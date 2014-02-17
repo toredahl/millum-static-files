@@ -13,7 +13,14 @@
 //= require foundation
 //$(document).foundation();
 
-$(document).ready(function(){
+$( document ).ajaxComplete(function() {
+  
+
+
+//});
+
+
+//$(document).ready(function(){
    
   var mouse_is_inside = false;
   $('.menu-20').removeClass("menu-selected");

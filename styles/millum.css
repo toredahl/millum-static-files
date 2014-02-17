@@ -264,7 +264,7 @@ ul#narrow-menu-list li {
 #template-changer .selected-item {
   background-color: #8E8983;
   color: #fff;
-    padding-bottom: 3.45em;
+    padding-bottom: 2.45em;
 }
 
 .menu-20 .menu-text {
@@ -409,9 +409,12 @@ ul#narrow-menu-list li {
 }
 
 ul#template-changer li {
-    background-color: #FFF;
+   
+
+  background-color: #FFFFFF;
     margin-right: 1px;
-    padding-bottom: 3.4em;
+    padding-bottom: 2.4em;
+    padding-top: 2em;
     text-align: center;
 }
 
@@ -678,12 +681,17 @@ form#contact-form input, form#contact-form textarea  {
   position:relative;
 }
 
+.absolute-div {
+  position:absolute;
+}
+
+
 .left-menuitem-triangle {
     display: block;
     height: 0;
     width: 0;
     right: 0;
-    top: 5.0em;
+    top: 4.0em;
     border-top: 1.10em solid #8E8983;
     border-right: 5.2em solid transparent;
     position: absolute; 
@@ -696,7 +704,7 @@ form#contact-form input, form#contact-form textarea  {
     height: 0;
     width: 0;
     left: 0;
-    top: 5.0em;
+    top: 4.0em;
     border-top: 1.10em solid #8E8983;
     border-left: 5.2em solid transparent;
     position: absolute; 
