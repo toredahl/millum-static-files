@@ -268,7 +268,8 @@ ul#floating-menu-narrow li {
 }
 
 .inner-container p {
-    line-height: 1.2;
+    line-height: 1.3;
+    font-size: 13px;
 }
 
 .shadow-container {
@@ -339,7 +340,8 @@ ul#narrow-menu-list li {
 }
 
 #nav-contact {
-    width: 12em;
+    /*width: 12em;*/
+    width: 20%;
     float: right;
     margin-right: 1em;
     margin-top: 1em;
@@ -407,9 +409,10 @@ ul#narrow-menu-list li {
 .large-contact-box {
     padding: 0;
     font-size: 30pt;
-    line-height: 4em;
+    /*line-height: 4em;*/
     overflow: hidden;
     margin-bottom: 0em;
+    padding: 1em;
 }
 
 .margin-bottom-2em {
@@ -417,10 +420,10 @@ ul#narrow-menu-list li {
 }
 
 .logo-box {
-    font-size: 28pt;
+    font-size: 28px;
     overflow: hidden;
     /*padding: .5em 0;*/
-    line-height: 2em;
+    line-height: 2.7em;
 }
 
 .logo-box-mobile {
@@ -436,12 +439,12 @@ ul#narrow-menu-list li {
     margin-top: 0;
     background-color: #363639;
     position: relative;
-    width: 8em;
+    /*width: 8em;*/
     padding: 2em 0;
 }
 
 #login-box {
-    /*width: 12em;*/
+    width: 10%;
     float: right;
     font-size: 15px;
 }
@@ -477,13 +480,13 @@ ul#narrow-menu-list li {
 }
 
 #millum-logo {
-    width: 12em;
+    /*width: 12em;*/
+    width: 16%;
 }
 
 #template-changer {
     height: 6em;
     padding:  0 0;
-    /*width: 75%;*/
     float:left;
     margin: 0;
 }
