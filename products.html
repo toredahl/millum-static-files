@@ -4,7 +4,11 @@
 
 <html>
 <head>
-    <title></title>
+    <title>Millum Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="foundation-5.1.1.custom/css/foundation.css" />
+    <link type="text/css" rel="stylesheet" href="styles/millum.css">
+    <script src="foundation-5.1.1.custom/js/vendor/modernizr.js"></script>
 </head>
 
 <body>
@@ -207,7 +211,7 @@
                 <div id="slideshow-section">
                     <!-- wrapper for the slideshow  -->
 
-                    <ul class="example-orbit" data-orbit="">
+                    <ul class="products-orbit-slider" data-orbit>
                         <li data-orbit-slide="headline-1"><img src=
                         "http://placehold.it/750x400/FDE8D7/000000"></li>
 
@@ -512,5 +516,25 @@
             </div>
         </div>
     </footer><!-- end footer element -->
+
+    <!--script src="scripts/jquery-1.11.0.min.js"></script -->
+    <!-- NB NB!  jquery-2.1 does not work with IE8 and below! If needed, use the above version -->
+    <script src="scripts/jquery-2.1.0.min.js"></script>
+    <script src="scripts/millum.js"></script>
+    <script src="foundation-5.1.1.custom/js/foundation.min.js"></script>
+    <!--script src="foundation-5.1.1.custom/js/foundation/foundation.js"></script>
+    <script src="foundation-5.1.1.custom/js/foundation/foundation.orbit.js"></script -->
+    <script>
+      $(".products-orbit-slider").foundation({
+        orbit: {
+            bullets: false,
+            circular:false,
+            timer: false
+        }
+    });
+
+    </script>
+
+
 </body>
 </html>
