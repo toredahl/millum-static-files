@@ -12,7 +12,31 @@ Varm mørkgrå #a09b96
 Grønn #41d705
 Oransje #ec581e
 
+/*
+Størrelser og type:
+Alle overskrifter: PT SANS Narrow
+All brødtekst og alt annet: PT SANS (regular)
+
+
+body base: 16px
+hovedfarge mørk font: #363639;
+
+H1: 40px (ikke pt som på skissen)
+H2: 
+H3:
+H4:
+
+p
+
+
+
+
+
 */
+
+
+
+
 
 
 body {
@@ -415,12 +439,22 @@ ul#narrow-menu-list li {
     overflow: hidden;
 }
 
+.large-contact-box-wrapper {
+    width: 100%;
+    padding: 0 2em;
+}    
+
 .large-contact-box {
     padding: 0;
     font-size: 30px;
     overflow: hidden;
     margin-bottom: 0em;
-    padding: 1em 3em;
+    padding: 1em 0em;
+}
+
+.large-contact-box a {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .margin-bottom-2em {
@@ -516,6 +550,11 @@ ul#template-changer li {
 
 #narrow-menu-list li {
     margin-left: 0;
+}
+
+/* the mobile menu is visible on small screens only */
+#mobile-menu-header-row {
+    width: 100%;
 }
 
 #mobile-menu {
