@@ -44,14 +44,15 @@ body {
     color: #363639;
 }
 
-h1, h2, h3, h4, p, div, span, #login-box, #nav-contact {
+h1, h2, h3, h4, #login-box, #nav-contact {
     color: #363639;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
-p {
- 
-    line-height: 1.4;
+p, div, span  {
+    color: #363639;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.5; /* warning: changing this will affect the header elements, need to make them more robust later */;
 }
 
 
@@ -104,7 +105,7 @@ h4 {
     font-size: 16px;
 }
 
-p,span {
+p,span, label {
     font-size: 14px;
 
 }
@@ -400,7 +401,7 @@ p.img-description-content {
     margin-top: 0;
     background-color: #363639;
     position: relative;
-    padding: 1.5em 0;
+    padding: 1.3em 0;
 }
 
 #login-box {
@@ -452,7 +453,7 @@ p.img-description-content {
 ul#template-changer li {
     background-color: #FFFFFF;
     margin-right: 1px;
-    padding: 1.52em 0;
+    padding: 1.65em 0;
     text-align: center;
 }
 
@@ -616,6 +617,7 @@ footer {
     color: #fff;
     min-height: 5rem;
     padding: 2em 0;
+    margin-top:3em;
 }
 
 footer ul {
@@ -843,15 +845,14 @@ footer h4 {
     margin-bottom: 3em;
 }
 
-#product-wrapper {
-    padding: 0 1.5em;
+#product-wrapper, #content-wrapper {
+    padding: 0 1.5em 3em 1.5em;
+    overflow: hidden;
 }
 
 #top-level-section {
     /*padding: 0 1em;*/
-
 }
-
 
 
 /*********************************************************
@@ -860,7 +861,14 @@ footer h4 {
 
 *********************************************************/
 
+.contact-info {
+    padding-left: 1em;
+}
 
+textarea {
+    height: 120px;
+
+}
 .padding-sides-1em {
     padding: 0 1em;
 }
@@ -882,9 +890,9 @@ form#contact-form {
 form#contact-form input[type=submit] {
   background-color:#1372EF;
   color: #fff;
-  font-size: 13px;
+  font-size: 16px;
   float: right;
-  padding:0.5em 3em;
+  padding:1.1em 3.3em;
 }
 
 form#contact-form input, form#contact-form textarea  {
