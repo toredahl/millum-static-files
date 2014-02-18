@@ -21,6 +21,7 @@ body {
     background: 0 color-stop(100%,rgba(255,255,255,0.5))), url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/lghtmesh.png) repeat 0 0;
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 16px;
+    color: #363639;
 }
 
 p {
@@ -98,12 +99,12 @@ footer h4 {
 }
 
 #millum-footer h4 {
-    font-size: 15pt;
+    font-size: 15px;
     font-weight: 400;
 }
 
 #millum-footer li {
-    font-size: 12pt;
+    font-size: 12px;
 }
 
 .row {
@@ -237,7 +238,7 @@ p.img-description-content {
 }
 
 #floating-menu-narrow h3 {
-    font-size: 1em;
+    font-size: 15px;
     font-weight: 400;
     margin: 0 0 0 5%;
     border-bottom: 1px solid #44A5DB;
@@ -343,8 +344,8 @@ ul#narrow-menu-list li {
     /*width: 12em;*/
     width: 20%;
     float: right;
-    margin-right: 1em;
-    margin-top: 1em;
+    margin-right: 0.7em;
+    margin-top: 0.7em;
 }
 
 
@@ -382,6 +383,14 @@ ul#narrow-menu-list li {
     top: 0;
 }
 
+
+.radius-10 {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
 .radius-20 {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -408,16 +417,20 @@ ul#narrow-menu-list li {
 
 .large-contact-box {
     padding: 0;
-    font-size: 30pt;
-    /*line-height: 4em;*/
+    font-size: 30px;
     overflow: hidden;
     margin-bottom: 0em;
-    padding: 1em;
+    padding: 1em 3em;
 }
 
 .margin-bottom-2em {
   margin-bottom: 2em;
 }
+
+.margin-bottom-3em {
+  margin-bottom: 3em;
+}
+
 
 .logo-box {
     font-size: 28px;
@@ -440,7 +453,7 @@ ul#narrow-menu-list li {
     background-color: #363639;
     position: relative;
     /*width: 8em;*/
-    padding: 2em 0;
+    padding: 1.5em 0;
 }
 
 #login-box {
@@ -462,7 +475,7 @@ ul#narrow-menu-list li {
     height: 0;
     width: 0;
     right: 0;
-    top: 5em;
+    top: 4.0em;
     border-top: 1.1em solid #323335;
     border-left: 4em solid transparent;
     position: absolute;
@@ -473,7 +486,7 @@ ul#narrow-menu-list li {
     height: 0;
     width: 0;
     left: 0;
-    top: 5em;
+    top: 4.0em;
     border-top: 1.1em solid #323335;
     border-right: 4em solid transparent;
     position: absolute;
@@ -662,8 +675,8 @@ form#contact-form input, form#contact-form textarea  {
  }
  
 .logo-container {
-    border-top: 2px solid #8E8983;
-    border-bottom: 2px solid #8E8983;
+    border-top: 1px solid #363639;
+    border-bottom: 1px solid #363639;
     overflow: hidden;
     padding: 2em 0;
     margin: 5em 0;
