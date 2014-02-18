@@ -363,7 +363,7 @@ p.img-description-content {
 
 .large-contact-box-wrapper {
     width: 100%;
-    padding: 0 2em;
+    padding: 10px;
 }    
 
 .large-contact-box {
@@ -625,6 +625,15 @@ footer {
     margin-top:3em;
 }
 
+footer h4 {
+    font-size: 15px;
+    color: #fff;
+}
+
+footer * a {
+    color: #fff;
+}
+
 footer ul {
     list-style-type: none;
     margin-left: 0;
@@ -643,10 +652,6 @@ footer ul {
     text-align: left;
 }
 
-footer h4 {
-    font-size: 15px;
-    color: #fff;
-}
 
 #millum-footer h4 {
     font-size: 15px;
@@ -850,8 +855,8 @@ footer h4 {
     margin-bottom: 3em;
 }
 
-#product-wrapper, #content-wrapper {
-    padding: 0 1.5em 3em 1.5em;
+#product-wrapper, #content-wrapper, #reference-content {
+    padding: 1em 1.5em 3em 1.5em;
     overflow: hidden;
 }
 
@@ -884,6 +889,7 @@ input[type=submit] {
 
 .contact-info h4, .contact h3 {
     margin: 0;
+    text-transform:uppercase;
 }
 
 textarea {
@@ -893,6 +899,11 @@ textarea {
 .padding-sides-1em {
     padding: 0 1em;
 }
+
+.padding-top-1em {
+    padding-top:1em;
+}
+
 
 .padding-top-2em {
     padding-top:2em;
