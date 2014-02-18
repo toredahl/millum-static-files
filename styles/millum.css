@@ -857,6 +857,9 @@ footer h4 {
 
 #top-level-section {
     /*padding: 0 1em;*/
+    border-bottom: 1px solid #ededeb;
+    margin-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 
@@ -869,6 +872,10 @@ footer h4 {
 input {
     box-shadow: none;
     -webkit-box-shadow: none;
+}
+
+input[type=submit] {
+    border: none;
 }
 
 .contact-info {
