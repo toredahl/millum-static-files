@@ -44,10 +44,17 @@ body {
     color: #363639;
 }
 
-h1, h2, h3, h4, #login-box, #nav-contact {
+h1, h2, h3, h4, ul#template-changer li a {
     color: #363639;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+
+ #nav-contact, #nav-contact div, #login-box div  {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #fff;
+ }
+
+
 
 p, div, span  {
     color: #363639;
@@ -237,7 +244,7 @@ p.img-description-content {
 .divider-bar-gray, .gray-bar-divider {
     background-color: #8E8983;
     color: #fff;
-    padding: 0.5em;
+    padding: 0.2em 0em 0 0.5em;
     margin: 1em 0;
     font-size: 20px;
 }
@@ -341,8 +348,6 @@ p.img-description-content {
     position: absolute;
     top: 0;
 }
-
-
 
 .contact-arrow-pos {
     position: relative;
@@ -861,8 +866,17 @@ footer h4 {
 
 *********************************************************/
 
+input {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 .contact-info {
     padding-left: 1em;
+}
+
+.contact-info h4, .contact h3 {
+    margin: 0;
 }
 
 textarea {
@@ -872,6 +886,15 @@ textarea {
 .padding-sides-1em {
     padding: 0 1em;
 }
+
+.padding-top-2em {
+    padding-top:2em;
+}
+
+.padding-bottom-2em {
+    padding-bottom:2em;
+}
+
 
 .top-img-container {
   padding: 1em;
