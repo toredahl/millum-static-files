@@ -44,7 +44,7 @@ body {
     color: #363639;
 }
 
-h1, h2, h3, h4, ul#template-changer li a {
+h1, h2, h3, h4, ul#template-changer li a, .large-contact-box {
     color: #363639;
     font-family: 'PT Sans Narrow', sans-serif;
 }
@@ -283,7 +283,7 @@ p.img-description-content {
 
 #template-changer a {
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 400;
     color: #363639;
 }
 
@@ -664,6 +664,9 @@ footer ul {
     color: #fff;
 }
 
+#millum-footer div {
+    padding-left: 3em;
+}
 
 /***********************************************************
  
