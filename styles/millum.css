@@ -22,9 +22,9 @@ body base: 16px
 hovedfarge mørk font: #363639;
 
 H1: 40px (ikke pt som på skissen)
-H2: 
-H3:
-H4:
+H2: 28px 
+H3: 17px
+H4: 15px
 
 p
 
@@ -43,7 +43,7 @@ body {
     
     background-image: url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/lghtmesh.png);
     background: 0 color-stop(100%,rgba(255,255,255,0.5))), url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/lghtmesh.png) repeat 0 0;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     color: #363639;
 }
@@ -52,10 +52,6 @@ p {
     font-family: 'PT Sans', sans-serif;
 }
 
-#millum-header {
-    min-height: 5em;
-    position: relative;
-}
 
 .white-bg {
     background-color: #fff;
@@ -80,57 +76,42 @@ nav ul li.selected-item span {
     background-color: #fff;
 }
 
-footer {
-    background-color: #333436;
-    color: #fff;
-    min-height: 5rem;
-    padding: 2em 0;
-}
-
-footer ul {
-    list-style-type: none;
-}
-
 /**************/
 /* typography */
 /**************/
 
-h1,h2,h3,h4 {
-    font-weight: 700;
+h1,h2, h3, h4 {
+    font-weight: 700;    
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+
+
 h1 {
-    font-size: 40pt;
+    font-size: 40px;
 }
 
 h2 {
-    font-size: 28pt;
-}
-
-h3 {
-    font-size: 20pt;
-}
-
-h4 {
-    font-size: 16pt;
-}
-
-
-footer h4 {
-    font-size: 15pt;
-    color: #fff;
-}
-
-#millum-footer h4 {
-    font-size: 15px;
+    font-size: 28px;
     font-weight: 400;
 }
 
-#millum-footer li {
-    font-size: 12px;
+h3 {
+    font-size: 20px;
 }
 
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+
+}
+
+/* paddings and margins */
+
+/* NB! This style for .row is an override of the Foundation .row style, which governs the entire responsive grid */
 .row {
     max-width: 72.5rem;
 }
@@ -160,19 +141,6 @@ footer h4 {
     margin: .5em 0;
 }
 
-#contact-box {
-    /*margin-top: 1em;*/
-}
-
-.divider-bar-gray, .gray-bar-divider {
-    background-color: #8E8983;
-    color: #fff;
-    padding: 0.5em;
-    margin: 1em 0;
-    font-size: 20pt;
-}
-
-
 .additional-container {
     padding: 1em 1em .5em;
     margin: .5em auto;
@@ -190,11 +158,12 @@ footer h4 {
 }
 
 #slideshow-section {
-    border-bottom: 2pt solid #C4C3BE;
+    border-bottom: 2px solid #C4C3BE;
     margin-bottom: 3em;
     padding-bottom: 1em;
 }
 
+/* the orbit slideris native to foundation - further customising will override native styles */
 .orbit-thumbs {
     margin-top: .75em;
 }
@@ -226,13 +195,327 @@ div.img-description-vertical {
 }
 
 p.img-description-content {
+    font-size: 19px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 19px;
     padding: .5em;
     margin: 0;
-    font-size: 19pt;
+}
+
+
+
+/*    positioning   */
+.relative-div {
+  position:relative;
+}
+
+.absolute-div {
+  position:absolute;
+}
+
+/*  colors */
+.blue-color {
+    color: #44A5DB;
+}
+
+.bg-white {
+    background-color: #fff;
 }
 
 .mobile-menu {
     background-color: #323335;
+}
+
+/* used primarily for floating menu */
+.blue-borders {
+    border-bottom: 4px solid #44A5DB !important;
+    border-top: 2px solid #44A5DB !important;
+}
+
+/* custom divider with text */
+.divider-bar-gray, .gray-bar-divider {
+    background-color: #8E8983;
+    color: #fff;
+    padding: 0.5em;
+    margin: 1em 0;
+    font-size: 20px;
+}
+
+/*   border radii  */
+.radius-10 {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.radius-20 {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.radius-30 {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+
+/*****************************
+
+   boxes for top menu and HEADER styles
+
+*****************************/
+
+#millum-header {
+    min-height: 5em;
+    position: relative;
+}
+
+#template-changer a {
+    font-size: 15px;
+    color: #363639;
+}
+
+#template-changer #narrow-menu-list li {
+    text-align: left;
+}
+
+#template-changer .selected-item {
+  background-color: #8E8983;
+}
+
+#template-changer .selected-item a {
+  color: #fff;
+    /*padding-bottom: 2.45em;*/
+}
+
+.menu-20 .menu-text {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 4px solid #fff;
+    border-top: 2px solid #000;
+}
+
+
+#floating-menu .menu-20 {
+    float: left;
+    width: 20%;
+    padding: 1em 1em;
+}
+
+#nav-contact {
+    width: 20%;
+    float: right;
+    margin-right: 0.7em;
+    margin-top: 0.7em;
+}
+
+.left-half-top-triangle {
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 1.2em solid #108BF5;
+    border-right: 1.2em solid transparent;
+}
+
+.box-container {
+    position: relative;
+    float:left;
+}
+
+.large-box-container {
+  min-height: 4em;
+}
+
+.blue-box {
+    background-color: #108BF5;
+    color: #fff;
+    text-align: center;
+}
+
+.absolutely-contact {
+    position: absolute;
+    top: 0;
+}
+
+
+
+.contact-arrow-pos {
+    position: relative;
+    bottom: 0;
+    left: 75%;
+}
+
+.contact-box {
+    padding: 0;
+    line-height: 3em;
+    overflow: hidden;
+}
+
+.large-contact-box-wrapper {
+    width: 100%;
+    padding: 0 2em;
+}    
+
+.large-contact-box {
+    padding: 0;
+    font-size: 30px;
+    overflow: hidden;
+    margin-bottom: 0em;
+    padding: 1em 0em;
+}
+
+.large-contact-box a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.margin-bottom-2em {
+  margin-bottom: 2em;
+}
+
+.margin-bottom-3em {
+  margin-bottom: 3em;
+}
+
+.logo-box {
+    font-size: 28px;
+    overflow: hidden;
+    line-height: 2.7em;
+}
+
+.logo-box-mobile {
+    font-size: 1.5em;
+    overflow: hidden;
+    padding: .25em 0;
+  width: 85%;
+  float: left;
+}
+
+.login-container {
+    clear: both;
+    margin-top: 0;
+    background-color: #363639;
+    position: relative;
+    padding: 1.5em 0;
+}
+
+#login-box {
+    width: 10%;
+    float: right;
+    font-size: 15px;
+}
+
+.login-box {
+    color: #fff;
+    text-align: center;
+}
+
+.left-login-triangle {
+    display: block;
+    height: 0;
+    width: 0;
+    right: 0;
+    top: 4.0em;
+    border-top: 1.1em solid #323335;
+    border-left: 4em solid transparent;
+    position: absolute;
+}
+
+.right-login-triangle {
+    display: block;
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 4.0em;
+    border-top: 1.1em solid #323335;
+    border-right: 4em solid transparent;
+    position: absolute;
+}
+
+#millum-logo {
+    width: 16%;
+}
+
+#template-changer {
+    height: 6em;
+    padding:  0 0;
+    float:left;
+    margin: 0;
+}
+
+ul#template-changer li {
+    background-color: #FFFFFF;
+    margin-right: 1px;
+    padding: 1.52em 0;
+    text-align: center;
+}
+
+#narrow-menu-list li {
+    margin-left: 0;
+}
+
+/* 
+    the mobile menu 
+        - this menu is visible on small screens only 
+*/
+
+#mobile-menu-header-row {
+    width: 100%;
+}
+
+#mobile-menu {
+    background-color: #323335;
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#mobile-menu ul {
+  clear: both;
+    margin: 0;
+}
+
+#mobile-menu li,li.mobile-border h2 {
+    float: none;
+    border-bottom: 1px solid #483C32;
+    width: 100%;
+}
+
+#mobile-menu li:last-child {
+    border: none;
+}
+
+#mobile-menu li h2 {
+    padding-left: .75em;
+    font-size: 1em;
+    color: #fff;
+    margin: 0;
+}
+
+#mobile-menu li a {
+    padding-left: 4em;
+    color: #fff;
+}
+
+#mobile-expand-menu {
+  display: none;
+}
+
+#expand-menu-button {
+  height: 2em;
+  width: 1.3em;
+  border: 0px solid #000;
+  float: right;
+}
+
+#expand-menu-button hr {
+    height: 3px;
+    margin: 20% 0 0 10%;
+    width: 80%;
+    background-color: #fff;
 }
 
 /********************************************************
@@ -281,10 +564,6 @@ ul#floating-menu-narrow li {
     border-bottom: 3px solid #44A5DB;
 }
 
-.blue-color {
-    color: #44A5DB;
-}
-
 .inner-container {
     background-color: #fff;
     padding-top: 10px;
@@ -309,7 +588,6 @@ ul#floating-menu-narrow li {
     padding: 2em 0;
     position: absolute;
     top: 6.0em;
-    /*width: 50%;*/
     z-index: 999999;
 }
 
@@ -323,273 +601,21 @@ ul#narrow-menu-list li {
     text-align: left;
 }
 
+/***********************************************************
+ 
+    FOOTER  styles
+ 
+ ***********************************************************/
 
-#template-changer a {
-    font-size: 15px;
-    color: #363639;
-}
-
-#template-changer #narrow-menu-list li {
-    text-align: left;
-}
-
-#template-changer .selected-item {
-  background-color: #8E8983;
-}
-
-#template-changer .selected-item a {
-  color: #fff;
-    /*padding-bottom: 2.45em;*/
-}
-
-.menu-20 .menu-text {
-    padding-bottom: 10px;
-    padding-top: 20px;
-    border-bottom: 4pt solid #fff;
-    border-top: 2pt solid #000;
-}
-
-.blue-borders {
-    border-bottom: 4pt solid #44A5DB !important;
-    border-top: 2pt solid #44A5DB !important;
-}
-
-#floating-menu .menu-20 {
-    float: left;
-    width: 20%;
-    padding: 1em 1em;
-}
-
-.bg-white {
-    background-color: #fff;
-}
-
-#nav-contact {
-    /*width: 12em;*/
-    width: 20%;
-    float: right;
-    margin-right: 0.7em;
-    margin-top: 0.7em;
-}
-
-
-/*****************************
-
-   boxes for top menu
-
-*****************************/
-.left-half-top-triangle {
-    display: block;
-    height: 0;
-    width: 0;
-    border-top: 1.2em solid #108BF5;
-    border-right: 1.2em solid transparent;
-}
-
-.box-container {
-    position: relative;
-    float:left;
-    /*width: 40%;*/
-}
-
-.large-box-container {
-  min-height: 4em;
-}
-
-.blue-box {
-    background-color: #108BF5;
+footer {
+    background-color: #333436;
     color: #fff;
-    text-align: center;
+    min-height: 5rem;
+    padding: 2em 0;
 }
 
-.absolutely-contact {
-    position: absolute;
-    top: 0;
-}
-
-
-.radius-10 {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-}
-
-
-.radius-20 {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-}
-
-.radius-30 {
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-}
-
-.contact-arrow-pos {
-    position: relative;
-    bottom: 0;
-    left: 75%;
-}
-
-.contact-box {
-    padding: 0;
-    line-height: 3em;
-    overflow: hidden;
-}
-
-.large-contact-box-wrapper {
-    width: 100%;
-    padding: 0 2em;
-}    
-
-.large-contact-box {
-    padding: 0;
-    font-size: 30px;
-    overflow: hidden;
-    margin-bottom: 0em;
-    padding: 1em 0em;
-}
-
-.large-contact-box a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.margin-bottom-2em {
-  margin-bottom: 2em;
-}
-
-.margin-bottom-3em {
-  margin-bottom: 3em;
-}
-
-
-.logo-box {
-    font-size: 28px;
-    overflow: hidden;
-    /*padding: .5em 0;*/
-    line-height: 2.7em;
-}
-
-.logo-box-mobile {
-    font-size: 1.5em;
-    overflow: hidden;
-    padding: .25em 0;
-  width: 85%;
-  float: left;
-}
-
-.login-container {
-    clear: both;
-    margin-top: 0;
-    background-color: #363639;
-    position: relative;
-    /*width: 8em;*/
-    padding: 1.5em 0;
-}
-
-#login-box {
-    width: 10%;
-    float: right;
-    font-size: 15px;
-}
-
-.login-box {
-    color: #fff;
-    /*font-size: 1.2em;*/
-    text-align: center;
-    /*line-height: 2em;*/
-
-}
-
-.left-login-triangle {
-    display: block;
-    height: 0;
-    width: 0;
-    right: 0;
-    top: 4.0em;
-    border-top: 1.1em solid #323335;
-    border-left: 4em solid transparent;
-    position: absolute;
-}
-
-.right-login-triangle {
-    display: block;
-    height: 0;
-    width: 0;
-    left: 0;
-    top: 4.0em;
-    border-top: 1.1em solid #323335;
-    border-right: 4em solid transparent;
-    position: absolute;
-}
-
-#millum-logo {
-    /*width: 12em;*/
-    width: 16%;
-}
-
-#template-changer {
-    height: 6em;
-    padding:  0 0;
-    float:left;
-    margin: 0;
-}
-
-ul#template-changer li {
-   
-
-  background-color: #FFFFFF;
-    margin-right: 1px;
-    padding: 1.5em 0;
-    text-align: center;
-    
-}
-
-#narrow-menu-list li {
-    margin-left: 0;
-}
-
-/* the mobile menu is visible on small screens only */
-#mobile-menu-header-row {
-    width: 100%;
-}
-
-#mobile-menu {
-    background-color: #323335;
-    color: #fff;
-    font-size: 1.5em;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-#mobile-menu ul {
-  clear: both;
-    margin: 0;
-}
-
-#mobile-menu li,li.mobile-border h2 {
-    float: none;
-    border-bottom: 1px solid #483C32;
-    width: 100%;
-}
-
-#mobile-menu li:last-child {
-    border: none;
-}
-
-#mobile-menu li h2 {
-    padding-left: .75em;
-    font-size: 1em;
-    color: #fff;
-    margin: 0;
-}
-
-#mobile-menu li a {
-    padding-left: 4em;
-    color: #fff;
+footer ul {
+    list-style-type: none;
 }
 
 #millum-footer .large-4 {
@@ -604,6 +630,19 @@ ul#template-changer li {
     text-align: left;
 }
 
+footer h4 {
+    font-size: 15px;
+    color: #fff;
+}
+
+#millum-footer h4 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#millum-footer li {
+    font-size: 12px;
+}
 
 
 /***********************************************************
@@ -645,70 +684,11 @@ ul#template-changer li {
 }
 
 
-/*********************************************************
 
-      SKJEMA/FORM TEMPLATE STYLES
+/* 
+   custom style: spinner container testing
+ */
 
-*********************************************************/
-
-
-.padding-sides-1em {
-    padding: 0 1em;
-}
-
-.top-img-container {
-  padding: 1em;
-}
-
-.top-img-container img {
-   display: block;
-  margin-left: auto;
-  margin-right: auto; 
-}
-
-form#contact-form {
-    margin-bottom: 100pt;
-}
-
-form#contact-form input[type=submit] {
-  background-color:#1372EF;
-  color: #fff;
-  font-size: 13pt;
-  float: right;
-  padding:0.5em 3em;
-}
-
-form#contact-form input, form#contact-form textarea  {
-  background-color:#F8F8F8;
- }
-
- /*********************************************************
-
-      ABOUT MILLUM TEMPLATE STYLES
-
-***********************************************************/
-
-
-.half-width {
-  padding: 0.1em 2.5em;
-  line-height: 3em;
-  overflow: hidden;
-}
-
-.byline {
-  margin-bottom: 1em;
-}
-
-
-
-
-
-
-/***********************************************************
- 
-    custom style: spinner container testing
- 
- ***********************************************************/
  .tinyslideshows {
     float:left;
     margin-right: 3em;
@@ -733,7 +713,7 @@ form#contact-form input, form#contact-form textarea  {
     padding: 0;
 }
 
-
+/* NB NB NB NB TODO:  thsese must be reinitialized into class styles */
 #slider2, #slider3, #slider4, #slider5, #slider1, #slider6  { height: 1%; overflow:hidden; padding: 0 0 10px; margin: 0 0 0 48px;  }
 
 #slider2 .viewport, #slider3 .viewport, #slider4 .viewport, #slider5 .viewport, #slider6 .viewport, #slider1 .viewport  { width: 48px; height: 48px; overflow: hidden; position: relative; }
@@ -747,11 +727,10 @@ form#contact-form input, form#contact-form textarea  {
 }
 
 
-/***********************************************************
- 
-    custom style: transparent polygon image overlay
- 
- ***********************************************************/
+/*
+    custom style: transparent polygon image overlay for frontpage images
+ */
+
 .overlay-container {
     width: 500px;
     height: 300px;
@@ -810,15 +789,6 @@ form#contact-form input, form#contact-form textarea  {
     padding: 2em;
     width: 40%;
     z-index: 1000;
-
-}
-
-.relative-div {
-  position:relative;
-}
-
-.absolute-div {
-  position:absolute;
 }
 
 
@@ -855,20 +825,63 @@ form#contact-form input, form#contact-form textarea  {
 
 }
 
-#mobile-expand-menu {
-  display: none;
+
+
+
+
+
+
+
+/*********************************************************
+
+      SKJEMA/FORM STYLES
+
+*********************************************************/
+
+
+.padding-sides-1em {
+    padding: 0 1em;
 }
 
-#expand-menu-button {
-  height: 2em;
-  width: 1.3em;
-  border: 0px solid #000;
+.top-img-container {
+  padding: 1em;
+}
+
+.top-img-container img {
+   display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+form#contact-form {
+    margin-bottom: 100pt;
+}
+
+form#contact-form input[type=submit] {
+  background-color:#1372EF;
+  color: #fff;
+  font-size: 13px;
   float: right;
+  padding:0.5em 3em;
 }
 
-#expand-menu-button hr {
-    height: 3px;
-    margin: 20% 0 0 10%;
-    width: 80%;
-    background-color: #fff;
+form#contact-form input, form#contact-form textarea  {
+  background-color:#F8F8F8;
+ }
+
+ /*********************************************************
+
+      ABOUT MILLUM  STYLES
+
+***********************************************************/
+
+
+.half-width {
+  padding: 0.1em 2.5em;
+  line-height: 3em;
+  overflow: hidden;
+}
+
+.byline {
+  margin-bottom: 1em;
 }
