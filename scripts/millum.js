@@ -43,18 +43,14 @@ $( document ).ajaxComplete(function() {
         currentItemHeader.addClass("blue-color");
 
         var currentItemText = $(this).find("div.menu-text");
-        currentItemText.addClass("blue-borders");
-        
+        currentItemText.addClass("blue-borders");    
       });
-                                             
       
     } else if (currentId == "customerservice") {
        mouse_is_inside = true;
       $("#floating-menu").hide();
       $("#floating-menu-narrow").hide();
-      
-      //no menu at all here
-      
+      //no menu at all here 
     }else {
       mouse_is_inside=false;
     }
@@ -66,8 +62,6 @@ $( document ).ajaxComplete(function() {
     $('#floating-menu').hide();
     $('#floating-menu-narrow').hide();
     $(".selected-item").removeClass("selected-item");
-    
-  
   });
     
   $("body").mouseup(function(){ 
@@ -76,34 +70,18 @@ $( document ).ajaxComplete(function() {
       $('#floating-menu-narrow').hide();
           mouse_is_inside=false;
           $(".selected-item").removeClass("selected-item");
-     }
-      
+      }     
     });
   
-  // customise these better later...with random intervals and dynamic counting
-  // $('#slider2').tinycarousel({interval: true,  axis: 'y', intervaltime: 6000, duration: 1000, pager:false});
-  // $('#slider3').tinycarousel({interval: true,  axis: 'y', intervaltime: 3800, duration: 1400});
-  // $('#slider4').tinycarousel({interval: true,  axis: 'y', intervaltime: 4400, duration: 800});
-  // $('#slider5').tinycarousel({interval: true,  axis: 'y', intervaltime: 7400, duration: 1200});
-  // $('#slider6').tinycarousel({interval: true,  axis: 'y', intervaltime: 2900, duration: 1800});
-  // $('#slider1').tinycarousel({interval: true,  axis: 'y', intervaltime: 3000, duration: 800, pager:false});
-
   for(var i=0; i< 20;i++) {
 
     var $slider = $("#slider"+i);
     // check if the element exists, and if so, calculate a random interval, with a minimum time
     if ($slider.length>0) {
       var interval = Math.floor((Math.random()*600)+1)*10+2000;
-      var duration = 3000; //Math.floor((Math.random()*500)+1)*10+500;
-      //console.log("I/A" + interval + " - " + duration);
+      var duration = 3000; 
       $slider.tinycarousel({interval: true,  axis: 'y', intervaltime: interval, duration: duration, pager:false});      
-
-
     }
-
   }
-
-
-  
 
 });

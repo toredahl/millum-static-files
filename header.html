@@ -20,7 +20,7 @@
                         <hr>
                         <hr>
                     </div>
-                </div>
+                <!-- </div> -->
 
                 <ul id="mobile-expand-menu">
                     <li class="mobile-border">
@@ -57,6 +57,9 @@
                         <h2>LOGG INN</h2>
                     </li>
                 </ul>
+
+                </div>
+
             </div>
         </div><!-- end mobile menu -->
         <!-- start medium and large screen menu: this menu is visible for tablet and desktop screens -->
@@ -207,3 +210,17 @@
             </div>
         </div><!-- end medium and large screen menu -->
     </nav><!-- start nav bar header element -->
+
+<script>
+$(function(){
+    
+  $( "#mobile-menu" ).bind( "tap click vclick", tapHandler );
+ 
+  function tapHandler( event ){
+    
+    $('#mobile-expand-menu').toggle();
+
+  }
+});
+</script>
+
