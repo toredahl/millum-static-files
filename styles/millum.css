@@ -573,6 +573,7 @@ ul#template-changer li {
 #mobile-menu li,li.mobile-border h2 {
     float: none;
     border-bottom: 1px solid #483C32;
+    width: 100%;
 }
 
 #mobile-menu li:last-child {
