@@ -689,6 +689,10 @@ footer ul {
   margin-top: 2em;
 }
 
+#frontpage-large-img-container {
+    padding: 0 0.7em 0 0em;
+}
+
 #frontpage-right-container {
     background-color: #8E8983;
     max-width: 22em;
@@ -744,38 +748,42 @@ footer ul {
 }
 
 /* NB NB NB NB TODO:  thsese must be reinitialized into class styles */
-#slider2, #slider3, #slider4, #slider5, #slider1, #slider6, .slider  { height: 1%; overflow:hidden; padding: 0 0 10px; margin: 0 0 0 48px;  }
+/*#slider2, #slider3, #slider4, #slider5, #slider1, #slider6,*/ 
+/*#slider2 .overview li, #slider3 .overview li, #slider4 .overview li, #slider5 .overview li, #slider6 .overview li, #slider1 .overview li,*/ 
+/*#slider2 .viewport, #slider3 .viewport, #slider4 .viewport, #slider5 .viewport, #slider6 .viewport, #slider1 .viewport,*/ 
+/*#slider2 .disable, #slider3 .disable, #slider4 .disable, #slider5 .disable, #slider6 .disable, #slider1 .disable,*/ 
+/*#slider2 .overview, #slider3 .overview, #slider4 .overview, #slider5 .overview, #slider1 .overview, #slider6 .overview,*/ 
 
-#slider2 .viewport, #slider3 .viewport, #slider4 .viewport, #slider5 .viewport, #slider6 .viewport, #slider1 .viewport, .slider .viewport   { width: 48px; height: 48px; overflow: hidden; position: relative; }
-
-#slider2 .disable, #slider3 .disable, #slider4 .disable, #slider5 .disable, #slider6 .disable, #slider1 .disable, .slider .disable { visibility: hidden; }
-#slider2 .overview, #slider3 .overview, #slider4 .overview, #slider5 .overview, #slider1 .overview, #slider6 .overview, .slider .overview  { list-style: none; position: absolute; width: 48px; left: 0 top: 0; }
-#slider2 .overview li, #slider3 .overview li, #slider4 .overview li, #slider5 .overview li, #slider6 .overview li, #slider1 .overview li, slider .overview li  { float: left; margin: 0 20px 0 0; padding: 1px; height: 48px; border: 1px solid #dcdcdc; width: 48px;}
-
+.slider  { height: 1%; overflow:hidden; padding: 0 0 10px; margin: 0 0 0 48px;  }
+.slider .viewport   { width: 48px; height: 48px; overflow: hidden; position: relative; }
+.slider .disable { visibility: hidden; }
+.slider .overview  { list-style: none; position: absolute; width: 48px; left: 0 top: 0; }
+slider .overview li  { float: left; margin: 0 20px 0 0; padding: 1px; height: 48px; border: 1px solid #dcdcdc; width: 48px;}
 .viewport ul {
   margin-left: 0;
 }
 
 
 /*
-    custom style: transparent polygon image overlay for frontpage images
+    custom style: transparent polygon image overlay for frontpage images.
+    How it works: ;
  */
 
 .overlay-container {
-    width: 500px;
-    height: 300px;
-    background-color: white;
+    width: 700px;
+    height: 390px;
+    background-color: #fff;
     position: relative;
     overflow: hidden;
 }
 
 .overlay-container img {
-    width: 495px;
-    height: 300px;
+    width: 700px;
+    height: 390px;
 }
 
 
-.fixed-overlay {
+#overlay {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -784,16 +792,27 @@ footer ul {
 
 #textBox {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #ccc;
+    top: 2em;
+    left: 2em;
+    color: #363639;
     font-weight: bold;
-    font-size: 20px;
-    font-family:arial;
     padding: 0.1em;
-    width: 37%;
+    width: 57%;
     z-index: 1000;
 }
+
+#textBox h1 {
+    text-transform: uppercase;
+}
+
+#textBox h2 {
+    font-weight: 400;
+}
+
+#textBox p {
+    font-size: 17px;
+}
+
 
 .overlay-container-small {
     width: 300px;

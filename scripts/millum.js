@@ -1,12 +1,46 @@
 
-// tinycarousel, move into its own file later.
+// tinycarousel script, may move into its own file later, but this will mean an extra server request, so maybe not. Do not forget the copyright notice.
+/*********************************************
+  tinycarousel: 
+  Copyright 2013 Maarten Baijs
+  http://www.baijs.com
+*********************************************/
+
 (function(a){a.tiny=a.tiny||{};a.tiny.carousel={options:{start:1,display:1,axis:"x",controls:true,pager:false,interval:false,intervaltime:3000,rewind:false,animation:true,duration:1000,callback:null}};a.fn.tinycarousel_start=function(){a(this).data("tcl").start()};a.fn.tinycarousel_stop=function(){a(this).data("tcl").stop()};a.fn.tinycarousel_move=function(c){a(this).data("tcl").move(c-1,true)};function b(q,e){var i=this,h=a(".viewport:first",q),g=a(".overview:first",q),k=g.children(),f=a(".next:first",q),d=a(".prev:first",q),l=a(".pager:first",q),w=0,u=0,p=0,j=undefined,o=false,n=true,s=e.axis==="x";function m(){if(e.controls){d.toggleClass("disable",p<=0);f.toggleClass("disable",!(p+1<u))}if(e.pager){var x=a(".pagenum",l);x.removeClass("active");a(x[p]).addClass("active")}}function v(x){if(a(this).hasClass("pagenum")){i.move(parseInt(this.rel,10),true)}return false}function t(){if(e.interval&&!o){clearTimeout(j);j=setTimeout(function(){p=p+1===u?-1:p;n=p+1===u?false:p===0?true:n;i.move(n?1:-1)},e.intervaltime)}}function r(){if(e.controls&&d.length>0&&f.length>0){d.click(function(){i.move(-1);return false});f.click(function(){i.move(1);return false})}if(e.interval){q.hover(i.stop,i.start)}if(e.pager&&l.length>0){a("a",l).click(v)}}this.stop=function(){clearTimeout(j);o=true};this.start=function(){o=false;t()};this.move=function(y,z){p=z?y:p+=y;if(p>-1&&p<u){var x={};x[s?"left":"top"]=-(p*(w*e.display));g.animate(x,{queue:false,duration:e.animation?e.duration:0,complete:function(){if(typeof e.callback==="function"){e.callback.call(this,k[p],p)}}});m();t()}};function c(){w=s?a(k[0]).outerWidth(true):a(k[0]).outerHeight(true);var x=Math.ceil(((s?h.outerWidth():h.outerHeight())/(w*e.display))-1);u=Math.max(1,Math.ceil(k.length/e.display)-x);p=Math.min(u,Math.max(1,e.start))-2;g.css(s?"width":"height",(w*k.length));i.move(1);r();return i}return c()}a.fn.tinycarousel=function(d){var c=a.extend({},a.tiny.carousel.options,d);this.each(function(){a(this).data("tcl",new b(a(this),c))});return this}}(jQuery));
 
-//= require foundation
+//= responsive design, built with foundation: wordpress use require+ foundation
+
+function createOverlay() {
+
+  var anglefactor = 9;
+  var cHeight = $(".overlay-container").height();
+  var cWidth = $(".overlay-container").width();
+  var halfWidth = cWidth/1.6;  // initialize to half the container width with factor 2... less than that will yield a larger overlay, more a smaller. 
+  var lesserHalf = halfWidth - (halfWidth/anglefactor); // this is the cutoff for the lower part of the quadrant, and the size of the divisor decides the angle. i.e factor 8 will yield a straighter line than 6.
+  var greaterHalf = halfWidth + (halfWidth/anglefactor);
+  //var canvas = $("#fixed-overlay");
+  var canvas = document.getElementById('overlay');
+  var ctx = canvas.getContext('2d');
+  //alert('-- cH :' + cHeight + '-- hW :' +  halfWidth + '  -- lH: ' + lesserHalf + ' -- gH: ' + greaterHalf);
+
+  //The lineTo() method adds a new point and creates a line from that point to the last specified point in the canvas 
+  ctx.fillStyle = '#fff';
+  ctx.beginPath();
+  ctx.moveTo(0,0); // start at upper left corner, pt 1
+  //ctx.lineTo(0,0); // we may not need a line to it, we're already there
+  ctx.lineTo(0, cHeight);  //pt 2, at coords 0,300 in this case. So we draw FROM that point, back to the previous one, i.e from pt 2 to pt 1, the upper left corner
+  ctx.lineTo(lesserHalf, cHeight); // and so on again, find a new point, pt 3, draw back to the previous one, which now is pt2
+  ctx.lineTo(greaterHalf,0); //the third corner of the polygon, pt 4, a little over halfway across the container, at the top
+  ctx.lineTo(0, 0);  // from there, that is pt 4, and back to the first corner, to close up the polygon
+  ctx.closePath();  // the actual closing
+  ctx.fill();  // and then we fill it with the fill color
+}
+
 
 // we use Ajax complete, because we are loading the footer and header element on every page. Redo in wordpress. 
 $( document ).ajaxComplete(function() {
 
+  createOverlay();
 //$(document).ready(function(){
    
   var mouse_is_inside = false;
