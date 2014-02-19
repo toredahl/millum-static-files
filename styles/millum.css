@@ -14,8 +14,8 @@ Oransje #ec581e
 
 /*
 Størrelser og type:
-Alle overskrifter: PT SANS Narrow
-All brødtekst og alt annet: PT SANS (regular)
+Alle overskrifter/ All h-elements: PT SANS Narrow  + teksten i grå bokser og blå bokser, skal også være narrow
+All other text/brødtekst og alt annet: PT SANS (regular)
 
 
 body base: 16px
@@ -32,13 +32,10 @@ p
 
 
 
-
-
-
 body {
     
     background-image: url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/lghtmesh.png);
-    background: 0 color-stop(100%,rgba(255,255,255,0.5))), url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/lghtmesh.png) repeat 0 0;
+    /*background: 0 color-stop(100%,rgba(255,255,255,0.5))), url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/lghtmesh.png) repeat 0 0;*/
     font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     color: #363639;
@@ -54,33 +51,16 @@ h1, h2, h3, h4, ul#template-changer li a, .large-contact-box {
     color: #fff;
  }
 
-
-
 p, div, span  {
     color: #363639;
     font-family: 'PT Sans', sans-serif;
     line-height: 1.5; /* warning: changing this will affect the header elements, need to make them more robust later */;
 }
 
-
 .white-bg {
     background-color: #fff;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    float: left;
-    width: 11em;
-    padding-top: 1em;
-}
-
-nav ul li.selected-item span {
-    /*border-bottom: 2pt solid #118AF3;*/
-    padding: 1em 1em .5em;
-}
 
 #template-wrapper {
     background-color: #fff;
@@ -128,12 +108,12 @@ p,span, label, .users, .byline {
     margin-bottom: 1em;
 }
 
-#top-level-section p {
-    margin-bottom: 3.5rem;
+#top-level-section p:last-child {
+    margin-bottom: 2.5rem;
 }
 
 #personal-contact-wrapper {
-    padding: 0 0 4em 1em;
+    padding: 0 0 2em 1em;
     margin: 1em auto;
 }
 
@@ -162,13 +142,14 @@ p,span, label, .users, .byline {
 }
 
 .additional-container p,.additional-container h4 {
-    padding: 0 1em;
+    padding: 0 0em;
+    margin: 0;
 }
 
 #slideshow-section {
-    border-bottom: 2px solid #C4C3BE;
+    border-bottom: 1px solid #C4C3BE;
     margin-bottom: 3em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 /* the orbit slideris native to foundation - further customising will override native styles */
@@ -272,9 +253,23 @@ p.img-description-content {
 
 /*****************************
 
-   boxes for top menu and HEADER styles
+   boxes for top MENU and HEADER styles
 
 *****************************/
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    width: 10em;
+    padding-top: 1em;
+}
+
+nav ul li.selected-item span {
+    padding: 1em 1em .5em;
+}
 
 #millum-header {
     min-height: 5em;
@@ -297,7 +292,6 @@ p.img-description-content {
 
 #template-changer .selected-item a {
   color: #fff;
-    /*padding-bottom: 2.45em;*/
 }
 
 .menu-20 .menu-text {
@@ -307,7 +301,6 @@ p.img-description-content {
     border-top: 2px solid #000;
 }
 
-
 #floating-menu .menu-20 {
     float: left;
     width: 20%;
@@ -315,19 +308,19 @@ p.img-description-content {
 }
 
 #nav-contact {
-    width: 20%;
+    width: 10em;
     float: right;
     font-weight: 400;
-    margin-right: 0.7em;
-    margin-top: 0.7em;
+    margin-right: 1.0em;
+    margin-top: 1.0em;
 }
 
 .left-half-top-triangle {
     display: block;
     height: 0;
     width: 0;
-    border-top: 1.2em solid #108BF5;
-    border-right: 1.2em solid transparent;
+    border-top: 0.7em solid #108BF5;
+    border-right: 0.9em solid transparent;
 }
 
 .box-container {
@@ -371,8 +364,9 @@ p.img-description-content {
     padding: 0;
     font-size: 30px;
     overflow: hidden;
-    margin-bottom: 0em;
     padding: 1em 0em;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .large-contact-box a {
@@ -407,7 +401,7 @@ p.img-description-content {
     margin-top: 0;
     background-color: #363639;
     position: relative;
-    padding: 1.3em 0;
+    padding: 1.25em 0;
 }
 
 #login-box {
@@ -415,7 +409,7 @@ p.img-description-content {
     float: right;
     font-size: 15px;
     font-weight: 400;
-    width: 10%;
+    width: 8em;
 }
 
 .login-box {
@@ -423,6 +417,8 @@ p.img-description-content {
     text-align: center;
 }
 
+
+/* the down pointing arrows (left and right) for the login-box - regulate height and width with border-top and border-left */
 .left-login-triangle {
     display: block;
     height: 0;
@@ -446,7 +442,12 @@ p.img-description-content {
 }
 
 #millum-logo {
-    width: 16%;
+    /*width: 20%; */
+    width: 232px;   /* if need avoid the image scaling when resizing, use this instead */
+}
+
+#millum-logo img {
+ width: auto;
 }
 
 #template-changer {
@@ -560,7 +561,7 @@ ul#template-changer li {
     font-weight: 400;
     margin: 0 0 0 5%;
     border-bottom: 1px solid #44A5DB;
-    width: 80%;
+    width: 90%;
     padding: 1px 0 10px;
 }
 
@@ -582,6 +583,10 @@ ul#floating-menu-narrow li {
     overflow: auto;
 }
 
+.no-padding {
+    padding: 0!important;
+}
+
 .inner-container p {
     line-height: 1.3;
     font-size: 13px;
@@ -596,7 +601,7 @@ ul#floating-menu-narrow li {
 #floating-menu-narrow {
     background-color: #fff;
     display: none;
-    padding: 2em 0;
+    padding: 2em 1.5em;
     position: absolute;
     top: 6.0em;
     z-index: 999999;
@@ -604,12 +609,14 @@ ul#floating-menu-narrow li {
 
 #floating-menu-narrow ul {
     list-style-type: none;
+    margin:0;
 }
 
 ul#narrow-menu-list li {
     float: none;
     padding: 5px 0 !important;
     text-align: left;
+    width: 13em;
 }
 
 /***********************************************************
@@ -820,9 +827,9 @@ footer ul {
     height: 0;
     width: 0;
     right: 0;
-    top: 3.5em;
-    border-top: 1.52em solid #8E8983;
-    border-right: 6.3em solid transparent;
+    top: 3.6em;
+    border-top: 1.0em solid #8E8983;
+    border-right: 5.8em solid transparent;
     position: absolute; 
     padding: 0!important;
   display: none;
@@ -833,9 +840,9 @@ footer ul {
     height: 0;
     width: 0;
     left: 0;
-    top: 3.5em;
-    border-top: 1.52em solid #8E8983;
-    border-left: 6.3em solid transparent;
+    top: 3.6em;
+    border-top: 1.0em solid #8E8983;
+    border-left: 5.8em solid transparent;
     position: absolute; 
     padding: 0!important;
     display: none;
@@ -864,11 +871,20 @@ footer ul {
     overflow: hidden;
 }
 
-#top-level-section {
+#top-level-section, #article-top-level-section {
     /*padding: 0 1em;*/
-    border-bottom: 1px solid #ededeb;
-    margin-bottom: 3em;
+    /*border-bottom: 1px solid #ededeb;*/
+    margin-bottom: 0em;
     padding-bottom: 2em;
+}
+
+#top-level-section h1, #article-top-level-section h1 {
+    margin: 0;
+    line-height: 1.0;
+}
+
+#top-level-section h2, #article-top-level-section h2 {
+    margin-bottom: 1em;
 }
 
 /*********************************************************
