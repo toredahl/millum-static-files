@@ -216,6 +216,10 @@ p.img-description-content {
     background-color: #323335;
 }
 
+#mobile-menu img {
+    max-width: 80%;
+}
+
 /* used primarily for floating menu */
 .blue-borders {
     border-bottom: 4px solid #44A5DB !important;
