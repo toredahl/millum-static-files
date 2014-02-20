@@ -107,14 +107,18 @@ $( document ).ajaxComplete(function() {
       }     
     });
   
-  for(var i=0; i< 20;i++) {
 
-    var $slider = $("#slider"+i);
-    // check if the element exists, and if so, calculate a random interval, with a minimum time
-    if ($slider.length>0) {
-      var interval = Math.floor((Math.random()*600)+1)*10+2000;
-      var duration = 3000; 
-      $slider.tinycarousel({interval: true,  axis: 'y', intervaltime: interval, duration: duration, pager:false});      
+  var testMode = false;
+  if(!testMode) {
+    for(var i=0; i< 20;i++) {
+
+      var $slider = $("#slider"+i);
+      // check if the element exists, and if so, calculate a random interval, with a minimum time
+      if ($slider.length>0) {
+        var interval = Math.floor((Math.random()*600)+1)*10+2000;
+        var duration = 3000; 
+        $slider.tinycarousel({interval: true,  axis: 'y', intervaltime: interval, duration: duration, pager:false});      
+      }
     }
   }
 

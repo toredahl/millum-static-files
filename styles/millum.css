@@ -704,7 +704,7 @@ footer ul {
 }
 
 #fp-first-row img:hover {
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .second-row-img-container img:hover {
@@ -736,28 +736,46 @@ footer ul {
 }
 
 .movehorizontal img {
-  margin-left: 0px;
+/*  margin-left: 0px;*/
+  left:0;
+  top:0;
   z-index: 99999;  
+  margin-left: 0;
   position: absolute;
-  -webkit-transition: margin 2s ease;
-     -moz-transition: margin 2s ease;
-       -o-transition: margin 2s ease;
-      -ms-transition: margin 2s ease;
-          transition: margin 2s ease;
+  /*-webkit-transition: margin 1s ease-out;*/
+     /*-moz-transition: margin 4s ease;
+       -o-transition: margin 1s ease-out;
+      -ms-transition: margin 1s ease-out;*/
+          /*transition: margin 1s ease-out;*/
+    -webkit-transition: all ease-out 2s;      
+    transition: left ease 2s;
+
 }
 
-.movehorizontal img:hover {
-  margin-left: 850px;
+.movehorizontal:hover img {
+    left: 850px;
 }
- 
+
+
+/*.movehorizontal img:hover:after {
+  left: 1850px;
+}
+*/
+
 .textBox {
     position: absolute;
-    top: 0px;
+    display:block;
+    top: 0;
+    left: 0;
     padding: 1em;
     background-color: #41d705;
     color: #fff;
     height: 246px;
-    width: 100%;
+    width: 325px;
+}
+
+.textBox:hover {
+    /*background-color: #ec581e;*/
 }
 
 
