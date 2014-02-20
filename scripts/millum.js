@@ -39,8 +39,12 @@ function createOverlay() {
 
 // we use Ajax complete, because we are loading the footer and header element on every page. Redo in wordpress. 
 $( document ).ajaxComplete(function() {
-
-  createOverlay();
+  var frontPage = $(".overlay-container").length > 0;
+  if ( frontPage) {
+    createOverlay();
+  }
+  
+  
 //$(document).ready(function(){
    
   var mouse_is_inside = false;

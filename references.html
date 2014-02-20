@@ -5,8 +5,10 @@
     <title>Millum References</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="foundation-5.1.1.custom/css/foundation.css" />
+    <link type="text/css" rel="stylesheet" href="jquery.mobile-1.4.1/jquery.mobile-1.4.1.min.css">
     <link type="text/css" rel="stylesheet" href="styles/millum.css">
     <script src="foundation-5.1.1.custom/js/vendor/modernizr.js"></script>
+    <script src="jquery.mobile-1.4.1/jquery.mobile-1.4.1.min.js"></script>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
     <div id="header"></div>
 
     <div class="row" id="outer-wrapper">
-        <div id="content-wrapper">
+        <div id="reference-wrapper">
             <div class="small-12 medium-12 large-12 columns">
                 <div class="row white-bg padding-sides-1em description-element padding-top-2em">
             
@@ -201,23 +203,23 @@
                 </div>
             </div>  
         </div>
-
-        <!-- html for this element is loaded by Jquery -->
-        <div id="footer"></div>
-
-         <!--script src="scripts/jquery-1.11.0.min.js"></script -->
-        <!-- NB NB!  jquery-2.1 does not work with IE8 and below! If needed, use the above version -->
-        <script src="scripts/jquery-2.1.0.min.js"></script>
-        <script src="scripts/millum.js"></script>
-        <script src="foundation-5.1.1.custom/js/foundation.min.js"></script>
-
-        <script> 
-            $(function() {
-                $("#header").load("header.html"); 
-                $("#footer").load("footer.html"); 
-            });
-        </script>
     </div>
+    <!-- html for this element is loaded by Jquery -->
+    <div id="footer"></div>
+
+    <!--script src="scripts/jquery-1.11.0.min.js"></script -->
+    <!-- NB NB!  jquery-2.1 does not work with IE8 and below! If needed, use the above version -->
+    <script src="scripts/jquery-2.1.0.min.js"></script>
+    <script src="scripts/millum.js"></script>
+    <script src="foundation-5.1.1.custom/js/foundation.min.js"></script>
+
+    <script> 
+        $(function() {
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script>
+
 
 </body>
 </html>

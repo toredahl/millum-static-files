@@ -292,6 +292,8 @@ nav ul li.selected-item span {
     color: #363639;
 }
 
+
+
 #template-changer #narrow-menu-list li {
     text-align: left;
 }
@@ -302,6 +304,7 @@ nav ul li.selected-item span {
 
 #template-changer .selected-item a {
   color: #fff;
+  font-weight: bold;
 }
 
 .menu-20 .menu-text {
@@ -1127,5 +1130,4 @@ form#contact-form input, form#contact-form textarea  {
     margin-bottom: 3em;
     padding-bottom: 2em;
 }
-
 
