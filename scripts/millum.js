@@ -37,6 +37,28 @@ function createOverlay() {
 }
 
 
+function startTinySlideshows(startslider) {  
+
+  for(var i=0; i< 20;i++) 
+  {
+
+      var $slider = $("#slider"+i);
+      // check if the element exists, and if so, calculate a random interval, with a minimum time
+      if ($slider.length>0) 
+      {
+        var interval = Math.floor((Math.random()*600)+1)*10+2000;
+        var duration = 3000; 
+        if(startslider){
+          $slider.tinycarousel({interval: true,  axis: 'y', intervaltime: interval, duration: duration, pager:false});      
+        }else {
+          $slider.stop(); // we stop it if nobody watches
+        }
+    }
+  }
+}  
+
+
+//.tinycarousel({interval: true,  axis: 'y', intervaltime: 2000, duration: 1000, pager:true});      
 // we use Ajax complete, because we are loading the footer and header element on every page. Redo in wordpress. 
 $( document ).ajaxComplete(function() {
   var frontPage = $(".overlay-container").length > 0;
@@ -111,19 +133,23 @@ $( document ).ajaxComplete(function() {
       }     
     });
   
+  // we start the slider first time, regardless
+  var has_focus = true;
 
-  var testMode = false;
-  if(!testMode) {
-    for(var i=0; i< 20;i++) {
+  if(has_focus) {
+    startTinySlideshows(true);
+  }
 
-      var $slider = $("#slider"+i);
-      // check if the element exists, and if so, calculate a random interval, with a minimum time
-      if ($slider.length>0) {
-        var interval = Math.floor((Math.random()*600)+1)*10+2000;
-        var duration = 3000; 
-        $slider.tinycarousel({interval: true,  axis: 'y', intervaltime: interval, duration: duration, pager:false});      
-      }
-    }
+  window.onfocus = function(){  
+    has_focus=true;  
+    console.log("Window has the focus...");
+    //startTinySlideshows(true);
+  }
+
+  // if the user leaves the page, we stop the slider 
+  window.onblur = function(){  
+    has_focus=false;  
+    console.log("Window do not have focus...");
   }
 
 });
