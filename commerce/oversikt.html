@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>MILLUM COMMERCE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../foundation-5.1.1.custom/css/foundation.css" />
+    <link type="text/css" rel="stylesheet" href="../jquery.mobile-1.4.1/jquery.mobile-1.4.1.min.css">
+    <link type="text/css" rel="stylesheet" href="css/commerce.css">
+    <script src="/../foundation-5.1.1.custom/js/vendor/modernizr.js"></script>
+    
+</head>
+
+<body>
+	
+	
+
+    <div id="content-wrapper">
+        <!-- this element loaded with jquery in the static files -->
+        <div id="header"></div>
+
+        <div id="middle">
+            <div id="mainpage-image">
+                <img src="http://placehold.it/1200x250/cccc00/000000" alt="test image commerce">
+            </div>
+
+            <h1> Commerce </h1>
+
+
+            <div class="left-2-col">
+
+                <form id="loginform">
+
+                    <h2> Logg inn </h2>
+                    
+                    <div class="formrow">
+                        <label for="username">Brukernavn </label>
+                        <input type="text" name="username" required>
+                        <div class="helptext">
+                            <h4>Hjelpetekst</h4>
+                            <p>
+                                Tast inn brukernavn som er tilsendt på e-post
+                            <p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="formrow">
+                        <label for="password">Passord </label>
+                        <input type="password" name="password" required>
+                        <div class="helptext">
+                            <h4>Passord</h4>
+                            <p>
+                                Tast inn passord som er tilsendt på e-post
+                            <p>
+                        </div>
+                    </div>
+
+                    <div class="formrow">
+                        <label for="singletonpassword">Engangspassord </label>
+                        <div class="captcha-container">
+                        <input type="text" name="singletonpassword" required>
+                        <div id="simplecaptcha"> 
+
+                            ABCDEF 
+
+                        </div>
+                        </div>
+
+                        <div class="helptext">
+                            <h4>Engangspassord</h4>
+                            <p>
+                                Skriv inn bokstavene som vises i feltet
+                            <p>
+                        </div>
+
+                        
+                    </div>
+
+
+                    <input type="submit" value="LOGG INN">
+
+                    
+                </form>
+
+            </div>
+
+            <div class="right-1-col">
+
+                <div class="divider-bar-gray margin-top-1rem">
+                    TILLEGG
+                </div>
+
+                <div class="additional-container">
+                    <img src=
+                        "http://placehold.it/310x200/DCDCDC/000000" alt="test image millum">
+
+                    <h4> Pay H4 </h4>
+
+                    <p>Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id
+                    quod maxime placeat facere possimus.</p>
+                </div>
+
+                <div class="additional-container">
+                    <img src=
+                    "http://placehold.it/310x200/DCDCDC/000000" alt="test image millum">
+
+                    <h4>Mobile H4</h4>
+
+                    <p>Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id
+                    quod maxime placeat facere possimus.</p>
+                </div>
+
+            </div>
+
+
+
+        </div>    
+
+    </div>    
+
+
+    <div id="support-bracket">
+        <div class="inner-container">
+            <div class="box-container large-contact-box-wrapper">
+                <div class="gray-box large-contact-box radius-15">
+                    TRENGER DU SUPPORT? TA KONTAKT MED OSS <a href="#">HER</a>
+                </div>
+                <div class="left-half-top-triangle contact-arrow-pos"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- html for footer element is loaded by Jquery in the static files -->
+    <div id="footer"></div> <!-- full width -->
+
+    <script src="../scripts/jquery-1.11.0.min.js"></script 
+    <script src="js/commerce.js"></script>
+    <script src="foundation-5.1.1.custom/js/foundation.min.js"></script>
+
+    <script> 
+        $(function() {
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script>
+
+      
+</body>
+</html>
+
+

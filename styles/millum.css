@@ -97,8 +97,8 @@ h4 {
 }
 
 p,span, label, .users, .byline {
-    font-size: 14px;
-    /*font-size: 0.84rem;*/
+    /*font-size: 14px;*/
+    font-size: 0.88rem;
 
 }
 

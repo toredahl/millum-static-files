@@ -1,0 +1,362 @@
+/*
+
+Hovedfarger:
+Blå #00a0ff
+Grafitt #363639
+Lysgrå #ededeb
+Varm mellomgrå #e6e4e2
+
+Komplement:
+Varm mørkgrå #a09b96
+Grønn #41d705
+Oransje #ec581e
+
+/*
+Størrelser og type:
+Alle overskrifter/ All h-elements: PT SANS Narrow  + teksten i grå bokser og blå bokser, skal også være narrow
+All other text/brødtekst og alt annet: PT SANS (regular)
+
+
+body base: 16px
+hovedfarge mørk font: #363639;
+
+H1: 40px (ikke pt som på skissen)
+H2: 28px 
+H3: 20px
+H4: 17px
+
+p
+
+*/
+
+
+
+
+body {
+	background-image: url(../img/worn_dots.png);
+	font-size: 16px;
+	font-family: 'PT Sans', sans-serif;
+    color: #363639;
+}
+
+
+#content-wrapper {
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 50rem;
+	display: block;	
+}
+
+/*  typography  */
+
+h1, h2, h3, h4 {
+    color: #363639;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.72rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.0rem;   
+	font-weight: 700;
+}
+
+p,span, label, .users, .byline {
+    font-size: 0.84rem;
+
+}
+
+nav {
+	overflow: hidden;
+}
+
+nav strong {
+	text-transform: uppercase;
+}
+
+nav div.nav-inner-container {
+	float: left;
+}
+
+#millum-logo {
+	width: 12rem;
+}
+
+#middle {
+	background-color: #fff;
+	clear: both;
+	margin-top: 1em;
+	min-height: 40rem;
+	overflow: auto;
+	padding: 1.5em;
+}
+
+#middle h1 {
+	text-transform: uppercase;
+	margin: 1em 0 0 0;
+}
+
+.middle-menu {
+	font-size: 1.5rem;
+	text-align: center;
+	height: 4rem;
+	padding-top: 1.0rem;
+}
+
+.left-2-col {
+	float: left;
+	width: 67%;
+}
+
+.right-1-col {
+	float: right;
+	width: 33%;
+}
+
+/*  right col stuff */
+
+.additional-container {
+	padding: 1.5rem 1.5rem 0 1.5rem; 
+}
+.additional-container h4 {
+	margin-top: 1rem;
+}
+
+
+
+.additional-container img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav-1 {
+	width: 25%;
+}
+
+.nav-2 {
+	width: 50%;
+}
+
+.nav-3 {
+	width: 25%;
+}
+
+/* blue box */
+#nav-contact {
+    width: 10em;
+    float: right;
+    font-weight: 400;
+    margin-right: 1.0em;
+    margin-top: 0.5em;
+}
+
+.left-half-top-triangle {
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 0.7em solid #108BF5;
+    border-right: 0.9em solid transparent;
+}
+
+.box-container {
+    position: relative;
+}
+
+.float-left {
+	float:left;
+}
+
+.contact-box {
+    padding: 0;
+    line-height: 3em;
+    overflow: hidden;
+}
+
+.contact-arrow-pos {
+	position: relative;
+	bottom: 0;
+	left: 75%;
+}
+
+.large-contact-box-wrapper {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 100%;
+}    
+
+.large-contact-box {
+    padding: 0;
+    font-size: 30px;
+    overflow: hidden;
+    padding: 1em 0em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.large-contact-box a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.large-box-container {
+  min-height: 4em;
+}
+
+.blue-box {
+    background-color: #108BF5;
+    color: #fff;
+    text-align: center;
+}
+
+.gray-box {
+    background-color: #a09b96;
+    color: #fff;
+    text-align: center;
+}
+
+/* custom divider with text */
+.divider-bar-gray, .gray-bar-divider {
+    background-color: #8E8983;
+    color: #fff;
+    padding: 0.2em 0em 0 0.5em;
+    margin-bottom: 1em;
+    font-size: 20px;
+}
+
+
+
+.radius-15 {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+/*  SUPPORT BRACKET */
+
+#support-bracket {
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#support-bracket .inner-container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*  FORM  */
+#loginform {
+	margin: 1em 1em 1em 0;
+	background-color: #ededeb;
+	overflow: hidden;
+	padding: 2rem 2rem 3rem 2rem;
+}
+
+#loginform h2 {
+	font-size: 1.25rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+#loginform input{
+	float:left;
+	margin-right: 0.5rem;
+	width: 18rem;
+}
+
+.formrow {
+	clear:both;
+	display: block;
+}
+
+.helptext {
+	float: left;
+	margin-left: 3em;
+}
+
+input[type=submit] {
+    border: none;
+	background-color: #1372EF;
+	clear:both;
+	color: #fff;
+	font-size: 1rem;
+	float: left;
+	padding: 1.0rem 1.2rem;
+}
+
+#loginform input[type=submit]{
+	width: 8rem;
+}
+
+.captcha-container {
+	float:left;
+	margin-bottom: 4rem;
+}
+
+.captcha-container input {
+	margin-bottom: 0.5rem;
+}
+
+#simplecaptcha {
+	background-color: #a09b96;
+	clear: both;
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding: 0.5rem;
+	text-align: center;
+	
+	width: 18rem;
+	
+}
+
+
+/************************************
+
+				FOOTER    
+
+*************************************/
+footer {
+    background-color: #333436;
+    color: #fff;
+    min-height: 5rem;
+    padding: 2em 0;
+    margin-top:3em;
+}
+
+footer h4 {
+    font-size: 15px;
+    color: #fff;
+}
+
+footer * a {
+    color: #fff;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+
+
+/*   margins */
+.margin-top-1rem {
+	margin-top: 1rem;
+}
