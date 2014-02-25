@@ -490,6 +490,28 @@ ul#myTab li.active a {
 	font-size: 0.84rem;
 }
 
+.lower-part .light-gray-bg {
+	min-height: 12rem;
+}
+
+#buttons {
+	overflow: hidden;
+}
+
+#confirmed {
+
+}
+
+.confirm {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.addendums span {
+	padding: 0 1rem;
+}
+
+
 /*#page-menu-slot {
 	
 	background-color: #fff;
