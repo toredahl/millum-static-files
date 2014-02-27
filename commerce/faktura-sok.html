@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>MILLUM COMMERCE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <!-- <link href="bootstrap-3.1.1-dist/css/bootstrap-responsive.css" rel="stylesheet"> -->
+	    <link type="text/css" rel="stylesheet" href="css/commerce.css">
+	    <!--script src="/../foundation-5.1.1.custom/js/vendor/modernizr.js"></script -->	    
+	</head>
+<body>
+
+<div class="container"><!-- start main container -->
+	<div id="header"></div>
+</div>
+
+<div id="main-menu" class="container white-bg">
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="column-content-menu">
+	            <ul>
+	                <li><a href="#">OVERSIKT</a></li>
+	                <li><a href="#">ORDRE</a></li>
+	                <li class="selected-item"><a href="#">FAKTURA</a> </li>
+	                <li><a href="#">MINE PRODUKTER</a> </li>
+	                <li><a href="#"> MINE KUNDER</a> </li>
+	                <li><a href="#"> [ett / eller / annet / tekst / messig]</a> </li>
+	                <li><a href="#"> SØK</a> </li>
+	            <ul>
+	        </div>
+		</div>
+	</div>
+</div>
+
+<div class="container white-bg padding-2rem"><!-- start main container -->
+	
+
+
+	<div class="row margin-bottom-2rem">
+		<div class="col-lg-12">
+			 <div class="light-gray padding-2rem">
+			 	<h2>Søk faktura</h2>
+			 	<input type="search" name="googlesearch"><button type="button" class="btn btn-primary btn-lg margin-left-1rem">SØK</button>
+				 <button type="button" class="btn btn-primary btn-lg float-right">Large button</button>
+			 </div>
+			
+		</div>
+	</div>	
+
+
+	<div class="row">
+		<div class="col-lg-12">
+
+		<ul id="invoices" class="nav nav-tabs">
+            <li class="active"><a href="#invoice" data-toggle="tab">Ufakturerte ordre (12)</a></li>
+            <li><a href="#invoice-archive" data-toggle="tab">Fakturaarkiv (877)</a></li> 
+        </ul>
+        <div id="invoiceContent" class="tab-content">
+            
+            <div class="tab-pane fade in active" id="invoice">
+                <table class="invoice-tables">
+
+                <tr>
+                    <th> Ordrenummer </th>
+                    <th> Kundenavn </th>
+                    <th> Header col </th>
+                    <th> Header col </th>
+                    <th> Header col </th>
+                   
+                </tr>
+
+                <tr>
+                    <td>100 78 33 </td>
+                    <td>Lasagne spesial, parmesan</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                    <td>some text</td>                   
+                </tr>
+
+                <tr>
+                    <td>100 78 33 </td>
+                    <td>Lasagne spesial, parmesan</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                   
+                </tr>
+               
+               	<tr>
+                    <td>100 78 33 </td>
+                    <td>Lasagne spesial, parmesan</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                   
+                </tr>
+               
+                
+
+                <tr><td colspan="9"> Se alle ordre </td></tr>
+
+            </table>
+
+
+            </div>
+
+            <div class="tab-pane fade" id="invoice-archive">                         
+				
+
+				<table class="invoice-tables">
+
+	                <tr>
+	                    <th> Ordrenummer </th>
+	                    <th> Kundenavn </th>
+	                    <th> Header col </th>
+	                    <th> Header col </th>
+	                    <th> Header col </th>
+	                   
+	                </tr>
+
+	                <tr>
+	                    <td>100 78 33 </td>
+	                    <td>Lasagne spesial, parmesan</td>
+	                    <td>some text</td>
+	                    <td>some text</td>
+	                    <td>some text</td>                   
+	                </tr>
+
+	                <tr><td colspan="9"> Se alle ordre </td></tr>
+
+	            </table>
+
+
+            </div>
+		</div>
+
+
+	    	
+			
+
+		</div>
+	</div>
+
+
+</div> <!-- end of main container with white background -->	
+
+<div id="support"></div><!-- no color background -->
+<div id="footer"></div> <!-- full width with its own color background -->
+
+<script src="../scripts/jquery-2.1.0.min.js"></script>
+<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+
+<script> 
+
+    $(function() {
+
+        $("#header").load("header-bs3.1.1.html");  
+        $("#footer").load("footer-bs3.1.1.html"); 
+
+		$('#invoices a').click(function (e) {
+				e.preventDefault();
+				$(this).tab('show');
+		});
+    
+	});
+
+</script>
+
+
+</body>
+</html>
