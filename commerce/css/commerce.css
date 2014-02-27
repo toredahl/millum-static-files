@@ -270,6 +270,7 @@ nav div.nav-inner-container {
     text-align: center;
 }
 
+
 .gray-box {
     background-color: #a09b96;
     color: #fff;
@@ -299,26 +300,22 @@ nav div.nav-inner-container {
 }
 
 
-.light-gray-bg {
+.light-gray-bg, .light-gray {
 	background-color: #ededeb;
 }
 
 
 /* COLORS */
-.white-bg {
+.white, .white-bg {
     background-color: #fff;
 }
 
-.graphite {
+.graphite, .graphite-bg {
 	background-color: #363639;
 }
 
-.blue {
+.blue, .blue-bg {
 	background-color:  #00a0ff;
-}
-
-.blue-txt {
-	color:  #00a0ff;
 }
 
 .white-txt {
@@ -329,8 +326,12 @@ nav div.nav-inner-container {
 	color: #41d705;
 }
 
-.light-gray {
-	background-color: #ededeb;
+.blue-txt {
+	color: #108BF5;
+}
+
+.block-el {
+	display: block;
 }
 
 
@@ -390,15 +391,14 @@ nav div.nav-inner-container {
 	margin-left: 3em;
 }
 
-input[type=submit] {
+/*input[type=submit] {
     border: none;
 	background-color: #1372EF;
 	clear:both;
 	color: #fff;
 	/*font-size: 1rem;*/
-	float: left;
 	padding: 1.0rem 1.2rem;
-}
+}*/
 
 #loginform input[type=submit]{
 	width: 12rem;
@@ -482,8 +482,8 @@ h4.blue-txt {
 	/*height: 2rem;*/
 }
 
-.percent-indicator {
-	color: #57a957;
+.percent-indicator { 
+
 	font-size: 2.5rem;
 	padding: 0.25rem 0;
 }
@@ -500,6 +500,11 @@ h4.blue-txt {
 .warehouse-item .progress {
 	height: 0.75rem;
 }
+
+.quality .progress {
+	height: 1.0rem;
+}
+
 
 .right-column-overview {
 	/*width: 16rem;*/
@@ -633,11 +638,11 @@ div#column-content-menu, #column-content-menu div {
 }
 
 
-table#order-table, table.invoice-tables {
+table, table#order-table, table.invoice-tables, table.full-width {
 	width: 100%;
 }
 
-table#order-table tr:last-child td, table.invoice-tables tr:last-child td {
+table#order-table tr:last-child td, table.invoice-tables tr:last-child td, table.first-last-colored tr:first-child th, table.first-last-colored tr:last-child td {
 	background-color: #ededeb;
 	text-align: right;
 	font-weight: 700;
@@ -650,10 +655,23 @@ table tr {
 	border-bottom: 1px solid #ededeb;
 }
 
-table#order-table th, table.invoice-tables th {
+table#order-table th, table.invoice-tables th  {
 	background-color: #ededeb;
 	padding: 0.5rem;
 }
+
+.warehouse-table tr th {
+	background-color: #a09b96;
+	color: #fff;
+	padding: 1rem;
+}
+
+.warehouse-table tr td {
+	background-color: #fff;
+	color: #000;
+	padding: 1rem;
+}
+
 
 table#order-table td, table.invoice-tables td {
 	text-align: center;
@@ -683,6 +701,67 @@ table#order-table td, table.invoice-tables td {
 	padding: 0.25rem 0.5rem;
 	text-transform: uppercase;
 	min-width: 6rem;
+}
+
+
+/*  FORM */
+#invoice-data input[type=submit], input[type=submit] {
+  background-color:#1372EF;
+  color: #fff;
+  font-size: 16px;
+  height: auto;
+  padding:1.1rem 3.3rem;
+  text-transform: uppercase;
+}
+
+#summary .row {
+	margin: 1rem 0;
+}
+
+/************************************
+
+			INVOICE  FAKTURA
+
+*************************************/
+
+.recipient, .supplier {
+	margin: 1rem 0;
+}
+
+#invoice-data input {
+	height: 3rem;
+	background-color: #fbfbfb;
+}
+
+#invoice-data label {
+	padding-bottom: 0.25rem;
+}
+
+.invoice-summary {
+
+	font-weight: 700;
+	margin-top: 2rem;
+}
+
+
+/************************************
+
+		VAREKATALOG WAREHOUSE    
+
+*************************************/
+
+.horizontals {
+	border-bottom: 1px solid #ededeb;
+	border-top: 1px solid #ededeb;
+}
+
+#quality-reminder {
+	margin-left: 1rem;
+	width: 80%;
+}
+
+.overflow-hide {
+	overflow:hidden;
 }
 
 
@@ -795,6 +874,10 @@ footer ul {
 
 /******************************************/
 
+.margin-zero {
+	margin: 0;
+}
+
 /*   margins */
 .margin-top-1rem {
 	margin-top: 1rem;
@@ -846,11 +929,15 @@ footer ul {
 }
 
 .padding-top-2rem {
-	padding: 2rem;
+	padding-top: 2rem;
 }
 
 .padding-bottom-2rem {
 	padding-bottom: 2rem;
+} 
+
+.padding-bottom-3rem {
+	padding-bottom: 3rem;
 } 
 
 .padding-right-1em {
@@ -872,4 +959,32 @@ footer ul {
 .rem20-height {
 
 	min-height: 20rem;
+}
+
+/* circle */
+
+.circle-text {
+    width:3.0rem;
+    font-weight: 700;
+}
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background: #41d705; 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+.circle-text div {
+    float:left;
+    font-size: 2rem;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
 }
