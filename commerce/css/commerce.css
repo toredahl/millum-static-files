@@ -34,14 +34,11 @@ p
 
 body {
 	background-image: url(../img/worn_dots.png);
-	font-size: 16px;
+	/*font-size: 16px!important;*/
 	font-family: 'PT Sans', sans-serif;
     color: #363639;
 }
 
-.column-inner-wrapper .row-fluid div:first-child {
-	
-}
 
 #content-wrapper {
 	width: 1140px;
@@ -59,26 +56,26 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    /*font-size: 2.5rem;*/
     font-weight: 700;
 }
 
 h2 {
-    font-size: 1.72rem;
+    /*font-size: 1.72rem;*/
     font-weight: 400;
 }
 
 h3 {
-    font-size: 1.25rem;
+    /*font-size: 1.25rem;*/
 }
 
 h4 {
-    font-size: 1.0rem;   
+    /*font-size: 1.0rem;   */
 	font-weight: 700;
 }
 
-p,span, label, .users, .byline {
-    font-size: 0.84rem;
+p,span, .users, .byline {
+    /*font-size: 0.84rem;*/
     color: #363639;
 }
 
@@ -99,14 +96,23 @@ nav div.nav-inner-container {
 }
 
 #millum-logo {
-	width: 12rem;
+	/*width: 12rem;*/
+	/*width: 100%;*/
 }
 
 /* MENU STUFF */
 .welcome {
-	height: 2rem;
+	/*height: 2rem;
 	padding: 1rem;
+	text-align: center;*/
+	height: 6rem;
+	padding: 1rem 0 1rem 0;
 	text-align: center;
+	width: 12rem;
+}
+
+#main-menu.container {
+	padding:0;
 }
 
 
@@ -122,6 +128,14 @@ nav div.nav-inner-container {
 #middle h1 {
 	text-transform: uppercase;
 	margin: 1em 0 0 0;
+}
+
+.millum-inner-container img {
+	width: 100%;
+}
+
+.millum-inner-container {
+	padding: 2rem 0;
 }
 
 .middle-menu {
@@ -150,6 +164,10 @@ nav div.nav-inner-container {
 	margin-top: 1rem;
 }
 
+.additional-container h4, .additional-container p {
+	padding-left: 1rem;
+}
+
 .additional-container img {
 	display: block;
 	margin-left: auto;
@@ -174,7 +192,7 @@ nav div.nav-inner-container {
     float: right;
     font-weight: 400;
     margin-right: 1.0em;
-    margin-top: 0.5em;
+    margin-top: 1.0em;
 }
 
 .left-half-top-triangle-blue {
@@ -307,6 +325,10 @@ nav div.nav-inner-container {
 	color:  #fff;
 }
 
+.green-txt {
+	color: #41d705;
+}
+
 .light-gray {
 	background-color: #ededeb;
 }
@@ -330,22 +352,32 @@ nav div.nav-inner-container {
 
 /*  FORM  */
 #loginform {
-	margin: 1em 1em 1em 0;
+	/*margin: 1em 1em 1em 0;*/
 	background-color: #ededeb;
 	overflow: hidden;
 	padding: 2rem 2rem 3rem 2rem;
 }
 
 #loginform h2 {
-	font-size: 1.25rem;
+	/*font-size: 1.25rem;*/
 	font-weight: 700;
 	margin-bottom: 2rem;
 }
 
 #loginform input{
-	float:left;
+	/*float:left;*/
 	margin-right: 0.5rem;
-	width: 18rem;
+	/*width: 18rem;*/
+	padding: 5px 0;
+	width: 100%;
+}
+
+#loginform label{
+	display: block;
+}
+
+#login-intro {
+	font-size: 2.5rem;
 }
 
 .formrow {
@@ -363,13 +395,16 @@ input[type=submit] {
 	background-color: #1372EF;
 	clear:both;
 	color: #fff;
-	font-size: 1rem;
+	/*font-size: 1rem;*/
 	float: left;
 	padding: 1.0rem 1.2rem;
 }
 
 #loginform input[type=submit]{
-	width: 8rem;
+	width: 12rem;
+	margin-top: 5rem;
+	padding: 1rem;
+	font-size: 1.5rem;
 }
 
 .captcha-container {
@@ -383,13 +418,14 @@ input[type=submit] {
 
 #simplecaptcha {
 	background-color: #a09b96;
-	clear: both;
+	/*clear: both;*/
 	font-size: 1.2rem;
 	font-weight: 700;
-	padding: 0.5rem;
+	padding: 0.8rem;
+	margin-top: 0.5rem;
 	text-align: center;
 	
-	width: 18rem;
+	/*width: 18rem;*/
 	
 }
 
@@ -423,14 +459,14 @@ div#warehouse-items + div.warehouse-item {
 }
 
 .warehouse-item  h4.box-header {
-	height: 2rem;
+	/*height: 2rem;*/
 	margin: 0;
-	padding: 0.5rem;
+	padding: 1.5rem;
 	color: #fff;
 }
 
 .item-upper {
-	height: 6rem;
+	/*height: 6rem;*/
 }
 
 .item-upper h4 {
@@ -443,17 +479,17 @@ h4.blue-txt {
 }
 
 .completed {
-	height: 2rem;
+	/*height: 2rem;*/
 }
 
 .percent-indicator {
 	color: #57a957;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	padding: 0.25rem 0;
 }
 
 .item-login {
-	height: 2rem;
+	/*height: 2rem;*/
 	padding-bottom: 0.5rem
 }
 
@@ -462,11 +498,11 @@ h4.blue-txt {
 }
 
 .warehouse-item .progress {
-	height: 0.5rem;
+	height: 0.75rem;
 }
 
 .right-column-overview {
-	width: 16rem;
+	/*width: 16rem;*/
 }
 
 ul#myTab li {
@@ -487,7 +523,7 @@ ul#myTab li.active a {
 }
 
 .action-intro {
-	font-size: 0.84rem;
+	/*font-size: 0.84rem;*/
 }
 
 .lower-part .light-gray-bg {
@@ -503,7 +539,7 @@ ul#myTab li.active a {
 }
 
 .confirm {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: 700;
 }
 
@@ -546,7 +582,7 @@ ul#myTab li.active a {
 
 .stipled-h4 {
 	border-bottom: 1px dotted #363639;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.5rem;	
 }
 
 #column-content {
@@ -557,7 +593,7 @@ ul#myTab li.active a {
 
 #column-content-menu {
     background-color: #a09b96;
-    height: 3rem;
+    height: 5rem;
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -570,8 +606,9 @@ ul#myTab li.active a {
 
 #column-content-menu ul li {
 	float: left;
-	padding: 0.0rem 1.5rem 0 1.5rem;
-	line-height: 3rem;
+	padding: 1.5rem 3.5rem 0rem 3.5rem;
+	/*line-height: 4rem;*/
+	height: 5rem;
 }
 
 #column-content-menu ul li.selected-item {
@@ -596,11 +633,11 @@ div#column-content-menu, #column-content-menu div {
 }
 
 
-table#order-table {
+table#order-table, table.invoice-tables {
 	width: 100%;
 }
 
-table#order-table tr:last-child td {
+table#order-table tr:last-child td, table.invoice-tables tr:last-child td {
 	background-color: #ededeb;
 	text-align: right;
 	font-weight: 700;
@@ -608,17 +645,17 @@ table#order-table tr:last-child td {
 }
 
 table tr {
-	line-height: 1.75rem;
+	line-height: 3rem;
 	border-collapse: collapse;
 	border-bottom: 1px solid #ededeb;
 }
 
-table#order-table th {
+table#order-table th, table.invoice-tables th {
 	background-color: #ededeb;
 	padding: 0.5rem;
 }
 
-table#order-table td {
+table#order-table td, table.invoice-tables td {
 	text-align: center;
 }
 
@@ -632,7 +669,7 @@ table#order-table td {
 }
 
 .order-input input {
-	width: 95%;
+	width: 100%;
 }
 
 .order-input input[type=submit] {
@@ -656,7 +693,8 @@ table#order-table td {
 *************************************/
 
 nav h1 {
-	margin-top: 2rem;
+	margin-top: 4rem;
+	/*font-size: 3.5rem;*/
 }
 
 .menu-container {
@@ -664,13 +702,15 @@ nav h1 {
     margin-top: 0;
     background-color: #363639;
     position: relative;
-    padding: 0.7rem 0;
-    width: 5rem;
+    padding: 1.3rem 0;
+    width: 6rem;
 }
 
 .menu-container hr {
-	width: 1.5em;
-	margin:0.3rem auto;
+	width: 1.4rem;
+	height: 0.5rem;
+	margin:0.0rem auto;
+	border-top: 2px solid #eee;
 	
 }
 
@@ -692,7 +732,7 @@ nav h1 {
     height: 0;
     width: 0;
     right: 0;
-    top: 3.6em;
+    top: 3.3em;
     border-top: 1.1em solid #323335;
     border-left: 4em solid transparent;
     position: absolute;
@@ -703,7 +743,7 @@ nav h1 {
     height: 0;
     width: 0;
     left: 0;
-    top: 3.6em;
+    top: 3.3em;
     border-top: 1.1em solid #323335;
     border-right: 4em solid transparent;
     position: absolute;
@@ -715,11 +755,20 @@ nav h1 {
 
 *************************************/
 
+#millum-footer {
+	text-align: left;
+}
+
+#millum-footer ul{
+	margin-left: 0;
+	padding-left: 0;
+}
+
 footer {
     background-color: #333436;
     color: #fff;
     min-height: 5rem;
-    padding: 2em 0;
+    padding: 3em 0;
     margin-top:3em;
 }
 
@@ -738,6 +787,11 @@ footer ul {
 }
 
 
+/*  SUPPORT BRACKET */
+#support {
+	margin-top: 4rem;
+}
+
 
 /******************************************/
 
@@ -752,6 +806,15 @@ footer ul {
 
 .margin-top-2rem {
 	margin-top: 2rem;
+}
+
+.margin-top-4rem {
+	margin-top: 4rem;
+}
+
+
+.margin-bottom-2rem {
+	margin-bottom: 2rem;
 }
 
 .margin-top-1rem {
@@ -774,6 +837,10 @@ footer ul {
 	padding: 1rem;
 }
 
+.padding-2rem {
+	padding: 2rem;
+}
+
 .padding-top-1rem {
 	padding: 1rem;
 }
@@ -786,9 +853,23 @@ footer ul {
 	padding-bottom: 2rem;
 } 
 
+.padding-right-1em {
+	padding-right: 1rem;
+}
+
 .no-left-padding {
 	padding-left: 0;
 }
 
+.txt-center {
+	text-align: center;
+}
 
+.font-size-2rem {
+	font-size: 2rem,
+}
 
+.rem20-height {
+
+	min-height: 20rem;
+}

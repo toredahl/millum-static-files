@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>MILLUM COMMERCE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <!-- <link href="bootstrap-3.1.1-dist/css/bootstrap-responsive.css" rel="stylesheet"> -->
+	    <link type="text/css" rel="stylesheet" href="css/commerce.css">
+	    <!--script src="/../foundation-5.1.1.custom/js/vendor/modernizr.js"></script -->	    
+	</head>
+<body>
+
+	<div class="container"><!-- start main container -->
+		<div id="header"></div>
+	</div>
+
+	<div class="container white-bg padding-2rem"><!-- start main container -->
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="millum-inner-container">
+	                <img src="http://placehold.it/1200x250/cccc00/000000" alt="test image commerce">
+		            <h1> Commerce </h1>
+	            </div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-8">
+
+				<form id="loginform">
+					<h3> Logg inn </h3>
+					<div class="row">
+						<div class="col-lg-6">
+							<label for="username">Brukernavn </label>
+							<input type="text" name="username" required>
+						</div>
+						<div class="col-lg-6 margin-top-2rem">
+							<strong>Hjelpetekst</strong>
+							<p>
+						    	Tast inn brukernavn som er tilsendt på e-post
+							<p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<label for="password">Passord </label>
+							<input type="password" name="password" required>
+						</div>
+						<div class="col-lg-6 margin-top-2rem">
+							<strong>Passord</strong>
+							<p>
+							    Tast inn passord som er tilsendt på e-post
+							<p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<label for="singletonpassword">Engangspassord </label>
+							<div class="captcha-containerx">
+								<input type="text" name="singletonpassword" required>
+								<div id="simplecaptcha"> 
+									ABCDEF 
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6  margin-top-2rem">
+							<strong>Engangspassord</strong>
+							<p>
+							    Skriv inn bokstavene som vises i feltet
+							<p>
+						</div>
+					</div>
+				
+					<input type="submit" value="LOGG INN">                	
+					
+				</form>
+			</div>
+
+			<div class="col-lg-4">
+				
+				<div class="divider-bar-gray">
+	                    TILLEGG
+	            </div>
+
+                <div class="additional-container">
+                    <img src=
+                        "http://placehold.it/310x200/DCDCDC/000000" alt="test image millum">
+
+                    <h4> Pay H4 </h4>
+
+                    <p>Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id
+                    quod maxime placeat facere possimus.</p>
+                </div>
+
+                <div class="additional-container">
+                    <img src=
+                    "http://placehold.it/310x200/DCDCDC/000000" alt="test image millum">
+
+                    <h4>Mobile H4</h4>
+
+                    <p>Nam libero tempore, cum soluta nobis est
+                    eligendi optio cumque nihil impedit quo minus id
+                    quod maxime placeat facere possimus.</p>
+                </div>
+
+			</div>
+		</div>
+	</div> <!-- end of main container with white background -->	
+
+	<div id="support"></div><!-- no color background -->
+
+	<div id="footer"></div> <!-- full width with its own color background -->
+
+	<script src="../scripts/jquery-2.1.0.min.js"></script>
+	<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+
+	<script> 
+	    $(function() {
+	        $("#header").load("login-header-bs3.1.1.html"); 
+	        $("#support").load("support-bs3.1.1.html"); 
+	        $("#footer").load("footer-bs3.1.1.html"); 
+		});
+	</script>
+
+
+</body>
+</html>
