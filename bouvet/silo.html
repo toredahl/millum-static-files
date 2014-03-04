@@ -1,0 +1,155 @@
+    <!DOCTYPE html>
+
+<html>
+<head>
+    <title>MILLUM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="silo.css">
+    <script src="../scripts/jquery-2.1.0.min.js"></script>
+    
+</head>
+
+<body>
+	
+
+
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<div class="wrap">
+
+	  <div class="subMenu" >
+	 	<div class="inner">
+	 		<!--a href="#" id="sTop" class="subNavBtn">Topp</a --> 
+			<a href="#" id="s1" class="subNavBtn">Konsept og design</a>
+			<a href="#" id="s2" class="subNavBtn">Arkitektur og integrasjon</a>
+			<a href="#" id="s3" class="subNavBtn">Prosesser</a>
+			<a href="#" id="s4" class="subNavBtn">EPIServer</a>
+			<a href="#" id="s5" class="subNavBtn">SAP</a>
+            <!--a href="#" id="s6" class="subNavBtn">Del 6</a -->
+            <a href="#" id="s7" class="subNavBtn end">En helhetlig løsning</a>
+		</div>  
+		
+				
+	</div>
+
+
+	<div class="section sTop">
+		
+		<div class="inner">
+	
+          
+		</div>
+		<br class="clear">
+	</div>
+
+
+	<div class="section s1">
+		
+		<div class="inner">
+
+          <h1>Konsept og design</h1>
+
+		</div>
+
+	</div>
+
+	<div class="section s2">
+		<div class="inner">
+
+          <h1>Arkitektur og integrasjon</h1>
+
+		</div>
+
+	</div>
+
+	<div class="section s3">
+		<div class="inner">
+
+          <h1>Prosesser</h1>
+
+		</div>
+
+	</div>
+
+	<div class="section s4">
+		<div class="inner">
+
+			<h1>EPIServer</h1>
+
+		</div>
+
+	</div>
+
+	<div class="section s5">
+		<div class="inner">
+		
+		<h1>SAP</h1>
+		
+		</div>
+
+	</div>
+
+      
+    <!--div class="section s6">
+		<div class="inner">
+		<hr>
+		...
+		</div>
+
+	</div -->
+    
+      
+      
+      <div class="separatorc"></div>  
+      
+   <div class="section s7">
+     <div class="inner">
+       <h1> En helhetlig løsning....</h1>
+          
+       <button id="murphy" type="button">Bouvetifiser</button>
+
+                   <div id="img-text">
+         
+En helhetlig løsning krever et samkjørt team som kompletterer hverandre. Fagfolk som forstår konsekvenser og ser sammenhenger fra A til Å. Dette får du hos Bouvet.
+         
+       </div>
+<div class="img-container">
+            
+            <img id="partial" class="show" src="http://millum-static-files.herokuapp.com/img/Silomannen_wite.jpg">
+            
+            <img id="whole" class="hide" src="http://millum-static-files.herokuapp.com/img/Silomannen_normal.jpg">
+
+
+       </div>
+		
+		</div>
+
+	</div>
+
+<script src="silo.js"></script>
+<script>
+	
+	$(document).ready( function() {
+  
+  $("#murphy").on('click', function() {
+      $("#partial").toggleClass("hide show");
+      $("#whole").toggleClass("hide show");
+    
+    
+  });
+  
+  $('.subMenu').smint({
+    	'scrollSpeed' : 1000
+    });
+});
+
+
+</script>      
+	
+
+</div>
+
+
+
+</body>
+
+</html>
