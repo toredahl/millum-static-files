@@ -148,7 +148,7 @@ $( document ).ajaxComplete(function() {
   var has_focus = true;
 
   if(has_focus) {
-    //startTinySlideshows(true);
+    startTinySlideshows(true);
   }
 
   // the idea here was to halt the slideshows if nobody was watching, i.e window.onblur, but have not had the time to look into that. Leave it as a Nice to have/TODO option. 

@@ -119,17 +119,16 @@ and (max-width : 780px) {
     }
 
     #fp-first-row img  {
-        margin-bottom: 1em;
-        margin-top: 1em;
+        margin-bottom: 0rem;
+        margin-top: 1rem;
     }
     
     .mobile-text img {
         padding: 0 0 1rem 0;
-
     }
 
     .mobile-text h1, .mobile-text h2, .mobile-text p {
-        padding: 1rem;
+        padding: 0 1rem;
     }
 
     #fp-second-row .small-12 {
@@ -152,18 +151,34 @@ and (max-width : 780px) {
         margin: 1rem 0;
     }
 
+    .mobile-tinyslides h3 {
+        border-top: 1px solid #a09b96;
+        padding-top: 1rem;
+        font-size: 1rem;
+        color: #a09b96;
+    }
+
     .mobile-tinyslides .columns{
         padding: 0;
+    }
+
+    .mobile-tinyslides hr {
+        padding: 0 1rem;
+        width: 100%;
+        margin: 0;
+        color: #a09b96;
+        border-bottom: 1px solid;
     }
 
     #millum-footer div {
         padding-left: 1rem;
     }
 
-
+    .slider { margin: 0.25rem 1.5rem 0 1.5rem;}
     .slider .viewport   { width: 6rem; height: 6rem; }
     .slider .overview  { width: 6rem; }
     .slider .overview li  { height: 6rem; width: 6rem; }
+
 
 }
 
@@ -198,7 +213,7 @@ and (min-width : 980px) {
         padding-left: 3rem;
     }
 
-
+    .slider {margin: 0 0 0 3.25rem; }
     .slider .viewport   { width: 3rem; height: 3rem; }
     .slider .overview  { width: 3rem; }
     .slider .overview li  { height: 3rem; width: 3rem; }
@@ -966,7 +981,7 @@ and (max-width : 980px) {
     padding: 0;
 }
 
-.slider  { height: 1%; overflow:hidden; padding: 0 0 0.7rem; margin: 0 0 0 3.25rem;  }
+.slider  { height: 1%; overflow:hidden; padding: 0 0 0.7rem;  }
 .slider .viewport   { overflow: hidden; position: relative; }
 .slider .disable { visibility: hidden; }
 .slider .overview  { list-style: none; position: absolute;  left: 0 top: 0; }
@@ -974,15 +989,6 @@ slider .overview li  { float: left; margin: 0 1.25rem 0 0; padding: 1px; border:
 .viewport ul {
   margin-left: 0;
 }
-
-@media only screen 
-and (max-width : 980px) {
-
-    .slider  {
-        margin: 1.25rem;
-    }
-}
-
 
 /*
     custom style: transparent polygon image overlay for frontpage images.
