@@ -724,10 +724,19 @@ footer ul {
 
 .image {
     float: left;
-    height: 255px;
+    height: 15.5rem;
     overflow: hidden;
     width: 100%;
     cursor:pointer;
+}
+
+
+@media only screen 
+and (max-width : 980px) {
+
+    .image {
+        height: 11.0rem;
+    }
 }
 
 .movehorizontal {
