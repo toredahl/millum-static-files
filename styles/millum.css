@@ -96,11 +96,112 @@ h4 {
     font-size: 1.0rem;   
 }
 
-p,span, label, .users, .byline {
-    /*font-size: 14px;*/
-    /*font-size: 0.88rem;*/
+@media only screen 
+and (max-width : 780px) {
+
+    .large-contact-box {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .white-bg {
+        background: none!important;
+    }
+
+    #content-wrapper {
+        padding: 0;
+    }
+
+    #fp-first-row {
+        background-color: #fff;
+        margin-top: 1rem;
+        padding-bottom: 1rem
+    }
+
+    #fp-first-row img  {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+    
+    .mobile-text img {
+        padding: 0 0 1rem 0;
+
+    }
+
+    .mobile-text h1, .mobile-text h2, .mobile-text p {
+        padding: 1rem;
+    }
+
+    #fp-second-row .small-12 {
+        background-color: #fff;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    #fp-second-row .small-12:first-child {
+        padding-top: 1.0rem;
+    }
+
+    #fp-second-row .small-12:last-child {
+        padding-bottom: 1.0rem;
+    }
+
+    .mobile-tinyslides {
+        background-color: #fff;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    #millum-footer div {
+        padding-left: 1rem;
+    }
+
+
+    .slider .viewport   { width: 6rem; height: 6rem; }
+    .slider .overview  { width: 6rem; }
+    .slider .overview li  { height: 6rem; width: 6rem; }
 
 }
+
+@media only screen 
+and (min-width : 980px) {
+
+    #product-wrapper, #content-wrapper, #reference-content {
+        padding: 1em 1.5em 3em 1.5em;
+        overflow: hidden;
+    }
+
+    #fp-first-row img  {
+      margin-bottom: 1em;
+      margin-top: 2em;
+    }
+
+    /* NB: This is a bit tricky... should not use or mobile, need other layout solutions */
+    .padding-sides-1em {
+        padding: 0 1em;
+    }
+
+    .large-contact-box {
+        padding: 0;
+        font-size: 30px;
+        overflow: hidden;
+        padding: 1em 0em;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #millum-footer div {
+        padding-left: 3rem;
+    }
+
+
+    .slider .viewport   { width: 3rem; height: 3rem; }
+    .slider .overview  { width: 3rem; }
+    .slider .overview li  { height: 3rem; width: 3rem; }
+
+
+}
+
 
 /* paddings and margins */
 
@@ -198,6 +299,8 @@ p.img-description-content {
     padding: .5em;
     margin: 0;
 }
+
+
 
 
 /*    positioning   */
@@ -300,8 +403,6 @@ nav ul li.selected-item span {
     color: #363639;
 }
 
-
-
 #template-changer #narrow-menu-list li {
     text-align: left;
 }
@@ -380,23 +481,6 @@ nav ul li.selected-item span {
     width: 100%;
     padding: 10px;
 }    
-
-.large-contact-box {
-    padding: 0;
-    font-size: 30px;
-    overflow: hidden;
-    padding: 1em 0em;
-    width: 70%;
-    margin: 0 auto;
-}
-
-@media only screen 
-and (max-width : 980px) {
-
-    .large-contact-box {
-        width: 100%;
-    }
-}
 
 
 .large-contact-box a {
@@ -697,20 +781,15 @@ footer ul {
 
 
 #millum-footer h4 {
-    /*font-size: 15px;*/
     font-size: 0.94rem;
     font-weight: 400;
 }
 
 #millum-footer li {
     font-size: 0.75rem;
-    /*font-size: 12px;*/
     color: #fff;
 }
 
-#millum-footer div {
-    padding-left: 3rem;
-}
 
 /***********************************************************
  
@@ -722,10 +801,6 @@ footer ul {
     margin-top: 3em;
 }
 
-#fp-first-row img  {
-  margin-bottom: 1em;
-  margin-top: 2em;
-}
 
 .relatively {
     position: relative; 
@@ -744,7 +819,8 @@ footer ul {
 and (max-width : 980px) {
 
     .image {
-        height: 11.0rem;
+        min-height: 10.0rem;
+        margin-bottom: 0.1rem;
     }
 
     #fp-second-row {
@@ -886,11 +962,11 @@ and (max-width : 980px) {
     padding: 0;
 }
 
-.slider  { height: 1%; overflow:hidden; padding: 0 0 10px; margin: 0 0 0 3.25rem;  }
-.slider .viewport   { width: 48px; height: 48px; overflow: hidden; position: relative; }
+.slider  { height: 1%; overflow:hidden; padding: 0 0 0.7rem; margin: 0 0 0 3.25rem;  }
+.slider .viewport   { overflow: hidden; position: relative; }
 .slider .disable { visibility: hidden; }
-.slider .overview  { list-style: none; position: absolute; width: 48px; left: 0 top: 0; }
-slider .overview li  { float: left; margin: 0 20px 0 0; padding: 1px; height: 48px; border: 1px solid #dcdcdc; width: 48px;}
+.slider .overview  { list-style: none; position: absolute;  left: 0 top: 0; }
+slider .overview li  { float: left; margin: 0 1.25rem 0 0; padding: 1px; border: 1px solid #dcdcdc; }
 .viewport ul {
   margin-left: 0;
 }
@@ -1024,10 +1100,6 @@ and (max-width : 980px) {
     margin-bottom: 3em;
 }
 
-#product-wrapper, #content-wrapper, #reference-content {
-    padding: 1em 1.5em 3em 1.5em;
-    overflow: hidden;
-}
 
 #top-level-section, #article-top-level-section {
     margin-bottom: 0em;
@@ -1083,9 +1155,6 @@ input[type=submit] {
 textarea {
     height: 120px;
 
-}
-.padding-sides-1em {
-    padding: 0 1em;
 }
 
 .padding-top-1em {
