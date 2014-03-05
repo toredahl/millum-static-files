@@ -390,6 +390,15 @@ nav ul li.selected-item span {
     margin: 0 auto;
 }
 
+@media only screen 
+and (max-width : 980px) {
+
+    .large-contact-box {
+        width: 100%;
+    }
+}
+
+
 .large-contact-box a {
     color: #fff;
     text-decoration: underline;
@@ -737,6 +746,11 @@ and (max-width : 980px) {
     .image {
         height: 11.0rem;
     }
+
+    #fp-second-row {
+        margin-top: 1.25rem;
+    }
+
 }
 
 .movehorizontal {
@@ -828,6 +842,15 @@ and (min-width : 1080px) {
   text-align: center; 
 }
 
+@media only screen 
+and (max-width : 980px) {
+
+    #frontpage-right-container .counter {
+        font-size: 1.75rem;
+    }
+}
+
+
 #frontpage-right-container .description {
     padding: 1rem;
     color: #fff;
@@ -848,8 +871,8 @@ and (min-width : 1080px) {
     border-top: 1px solid #a09b96;
     border-bottom: 1px solid #a09b96;
     overflow: hidden;
-    padding: 2em 0;
-    margin: 5em 0;
+    padding: 2rem 0;
+    margin: 5rem 0;
 }
 
 .logo-container img {
@@ -863,13 +886,21 @@ and (min-width : 1080px) {
     padding: 0;
 }
 
-.slider  { height: 1%; overflow:hidden; padding: 0 0 10px; margin: 0 0 0 48px;  }
+.slider  { height: 1%; overflow:hidden; padding: 0 0 10px; margin: 0 0 0 3.25rem;  }
 .slider .viewport   { width: 48px; height: 48px; overflow: hidden; position: relative; }
 .slider .disable { visibility: hidden; }
 .slider .overview  { list-style: none; position: absolute; width: 48px; left: 0 top: 0; }
 slider .overview li  { float: left; margin: 0 20px 0 0; padding: 1px; height: 48px; border: 1px solid #dcdcdc; width: 48px;}
 .viewport ul {
   margin-left: 0;
+}
+
+@media only screen 
+and (max-width : 980px) {
+
+    .slider  {
+        margin: 1.25rem;
+    }
 }
 
 
