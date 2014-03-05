@@ -152,6 +152,10 @@ and (max-width : 780px) {
         margin: 1rem 0;
     }
 
+    .mobile-tinyslides .columns{
+        padding: 0;
+    }
+
     #millum-footer div {
         padding-left: 1rem;
     }
