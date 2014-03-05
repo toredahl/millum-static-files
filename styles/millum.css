@@ -96,8 +96,20 @@ h4 {
     font-size: 1.0rem;   
 }
 
+
+
 @media only screen 
 and (max-width : 780px) {
+
+    .image {
+        min-height: 10.0rem;
+        margin-bottom: 0.1rem;
+    }
+
+    #fp-second-row {
+        margin-top: 1.25rem;
+    }
+
 
     .large-contact-box {
         width: 100%;
@@ -184,6 +196,10 @@ and (max-width : 780px) {
 
 @media only screen 
 and (min-width : 980px) {
+
+    .image {
+        min-height: 13.5rem;
+    }
 
     #product-wrapper, #content-wrapper, #reference-content {
         padding: 1em 1.5em 3em 1.5em;
@@ -827,26 +843,12 @@ footer ul {
 
 .image {
     float: left;
-    height: 15.5rem;
     overflow: hidden;
     width: 100%;
     cursor:pointer;
 }
 
 
-@media only screen 
-and (max-width : 980px) {
-
-    .image {
-        min-height: 10.0rem;
-        margin-bottom: 0.1rem;
-    }
-
-    #fp-second-row {
-        margin-top: 1.25rem;
-    }
-
-}
 
 .movehorizontal {
     position: relative;
