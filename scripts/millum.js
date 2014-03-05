@@ -47,7 +47,7 @@ function createOverlay() {
 
 function startTinySlideshows(startslider) {  
 
-  for(var i=0; i< 10;i++) // at present there are 7 on the front page... these may slow the browser down, if allowed to run free....
+  for(var i=0; i< 20;i++) // at present there are 7 on the front page... these may slow the browser down, if allowed to run free....
   {
 
       var $slider = $("#slider"+i);
