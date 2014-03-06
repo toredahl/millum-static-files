@@ -96,24 +96,27 @@ h4 {
     font-size: 1.0rem;   
 }
 
+#tiny-container {
+        margin-top: 3%;
+    }
 
 
 @media only screen 
 and (max-width : 780px) {
 
     .image {
-        min-height: 10.0rem;
-        margin-bottom: 0.1rem;
+        /*min-height: 10.0rem;*/
+        margin-bottom: 1%;
     }
 
     #fp-second-row {
-        margin-top: 1.25rem;
+        margin-top: 1%;
     }
 
 
     .large-contact-box {
         width: 100%;
-        padding: 1rem;
+        padding: 1%;
     }
 
     .white-bg {
@@ -149,14 +152,16 @@ and (max-width : 780px) {
         padding-top: 0.5rem;
     }
 
-    #fp-second-row .small-12:first-child {
+   /* #fp-second-row .small-12:first-child {
         padding-top: 1.0rem;
     }
 
     #fp-second-row .small-12:last-child {
         padding-bottom: 1.0rem;
     }
+*/
 
+    
     .mobile-tinyslides {
         background-color: #fff;
         padding: 1rem;
@@ -191,6 +196,11 @@ and (max-width : 780px) {
     .slider .overview  { width: 6rem; }
     .slider .overview li  { height: 6rem; width: 6rem; }
 
+    /*.slider { margin: 0.25rem 1.5rem 0 1.5rem;}
+    .slider .viewport   { width: 5rem; height: 5rem; }
+    .slider .overview  { width: 5rem; }
+    .slider .overview li  { height: 5rem; width: 5rem; }
+*/
 
 }
 
@@ -202,13 +212,14 @@ and (min-width : 980px) {
     }
 
     #product-wrapper, #content-wrapper, #reference-content {
-        padding: 1em 1.5em 3em 1.5em;
+        /*padding: 1em 1.5em 3em 1.5em;*/
+        padding: 2% 0;
         overflow: hidden;
     }
 
     #fp-first-row img  {
-      margin-bottom: 1em;
-      margin-top: 2em;
+      /*margin-bottom: 1em;
+      margin-top: 2em;*/
     }
 
     /* NB: This is a bit tricky... should not use or mobile, need other layout solutions */
@@ -783,8 +794,8 @@ footer {
     background-color: #333436;
     color: #fff;
     min-height: 5rem;
-    padding: 2em 0;
-    margin-top:3em;
+    padding: 1% 0;
+    margin-top:2%;
 }
 
 footer h4 {
@@ -833,7 +844,7 @@ footer ul {
  ***********************************************************/
 
 #fp-second-row {
-    margin-top: 3em;
+    margin-top: 5%;
 }
 
 
@@ -843,7 +854,7 @@ footer ul {
 
 .image {
     float: left;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100%;
     cursor:pointer;
 }
@@ -871,9 +882,10 @@ footer ul {
 .movehorizontal img {
   left:0;
   top:0;
+  width: 100%;
   z-index: 500;  
   margin-left: 0;
-  position: absolute;
+/*  position: absolute;*/
   /*-webkit-transition: margin 1s ease-out;*/
      /*-moz-transition: margin 4s ease;
        -o-transition: margin 1s ease-out;
@@ -887,6 +899,10 @@ footer ul {
 /* Hover effect for desktops and laptops only  */
 @media only screen 
 and (min-width : 1080px) {
+
+    .movehorizontal img {
+        position: absolute;
+    }
 
     .movehorizontal:hover img {
         left: 850px;
@@ -902,23 +918,25 @@ and (min-width : 1080px) {
     display:block;
     top: 0;
     left: 0;
-    padding: 1em;
+    padding: 1%;
     background-color: #a09b96;
     color: #fff;
-    height: 246px;
-    width: 325px;
+    /*height: 246px;
+    width: 325px;*/
+    width: 100%;
+    height: 100%;
 }
 
 
 #frontpage-large-img-container {
-    padding: 0 0.7rem 0 0rem;
+    /*padding: 0 0.7rem 0 0rem;*/
 }
 
 #frontpage-right-container {
     background-color: #a09b96;
     /*max-width: 22em;
     min-height: 22em;*/
-    min-height: 22rem;
+    /*min-height: 22rem;*/
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -928,7 +946,8 @@ and (min-width : 1080px) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1.5em;
+  padding-top: 1%;
+  width: 25%;
 }
 
 #frontpage-right-container .counter {
@@ -961,20 +980,22 @@ and (max-width : 980px) {
 
  .tinyslideshows {
     float:left;
-    margin-right: 3em;
+    margin-right: 3%;
  }
  
 .logo-container {
     border-top: 1px solid #a09b96;
     border-bottom: 1px solid #a09b96;
     overflow: hidden;
-    padding: 2rem 0;
-    margin: 5rem 0;
+    padding: 2% 0;
+    margin: 5% 0;
 }
 
 .logo-container img {
-    width: 48px;
-    margin-right: 3.5em;
+    /*width: 48px;
+    margin-right: 3.5em;*/
+    width: 100%;
+    margin-right: 2%;
     clear: both;
 }
 
@@ -997,16 +1018,21 @@ slider .overview li  { float: left; margin: 0 1.25rem 0 0; padding: 1px; border:
  */
 
 .overlay-container {
-    width: 700px;
-    height: 390px;
+    /*width: 700px;
+    height: 390px;*/
+
+
     background-color: #fff;
     position: relative;
     overflow: hidden;
 }
 
 .overlay-container img {
-    width: 700px;
-    height: 390px;
+    /*width: 700px;
+    height: 390px;*/
+    width: 100%;
+
+
 }
 
 
