@@ -37,7 +37,7 @@ body {
     background-image: url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/lghtmesh.png);
     /*background: 0 color-stop(100%,rgba(255,255,255,0.5))), url(https://raw.github.com/subtlepatterns/SubtlePatterns/gh-pages/lghtmesh.png) repeat 0 0;*/
     font-family: 'PT Sans', sans-serif;
-    font-size: 16px;
+    font-size: 100.0%;
     color: #363639;
 }
 
@@ -62,7 +62,7 @@ p, div, span  {
 }
 
 
-#template-wrapper {
+#template-wrapper, #product-wrapper div:first-child {
     background-color: #fff;
 }
 
@@ -863,6 +863,7 @@ footer ul {
 
 .movehorizontal {
     position: relative;
+    overflow: hidden;
 }
 
 /* text to overlay the second row images - this text follows the image on hover, easing out */
@@ -980,9 +981,13 @@ and (max-width : 980px) {
 
  .tinyslideshows {
     float:left;
-    margin-right: 3%;
+    margin-right: 1%;
  }
  
+#reference-element {
+    padding-top: 1%;
+}
+
 .logo-container {
     border-top: 1px solid #a09b96;
     border-bottom: 1px solid #a09b96;
