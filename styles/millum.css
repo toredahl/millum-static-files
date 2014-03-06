@@ -208,7 +208,7 @@ and (max-width : 780px) {
 and (min-width : 980px) {
 
     .image {
-        min-height: 13.5rem;
+        min-height: 16.1rem;  /* this is fragile, and if removed, will result in the images in the second row to disappear, because of the overflow hidden */ 
     }
 
     #product-wrapper, #content-wrapper, #reference-content {
