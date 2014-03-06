@@ -113,7 +113,7 @@ $( document ).ajaxComplete(function() {
   $('.menu-20').removeClass("menu-selected");
   
   
-  $('#expand-menu-button').on('click', function(){
+  $('#expand-menu-button').on('click tap vclick touch', function(){
       $('#mobile-expand-menu').toggle();
   }); 
   
