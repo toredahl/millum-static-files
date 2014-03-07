@@ -246,7 +246,11 @@ and (max-device-width : 1024px) {
     .slider .viewport   { width: 4rem; height: 4rem; }
     .slider .overview  { width: 4rem; }
     .slider .overview li  { height: 4rem; width: 4rem; }
-
+    
+    #product-wrapper, #content-wrapper, #reference-content {
+        padding: 2% 0;
+        overflow: hidden;
+    }
 
 }
 
@@ -259,7 +263,6 @@ and (min-width : 1025px) {
     }
 
     #product-wrapper, #content-wrapper, #reference-content {
-        /*padding: 1em 1.5em 3em 1.5em;*/
         padding: 2% 0;
         overflow: hidden;
     }
@@ -325,7 +328,6 @@ and (min-width : 1025px) {
         line-height: 1.0;
     }
 
-
     .top-img-container {
       padding: 1em;
       margin-bottom: 3em;
@@ -347,11 +349,13 @@ and (min-width : 1025px) {
         padding-bottom: 2em;
     }
 
-
     .description-element img {
         margin-top: 4.5em;
     }
 
+    #product-wrapper div:first-child {
+/*        padding-top: 0.25rem;*/
+    }
 
     .slider {margin: 0 0 0 3.25rem; }
     .slider .viewport   { width: 3.5rem; height: 3.5rem; }
