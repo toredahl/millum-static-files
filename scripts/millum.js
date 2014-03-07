@@ -117,11 +117,30 @@ $( document ).ajaxComplete(function() {
       $('#mobile-expand-menu').toggle();
   }); 
   
+  $("#template-changer li").mouseout(function(){
+    
+    var currentId = $(this).children("div").attr("id");
+    
+    var closemenu = true;
+    // $(".selected-item").removeClass("selected-item");
+    if (currentId == "about") {
+        // we need also to check if not hovering over the menu itself 
+      $("#floating-menu-narrow").hide();
+       
+    } else if (currentId == "products") {
+        // we need also to check if not hovering over the menu itself
+      $("#floating-menu").hide();
+       
+    } else {/*do nothing*/}
+
+
+  });
+
   $("#template-changer li").on('click mouseover', function() {
     
     var current = $(this).children("span").html();
     var currentId = $(this).children("div").attr("id");
-    console.log("now what : " + currentId);
+    
     $(".selected-item").removeClass("selected-item");
     $(this).toggleClass("selected-item");
 
@@ -129,6 +148,16 @@ $( document ).ajaxComplete(function() {
       // here we want to show the narrow menu
       $("#floating-menu-narrow").show();
       $("#floating-menu").hide();
+
+      $("#floating-menu-narrow").mouseenter(function(){
+          $("#floating-menu-narrow").show();
+      });
+
+      $("#floating-menu-narrow").mouseleave(function(){
+          $("#floating-menu-narrow").hide();
+      });
+      
+
       mouse_is_inside = true;
         
     } else if (currentId == "products") {
@@ -145,6 +174,14 @@ $( document ).ajaxComplete(function() {
         var currentItemText = $(this).find("div.menu-text");
         currentItemText.addClass("blue-borders");    
       });
+
+      $("#floating-menu").mouseenter(function(){
+          $("#floating-menu").show();
+      });
+
+      $("#floating-menu").mouseleave(function(){
+          $("#floating-menu").hide();
+      });
       
     } else if (currentId == "customerservice") {
        mouse_is_inside = true;
@@ -157,12 +194,12 @@ $( document ).ajaxComplete(function() {
     
   });
   
-  $("#Xtemplate-changer li").on('mouseout', function() {
-    mouse_is_inside=false;  
-    $('#floating-menu').hide();
-    $('#floating-menu-narrow').hide();
-    $(".selected-item").removeClass("selected-item");
-  });
+  // $("#Xtemplate-changer li").on('mouseout', function() {
+  //   mouse_is_inside=false;  
+  //   $('#floating-menu').hide();
+  //   $('#floating-menu-narrow').hide();
+  //   $(".selected-item").removeClass("selected-item");
+  // });
     
   $("body").mouseup(function(){ 
     if(mouse_is_inside) {

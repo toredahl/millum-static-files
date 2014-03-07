@@ -101,7 +101,7 @@ h4 {
 }
 
 #tiny-container {
-        margin-top: 3%;
+        margin-top: 1%;
     }
 
 
@@ -160,6 +160,11 @@ and (max-width : 780px) {
         margin-top: 1rem;
     }
 
+    #millum-footer .small-12 {
+        text-align: left;
+    }
+
+
    /* #fp-second-row .small-12:first-child {
         padding-top: 1.0rem;
     }
@@ -168,6 +173,10 @@ and (max-width : 780px) {
         padding-bottom: 1.0rem;
     }
 */
+
+    .large-contact-box-wrapper {
+        width: 100%;
+    }    
 
     .top-img-container {
       padding: 1em;
@@ -217,8 +226,31 @@ and (max-width : 780px) {
 
 }
 
+/* ipad sizes  */
 @media only screen 
-and (min-width : 980px) {
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    #content-wrapper {
+        padding-top: 1rem;
+    }
+
+    .large-contact-box-wrapper {
+        width: 80%;
+    }    
+
+    
+    .slider { margin: 0.25rem 1.5rem 0 1.5rem;}
+    .slider .viewport   { width: 4rem; height: 4rem; }
+    .slider .overview  { width: 4rem; }
+    .slider .overview li  { height: 4rem; width: 4rem; }
+
+
+}
+
+
+@media only screen 
+and (min-width : 1025px) {
 
     .image {
         min-height: 16.1rem;  /* this is fragile, and if removed, will result in the images in the second row to disappear, because of the overflow hidden */ 
@@ -308,9 +340,9 @@ and (min-width : 980px) {
     }
 
     .slider {margin: 0 0 0 3.25rem; }
-    .slider .viewport   { width: 3rem; height: 3rem; }
-    .slider .overview  { width: 3rem; }
-    .slider .overview li  { height: 3rem; width: 3rem; }
+    .slider .viewport   { width: 3.5rem; height: 3.5rem; }
+    .slider .overview  { width: 3.5rem; }
+    .slider .overview li  { height: 3.5rem; width: 3.5rem; }
 
 
 }
@@ -562,6 +594,7 @@ nav ul li.selected-item span {
     background-color: #108BF5;
     color: #fff;
     text-align: center;
+    padding: 1rem;
 }
 
 .absolutely-contact {
@@ -582,8 +615,7 @@ nav ul li.selected-item span {
 }
 
 .large-contact-box-wrapper {
-    width: 100%;
-    padding: 10px;
+    padding: 1rem;
 }    
 
 
@@ -872,17 +904,12 @@ footer ul {
 
 
 #millum-footer .large-4 {
-    text-align: center;
+    padding-left: 10%;
 }
 
 #millum-footer .medium-4 {
-    text-align: center;
+    padding-left: 10%;
 }
-
-#millum-footer .small-12 {
-    text-align: left;
-}
-
 
 #millum-footer h4 {
     font-size: 0.94rem;
@@ -1051,7 +1078,7 @@ and (max-width : 980px) {
     border-bottom: 1px solid #a09b96;
     overflow: hidden;
     padding: 2% 0;
-    margin: 5% 0;
+    margin: 2% 0;
 }
 
 .logo-container img {

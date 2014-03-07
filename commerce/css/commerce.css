@@ -30,15 +30,20 @@ p
 */
 
 
-
-
 body {
 	background-image: url(../img/worn_dots.png);
-	/*font-size: 16px!important;*/
+	font-size: 100%;
 	font-family: 'PT Sans', sans-serif;
     color: #363639;
 }
 
+.no-padding {
+	padding-left: 0;
+}
+
+#header-container {
+	margin-bottom: 1%;
+}
 
 #content-wrapper {
 	width: 1140px;
@@ -99,6 +104,8 @@ nav div.nav-inner-container {
 	/*width: 12rem;*/
 	width: 100%;
 }
+
+
 
 /* MENU STUFF */
 .welcome {
@@ -188,7 +195,7 @@ nav div.nav-inner-container {
 
 /* blue box */
 #nav-contact {
-    width: 10em;
+    width: 100%;
     float: right;
     font-weight: 400;
     margin-right: 1.0em;
@@ -230,7 +237,7 @@ nav div.nav-inner-container {
 
 .contact-box {
     padding: 0;
-    line-height: 3em;
+    padding: 1.5em;
     overflow: hidden;
 }
 
@@ -360,7 +367,6 @@ nav div.nav-inner-container {
 }
 
 #loginform h2 {
-	/*font-size: 1.25rem;*/
 	font-weight: 700;
 	margin-bottom: 2rem;
 }
@@ -375,6 +381,12 @@ nav div.nav-inner-container {
 
 #loginform label{
 	display: block;
+	font-size: 1.5rem;
+}
+
+#loginform strong {
+	
+	font-size: 1.5rem;
 }
 
 #login-intro {
@@ -705,13 +717,14 @@ table#order-table td, table.invoice-tables td {
 
 
 /*  FORM */
-#invoice-data input[type=submit], input[type=submit] {
+#invoice-data input[type=submit], #loginform input[type=submit]  ,input[type=submit] {
   background-color:#1372EF;
   color: #fff;
-  font-size: 16px;
+  font-size: 1.0rem;
   height: auto;
   padding:1.1rem 3.3rem;
   text-transform: uppercase;
+  width: 48%;
 }
 
 #summary .row {
