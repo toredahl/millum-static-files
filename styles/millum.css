@@ -62,7 +62,7 @@ p, div, span  {
 }
 
 
-#template-wrapper, #product-wrapper div:first-child, #contact-wrapper div:first-child, #article-wrapper div:first-child {
+#template-wrapper, #product-wrapper div:first-child, #contact-wrapper div:first-child, #article-wrapper div:first-child, #reference-wrapper div:first-child {
     background-color: #fff;
 }
 
@@ -218,11 +218,10 @@ and (max-width : 780px) {
     .slider .overview  { width: 6rem; }
     .slider .overview li  { height: 6rem; width: 6rem; }
 
-    /*.slider { margin: 0.25rem 1.5rem 0 1.5rem;}
-    .slider .viewport   { width: 5rem; height: 5rem; }
-    .slider .overview  { width: 5rem; }
-    .slider .overview li  { height: 5rem; width: 5rem; }
-*/
+    .description-element img {
+        margin-top: 1.5rem;
+    }
+
 
 }
 
@@ -239,6 +238,9 @@ and (max-device-width : 1024px) {
         width: 80%;
     }    
 
+.description-element img {
+        margin-top: 4.5rem;
+    }
     
     .slider { margin: 0.25rem 1.5rem 0 1.5rem;}
     .slider .viewport   { width: 4rem; height: 4rem; }
@@ -297,7 +299,7 @@ and (min-width : 1025px) {
         font-size: 30px;
         overflow: hidden;
         padding: 1em 0em;
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -338,6 +340,18 @@ and (min-width : 1025px) {
     #millum-footer div {
         padding-left: 3rem;
     }
+
+    .description-content {
+        border-bottom: 1px solid #ededeb;
+        margin-bottom: 3em;
+        padding-bottom: 2em;
+    }
+
+
+    .description-element img {
+        margin-top: 4.5em;
+    }
+
 
     .slider {margin: 0 0 0 3.25rem; }
     .slider .viewport   { width: 3.5rem; height: 3.5rem; }
@@ -594,7 +608,7 @@ nav ul li.selected-item span {
     background-color: #108BF5;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 1.75rem;
 }
 
 .absolutely-contact {
@@ -904,7 +918,7 @@ footer ul {
 
 
 #millum-footer .large-4 {
-    padding-left: 10%;
+    padding-left: 10%;  
 }
 
 #millum-footer .medium-4 {
@@ -1303,13 +1317,5 @@ form#contact-form input, form#contact-form textarea  {
     margin-top: 2.8em;
 }
 
-.description-element img {
-    margin-top: 4.5em;
-}
 
-.description-content {
-    border-bottom: 1px solid #ededeb;
-    margin-bottom: 3em;
-    padding-bottom: 2em;
-}
 
