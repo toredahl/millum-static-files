@@ -1,0 +1,151 @@
+
+
+<!DOCTYPE html>
+<head>
+	<title>Millum dokumentasjon</title>
+</head>
+
+<style>
+	body {
+		width: 1180px;
+		margin: 0 auto;
+		font-size: 100%;
+		padding: 1rem;
+		background-color: #ebebeb;
+		font-family: Trebuchet MS;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	article {
+		width: 100%;
+		background-color: #fff;
+		min-height: 800px;
+		padding: 2rem;
+	}
+
+	ul {
+		display: inline-table;
+		margin-left: 2rem;
+	}
+
+</style>
+<body>
+	
+	<article>
+		<h1>Millum maler - beskrivelse</h1>
+		
+		<p>Herunder følger en overordnet beskrivelse av det statiske malsettet for Millum.no.  Malsettet vil danne utgangspunktet for senere implementasjon i Wordpress-drakt. </p>
+
+		<h2>Maler</h2>
+
+		
+		<p>
+			Det er laget 5 statiske maler for Millum.no:
+		</p>
+		<ul>
+			<li>Forsidemal, (index.html)</li>
+			<li>Produktmal (products.html)</li>
+			<li>Artikkelmal (article.html)</li>
+			<li>Kundereferansemal (references.html)</li>
+			<li>Kontaktsidemal (contact.html)</li>
+		</ul>
+		<p>I tillegg er html-kode for header-element og footer-element skilt ut i egne maler under testing, for å unngå duplisering av kode. Disse malene er navngitt som <b> header.html </b> og <b> footer.html</b></p>
+	
+
+		<hr>
+		<h2>Responsivt design</h2>
+		<p>
+			Det er implementert et responsivt design med utgangspunkt i rammeverket Foundation. Foundation utgjør et av de mest brukte responsive rammeverkene, og har <a href="http://foundation.zurb.com/docs/">god dokumentasjon</a>.  Det er <strong><u><i>nødvendig</i></u></strong> å benytte Foundation som rammeverk i Wordpress-implementasjonen, for å kunne videreføre responsivt design, samt en god del annen kritisk funksjonalitet som malsettet har implementert. Det finnes et Foundation-basert Wordpress-theme som så vidt er testet (required+), og som ser ut til å ha den ønskelige funksjonaliteten, og som anbefales benyttet [<a href="http://themes.required.ch/docs/installation/">http://themes.required.ch/ </a> ]. Det er dog fullt mulig å benytte Foundation-rammeverket i andre themes også. 
+		</p>
+
+		<p>
+			Foundations rammeverket er implementert med en 12 kolonnes grid, som kan konfigureres slik at man kan angi et ulikt antall kolonner etter skjermstørrelse om ønskelig. I de tilfeller dette ikke er nødvendig (f.eks skal hovedbildet i artikkelmalen alltid vises i fullbredde) er det tilstrekkelig å angi antallet kolonner for den minste skjermstørrelsen (dvs "small"), og de større skjermstørrelsene vil deretter følge dette oppsettet. For ordens skyld er alle tre (small, medium, large) størrelsene benyttet i de fleste tilfeller. I noen tilfeller er det nødvendig å ha et ulikt antall kolonner for et gitt element av layouthensyn. F.eks for skjemaet på kontaktsiden, der inputfeltene vil ha fullbredde på en liten skjerm, men et mer komplekst, nøstet oppsett for tablet og laptop/stasjonær. Rammeverket sørger der for at layout brekker korrekt på liten, medium og stor skjerm. </p>
+
+		<p>
+			I noen tilfeller er det nødvendig med tilpasning for hver enkelt av de tre inndelingene, og i de tilfeller er stilene definert under egne viewports angitt i stilarket. Det er definert tre viewports:
+
+			<ul>
+				<li> <768px (mobil)</li>
+				<li>768px1024px (tablet)</li>
+				<li> >1024px (laptop ++)</li>
+			</ul>
+
+		</p>
+
+		<hr>
+		<h2>Html</h2>
+		<p>
+			Malene er statiske og skrevet i standard html og html5. Enkelte sideelementer (f.eks kontaktperson-bokser) er duplisert for å gi et bedre inntrykk av hvordan sidene vil ta seg ut. 
+
+		</p>
+		<hr>
+		<h2>Fonter</h2>
+		<p>
+			Det benyttes to fonter for malsettet:
+			<ul>
+				<li>PT Sans Narrow for alle h-elementer</li>
+				<li>PT Sans for alle andre elementer </li>
+			</ul>
+
+		</p>
+		<p>
+			Fontstørrelser er definert som:
+
+		</p>
+		<ul>
+			<li>H1: 40px (NB: ikke pt som en av skissene viser)</li>
+			<li>H2: 28px </li>
+			<li>H3: 20px</li>
+			<li>H4: 17px</li>
+			<li>Øvrige tekstelementer: 14px med enkelte unntak</li>
+		</ul>
+
+
+		<hr>
+		<h2>Farger</h2>
+		<p>Følgende fargekoder benyttes i malsettet:</p>
+		<h3>Hovedfarger:</h3>
+		<ul>	
+			<li>Blå #00a0ff</li>
+			<li>Grafitt #363639</li>
+			<li>Lysgrå #ededeb</li>
+			<li>Varm mellomgrå #e6e4e2</li>
+		</ul>
+		<h3>Komplement:</h3>
+		<ul>
+
+		<li>Varm mørkgrå #a09b96</li>
+		<li>Grønn #41d705</li>
+		<li>Oransje #ec581e</li>
+
+
+		</ul>
+
+		<hr>
+		<h2>CSS og Javascript</h2>
+		<p>
+			<b>Javascript-bibliotek:</b> På en del steder er det benyttet javascript for å øke brukeropplevelsen. Det er benyttet Jquery 2.1 som støttebibliotek, men det er i utgangspunktet ikke noe i veien for å benytte 1.1x i stedet om ønskelig. For mini-sliderene på forsiden er det benyttet biblioteket <i> tinycarousel </i>. Koden for tinycarousel ligger øverst i hovedskriptet millum.js, og forfatteren må krediteres i henhold til copyright notice. Det er også benyttet jquery.mobile, for å kunne fange opp touch-eventer (tap, swipe) fra en mobil enhet. Det er dessuten tatt i bruk innebyggede Foundation javascript-moduler. Nærmere bestemt slideshow-modulen (kalt <a href="http://foundation.zurb.com/docs/components/orbit.html">Orbit</a>) på Produktside-malen. Kode for denne er bygget inn i Foundation-biblioteket, men selve initialiseringen skjer fra products.html-malen. 
+		</p>
+		<p>
+			<b>Hovedbilde, forside: </b>I henhold til design skal det være et transparent overlay over hovedbildet på forsiden i form av et irregulært polygon. Med irregulært poylgon menes et rektangel hvor en av kantene ikke står vinkelrett. For å få til dette er det benyttet et html5 canvas-element. Størrelsen for dette beregnes dynamisk med javascript, og settes inn i DOM'en etter at siden er lastet. Grunnen til dette er for å få den nøyaktig like høy som bildeelementet det skal dekke, samt angi en bredde som er litt over halvparten av bildebredden i nedre del av canvas, med en skrånende diagonal kant til toppen av elementet. 
+		</p>
+
+		<p>
+			<b>Menyer:</b> det er to ulike "flytende" meny-elementer, en for menypunkt 1 "Om Millum", og en for menypunkt 2 "Produkter". Disse ligger skjult i DOM'en, og kommer til syne på mouseover på sine respektive meny-elementer. Det benyttes javascript også her, for å detektere når musepekeren er utenfor menypunktet og synlig menyelement, slik at det kan skjules på riktig tidspunkt. 
+		</p>
+
+		<p>
+			<b>Stiler:</b> Bortsett fra logo og testbilder og bibliotek-relaterte elementer er alle grafiske elementer laget med css. Det skal senere inngå noen få ikoner i form av bilder. Enkelte av elementene, som blå "snakkebobler" utgjør et sett av html-elementer og css som spiller sammen. Disse kan man regulere størrelsen på, ved å justere border-top og border-left for de små trianglene, samt høyden for selve bokselementet. 
+		</p>
+
+
+
+
+	</article>
+</body>
+
+</html>

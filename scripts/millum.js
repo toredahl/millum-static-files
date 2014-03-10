@@ -12,15 +12,9 @@
 //= responsive design, built with foundation: wordpress use required+ foundation:  http://themes.required.ch/  Recommend using a child theme of this theme for wordpress implementation.
 // documentation for foundation can be found here: http://foundation.zurb.com/docs/
 
-
-function adjustBoxHeight(pixel_height, box_id) {
-
-
-}
-
 // createOverlay: this creates a askewed overlay, as shown on the design sketches. 
 function createOverlay() {
-  console.log("called createOverlay ");
+  
   var overlay_width = $("#frontpage-large-img-container img").width();
   var overlay_height = $("#frontpage-large-img-container img").height();
 
@@ -30,19 +24,12 @@ function createOverlay() {
   canvas.height = overlay_height;
   canvas.width = overlay_width;
 
-  //$("#main-image-wrapper").append(canvas);
-
-  
-
   var anglefactor = 9;
-  //var cHeight = $(".overlay-container").height();
-  //var cWidth = $(".overlay-container").width();
   var cHeight = overlay_height;
   var cWidth  = overlay_width;
   var halfWidth = cWidth/1.6;  // initialize to half the container width with factor 2... less than that will yield a larger overlay, more a smaller. 
   var lesserHalf = halfWidth - (halfWidth/anglefactor); // this is the cutoff for the lower part of the quadrant, and the size of the divisor decides the angle. i.e factor 8 will yield a straighter line than 6.
   var greaterHalf = halfWidth + (halfWidth/anglefactor);
-  //var canvas = document.getElementById('overlay');
   var ctx = canvas.getContext('2d');
   //console.log('-- cH :' + cHeight + '-- hW :' +  halfWidth + '  -- lH: ' + lesserHalf + ' -- gH: ' + greaterHalf);
 
@@ -92,12 +79,6 @@ var overlaynotcreated = true;
 //.tinycarousel({interval: true,  axis: 'y', intervaltime: 2000, duration: 1000, pager:true});      
 // we use Ajax complete, because we are loading the footer and header element on every page. Redo this in wordpress as desired. 
 $( document ).ajaxComplete(function() {
-
-
-  // $("div.second-row-inner-container").on("tap", function(){
-  //     $("div.second-row-inner-container img").hide();
-  //     event.preventDefault();
-  // });
 
 
   var frontPage = $(".overlay-container").length > 0;
@@ -193,13 +174,6 @@ $( document ).ajaxComplete(function() {
     }
     
   });
-  
-  // $("#Xtemplate-changer li").on('mouseout', function() {
-  //   mouse_is_inside=false;  
-  //   $('#floating-menu').hide();
-  //   $('#floating-menu-narrow').hide();
-  //   $(".selected-item").removeClass("selected-item");
-  // });
     
   $("body").mouseup(function(){ 
     if(mouse_is_inside) {
@@ -214,22 +188,18 @@ $( document ).ajaxComplete(function() {
   var has_focus = true;
 
   if(has_focus) {
-    //startTinySlideshows(true);
+    startTinySlideshows(true);
   }
 
   // the idea here was to halt the slideshows if nobody was watching, i.e window.onblur, but have not had the time to look into that. Leave it as a Nice to have/TODO option. 
   window.onfocus = function(){  
     has_focus=true;  
-    //console.log("Window has the focus...");
-    //startTinySlideshows(true);
   }
 
   // if the user leaves the page, we stop the slider 
   window.onblur = function(){  
     has_focus=false;  
-    //console.log("Window do not have focus...");
   }
-
   
 
 });
