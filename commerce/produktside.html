@@ -36,7 +36,7 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<div class="product-img-container">
-				<img src="http://placehold.it/250x250/DFFF00/000000" alt="product item" class="product-image">	
+				<img src="http://placehold.it/250x250/00a0ff/000000" alt="product item" class="product-image">	
 			</div>
 		</div>
 
@@ -46,29 +46,29 @@
 				
 				<div class="form-group">
 					
-				    <label for="item-name">Varenavn*</label>
+				    <label id="upper-label" for="item-name">Varenavn*</label>
 				    <input type="email" class="form-control" id="item-name" placeholder="Pukka lemongrass after shave">
 
 					<div class="row">
 					  <div class="col-xs-6">
 					  	<label for="item-id">Varenummer*</label>
-					    <input id="item-id" type="text" class="form-control" placeholder=".col-xs-6">
+					    <input id="item-id" type="text" class="form-control" placeholder="default text">
 						<div class="row">
 					  		<div class="col-xs-6">
 								<label for="item-price">Varepris*</label>
-								<input id="item-price" type="text" class="form-control" placeholder=".col-xs-6">
+								<input id="item-price" type="text" class="form-control" placeholder="">
 							</div>
 						</div>
 
 						<div class="row">
 					  		<div class="col-xs-6">
 								<label for="item-price">Antall i salgsenhet*</label>
-								<input id="item-price" type="text" class="form-control" placeholder=".col-xs-6">
+								<input id="item-price" type="text" class="form-control" placeholder="">
 							</div>
 							<div class="col-xs-6">
 								<label for="select-item">Salgsenhet*</label>
 								<select id="select-item" class="form-control">
-								  <option>1</option>
+								  <option>Velg</option>
 								  <option>2</option>
 								</select>
 							</div>
@@ -77,12 +77,12 @@
 						<div class="row">
 					  		<div class="col-xs-6">
 								<label for="item-price">Enhetspris*</label>
-								<input id="item-price" type="text" class="form-control" placeholder=".col-xs-6">
+								<input id="item-price" type="text" class="form-control" placeholder="">
 							</div>
 							<div class="col-xs-6">
 								<label for="select-item">Enhet*</label>
 								<select id="select-item" class="form-control">
-								  <option>1</option>
+								  <option>Velg</option>
 								  <option>2</option>
 								</select>
 							</div>
@@ -93,9 +93,9 @@
 					  	<label for="item-description">Varebeskrivelse</label>
 					    <textarea id="item-description" class="form-control" rows="5"></textarea>
 						<label for="item-url">URL Varebeskrivelse</label>
-					    <input id="item-url" type="text" class="form-control" placeholder=".col-xs-6">
+					    <input id="item-url" type="text" class="form-control" placeholder="">
 						<label for="item-search">Søkeord*</label>
-					    <input id="item-search" type="text" class="form-control" placeholder=".col-xs-6">
+					    <input id="item-search" type="text" class="form-control" placeholder="">
 					  </div>
 					</div>
 				</div>			
@@ -107,14 +107,16 @@
 		<div class="col-lg-12">
 	    	
 			<hr>
-			<h4>Ekstra vareinformasjon</h4>
-
-			<form id="additional-product-item-form" role="form">
+			<h4 class="no-margin">Ekstra vareinformasjon</h4>
+			<div class="info-explantion">
+				<div class="small-circle float-left"></div><div class="float-left">Har utfylte punkter</div>
+			</div>
+			<form id="additional-product-item-form" class="clearing" role="form">
 				<div class="row">	
 
 					<div class="col-xs-4">						
 						<select id="select-item" class="form-control">
-							<option>Avtale / Bonus / Rabatt</option>
+							<option>Avtale / Bonus / Rabatt </option>
 							<option>2</option>
 						</select>
 					</div>
