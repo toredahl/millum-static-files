@@ -1129,6 +1129,20 @@ label#upper-label {
 	margin: 0;
 }
 
+#additional-product-item-form select.form-control-radical {
+    padding-right: 10px!important;
+}
+
+#additional-product-item-form select.form-control-radical:invalid {
+    background-image: radial-gradient(#129923 6px, transparent 7px);
+    background-position: right 3rem center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    width: 100%;
+}
+
+
+
 
 
 
