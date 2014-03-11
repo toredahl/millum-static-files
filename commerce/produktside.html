@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>MILLUM COMMERCE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link type="text/css" rel="stylesheet" href="css/commerce.css">
+	    <script src="/../foundation-5.1.1.custom/js/vendor/modernizr.js"></script> 	    
+	</head>
+<body>
+
+<div class="container"><!-- start main container -->
+	<div id="header"></div>
+</div>
+
+<div id="main-menu" class="container white-bg">
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="column-content-menu">
+	            <ul>
+	                <li><a href="#">OVERSIKT</a></li>
+	                <li class="selected-item"><a href="#">ORDRE</a></li>
+	                <li><a href="#">FAKTURA</a> </li>
+	                <li><a href="#">MINE PRODUKTER</a> </li>
+	                <li><a href="#"> MINE KUNDER</a> </li>
+	                <li><a href="#"> [ett / eller / annet / tekst / messig]</a> </li>
+	                <li><a href="#"> SØK</a> </li>
+	            <ul>
+	        </div>
+		</div>
+	</div>
+</div>
+
+<div class="container white-bg padding-2rem"><!-- start main container -->
+		
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="product-img-container">
+				<img src="http://placehold.it/250x250/DFFF00/000000" alt="product item" class="product-image">	
+			</div>
+		</div>
+
+		<div class="col-lg-8">
+
+			<form id="product-item-form" role="form">
+				
+				<div class="form-group">
+					
+				    <label for="item-name">Varenavn*</label>
+				    <input type="email" class="form-control" id="item-name" placeholder="Pukka lemongrass after shave">
+
+					<div class="row">
+					  <div class="col-xs-6">
+					  	<label for="item-id">Varenummer*</label>
+					    <input id="item-id" type="text" class="form-control" placeholder=".col-xs-6">
+						<div class="row">
+					  		<div class="col-xs-6">
+								<label for="item-price">Varepris*</label>
+								<input id="item-price" type="text" class="form-control" placeholder=".col-xs-6">
+							</div>
+						</div>
+
+						<div class="row">
+					  		<div class="col-xs-6">
+								<label for="item-price">Antall i salgsenhet*</label>
+								<input id="item-price" type="text" class="form-control" placeholder=".col-xs-6">
+							</div>
+							<div class="col-xs-6">
+								<label for="select-item">Salgsenhet*</label>
+								<select id="select-item" class="form-control">
+								  <option>1</option>
+								  <option>2</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row">
+					  		<div class="col-xs-6">
+								<label for="item-price">Enhetspris*</label>
+								<input id="item-price" type="text" class="form-control" placeholder=".col-xs-6">
+							</div>
+							<div class="col-xs-6">
+								<label for="select-item">Enhet*</label>
+								<select id="select-item" class="form-control">
+								  <option>1</option>
+								  <option>2</option>
+								</select>
+							</div>
+						</div>
+					 </div>
+
+					 <div class="col-xs-6">
+					  	<label for="item-description">Varebeskrivelse</label>
+					    <textarea id="item-description" class="form-control" rows="5"></textarea>
+						<label for="item-url">URL Varebeskrivelse</label>
+					    <input id="item-url" type="text" class="form-control" placeholder=".col-xs-6">
+						<label for="item-search">Søkeord*</label>
+					    <input id="item-search" type="text" class="form-control" placeholder=".col-xs-6">
+					  </div>
+					</div>
+				</div>			
+			</form>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12">
+	    	
+			<hr>
+			<h4>Ekstra vareinformasjon</h4>
+
+			<form id="additional-product-item-form" role="form">
+				<div class="row">	
+
+					<div class="col-xs-4">						
+						<select id="select-item" class="form-control">
+							<option>Avtale / Bonus / Rabatt</option>
+							<option>2</option>
+						</select>
+					</div>
+
+					<div class="col-xs-4">						
+						<select id="select-item" class="form-control">
+							<option>Produktmerking</option>
+							<option>2</option>
+						</select>
+					</div>
+
+					<div class="col-xs-4">					
+						<select id="select-item" class="form-control">
+							<option>Kampanje</option>
+							<option>2</option>
+						</select>
+					</div>
+				</div>
+			
+				<div class="row">	
+
+					<div class="col-xs-4">
+						<select id="select-item" class="form-control">
+							<option>Bestillongskrac</option>
+							<option>2</option>
+						</select>
+					</div>
+
+					<div class="col-xs-4">
+						<select id="select-item" class="form-control">
+							<option>Forfall og erstatningsinformasjon</option>
+							<option>2</option>
+						</select>
+					</div>
+
+					<div class="col-xs-4">
+						<select id="select-item" class="form-control">
+							<option>Kriterier</option>
+							<option>2</option>
+						</select>
+					</div>
+				</div>
+			
+				<div class="row">
+			  		<div class="col-xs-4">
+						<label for="item-add-id">Legg til varenr</label>
+						<input id="item-add-id" type="text" class="form-control" placeholder="">
+					</div>
+					<div class="col-xs-4">
+						<label for="item-addition">Tillegg</label>
+						<input id="item-addition" type="text" class="form-control" placeholder="">
+					</div>
+				</div>
+		
+			</form>
+			<hr>
+			
+			<div id="button-row" class="row">
+				<div class="col-xs-4 col-xs-push-8">
+					<div class="float-right"><input type="submit" value="LAGRE"></div>
+					<div class="light-gray preview-button float-right"><input type="submit" value="FORHÅNDSVIS"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+</div> <!-- end of main container with white background -->	
+
+<div id="support"></div><!-- no color background -->
+<div id="footer"></div> <!-- full width with its own color background -->
+
+<script src="../scripts/jquery-2.1.0.min.js"></script>
+<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+
+<script> 
+    $(function() {
+        $("#header").load("header-bs3.1.1.html"); 
+        //$("#header").load("login-header-bs3.1.1.html"); 
+        $("#support").load("support-bs3.1.1.html"); 
+        $("#footer").load("footer-bs3.1.1.html"); 
+    	//$(".tmp-w").load("warehouse-item.html"); 
+
+    	//$('.carousel').carousel();
+
+	// $('#myTab a').click(function (e) {
+	// 		e.preventDefault();
+	// 		$(this).tab('show');
+	// });
+    
+	});
+</script>
+
+
+</body>
+</html>

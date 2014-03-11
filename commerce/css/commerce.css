@@ -32,7 +32,7 @@ p
 
 body {
 	background-image: url(../img/worn_dots.png);
-	font-size: 100%;
+	font-size: 62.5%;
 	font-family: 'PT Sans', sans-serif;
     color: #363639;
 }
@@ -61,26 +61,29 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    /*font-size: 2.5rem;*/
+    font-size: 4.0rem;
     font-weight: 700;
 }
 
 h2 {
-    /*font-size: 1.72rem;*/
+    font-size: 2.8rem;
     font-weight: 400;
 }
 
 h3 {
-    /*font-size: 1.25rem;*/
+    font-size: 2.0rem;
 }
 
 h4 {
-    /*font-size: 1.0rem;   */
+    font-size: 1.4rem;   
 	font-weight: 700;
 }
 
+div, p, span {
+	font-size: 1.4rem;
+}
+
 p,span, .users, .byline {
-    /*font-size: 0.84rem;*/
     color: #363639;
 }
 
@@ -312,6 +315,10 @@ nav div.nav-inner-container {
 }
 
 
+#button-row .light-gray input{
+	background-color: #a09b96;
+}
+
 /* COLORS */
 .white, .white-bg {
     background-color: #fff;
@@ -408,9 +415,8 @@ nav div.nav-inner-container {
 	background-color: #1372EF;
 	clear:both;
 	color: #fff;
-	/*font-size: 1rem;*/
 	padding: 1.0rem 1.2rem;
-}*/
+} */
 
 #loginform input[type=submit]{
 	width: 12rem;
@@ -980,6 +986,7 @@ footer ul {
     width:3.0rem;
     font-weight: 700;
 }
+
 .circle-text:after {
     content: "";
     display: block;
@@ -991,6 +998,7 @@ footer ul {
     -webkit-border-radius: 50%; 
     border-radius: 50%;
 }
+
 .circle-text div {
     float:left;
     font-size: 2rem;
@@ -1001,3 +1009,106 @@ footer ul {
     text-align:center;
     color:white;
 }
+
+
+form.category-form input, form.save-action input {
+	height: 3.5rem;	
+	margin-bottom: 0.5rem;
+	width: 60%;
+
+}
+
+form.category-form input[type=submit], form.save-action input[type=submit]{
+	height: 3.5rem;	
+	margin: 0 0 0.5rem 1rem;
+	padding: 0.5rem 0;
+	width: 20%;
+}
+
+input[type=submit] {
+	width: auto;
+	border: none;
+}
+
+form.save-action {
+	background-color: #fff;
+}
+
+form.category-form span {
+	margin-left: 1rem;
+}
+
+div.page-action {
+	margin: 3rem 0;
+}
+
+#main-action form input {
+	margin: 0;
+	padding: 0;
+}
+
+#search-action input {
+	height: 3.5rem;
+	width: 25%;
+	margin-right: 1rem;
+}
+
+#search-action input[type=submit] {
+	width: 10%;
+}	
+
+.search-result {
+	margin: 1rem 0;
+}
+
+.product-img-container {
+	border: 1px solid #000;
+
+}
+
+.product-img-container img {
+	display: block;
+	margin: 0 auto;
+	padding: 3rem;
+}
+
+#product-item-form label {
+	margin-top: 1.5rem;
+}
+
+#product-item-form input, #product-item-form textarea, #additional-product-item-form input {
+	background-color: #f7f7f9;
+}
+
+#product-item-form select, #additional-product-item-form select { 
+	background-color: #e6e4e2;
+}
+
+#additional-product-item-form .row {
+	margin-bottom: 2rem;
+}
+
+.preview-button {
+	
+	
+}
+
+
+#button-row * div {
+	float: right;
+	margin-left: 1rem;
+	width: 15rem;
+}
+
+#button-row div input {
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 1.5rem 3rem;
+	width: 100%;
+}
+
+
+
+
+
+
