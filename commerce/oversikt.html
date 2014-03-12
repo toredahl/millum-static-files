@@ -23,7 +23,7 @@
             <div id="column-content-menu">
                 <ul>
                     <li><a href="#">OVERSIKT</a></li>
-                    <li class="selected-item"><a href="#">ORDRE</a></li>
+                    <li class="selected-item"><a href="#">ORDRE</a><div id="counter" class="no-show">0</div></li>
                     <li><a href="#">FAKTURA</a> </li>
                     <li><a href="#">MINE PRODUKTER</a> </li>
                     <li><a href="#"> MINE KUNDER</a> </li>
@@ -34,79 +34,64 @@
 
             <h3>Ubehandlede ordre</h3>
             <table id="order-table">
-
+                <thead>
                 <tr>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
+                    <th> Ordrenr </th>
+                    <th> Kundenr </th>
+                    <th> Kunde </th>
+                    <th> Ordredato </th>
+                    <th> Ønsket levering </th>
+                    <th> Sum </th>
+                    <th> Mottatt </th>
+                    <th> Bekreft ordre uten endring </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>12345</td>
+                    <td>56789</td>
+                    <td>  Thon Hotels  </td>
+                    <td> 10.04.2014 </td>
+                    <td>17.04.2014</td>
+                    <td>112 000</td>
+                    <td><div class="gray-box white-txt rectangle click-me"> MOTTATT </div></td>
+                    <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
+                </tr>
+                <tr>
+                    <td>34567</td>
+                    <td>56789</td>
+                    <td>  Rica Hotels  </td>
+                    <td> 12.04.2014 </td>
+                    <td>10.04.2015</td>
+                    <td>102 000</td>
+                    <td><div class="gray-box white-txt rectangle click-me"> MOTTATT </div></td>
+                    <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
+                </tr>
+                <tr>
+                    <td>23456</td>
+                    <td>67890</td>
+                    <td>  Clarion Hotels  </td>
+                    <td> 12.04.2014 </td>
+                    <td>15.05.2014</td>
+                    <td>122 000</td>
+                    <td><div class="gray-box white-txt rectangle click-me "> MOTTATT </div></td>
+                    <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
                 </tr>
 
                 <tr>
-                    <td>100 78 33 </td>
-                    <td>Lasagne spesial, parmesan</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                </tr>
-                <tr>
-                    <td>108654</td>
-                    <td>Produkt nam</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                </tr>
-                <tr>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                </tr>
-                <tr>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                </tr>
-                <tr>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
+                    <td>52356</td>
+                    <td>22890</td>
+                    <td>  Silica Hotels  </td>
+                    <td> 12.03.2014 </td>
+                    <td>15.06.2014</td>
+                    <td>322 000</td>
+                    <td><div class="gray-box white-txt rectangle click-me "> MOTTATT </div></td>
+                    <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
                 </tr>
 
-                <tr><td colspan="9"> Se alle ordre </td></tr>
-
+                </tbody>
             </table>
-
+            <div class="pseudo-row"> Se alle ordre</div>
         </div>
     </div>
 
@@ -191,13 +176,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img data-src="http://placehold.it/200x100/aa0ccc/00ff00" alt="First slide">
+                                    <img src="http://placehold.it/300x220/aa0ccc/00ff00" data-src="http://placehold.it/200x100/aa0ccc/00ff00" alt="First slide">
                                 </div>
                                 <div class="item">
-                                    <img data-src="http://placehold.it/200x100/aa0c00/00ff00" alt="Second slide">
+                                    <img src="http://placehold.it/300x220/aa0c00/00ff00" alt="Second slide">
                                 </div>
                                 <div class="item">
-                                    <img data-src="http://placehold.it/200x100/aa0ccc/ee00ff" alt="Third slide">
+                                    <img src="http://placehold.it/300x220/aa0ccc/ee00ff" alt="Third slide">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -214,31 +199,45 @@
     </div>
 </div>
 
-
 <div id="support"></div><!-- no color background -->
-
 <div id="footer"></div> <!-- full width with its own color background -->
 
 <script src="../scripts/jquery-2.1.0.min.js"></script>
 <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
 
 <script> 
     $(function() {
         $("#header").load("header-bs3.1.1.html"); 
-        //$("#header").load("login-header-bs3.1.1.html"); 
         $("#support").load("support-bs3.1.1.html"); 
         $("#footer").load("footer-bs3.1.1.html"); 
         $(".tmp-w").load("warehouse-item.html"); 
+        $("#order-table").tablesorter(); 
+        
+        
 
-        //$('.carousel').carousel();
+        $('.click-me').on('click', function() {
+            var ok = '<span class="glyphicon glyphicon-ok green-txt"></span>';    
+            $(this).replaceWith(ok);                
+        });
 
-    $('#myTab a').click(function (e) {
-            e.preventDefault();
-            $(this).tab('show');
-    });
+        $('.input-wrapper').siblings('div.gray-box').on('click', function() {
+            
+            var currentvalue = parseInt($('#counter').html());
+            if (currentvalue === 0) {
+                $('#counter').removeClass('no-show');
+            }
+            currentvalue++;
+            $('#counter').html(currentvalue);
+            $(this).parent("td").parent("tr").remove();
+            
+        });
 
+        // $('#myTab a').click(function (e) {
+        //         e.preventDefault();
+        //         $(this).tab('show');
+        // });
 
-    
     });
 </script>
 

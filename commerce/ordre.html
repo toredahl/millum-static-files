@@ -80,7 +80,7 @@
 		</div>
 		<div class="col-lg-4">
 			<div class="light-gray-bg padding-1rem">
-				  <span class="glyphicon glyphicon-envelope"></span> <a href="#">Du har fått melding fra bestiller</a>
+				  <span class="glyphicon glyphicon-envelope font-20"></span><span class="icon-adjustment"><a href="#">Du har fått melding fra bestiller</a></span>
 			</div>
 		</div>
 		<div class="col-lg-4">
@@ -114,7 +114,7 @@
 		<div class="col-lg-12">
 	    	
 			<table id="order-table">
-
+				<thead>
                 <tr>
                     <th> Header col </th>
                     <th> Header col </th>
@@ -123,10 +123,11 @@
                     <th> Header col </th>
                     <th> Header col </th>
                     <th> Header col </th>
-                    <th> Header col </th>
+                    <th> Kommentar </th>
                     <th> Header col </th>
                 </tr>
-
+				</thead>
+				<tbody>
                 <tr>
                     <td>100 78 33 </td>
                     <td>Lasagne spesial, parmesan</td>
@@ -134,7 +135,7 @@
                     <td>some text</td>
                     <td>some text</td>
                     <td>some text</td>
-                    <td>some text</td>
+                    <td><input type="text" name="changefield" value=""></td>
                     <td>some text</td>
                     <td>some text</td>
                 </tr>
@@ -145,7 +146,18 @@
                     <td>some text</td>
                     <td>some text</td>
                     <td>some text</td>
+                    <td><input type="text" name="changefield" value=""></td>
+                    <td>In da vlub</td>
                     <td>some text</td>
+                </tr>
+                <tr>
+                    <td>some text</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                    <td>some dummy was here</td>
+                    <td><input type="text" name="changefield" value="Skriv her"></td>
                     <td>some text</td>
                     <td>some text</td>
                 </tr>
@@ -156,36 +168,27 @@
                     <td>some text</td>
                     <td>some text</td>
                     <td>some text</td>
+                    <td><input type="text" name="changefield" value="Skriv her"></td>
                     <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
+                    <td>que sera</td>
                 </tr>
                 <tr>
                     <td>some text</td>
+                    <td>lastrow</td>
                     <td>some text</td>
                     <td>some text</td>
                     <td>some text</td>
                     <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                </tr>
-                <tr>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
+                    <td><input type="text" name="changefield" value="Skriv her"></td>
                     <td>some text</td>
                     <td>some text</td>
                 </tr>
 
-                <tr><td colspan="9"> Se alle ordre </td></tr>
-
+<!--                 <tr><td colspan="8"></td><td> Se alle ordre </td></tr> -->
+				</tbody>
             </table>
+			
+			<div class="pseudo-row"> Se alle ordre</div>
 
 		</div>
 	</div>
@@ -195,7 +198,7 @@
 		<div class="col-lg-4">
 			
 			<div class="light-gray-bg padding-1rem">
-				<span class="glyphicon glyphicon-envelope"></span><span class="stipled-h4"><strong> Melding fra bestiller </strong></span>
+				<span class="glyphicon glyphicon-envelope font-20"></span><span class="stipled-h4 icon-adjustment"><strong> Melding fra bestiller </strong></span>
 				<p class="margin-top-1rem">
 					Hei Arne, <br>
 					sender du den gule sausen, den med estragon og ekstra smak?
@@ -219,7 +222,7 @@
 					<input type="text" name="order">
 				
 				<div class="row margin-top-2rem">
-					<div class="col-lg-6">Ordren er ikke akseptert. Bestilleren har ikke fått svar tilbake.</div>
+					<div class="col-lg-6"><span class="orange-txt">Ordren er ikke akseptert.</span> Bestilleren har ikke fått svar tilbake.</div>
 					<div class="col-lg-6">
 						<input type="submit" value="BEKREFT">
 					</div>
@@ -236,6 +239,7 @@
 
 <script src="../scripts/jquery-2.1.0.min.js"></script>
 <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
 
 <script> 
     $(function() {
@@ -244,6 +248,12 @@
         $("#support").load("support-bs3.1.1.html"); 
         $("#footer").load("footer-bs3.1.1.html"); 
     	$(".tmp-w").load("warehouse-item.html"); 
+
+
+        $("#order-table").tablesorter(); 
+    
+
+
 
     	//$('.carousel').carousel();
 
