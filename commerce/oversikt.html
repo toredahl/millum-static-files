@@ -23,7 +23,7 @@
             <div id="column-content-menu">
                 <ul>
                     <li><a href="#">OVERSIKT</a></li>
-                    <li class="selected-item"><a href="#">ORDRE</a><div id="counter" class="no-show">0</div></li>
+                    <li class="selected-item"><a href="#">ORDRE</a><div id="counter" class="no-show counter-box">0</div></li>
                     <li><a href="#">FAKTURA</a> </li>
                     <li><a href="#">MINE PRODUKTER</a> </li>
                     <li><a href="#"> MINE KUNDER</a> </li>
@@ -207,14 +207,17 @@
 <script src="js/jquery.tablesorter.min.js"></script>
 
 <script> 
+
+    function removeRow (currentelement) {
+        currentelement.parent("td").parent("tr").remove();
+    }
+
     $(function() {
         $("#header").load("header-bs3.1.1.html"); 
         $("#support").load("support-bs3.1.1.html"); 
         $("#footer").load("footer-bs3.1.1.html"); 
         $(".tmp-w").load("warehouse-item.html"); 
         $("#order-table").tablesorter(); 
-        
-        
 
         $('.click-me').on('click', function() {
             var ok = '<span class="glyphicon glyphicon-ok green-txt"></span>';    
@@ -225,11 +228,15 @@
             
             var currentvalue = parseInt($('#counter').html());
             if (currentvalue === 0) {
-                $('#counter').removeClass('no-show');
+                $("#counter").removeClass("no-show"); //.addClass("counterbox");
             }
             currentvalue++;
             $('#counter').html(currentvalue);
-            $(this).parent("td").parent("tr").remove();
+
+            $(this).parent("td").parent("tr").delay(500).fadeOut(1300, function(){
+                $(this).remove();
+            });
+            
             
         });
 

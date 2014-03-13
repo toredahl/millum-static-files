@@ -677,8 +677,14 @@ div#column-content-menu, #column-content-menu div {
 
 #counter {
 	position: absolute;
-	top: 0;
-	left: 1rem;
+	top: 0.5rem;
+	left: 0.5rem;
+}
+
+.counter-box {
+	background-color: red;
+	color: #fff;
+	padding: 0.2rem 0.5rem;
 }
 
 table, table#order-table, table.invoice-tables, table.full-width {
@@ -725,7 +731,7 @@ table#order-table th, table.invoice-tables th  {
 }
 
 
-table#order-table td, table.invoice-tables td {
+table#order-table th, table#order-table td, table.invoice-tables td {
 	text-align: center;
 	padding: 0.5rem;
 }
@@ -1198,6 +1204,13 @@ label#upper-label {
 table .rectangle {
 	width: 10rem;
 	height: 3.6rem;
+	display:block;
+	margin: 0 auto;
+}
+
+table .rectangle:hover {
+
+	background-color: #00a0ff;
 }
 
 .icon-adjustment {
@@ -1227,3 +1240,13 @@ table .rectangle {
 .no-show {
 	display:none;
 }
+
+
+
+
+
+
+
+
+
+
