@@ -693,6 +693,8 @@ table, table#order-table, table.invoice-tables, table.full-width {
 	width: 100%;
 }
 
+
+
 /*table#order-table tr:last-child td, table.invoice-tables tr:last-child td, table.first-last-colored tr:first-child th, table.first-last-colored tr:last-child td {
 	background-color: #ededeb;
 	text-align: right;
@@ -1032,6 +1034,10 @@ footer ul {
 	font-size: 2rem,
 }
 
+.font-size-2_5rem {
+	font-size: 2.5rem;
+}
+
 .rem20-height {
 
 	min-height: 20rem;
@@ -1255,5 +1261,7 @@ table .rectangle:hover {
 	min-height: 12rem;
 	clear: both;
 }
+
+
 
 
