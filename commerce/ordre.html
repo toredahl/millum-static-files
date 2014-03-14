@@ -58,7 +58,7 @@
 				<h3>Ordre 12345</h3>
 		</div>
 		<div class="col-lg-6">
-			<span class="float-right padding-top-2rem"><a href="">Skriv ut</a></span>
+			<span class="float-right padding-top-2rem"><span class="glyphicon glyphicon-print margin-right-1rem"></span><span><a href="">Skriv ut</a></span></span>
 		</div>
 	</div>
 
@@ -116,79 +116,86 @@
 			<table id="order-table">
 				<thead>
                 <tr>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
+                    <th> Varenummer </th>
+                    <th> Varenavn </th>
+                    <th> Ant. i enhet </th>
+                    <th> Enhet</th>
+                    <th> Pris </th>
+                    <th> Ant.bestill </th>
+                    <th> Ant bek. </th>
                     <th> Kommentar </th>
-                    <th> Header col </th>
+                    <th> Linjesum </th>
+                    <th> Endring</th>
                 </tr>
 				</thead>
 				<tbody>
                 <tr>
                     <td>100 78 33 </td>
                     <td>Lasagne spesial, parmesan</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
+                    <td>2</td>
+                    <td>stk</td>
+                    <td>130</td>
+                    <td>3</td>
+                    <td><input type="text" name="changefield" value="4"></td>
                     <td><input type="text" name="changefield" value=""></td>
-                    <td>some text</td>
-                    <td>some text</td>
+                    <td>325,50</td>
+                	<td>Endre</td>
                 </tr>
+
                 <tr>
-                    <td>108654</td>
-                    <td>Produkt nam</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
+                    <td>100 78 33 </td>
+                    <td>Lasagne spesial, parmesan</td>
+                    <td>2</td>
+                    <td>stk</td>
+                    <td>130</td>
+                    <td>3</td>
+                    <td><input type="text" name="changefield" value="4"></td>
                     <td><input type="text" name="changefield" value=""></td>
-                    <td>In da vlub</td>
-                    <td>some text</td>
+                    <td>325,50</td>
+                	<td>Endre</td>
                 </tr>
                 <tr>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some dummy was here</td>
-                    <td><input type="text" name="changefield" value="Skriv her"></td>
-                    <td>some text</td>
-                    <td>some text</td>
+                    <td>100 78 33 </td>
+                    <td>Lasagne spesial, parmesan</td>
+                    <td>2</td>
+                    <td>stk</td>
+                    <td>130</td>
+                    <td>3</td>
+                    <td><input type="text" name="changefield" value="4"></td>
+                    <td><input type="text" name="changefield" value=""></td>
+                    <td>325,50</td>
+                	<td>Endre</td>
                 </tr>
                 <tr>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td><input type="text" name="changefield" value="Skriv her"></td>
-                    <td>some text</td>
-                    <td>que sera</td>
+                    <td>100 78 33 </td>
+                    <td>Lasagne spesial, parmesan</td>
+                    <td>2</td>
+                    <td>stk</td>
+                    <td>130</td>
+                    <td>3</td>
+                    <td><input type="text" name="changefield" value="4"></td>
+                    <td><input type="text" name="changefield" value=""></td>
+                    <td>325,50</td>
+                	<td>Endre</td>
                 </tr>
                 <tr>
-                    <td>some text</td>
-                    <td>lastrow</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td><input type="text" name="changefield" value="Skriv her"></td>
-                    <td>some text</td>
-                    <td>some text</td>
+                    <td>100 78 33 </td>
+                    <td>Lasagne spesial, parmesan</td>
+                    <td>2</td>
+                    <td>stk</td>
+                    <td>130</td>
+                    <td>3</td>
+                    <td><input type="text" name="changefield" value="4"></td>
+                    <td><input type="text" name="changefield" value=""></td>
+                    <td>325,50</td>
+                	<td>Endre</td>
                 </tr>
 
 <!--                 <tr><td colspan="8"></td><td> Se alle ordre </td></tr> -->
 				</tbody>
             </table>
 			
-			<div class="pseudo-row"> Se alle ordre</div>
+			<div class="pseudo-row"><div id="add-row" class="float-left">Legg til ny varelinje</div> <div class="float-right">Se alle ordre</div></div>
 
 		</div>
 	</div>
@@ -211,26 +218,30 @@
 		</div>
 		<div class="col-lg-4">
 			<span>Svar til bestiller </span>
-			<textarea class="widetext" rows="5">
+			<textarea id="confirm-message" class="widetext" rows="5">
 			</textarea>
 		</div>
 		<div class="col-lg-4">
 			<div>
 				<h4>BEKREFT ORDRE</h4>	
-				<form class="order-input" action="">
+				<form id="confirm-form" class="order-input" action="">
 					<label for="order">Ditt ordrenummer</label>
 					<input type="text" name="order">
 				
 				<div class="row margin-top-2rem">
-					<div class="col-lg-6"><span class="orange-txt">Ordren er ikke akseptert.</span> Bestilleren har ikke fått svar tilbake.</div>
 					<div class="col-lg-6">
-						<input type="submit" value="BEKREFT">
+						<div class="confirm-msg no-show"><span class="orange-txt">Ordren er ikke akseptert.</span> Bestilleren har ikke fått svar tilbake.</div>
+					</div>
+					<div class="col-lg-6">
+						<input id="confirm-order" type="submit" value="BEKREFT">
 					</div>
 				</div>
 				</form>
 			</div>
 		</div>
 	</div>
+
+	
 
 </div> <!-- end of main container with white background -->	
 
@@ -248,20 +259,42 @@
         $("#support").load("support-bs3.1.1.html"); 
         $("#footer").load("footer-bs3.1.1.html"); 
     	$(".tmp-w").load("warehouse-item.html"); 
-
-
         $("#order-table").tablesorter(); 
-    
+
+        $("#add-row").on('click', function() {
+        	
+        	var newrow = '<tr><td>34566</td><td>Rødspette</td><td>4</td><td>paller</td><td>455</td><td>7</td><td><input type="text" name="changefield" value="2"></td><td><input type="text" name="changefield" value=""></td><td>467</td><td>Endre</td></tr>';
+			$("#order-table").append(newrow);			
+
+        });
 
 
+         $("#confirm-form").on('submit', function(e) { 
+        	e.preventDefault();  //prevent form from submitting
+        	var data = $("#confirm_form :input").serializeArray();
+        	var msg = $("#confirm-message").val();
 
-    	//$('.carousel').carousel();
+        	if(msg.length<5){
+        		$(".confirm-msg").toggle('no-show');	
+        	}else{
 
-	// $('#myTab a').click(function (e) {
-	// 		e.preventDefault();
-	// 		$(this).tab('show');
-	// });
-    
+        		//$(this).submit();
+        		console.log("here we submit the form...");
+
+        	}
+
+
+        	//console.log(data); //use the console for debugging, F12 in Chrome, not alerts
+        	
+
+    	});
+
+        // $("#confirm-order").on('click', function() {
+
+        // 	alert("you fool!"):
+        // });
+
+        
 	});
 </script>
 
