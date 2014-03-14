@@ -219,6 +219,9 @@
         $(".tmp-w").load("warehouse-item.html"); 
         $("#order-table").tablesorter(); 
 
+
+
+
         $('.click-me').on('click', function() {
             var ok = '<span class="glyphicon glyphicon-ok green-txt"></span>';    
             $(this).replaceWith(ok);                
@@ -233,19 +236,16 @@
             currentvalue++;
             $('#counter').html(currentvalue);
 
-            $(this).parent("td").parent("tr").delay(500).fadeOut(1300, function(){
+            $(this).parent("td").parent("tr").delay(350).fadeOut(250, function(){
                 $(this).remove();
             });
             
-            
         });
 
-        // $('#myTab a').click(function (e) {
-        //         e.preventDefault();
-        //         $(this).tab('show');
-        // });
-
     });
+
+
+
 </script>
 
 

@@ -676,15 +676,17 @@ div#column-content-menu, #column-content-menu div {
 }
 
 #counter {
-	position: absolute;
-	top: 0.5rem;
-	left: 0.5rem;
+	
+	font-size: 1.5rem;
+    left: 0.6rem;
+    position: absolute;
+    top: -1rem;
 }
 
 .counter-box {
-	background-color: red;
+	background-color: #00a0ff;
 	color: #fff;
-	padding: 0.2rem 0.5rem;
+	padding: 0.2rem 0.75rem;
 }
 
 table, table#order-table, table.invoice-tables, table.full-width {
@@ -1241,12 +1243,17 @@ table .rectangle:hover {
 	display:none;
 }
 
+.warehouse-stats {
+	text-decoration: underline;
+	float:right;
+	clear: right;
+}
 
-
-
-
-
-
-
+.statistics {
+	background-color: cyan;
+	padding: 1rem;
+	min-height: 12rem;
+	clear: both;
+}
 
 
