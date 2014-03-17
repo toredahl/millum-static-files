@@ -225,6 +225,20 @@ nav div.nav-inner-container {
     border-right: 0.9em solid transparent;
 }
 
+.down-triangle-graphite {
+	display: block;
+    height: 0;
+    width: 0;
+    border-top: 0.5em solid #363639;
+    border-right: 0.5em solid transparent;
+	border-left: 0.5em solid transparent;
+}
+
+.table-arrow-position {
+  left: 10px;
+  position: relative;
+  top: 12px;
+}
 
 .box-container {
     position: relative;
@@ -375,10 +389,13 @@ nav div.nav-inner-container {
 	border: 2px solid red;
 }
 
-
 .red-txt {
 	color: red;
 }
+
+.black-txt {
+	color: #000;
+} 
 
 .fade {
 	opacity: 0.5;
@@ -789,15 +806,16 @@ table#order-table th, table#order-table td, table.invoice-tables td {
 
 
 /*  FORM */
-#invoice-data input[type=submit], #loginform input[type=submit]  ,input[type=submit] {
-  /*background-color:#1372EF;*/
-  color: #fff;
+#invoice-data input[type=submit], #loginform input[type=submit],input[type=submit] {
   font-size: 1.5rem;
   height: auto;
   padding:1.1rem 3.3rem;
   text-transform: uppercase;
-  /*width: 48%;*/
 }
+
+#invoice-data input[type=submit], #loginform input[type=submit] {
+	color: #fff;
+	}
 
 #summary .row {
 	margin: 1rem 0;
@@ -1264,6 +1282,10 @@ table .rectangle:hover {
 	margin-right: 0.5rem;
 }
 
+#order-table th:hover {
+	cursor: pointer;
+}
+
 .no-show {
 	display:none;
 }
@@ -1286,10 +1308,25 @@ table .rectangle:hover {
 	visibility: hidden;
 }
 
+.pulldown-menu {
+	background-color: #e6e4e2;
+	height: 4rem;
+	border: 1px solid #a09b96;
+	padding: 1rem;
+}
 
+.expand-box {
+	padding: 1rem;
+}
 
+.expand-form label {
+	width: 40%;
+}
 
-
+.labeling-form label {
+	margin-left: 1rem;
+	font-weight: 400;
+}
 
 
 
