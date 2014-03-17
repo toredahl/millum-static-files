@@ -136,7 +136,7 @@
                     <td>stk</td>
                     <td>130</td>
                     <td>3</td>
-                    <td><input type="text" name="changefield" value="4"></td>
+                    <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>325,50</td>
                 	<td>Endre</td>
@@ -149,7 +149,7 @@
                     <td>stk</td>
                     <td>130</td>
                     <td>3</td>
-                    <td><input type="text" name="changefield" value="4"></td>
+                    <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>325,50</td>
                 	<td>Endre</td>
@@ -161,7 +161,7 @@
                     <td>stk</td>
                     <td>130</td>
                     <td>3</td>
-                    <td><input type="text" name="changefield" value="4"></td>
+                    <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>325,50</td>
                 	<td>Endre</td>
@@ -173,7 +173,7 @@
                     <td>stk</td>
                     <td>130</td>
                     <td>3</td>
-                    <td><input type="text" name="changefield" value="4"></td>
+                    <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>325,50</td>
                 	<td>Endre</td>
@@ -185,13 +185,12 @@
                     <td>stk</td>
                     <td>130</td>
                     <td>3</td>
-                    <td><input type="text" name="changefield" value="4"></td>
+                    <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>325,50</td>
                 	<td>Endre</td>
                 </tr>
 
-<!--                 <tr><td colspan="8"></td><td> Se alle ordre </td></tr> -->
 				</tbody>
             </table>
 			
@@ -220,6 +219,7 @@
 			<span>Svar til bestiller </span>
 			<textarea id="confirm-message" class="widetext" rows="5">
 			</textarea>
+			<div class="user-info">Ved endring av ordre gis bestilleren svar tilbake.</div>
 		</div>
 		<div class="col-lg-4">
 			<div>
@@ -230,10 +230,11 @@
 				
 				<div class="row margin-top-2rem">
 					<div class="col-lg-6">
-						<div class="confirm-msg no-show"><span class="orange-txt">Ordren er ikke akseptert.</span> Bestilleren har ikke fått svar tilbake.</div>
+						<input id="change-order" class="no-show orange-bg" type="submit" value="ENDRING">
+						<div class="confirm-msg no-show"><span class="orange-txt">Ordren er ikke akseptert.</span></div>
 					</div>
 					<div class="col-lg-6">
-						<input id="confirm-order" type="submit" value="BEKREFT">
+						<input id="confirm-order" type="submit" class="warm-gray-bg" value="BEKREFT">
 					</div>
 				</div>
 				</form>
@@ -268,32 +269,30 @@
 
         });
 
+        $('.change-order').on('change', function() {
+        	$('#change-order').removeClass('no-show');
+        	//$('.confirm-msg').removeClass('no-show');
+        	$('#confirm-message').addClass('green-border');
+        	$('#confirm-order').addClass('fade');
+        });
 
          $("#confirm-form").on('submit', function(e) { 
         	e.preventDefault();  //prevent form from submitting
-        	var data = $("#confirm_form :input").serializeArray();
+        	//var data = $("#confirm_form :input").serializeArray();
         	var msg = $("#confirm-message").val();
 
         	if(msg.length<5){
         		$(".confirm-msg").toggle('no-show');	
+        		$("#confirm-message").removeClass('green-border');
+        		$("#confirm-message").addClass('red-border');
+        		$(".user-info").addClass("red-txt");
         	}else{
 
         		//$(this).submit();
         		console.log("here we submit the form...");
-
         	}
 
-
-        	//console.log(data); //use the console for debugging, F12 in Chrome, not alerts
-        	
-
     	});
-
-        // $("#confirm-order").on('click', function() {
-
-        // 	alert("you fool!"):
-        // });
-
         
 	});
 </script>

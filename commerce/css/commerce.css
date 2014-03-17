@@ -343,6 +343,14 @@ nav div.nav-inner-container {
 	background-color:  #00a0ff;
 }
 
+.orange-bg {
+	background-color: #ec581e;
+}
+
+.warm-gray-bg {
+	background-color: #A09B96;
+}
+
 .white-txt {
 	color:  #fff;
 }
@@ -359,8 +367,21 @@ nav div.nav-inner-container {
 	color: #ec581e;
 }
 
+.green-border {
+	border: 2px solid #41d705;
+}
+
+.red-border {
+	border: 2px solid red;
+}
+
+
 .red-txt {
 	color: red;
+}
+
+.fade {
+	opacity: 0.5;
 }
 
 .block-el {
@@ -755,7 +776,7 @@ table#order-table th, table#order-table td, table.invoice-tables td {
 
 .order-input input[type=submit] {
     border: none;
-	background-color: #a09b96;
+	/*background-color: #a09b96;*/
 }
 
 .navigate-button {
@@ -769,7 +790,7 @@ table#order-table th, table#order-table td, table.invoice-tables td {
 
 /*  FORM */
 #invoice-data input[type=submit], #loginform input[type=submit]  ,input[type=submit] {
-  background-color:#1372EF;
+  /*background-color:#1372EF;*/
   color: #fff;
   font-size: 1.5rem;
   height: auto;
@@ -1259,6 +1280,27 @@ table .rectangle:hover {
 	min-height: 12rem;
 	clear: both;
 }
+
+/* this class is for sorting with symbols in a tablesorter instance. Place numbers inside the span and then hide it with this class, and the table will sort correctly. */
+.table-sorter-index {
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
