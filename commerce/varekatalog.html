@@ -23,7 +23,7 @@
 	                <li><a href="#">FAKTURA</a> </li>
 	                <li><a href="#">MINE PRODUKTER</a> </li>
 	                <li><a href="#"> MINE KUNDER</a> </li>
-	                <li><a href="#"> [ett / eller / annet / tekst / messig]</a> </li>
+	                <li class="search-field"><input type="text"></li>
 	                <li><a href="#"> SØK</a> </li>
 	            <ul>
 	        </div>
@@ -35,14 +35,14 @@
 		
 	<div class="row">
 		<div class="col-lg-8">
-			<h3>Pals varekatalog</h3> 
+			<h3 class="bold-font">Pals varekatalog</h3> 
 
 			<div> <b>Kunder</b> 
 				<span><a href="">Choice</a></span>
 				<span><a href="">Thon</a></span>
 				<span><a href="">Asko</a></span>
 				<span><a href="">Rica</a></span> 
-				<div class="float-right"><b> Valuta NOK </b></div>
+				<div class="float-right"><b> Valuta: NOK </b></div>
 			</div>
 
 			<div class="row">
@@ -51,7 +51,7 @@
 						<div class="row margin-top-2rem">
 							<div class="col-lg-12 margin-bottom-1rem">
 
-								<h4>Beskrivelse</h4>
+								<h3 class="bold-font">Beskrivelse</h3>
 								<textarea class="form-control" rows="3"></textarea>
 								<b class="float-right margin-1rem"><a href="">Les hele beskrivelsen</a></b>
 							</div>
@@ -62,35 +62,41 @@
 
 								<table id="warehouse-category-table" class="tablesorter warehouse-table"> 
 									<thead> 
-									<tr>
-										<th>Varekatalog</th>
-										<th>Col 2</th>
-										<th>Col3 </th>
-									</tr>
+										<tr>
+											<th><div class="float-left">Varekatalog</div><div class="down-triangle-white float-left table-arrow-position"></div></th>
+											<th>&nbsp;<div class="down-triangle-white float-left table-arrow-position"></div></th>
+											<th>&nbsp; <div class="down-triangle-white float-left table-arrow-position"></div></th>
+										</tr>
 									</thead> 
 										
 									<tbody>
-									<tr>
-										<td>Biffer og fileter</td>
-										<td>4</td>
-										<td>symbol</td>
-									</tr>
-									<tr>
-										<td>Kjøtt</td>
-										<td>2</td>
-										<td>sym</td>
-									</tr>
-									<tr>
-										<td>Fisk</td>
-										<td>6</td>
-										<td>sym</td>
-									</tr>
+										<tr>
+											<td>Biffer og fileter</td>
+											<td>4</td>
+											<td> <span class="table-sorter-index float-left">3</span><span class="orange-bar float-left margin-top-1rem"></span>    </td>
+										</tr>
+										<tr>
+											<td>Kjøtt</td>
+											<td>2</td>
+											<td> <span class="table-sorter-index float-left">1</span><span class="up-triangle-green float-left margin-top-1rem"></span>    </td>
+										</tr>
+										<tr>
+											<td>Fisk</td>
+											<td>6</td>
+											<td> <span class="table-sorter-index float-left">3</span><span class="orange-bar float-left margin-top-1rem"></span>    </td>
+										</tr>
 
-									<tr>
-										<td>Skalldyr</td>
-										<td>3</td>
-										<td>sym</td>
-									</tr>
+										<tr>
+											<td>Skalldyr</td>
+											<td>3</td>
+											<td> <span class="table-sorter-index float-left">5</span><span class="down-triangle-red float-left margin-top-1rem"></span>    </td>
+										</tr>
+
+										<tr>
+											<td>Ost</td>
+											<td>2</td>
+											<td> <span class="table-sorter-index float-left">1</span><span class="up-triangle-green float-left margin-top-1rem"></span>    </td>
+										</tr>
 									</tbody>
 								</table>
 
@@ -103,13 +109,13 @@
 										<th>Resultat i salg siste 3 måneder</th>
 									</tr>
 									<tr>
-										<td>Økning</td>
+										<td><span class="float-left margin-top-1rem margin-right-2rem up-triangle-green"></span><span class="float-left">Økning</span> </td>
 									</tr>
 									<tr>
-										<td>Uendret</td>
+										<td><span class="float-left margin-top-1rem margin-right-2rem orange-bar"></span><span class="float-left">Uendret</span></td>
 									</tr>
 									<tr>
-										<td>Nedgang</td>
+										<td><span class="float-left margin-top-1rem margin-right-2rem  down-triangle-red"></span><span class="float-left">Nedgang</span></td>
 									</tr>
 								</table>
 
@@ -125,20 +131,20 @@
 
 		<div class="col-lg-4">
 
-			<div><input type="submit" value="Send faktura" class="float-right"></div>
+			<div><input type="submit" value="Send varekatalog" class="blue-bg white-txt float-right"></div>
 			<div class="clearing"></div>
 			<div>
 				<h4> Katalogkvalitet</h4>
 				<div class="quality">
 					<div class="percent-indicator float-right blue-txt">68%</div>
 					<div class="progress clearing">
-						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 68%">
+						<div id="item-progress" class="blue-progress-bar progress-bar-info-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 68%">
 				      		<span class="sr-only">40% Complete (success)</span>
 						</div>
 					</div>
 					
-					<b><a href="">+Last opp bilde</a></b><br>
-					<b><a href="">+Skriv varebeskrivelser</a></b>
+					<a href="" class="bold-font">+Last opp bilde</a><br>
+					<a href="" class="bold-font">+Skriv varebeskrivelser</a>
 					
 					<div class="horizontals padding-top-2rem padding-bottom-2rem overflow-hide margin-top-2rem">
 						
@@ -153,14 +159,14 @@
 				<h4>Hvor mye har blitt solgt</h4>
 				<div class="float-left">
 					123 345,78 
-					<div class="green-txt">67%</div>
+					<div class="margin-top-2rem"><span class="down-triangle-orange float-left margin-top-small margin-right-1rem"></span><span class="float-left orange-txt">67%</span></div>
 
 				</div>
 				<div class="float-right">
 					
 					<!-- Single button -->
 					<div class="btn-group">
-					  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					  <button type="button" class="btn btn-default dropdown-toggle light-gray-bg" data-toggle="dropdown">
 					    Ukebasert <span class="caret"></span>
 					  </button>
 					  <ul class="dropdown-menu" role="menu">
@@ -197,6 +203,10 @@
     	//$(".tmp-w").load("warehouse-item.html"); 
     	
     	$("#warehouse-category-table").tablesorter(); 
+    	$("#warehouse-category-table th").on('click', function() {
+        	$("div.table-arrow-position").toggleClass('down-triangle-white').toggleClass('up-triangle-white');
+        });
+
 
 
     	//$('.carousel').carousel();

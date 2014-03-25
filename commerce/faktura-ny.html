@@ -10,7 +10,7 @@
 	</head>
 <body>
 
-<div class="container"><!-- start main container -->
+<div id="main-header" class="container"><!-- start main container -->
 	<div id="header"></div>
 </div>
 
@@ -24,7 +24,7 @@
 	                <li class="selected-item"><a href="#">FAKTURA</a> </li>
 	                <li><a href="#">MINE PRODUKTER</a> </li>
 	                <li><a href="#"> MINE KUNDER</a> </li>
-	                <li><a href="#"> [ett / eller / annet / tekst / messig]</a> </li>
+	                <li class="search-field"><input type="text"></li>
 	                <li><a href="#"> SØK</a> </li>
 	            <ul>
 	        </div>
@@ -33,7 +33,7 @@
 </div>
 
 <div class="container white-bg padding-2rem margin-bottom-2rem"><!-- start main container -->
-	<h3>Fakturaopplysninger</h3>
+	<h3 class="bold-font">Fakturaopplysninger</h3>
 	<div class="row">
 		<div class="col-lg-4">
 				
@@ -174,8 +174,9 @@
 					<td>-</td>
 					<td>-</td>
 				</tr>
-				<tr><td colspan="10"> Se alle ordre </td></tr>
+				
 			</table>
+			<div class="pseudo-row"> <div class="float-right"><a href="">Se alle ordre</a></div></div>
 		</div>
 	</div>
 
@@ -265,7 +266,7 @@
 					<div class="col-lg-6"><b>NOK 1234,56</b></div>
 				</div>
 				<hr>
-				<input type="submit" value="Send faktura" class="left">
+				<input type="submit" value="Send faktura" class="left blue-bg white-txt">
 			</form>
 
 		</div>

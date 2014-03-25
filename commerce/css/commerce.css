@@ -37,6 +37,10 @@ body {
     color: #363639;
 }
 
+#main-header.container {
+	padding-left: 0;
+}
+
 .no-padding {
 	padding-left: 0;
 }
@@ -88,7 +92,7 @@ p,span, .users, .byline {
 }
 
 a {
-	color: #363639;;
+	color: #363639;
 }
 
 nav {
@@ -108,6 +112,9 @@ nav div.nav-inner-container {
 	width: 100%;
 }
 
+.bold-font {
+	font-weight: bold;
+}
 
 /* MENU STUFF */
 .welcome {
@@ -234,10 +241,90 @@ nav div.nav-inner-container {
 	border-left: 0.5em solid transparent;
 }
 
+.up-triangle-graphite {
+	display: block;
+    height: 0;
+    width: 0;
+    border-bottom: 0.5em solid #363639;
+    border-right: 0.5em solid transparent;
+	border-left: 0.5em solid transparent;
+}
+
+
+.down-triangle-white {
+	display: block;
+    height: 0;
+    width: 0;
+    border-top: 0.5em solid #fff;
+    border-right: 0.5em solid transparent;
+	border-left: 0.5em solid transparent;
+}
+
+.up-triangle-white {
+	display: block;
+    height: 0;
+    width: 0;
+    border-bottom: 0.5em solid #fff;
+    border-right: 0.5em solid transparent;
+	border-left: 0.5em solid transparent;
+}
+
+.up-triangle-green {
+	display: block;
+    height: 0;
+    width: 0;
+    border-bottom: 0.5em solid #41d705;
+    border-right: 0.5em solid transparent;
+	border-left: 0.5em solid transparent;
+}
+
+.down-triangle-red {
+	display: block;
+    height: 0;
+    width: 0;
+    border-top: 0.5em solid red;
+    border-right: 0.5em solid transparent;
+	border-left: 0.5em solid transparent;
+}
+
+.down-triangle-orange {
+	display: block;
+    height: 0;
+    width: 0;
+    border-top: 0.5em solid #ec581e;
+    border-right: 0.5em solid transparent;
+	border-left: 0.5em solid transparent;
+}
+
+
+
+.red-bar {
+	display: block;
+	height: 1px;
+	width: 15px;
+	border-top: 0.25em solid red;
+	border-bottom: 0.25rem solid red;
+}
+
+
+.orange-bar {
+	display: block;
+	height: 1px;
+	width: 15px;
+	border-top: 0.25em solid #ec581e;
+	border-bottom: 0.25rem solid #ec581e;
+}
+
 .table-arrow-position {
   left: 10px;
   position: relative;
   top: 12px;
+}
+
+.pulldown-form-position {
+	right: 10px;
+  	position: relative;
+  	top: 5px;
 }
 
 .box-container {
@@ -298,6 +385,9 @@ nav div.nav-inner-container {
     text-align: center;
 }
 
+.progress-bar-info {
+	color: #108BF5;
+}
 
 .gray-box, .warm-gray-box {
     background-color: #a09b96;
@@ -692,6 +782,16 @@ ul#myTab li.active a {
 	position: relative;
 }
 
+#column-content-menu ul li.search-field {
+	
+	padding: 1.0rem 3.5rem 0rem 3.5rem;
+}
+
+.search-field input {
+	height: 3rem;
+	background-color: #ededeb;
+}
+
 #column-content-menu ul li.selected-item {
 	background-color: #fff;
 }
@@ -755,7 +855,7 @@ table tr {
 	border-bottom: 1px solid #ededeb;
 }
 
-table#order-table th, table.invoice-tables th  {
+table#order-table th, table.invoice-tables th, table#order-table-static th{
 	background-color: #ededeb;
 	padding: 0.5rem;
 }
@@ -773,7 +873,7 @@ table#order-table th, table.invoice-tables th  {
 }
 
 
-table#order-table th, table#order-table td, table.invoice-tables td {
+table#order-table th, table#order-table td, table.invoice-tables td, table.invoice-tables th {
 	text-align: center;
 	padding: 0.5rem;
 }
@@ -982,6 +1082,12 @@ footer ul {
 }
 
 /*   margins */
+
+.margin-top-small {
+	margin-top: 0.5rem;
+}
+
+
 .margin-top-1rem {
 	margin-top: 1rem;
 }
@@ -1121,13 +1227,17 @@ form.category-form input, form.save-action input {
 form.category-form input[type=submit], form.save-action input[type=submit]{
 	height: 3.5rem;	
 	margin: 0 0 0.5rem 1rem;
-	padding: 0.5rem 0;
-	width: 20%;
+	padding: 0.5rem 1rem;
+	width: auto;
 }
 
 input[type=submit] {
 	width: auto;
 	border: none;
+}
+
+input[type=submit]:hover {
+	opacity:0.85;
 }
 
 form.save-action {
@@ -1148,14 +1258,18 @@ div.page-action {
 }
 
 #search-action input {
-	height: 3.5rem;
+	/*height: 3.5rem;*/
 	width: 25%;
 	margin-right: 1rem;
 }
 
 #search-action input[type=submit] {
-	width: 10%;
+	width: auto;
 }	
+
+.custom-search-field {
+	height: 4.4rem;
+}
 
 .search-result {
 	margin: 1rem 0;
@@ -1276,7 +1390,7 @@ table .rectangle:hover {
 	font-size: 2.5rem;
 }
 
-#order-table input {
+#order-table input, #order-table-static input {
 	background-color: #FBFBFB;
 	float:left;
 	margin-right: 0.5rem;
@@ -1285,6 +1399,12 @@ table .rectangle:hover {
 #order-table th:hover {
 	cursor: pointer;
 }
+
+#order-table-static th:hover {
+	cursor: auto;
+}
+
+
 
 .no-show {
 	display:none;
@@ -1329,16 +1449,66 @@ table .rectangle:hover {
 }
 
 
+th.header:hover, a:hover {
+	color: #00a0ff;
+}
 
 
+a:hover { 
+	text-decoration: none;
+}
 
 
+#confirm-order:hover {
+	background-color: #00a0ff;
+}
 
+.warm-gray-border {
+	border: 1px solid #e6e4e2;
+}
 
+#search-invoice-field {
+	height: 4.3rem;
+}
 
+.progress-bar-info-blue , .progress-bar {
+	color: #108BF5;
+}
 
+.blue-progress-bar {
+	float: left;
+	width: 0;
+	height: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: #108BF5;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	-webkit-transition: width .6s ease;
+	transition: width .6s ease;
+}
 
+.floated-header {
+	width: auto;
+	margin-right: 2rem;
+	float:left;
+	margin-top: 0;
+}
 
+.header-container {
+	overflow: hidden;
+}
 
+.underlined {
+	text-decoration: underline;
+}
 
+.full-width {
+	width: 100%;
+}
 
+#campaign-form input[type=textarea] {
+	height:12rem;
+}

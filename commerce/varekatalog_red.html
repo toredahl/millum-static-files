@@ -23,7 +23,7 @@
 	                <li><a href="#">FAKTURA</a> </li>
 	                <li><a href="#">MINE PRODUKTER</a> </li>
 	                <li><a href="#"> MINE KUNDER</a> </li>
-	                <li><a href="#"> [ett / eller / annet / tekst / messig]</a> </li>
+	                <li class="search-field"><input type="text"></li>
 	                <li><a href="#"> SØK</a> </li>
 	            <ul>
 	        </div>
@@ -35,14 +35,14 @@
 		
 	<div class="row">
 		<div class="col-lg-8">
-			<h3>Pals varekatalog</h3> 
+			<div class="header-container"><h3 class="bold-font floated-header">Pals varekatalog</h3><div class="float-left"><a href="" class="underlined">Avbryt </a></div></div>
 
 			<div> <b>Kunder</b> 
 				<span><a href="">Choice</a></span>
 				<span><a href="">Thon</a></span>
 				<span><a href="">Asko</a></span>
 				<span><a href="">Rica</a></span> 
-				<div class="float-right"><b> Valuta NOK </b></div>
+				<div class="float-right bold-font">Valuta: NOK </div>
 			</div>
 
 			<div class="row">
@@ -53,7 +53,7 @@
 
 								<h4>Beskrivelse</h4>
 								<textarea class="form-control" rows="3"></textarea>
-								<input type="submit" value="Lagre endring" class="float-right">
+								<input type="submit" value="Lagre beskrivelse" class="blue-bg white-txt float-right margin-top-1rem">
 							</div>
 						</div>				
 
@@ -69,7 +69,7 @@
 									<input type="text"><span class="glyphicon glyphicon-cloud-download"></span>
 
 									<h4>Ny kategori</h4>
-									<input type="text"><input type="submit" value="Lagre kategori">
+									<input type="text"><input type="submit" value="Legge til kategori" class="blue-bg white-txt margin-top-1rem">
 								</form>
 								
 							</div>
@@ -81,13 +81,13 @@
 										<th>Resultat i salg siste 3 måneder</th>
 									</tr>
 									<tr>
-										<td>Økning</td>
+										<td><span class="float-left margin-top-1rem margin-right-2rem up-triangle-green"></span><span class="float-left">Økning</span> </td>
 									</tr>
 									<tr>
-										<td>Uendret</td>
+										<td><span class="float-left margin-top-1rem margin-right-2rem orange-bar"></span><span class="float-left">Uendret</span></td>
 									</tr>
 									<tr>
-										<td>Nedgang</td>
+										<td><span class="float-left margin-top-1rem margin-right-2rem  down-triangle-red"></span><span class="float-left">Nedgang</span></td>
 									</tr>
 								</table>
 
@@ -96,9 +96,9 @@
 
 					</div>
 
-					<div id="main-action" class="page-action">
+					<div  class="page-action">
 						<form action="" class="save-action">
-							<input type="submit" value="Lagre endring"> <a href="">Avbryt</a>
+							<input type="submit" value="Lagre endring" class="blue-bg white-txt"> <a href="" class="underlined">Avbryt</a>
 						</form>
 					</div>
 				</div>
@@ -107,21 +107,20 @@
 		</div>
 
 		<div class="col-lg-4">
-
-			<div><input type="submit" value="Send faktura" class="float-right"></div>
-			<div class="clearing"></div>
+			<!-- <div><input type="submit" value="Send varekatalog" class="blue-bg white-txt float-right"></div>
+			<div class="clearing"></div> -->
 			<div>
-				<h4> Katalogkvalitet</h4>
+				<h3 class="bold-font">Katalogkvalitet</h3>
 				<div class="quality">
 					<div class="percent-indicator float-right blue-txt">68%</div>
 					<div class="progress clearing">
-						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 68%">
+						<div id="item-progress" class="blue-progress-bar progress-bar-info-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 68%">
 				      		<span class="sr-only">40% Complete (success)</span>
 						</div>
 					</div>
 					
-					<b><a href="">+Last opp bilde</a></b><br>
-					<b><a href="">+Skriv varebeskrivelser</a></b>
+					<a href="" class="bold-font">+Last opp bilde</a><br>
+					<a href="" class="bold-font">+Skriv varebeskrivelser</a>
 					
 					<div class="horizontals padding-top-2rem padding-bottom-2rem overflow-hide margin-top-2rem">
 						
@@ -136,14 +135,13 @@
 				<h4>Hvor mye har blitt solgt</h4>
 				<div class="float-left">
 					123 345,78 
-					<div class="green-txt">67%</div>
+					<div class="margin-top-2rem"><span class="down-triangle-orange float-left margin-top-small margin-right-1rem"></span><span class="float-left orange-txt">67%</span></div>
 
 				</div>
+
 				<div class="float-right">
-					
-					<!-- Single button -->
 					<div class="btn-group">
-					  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					  <button type="button" class="btn btn-default dropdown-toggle light-gray-bg" data-toggle="dropdown">
 					    Ukebasert <span class="caret"></span>
 					  </button>
 					  <ul class="dropdown-menu" role="menu">
@@ -157,8 +155,6 @@
 				<div class="clearing margin-top-2rem">
 					Katalogen har hatt en oppgang i salget siste måned
 				</div>
-
-		    
 			</div>
 		</div>
 	</div>	

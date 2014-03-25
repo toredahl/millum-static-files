@@ -40,8 +40,10 @@
 		<div class="col-lg-12">
 			 <div class="light-gray padding-2rem">
 			 	<h2>Søk faktura</h2>
-			 	<input type="search" name="googlesearch"><button type="button" class="btn btn-primary btn-lg margin-left-1rem">SØK</button>
-				 <button type="button" class="btn btn-primary btn-lg float-right">Large button</button>
+			 	<input id="search-invoice-field" type="search" name="googlesearch"> <input id="search-invoice" type="submit" class="blue-bg white-txt margin-left-1rem" value="SØK">
+				<input id="search-invoice-button" type="submit" class="blue-bg white-txt float-right" value="LAG NY FAKTURA">
+			 	<!-- <button type="button" class="btn btn-primary btn-lg margin-left-1rem">SØK</button> -->
+				 <!-- <button type="button" class="btn btn-primary btn-lg float-right">Large button</button> -->
 			 </div>
 			
 		</div>
@@ -58,56 +60,55 @@
         <div id="invoiceContent" class="tab-content">
             
             <div class="tab-pane fade in active" id="invoice">
-                <table class="invoice-tables">
+                <table id="invoice-table" class="invoice-tables">
 
-                <tr>
-                    <th> Ordrenummer </th>
-                    <th> Kundenavn </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                    <th> Header col </th>
-                   
-                </tr>
+				<thead>
+	                <tr>
+	                    <th> <div class="float-left">Ordrenummer</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+	                    <th> <div class="float-left">Kundenavn</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+	                    <th> <div class="float-left">Kundenummer</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+	                    <th> <div class="float-left">Ordredato</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+	                    <th> <div class="float-left">Sum</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+	                </tr>
+				</thead>
+				<tbody>
+	                <tr>
+	                    <td>187 78 33 </td>
+	                    <td>Thon</td>
+	                    <td>102456</td>
+	                    <td>11.04.2013</td>
+	                    <td>99 000</td>                   
+	                </tr>
 
-                <tr>
-                    <td>100 78 33 </td>
-                    <td>Lasagne spesial, parmesan</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>                   
-                </tr>
-
-                <tr>
-                    <td>100 78 33 </td>
-                    <td>Lasagne spesial, parmesan</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                   
-                </tr>
+	                <tr>
+	                    <td>345 78 33 </td>
+	                    <td>Clarion</td>
+	                    <td>123356</td>
+	                    <td>21.05.2014</td>
+	                    <td>199 987</td>                   
+	                   
+	                </tr>
+	               
+	               	<tr>
+	                    <td>111 48 23 </td>
+	                    <td>Radisson</td>
+	                    <td>444456</td>
+	                    <td>01.06.2014</td>
+	                    <td>69 050</td>                   
+	                   
+	                </tr>
                
-               	<tr>
-                    <td>100 78 33 </td>
-                    <td>Lasagne spesial, parmesan</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                    <td>some text</td>
-                   
-                </tr>
-               
-                
-
-                <tr><td colspan="9"> Se alle ordre </td></tr>
+                </tbody>
 
             </table>
-
+			<div class="pseudo-row"><div class="float-right"><a href="">Se alle ordre</a></div></div>
 
             </div>
 
             <div class="tab-pane fade" id="invoice-archive">                         
 				
 
-				<table class="invoice-tables">
+				<table id="invoice-archive" class="invoice-tables">
 
 	                <tr>
 	                    <th> Ordrenummer </th>
@@ -126,10 +127,8 @@
 	                    <td>some text</td>                   
 	                </tr>
 
-	                <tr><td colspan="9"> Se alle ordre </td></tr>
-
 	            </table>
-
+				<div class="pseudo-row"><div class="float-right">Se alle ordre</div></div>
 
             </div>
 		</div>
@@ -149,6 +148,7 @@
 
 <script src="../scripts/jquery-2.1.0.min.js"></script>
 <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
 
 <script> 
 
@@ -156,6 +156,14 @@
 
         $("#header").load("header-bs3.1.1.html");  
         $("#footer").load("footer-bs3.1.1.html"); 
+
+        $("#invoice-table").tablesorter(); 
+
+        $("#invoice-table th").on('click', function() {
+        	$("div.table-arrow-position").toggleClass('down-triangle-graphite').toggleClass('up-triangle-graphite');
+        });
+
+
 
 		$('#invoices a').click(function (e) {
 				e.preventDefault();

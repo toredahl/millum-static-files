@@ -24,7 +24,7 @@
 	                <li><a href="#">FAKTURA</a> </li>
 	                <li><a href="#">MINE PRODUKTER</a> </li>
 	                <li><a href="#"> MINE KUNDER</a> </li>
-	                <li><a href="#"> [ett / eller / annet / tekst / messig]</a> </li>
+	                <li class="search-field"><input type="text"></li>
 	                <li><a href="#"> SØK</a> </li>
 	            <ul>
 	        </div>
@@ -32,7 +32,7 @@
 	</div>
 </div>
 
-<div class="container white-bg padding-2rem"><!-- start main container -->
+<div id="commerce-container" class="container white-bg padding-2rem"><!-- start main container -->
 		
 	<div class="row">
 		<div class="col-lg-12">
@@ -234,7 +234,7 @@
 						<div class="confirm-msg no-show"><span class="orange-txt">Ordren er ikke akseptert.</span></div>
 					</div>
 					<div class="col-lg-6">
-						<input id="confirm-order" type="submit" class="warm-gray-bg" value="BEKREFT">
+						<input id="confirm-order" type="submit" class="warm-gray-bg white-txt" value="BEKREFT">
 					</div>
 				</div>
 				</form>
@@ -255,12 +255,18 @@
 
 <script> 
     $(function() {
+
         $("#header").load("header-bs3.1.1.html"); 
         //$("#header").load("login-header-bs3.1.1.html"); 
         $("#support").load("support-bs3.1.1.html"); 
         $("#footer").load("footer-bs3.1.1.html"); 
     	$(".tmp-w").load("warehouse-item.html"); 
         $("#order-table").tablesorter(); 
+
+        $("#order-table th").on('click', function() {
+        	$("div.table-arrow-position").toggleClass('down-triangle-graphite').toggleClass('up-triangle-graphite');
+        });
+
 
         $("#add-row").on('click', function() {
         	
@@ -289,7 +295,7 @@
         	}else{
 
         		//$(this).submit();
-        		console.log("here we submit the form...");
+        		
         	}
 
     	});
