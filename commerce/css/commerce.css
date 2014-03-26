@@ -1295,7 +1295,7 @@ label#upper-label {
 	margin: 0;
 }
 
-#product-item-form input, #product-item-form textarea, #additional-product-item-form input {
+#product-item-form input, #product-item-form textarea, #additional-product-item-form input[type=text] {
 	background-color: #f7f7f9;
 }
 
@@ -1327,6 +1327,11 @@ label#upper-label {
     -webkit-border-radius: 50%; 
     border-radius: 50%;
     background: #41d705; 
+}
+
+.inside-circle {
+	margin-top: 0.35rem;
+	margin-right: 1rem;
 }
 
 .info-explantion {
@@ -1512,3 +1517,8 @@ a:hover {
 #campaign-form input[type=textarea] {
 	height:12rem;
 }
+
+#campaign-form input[type=textarea] {
+	height:6rem;
+}
+

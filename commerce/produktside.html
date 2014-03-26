@@ -23,7 +23,7 @@
 	                <li><a href="#">FAKTURA</a> </li>
 	                <li><a href="#">MINE PRODUKTER</a> </li>
 	                <li><a href="#"> MINE KUNDER</a> </li>
-	                <li><a href="#"> [ett / eller / annet / tekst / messig]</a> </li>
+	                <li class="search-field"><input type="text"></li>
 	                <li><a href="#"> SØK</a> </li>
 	            <ul>
 	        </div>
@@ -113,20 +113,13 @@
 			</div>
 			<form id="additional-product-item-form" class="clearing" role="form">
 				<div class="row">	
-
-<!-- 					<div class="col-xs-4">						
-						<select id="select-item" class="form-control">
-							<option>Avtale / Bonus / Rabatt </option>
-							<option>2</option>
-						</select>
-					</div>
- -->
-
-
 					<div class="col-xs-4">
-						<div class="pulldown-menu">Avtale / Bonus / Rabatt <div class="down-triangle-graphite float-right pulldown-form-position"></div></div>
+						<div class="pulldown-menu">
+							<div class="small-circle float-left inside-circle"></div>
+							<div class="float-left">Avtale / Bonus / Rabatt </div>
+							<div class="down-triangle-graphite float-right pulldown-form-position"></div>
+						</div>
 						<div class="expand-box no-show">
-							
 							<form class="expand-form" id="rebate-form" action="">
 								<label for="price-tag">Pris før rabatt</label><br>
 								<input name="price-tag" type="text" value="825"><br><br>
@@ -136,26 +129,8 @@
 								<label for="rebate">Ordrerabatt</label>  <input type="checkbox" name="rebate"> <br>
 								<input type="submit" value="OK" class="float-right black-txt">
 							</form>
-
 						</div>
 					</div>
-
-					<!-- <div class="col-xs-4">
-						<label for="">Avtale / Bonus / Rabatt </label>
-						<select id="select-item-x" required class="form-control form-control-radical">
-						<option disabled selected value="">Velg</option>
-						<option>Avtale / Bonus / Rabatt </option>
-						<option>2</option>
-						</select>
-					</div> -->
-
-					<!-- <div class="col-xs-4">						
-						<select id="select-item" class="form-control">
-							<option>Produktmerking</option>
-							<option>2</option>
-						</select>
-					</div> -->
-
 
 					<div class="col-xs-4">
 						<div class="pulldown-menu">Produktmerking <div class="down-triangle-graphite float-right pulldown-form-position"></div></div>
@@ -169,7 +144,6 @@
 										<input type="checkbox" name="env-1"><label for="env-2">Merking 2</label> <br>
 										<input type="checkbox" name="env-1"><label for="env-3">Merking 3</label> <br>
 										<input type="checkbox" name="env-1"><label for="env-4">Merking 4</label> <br>
-
 									</div>
 
 									<div class="col-xs-6">
@@ -180,11 +154,8 @@
 										<input type="checkbox" name="env-13"><label for="env-13">Merking 13</label> <br>
 										<input type="checkbox" name="env-14"><label for="env-13">Merking 14</label> <br>
 									</div>
-
 								</div>
-								
 							</form>
-
 						</div>
 					</div>
 
@@ -219,28 +190,73 @@
 				<div class="row">	
 
 					<div class="col-xs-4">
-						<select id="select-item" class="form-control">
-							<option>Bestillongskrac</option>
-							<option>2</option>
-						</select>
+
+						<div class="pulldown-menu">Bestillingskrav <div class="down-triangle-graphite float-right pulldown-form-position"></div></div>
+						<div class="expand-box no-show">
+							
+							<form class="expand-form" id="order-form" action="">
+								<label for="minimum-count">Min. antall</label><br>
+								<input name="minimum-count" type="text" class="full-width"><br><br>
+								
+								<label for="maximum-count">Maks. antall</label><br>
+								<input name="maximum-count" type="text" class="full-width"><br><br>
+								
+								<label for="period">Bestillingsintervall:</label><br>
+								<input name="period" type="text"  class="full-width"><br><br>
+								
+								<label for="lead-time">Ledetid:</label><br>
+								<input name="lead-time" type="text" class="full-width"><br><br>
+
+								<label for="price">Beskrivelse:</label><br>
+								<input type="textarea" class="full-width">
+								<br><br>
+								<input type="submit" value="OK" class="float-right black-txt">
+								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
+							</form>
+						</div>
 					</div>
 
 					<div class="col-xs-4">
-						<select id="select-item" class="form-control">
-							<option>Forfall og erstatningsinformasjon</option>
-							<option>2</option>
-						</select>
+
+						<div id="" class="pulldown-menu">Forfalt- og erstatningskrav <div class="down-triangle-graphite float-right pulldown-form-position"></div></div>
+						<div class="expand-box no-show">
+							
+							<form class="expand-form" id="due-form" action="">
+								<label for="old-id-number">Gammelt varenummer:</label><br>
+								<input name="old-id-number" type="text" class="full-width"><br><br>
+								
+								<label for="replacement-id">Erstatningsvarenummer</label><br>
+								<input name="replacement-id" type="text" class="full-width"><br><br>
+								
+								<label for="due-date">Utgått dato:</label><br>
+								<input id="due-date" type="date"><br><br>
+								
+								<label for="due-status">Utgått status:</label><br>
+								<input name="due-status" type="text" class="full-width"><br><br>
+
+								<input type="submit" value="OK" class="float-right black-txt">
+								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
+							</form>
+
+						</div>
 					</div>
 
 					<div class="col-xs-4">
-						<select id="select-item" class="form-control">
-							<option>Kriterier</option>
-							<option>2</option>
-						</select>
+						<div id="" class="pulldown-menu">Kriterier<div class="down-triangle-graphite float-right pulldown-form-position"></div></div>
+							<div class="expand-box no-show">
+								<p>Om ditt produkt har flere kriterier som kunden din trenger å spesifisere kan du legge dem til her.</p>
+
+								<div><a href="" class="underlined">Livvidde</a></div>
+									<div>+ Legg til flere inndelinger</div>
+								
+							</div>
+						</div>
 					</div>
-				</div>
+				
 			
-				<div class="row">
+				<div class="clearing">.</div>
+
+				<div class="row clearing">
 			  		<div class="col-xs-4">
 						<label for="item-add-id">Legg til varenr</label>
 						<input id="item-add-id" type="text" class="form-control" placeholder="">
@@ -256,13 +272,13 @@
 			
 			<div id="button-row" class="row">
 				<div class="col-xs-4 col-xs-push-8">
-					<div class="float-right"><input type="submit" value="LAGRE"></div>
-					<div class="light-gray preview-button float-right"><input type="submit" value="FORHÅNDSVIS"></div>
+					<div class="float-right"><input type="submit" class="blue-bg white-txt" value="LAGRE"></div>
+					<div class="light-gray preview-button float-right"><input type="submit"  class="warm-gray-bg white-txt" value="FORHÅNDSVIS"></div>
 				</div>
 			</div>
 
 		</div>
-
+</div>
 
 
 	</div>
