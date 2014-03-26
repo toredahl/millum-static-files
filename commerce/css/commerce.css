@@ -1552,3 +1552,7 @@ a:hover {
 .modal-content {
 	padding: 4rem;
 }
+
+.third-width {
+	width: 38%;
+}

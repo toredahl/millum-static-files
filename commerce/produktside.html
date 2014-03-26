@@ -141,14 +141,15 @@
 							<div class="down-triangle-graphite float-right pulldown-form-position"></div>
 						</div>
 						<div class="expand-box no-show">
-							<form class="expand-form" id="rebate-form" action="">
-								<label for="price-tag">Pris før rabatt</label><br>
-								<input name="price-tag" type="text" value="825"><br><br>
-								<label for="agreement">Avtale</label><input type="checkbox" name="agreement"> <br>
-								<label for="bonus">Bonus</label> <input type="checkbox" name="bonus" checked> <br>
-								<label for="bonus-2">Bonus 2</label> <input type="checkbox" name="bonus-2" checked> <br>
-								<label for="rebate">Ordrerabatt</label>  <input type="checkbox" name="rebate"> <br>
+							<form id="rebate-form" class="expand-form" action="">
+								<label for="price-tag" class="full-width">Pris før rabatt</label> <br>
+								<input name="price-tag" class="full-width" type="text" value="825"><br><br>
+								<label for="agreement" class="third-width">Avtale</label><input type="checkbox" name="agreement"> <br>
+								<label for="bonus" class="third-width">Bonus</label> <input type="checkbox" name="bonus" checked> <br>
+								<label for="bonus-2" class="third-width">Bonus 2</label> <input type="checkbox" name="bonus-2" checked> <br>
+								<label for="rebate" class="third-width">Ordrerabatt</label>  <input type="checkbox" name="rebate"> <br>
 								<input type="submit" value="OK" class="float-right black-txt">
+								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
 							</form>
 						</div>
 					</div>
@@ -176,6 +177,9 @@
 										<input type="checkbox" name="env-14"><label for="env-13">Merking 14</label> <br>
 									</div>
 								</div>
+								
+								<input type="submit" value="OK" class="float-right black-txt">
+								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
 							</form>
 						</div>
 					</div>
@@ -202,6 +206,9 @@
 
 								<label for="price">Beskrivelse:</label><br>
 								<input type="textarea" class="full-width">
+								<br><br>
+								<input type="submit" value="OK" class="float-right black-txt">
+								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
 
 							</form>
 						</div>
@@ -268,8 +275,10 @@
 								<p>Om ditt produkt har flere kriterier som kunden din trenger å spesifisere kan du legge dem til her.</p>
 
 								<div><a href="" class="underlined">Livvidde</a></div>
-									<div>+ Legg til flere inndelinger</div>
-								
+								<div>+ Legg til flere inndelinger</div>
+
+								<input type="submit" value="OK" class="float-right black-txt">
+								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
 							</div>
 						</div>
 					</div>
