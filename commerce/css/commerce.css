@@ -906,12 +906,17 @@ table#order-table th, table#order-table td, table.invoice-tables td, table.invoi
 
 
 /*  FORM */
-#invoice-data input[type=submit], #loginform input[type=submit],input[type=submit] {
+#invoice-data input[type=submit], #loginform input[type=submit], #product-info-container #button-row input[type=submit], input[type=submit] {
   font-size: 1.5rem;
   height: auto;
   padding:1.1rem 3.3rem;
   text-transform: uppercase;
 }
+
+#product-info-container input[type=submit] {
+	padding: 0.5rem;
+}
+
 
 #invoice-data input[type=submit], #loginform input[type=submit] {
 	color: #fff;
@@ -1277,8 +1282,9 @@ div.page-action {
 
 .product-img-container {
 	border: 1px solid #a09b96;
-
 }
+
+
 
 .product-img-container img {
 	display: block;
@@ -1522,3 +1528,27 @@ a:hover {
 	height:6rem;
 }
 
+.product-img-container:hover .edit-img h4, .product-img-container:hover .edit-img ul {
+	display:block;
+}
+
+.edit-img  {
+	position: absolute;
+	top: 18rem;
+	left: 35%;
+	
+}
+
+.edit-img h4 {
+	display:none;
+}
+
+
+.edit-img ul {
+
+	display: none;
+}
+
+.modal-content {
+	padding: 4rem;
+}

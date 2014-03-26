@@ -19,9 +19,9 @@
 			<div id="column-content-menu">
 	            <ul>
 	                <li><a href="#">OVERSIKT</a></li>
-	                <li class="selected-item"><a href="#">ORDRE</a></li>
+	                <li> <a href="#">ORDRE</a></li>
 	                <li><a href="#">FAKTURA</a> </li>
-	                <li><a href="#">MINE PRODUKTER</a> </li>
+	                <li class="selected-item"><a href="#">MINE PRODUKTER</a> </li>
 	                <li><a href="#"> MINE KUNDER</a> </li>
 	                <li class="search-field"><input type="text"></li>
 	                <li><a href="#"> SØK</a> </li>
@@ -31,12 +31,33 @@
 	</div>
 </div>
 
-<div class="container white-bg padding-2rem"><!-- start main container -->
+<div id="product-info-container" class="container white-bg padding-2rem"><!-- start main container -->
 		
 	<div class="row">
 		<div class="col-lg-4">
-			<div class="product-img-container">
+			<div class="product-img-container relatively">
 				<img src="http://placehold.it/250x250/00a0ff/000000" alt="product item" class="product-image">	
+				
+				<div class="edit-img">
+					<h4>Rediger bilde </h4>
+					<ul>
+						<li>Last opp bilde</li>
+						<li>Legg inn URL</li>
+						<li>Fjern bilde</li>
+					</ul>
+
+				</div>
+
+				<div id="modal-img-info" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-sm">
+				    <div class="modal-content">
+				  		yes
+				    </div>
+				  </div>
+				</div>
+
+
+
 			</div>
 		</div>
 
@@ -47,7 +68,7 @@
 				<div class="form-group">
 					
 				    <label id="upper-label" for="item-name">Varenavn*</label>
-				    <input type="email" class="form-control" id="item-name" placeholder="Pukka lemongrass after shave">
+				    <input type="email" class="form-control" id="item-name" placeholder="Oil of McINtyre">
 
 					<div class="row">
 					  <div class="col-xs-6">
@@ -107,7 +128,7 @@
 		<div class="col-lg-12">
 	    	
 			<hr>
-			<h4 class="no-margin">Ekstra vareinformasjon</h4>
+			<h3 class="no-margin">Ekstra vareinformasjon</h3>
 			<div class="info-explantion">
 				<div class="small-circle float-left"></div><div class="float-left">Har utfylte punkter</div>
 			</div>
@@ -301,9 +322,26 @@
         $(".pulldown-menu").on('click', function() {
         	
         	$(this).siblings().toggleClass('no-show');
-        	$("div.pulldown-form-position").toggleClass('down-triangle-graphite').toggleClass('up-triangle-graphite');
+        	$(this).find("div.pulldown-form-position").toggleClass('down-triangle-graphite').toggleClass('up-triangle-graphite');
 
         });
+
+
+        // $(".edit-img h4").on('mouseover', function() {
+        // 	//$(this).find(".edit-img").removeClass('hide');
+        // 	$(".edit-img ul").removeClass('hide');
+        // });
+
+         $(".edit-img ul li").on('click', function() {
+         	var elem = $(this).html();
+         	//alert("Du klikket på : " + elem + " -->   funksjonalitet for det kommer senere");
+         	
+         	$('#modal-img-info .modal-content').html("Du klikket på: " + elem);
+         	$('#modal-img-info').modal('show');
+
+
+        // 	$(".edit-img ul").addClass('hide');
+         });
 
         if (!Modernizr.inputtypes.date) {
         	
