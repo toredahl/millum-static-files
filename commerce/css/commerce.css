@@ -514,7 +514,6 @@ nav div.nav-inner-container {
 
 /*  FORM  */
 #loginform {
-	/*margin: 1em 1em 1em 0;*/
 	background-color: #ededeb;
 	overflow: hidden;
 	padding: 2rem 2rem 3rem 2rem;
@@ -525,10 +524,12 @@ nav div.nav-inner-container {
 	margin-bottom: 2rem;
 }
 
+#loginform h3 {
+	font-weight: bold;
+}
+
 #loginform input{
-	/*float:left;*/
 	margin-right: 0.5rem;
-	/*width: 18rem;*/
 	padding: 5px 0;
 	width: 100%;
 }
@@ -536,6 +537,7 @@ nav div.nav-inner-container {
 #loginform label{
 	display: block;
 	font-size: 1.5rem;
+	font-weight: normal;
 }
 
 #loginform strong {
