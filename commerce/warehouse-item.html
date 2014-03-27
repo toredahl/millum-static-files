@@ -1,8 +1,20 @@
 <!-- warehouse item start -->
 <div class="warehouse-item float-left">
     <h4 class="graphite box-header">Varekatalog med langt navn</h4>
-    <div class="item-upper">
-        <h4 class="blue-txt">KUNDER (3)</h4>
+    <div class="item-upper relatively">
+        
+        <div class="cust-ctn">
+            <h4 class="blue-txt customer-header">KUNDER (3)</h4>
+            
+            <div class="customers absolutely">
+                <ul>
+                    <li>Asko</li>
+                    <li>Choice</li>
+                    <li>Radisson</li>
+                </ul>
+            </div>
+        </div>
+
         <h4>VARER (24)</h4>
         <div class="margin-top-1rem">Siste kjøp: 14.02.2014</div>
         <div class="blue-txt">Seneste aktivitet</div>
@@ -92,7 +104,7 @@
 
     </div>
 
-    <div>
+    <div class="floatct">
         <div class="warehouse-stats blue-txt">Se handel på varekatalog</div>
         <div class="statistics no-show">
             GRAFVISNING
@@ -119,11 +131,15 @@
 
     $(function() {
     $(".add-item-description").on('click', function() {
-            
             $(this).find('.modal-add-desc').modal('show');
          });
     });
 
+    // $(".customer-header").on('mouseover', function() {
+    //     var tmp = $(this).siblings()[0];
+    //     $(tmp).attr('visibility', 'visible');
+    
+    // });
 
 
 

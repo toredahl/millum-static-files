@@ -45,6 +45,8 @@ body {
 	padding-left: 0;
 }
 
+
+
 #header-container {
 	margin-bottom: 1%;
 }
@@ -114,6 +116,14 @@ nav div.nav-inner-container {
 
 .bold-font {
 	font-weight: bold;
+}
+
+.relatively {
+	position: relative;
+}
+
+.absolutely {
+	position: absolute;
 }
 
 /* MENU STUFF */
@@ -297,7 +307,6 @@ nav div.nav-inner-container {
 }
 
 
-
 .red-bar {
 	display: block;
 	height: 1px;
@@ -325,6 +334,10 @@ nav div.nav-inner-container {
 	right: 10px;
   	position: relative;
   	top: 5px;
+}
+
+.floatct {
+	overflow: hidden;
 }
 
 .box-container {
@@ -1435,10 +1448,11 @@ table .rectangle:hover {
 }
 
 .statistics {
-	background-color: cyan;
+	background-color: #ededeb;
 	padding: 1rem;
 	min-height: 12rem;
 	clear: both;
+	margin-top: 3rem;
 }
 
 /* this class is for sorting with symbols in a tablesorter instance. Place numbers inside the span and then hide it with this class, and the table will sort correctly. */
@@ -1588,4 +1602,23 @@ a:hover {
 	clear: both;
 	margin-top: 2rem;
 }
+
+.customers {
+	top: 0rem;
+	left: 7rem;
+	padding: 1rem;
+	background-color: #fff;
+	border: 1px solid #000;
+	visibility: hidden;
+}
+
+.customers ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.cust-ctn:hover .customers {
+	visibility: visible;
+}
+
 
