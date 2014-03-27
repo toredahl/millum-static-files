@@ -1307,6 +1307,7 @@ label#upper-label {
 
 #product-item-form select, #additional-product-item-form select { 
 	background-color: #e6e4e2;
+	font-weight: bold;
 }
 
 #additional-product-item-form .row {
