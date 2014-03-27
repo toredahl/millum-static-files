@@ -45,28 +45,22 @@
 						<li>Legg inn URL</li>
 						<li>Fjern bilde</li>
 					</ul>
-
 				</div>
 
 				<div id="modal-img-info" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-sm">
 				    <div class="modal-content">
-				  		yes
+				  		
 				    </div>
 				  </div>
 				</div>
-
-
-
 			</div>
 		</div>
 
 		<div class="col-lg-8">
 
 			<form id="product-item-form" role="form">
-				
 				<div class="form-group">
-					
 				    <label id="upper-label" for="item-name">Varenavn*</label>
 				    <input type="email" class="form-control" id="item-name" placeholder="Oil of McINtyre">
 
@@ -335,21 +329,13 @@
 
         });
 
-
-        // $(".edit-img h4").on('mouseover', function() {
-        // 	//$(this).find(".edit-img").removeClass('hide');
-        // 	$(".edit-img ul").removeClass('hide');
-        // });
-
+        
          $(".edit-img ul li").on('click', function() {
          	var elem = $(this).html();
-         	//alert("Du klikket på : " + elem + " -->   funksjonalitet for det kommer senere");
          	
          	$('#modal-img-info .modal-content').html("Du klikket på: " + elem);
          	$('#modal-img-info').modal('show');
 
-
-        // 	$(".edit-img ul").addClass('hide');
          });
 
         if (!Modernizr.inputtypes.date) {
@@ -357,16 +343,6 @@
 		    $('input[type=date]').datepicker();
 		    // datepicker must be styled for the other browsers later: http://api.jqueryui.com/datepicker/
 		}
-
-
-    	//$(".tmp-w").load("warehouse-item.html"); 
-
-    	//$('.carousel').carousel();
-
-	// $('#myTab a').click(function (e) {
-	// 		e.preventDefault();
-	// 		$(this).tab('show');
-	// });
     
 	});
 </script>

@@ -519,12 +519,12 @@ nav div.nav-inner-container {
 	padding: 2rem 2rem 3rem 2rem;
 }
 
-#loginform h2 {
+#loginform h2,  {
 	font-weight: 700;
 	margin-bottom: 2rem;
 }
 
-#loginform h3 {
+#loginform h3, #overview-container h2 {
 	font-weight: bold;
 }
 
@@ -983,11 +983,9 @@ table#order-table th, table#order-table td, table.invoice-tables td, table.invoi
 
 nav h1 {
 	margin-top: 3rem;
-	/*font-size: 3.5rem;*/
 }
 
 .menu-container {
-    /*clear: both;*/
     margin-top: 0;
     background-color: #363639;
     position: relative;
@@ -1418,7 +1416,9 @@ table .rectangle:hover {
 	cursor: auto;
 }
 
-
+.width-50 {
+	width: 50%;
+}
 
 .no-show {
 	display:none;
@@ -1558,4 +1558,17 @@ a:hover {
 
 .third-width {
 	width: 38%;
+}
+
+.btn-height {
+	height: 4.2rem;
+}
+
+#warehouse-stock .upload-btn, #warehouse-stock .save-btn {
+	margin: 1rem 2rem 0 0;
+	width: 50%;
+}
+
+#warehouse-stock .search-img-btn {
+	width: 40%;
 }
