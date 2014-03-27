@@ -36,33 +36,60 @@
                                 <li><a href="" class="underlined">Banan</a></li>
                                 <li><a href="" class="underlined">Agurk</a></li>
                             </ul>
-
                         </div>
                         <div class="col-lg-6">
                             <h2>Last opp bilder for </h2>
                             <strong class="font-20">Appelsinjuice</strong>
                             <form action="">
                                 <input type="text" class="btn-height margin-right-2rem width-50"><input type="submit" class="warm-gray-bg white-txt search-img-btn" value="Bla gjennom"> 
-                                <input type="submit" class="warm-gray-bg white-txt upload-btn width-50" value="Last opp"> <span>.jpg .jpeg  .png</span>
-
+                                <input type="submit" class="warm-gray-bg white-txt upload-btn width-50" value="Last opp"> <span class="padding-left-2rem">.jpg .jpeg  .png</span>
                                 <div class="margin-top-2rem">ELLER sett inn alle url med varenavn</div>
                                 <input type="text" class="btn-height margin-right-2rem width-50"> <br>
                                 <input type="submit" class="warm-gray-bg white-txt save-btn width-50" value="Lagre">
-
                             </form>
-                            
                         </div>
-
                     </div>
-
-
-
-
-
                 </div>
               </div>
             </div>
         </div>
+
+        <!-- adding description -->
+        <div class="add-item-description">
+            +Legg inn varebeskrivelse
+
+            <div class="modal fade bs-example-modal-sm modal-add-desc" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3>Disse mangler bilde</h3>
+                            <ul>
+                                <li><a href="" class="underlined">Appelsinjuice </a></li>
+                                <li><a href="" class="underlined">Mandarinjuice</a></li>
+                                <li><a href="" class="underlined">Eple</a></li>
+                                <li><a href="" class="underlined">Banan</a></li>
+                                <li><a href="" class="underlined">Agurk</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2>Skriv varebeskrivelse for </h2>
+                            <strong class="font-20">Appelsinjuice</strong>
+                            <form action="">
+                                <input type="textarea" class="btn-height margin-right-2rem desc-textarea">
+                                <input type="submit" class="warm-gray-bg white-txt save-btn width-50 float-right" value="Lagre">
+                            </form>
+                            <div class="float-right gray-prevnext">
+                                NESTE
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
     </div>
 
     <div>
@@ -89,6 +116,15 @@
             $(this).find('.modal-add-img').modal('show');
          });
     });
+
+    $(function() {
+    $(".add-item-description").on('click', function() {
+            
+            $(this).find('.modal-add-desc').modal('show');
+         });
+    });
+
+
 
 
 </script>
