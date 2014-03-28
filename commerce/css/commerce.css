@@ -553,6 +553,10 @@ nav div.nav-inner-container {
 	font-weight: normal;
 }
 
+#invoice-data label {
+	font-weight: normal;
+}
+
 #loginform strong {
 	
 	font-size: 1.5rem;
@@ -846,15 +850,6 @@ table, table#order-table, table.invoice-tables, table.full-width {
 	width: 100%;
 }
 
-
-
-/*table#order-table tr:last-child td, table.invoice-tables tr:last-child td, table.first-last-colored tr:first-child th, table.first-last-colored tr:last-child td {
-	background-color: #ededeb;
-	text-align: right;
-	font-weight: 700;
-	padding: 0.5rem;
-}*/
-
 .pseudo-row {
 	background-color: #ededeb;
 	text-align: right;
@@ -870,7 +865,7 @@ table tr {
 	border-bottom: 1px solid #ededeb;
 }
 
-table#order-table th, table.invoice-tables th, table#order-table-static th{
+table#order-table th, table.invoice-tables th, table#order-table-static th, th{
 	background-color: #ededeb;
 	padding: 0.5rem;
 }
@@ -951,7 +946,7 @@ table#order-table th, table#order-table td, table.invoice-tables td, table.invoi
 	margin: 1rem 0;
 }
 
-#invoice-data input {
+#invoice-data input[type=number], #invoice-data input[type=date], input[type=number]{
 	height: 3rem;
 	background-color: #fbfbfb;
 }
@@ -961,11 +956,14 @@ table#order-table th, table#order-table td, table.invoice-tables td, table.invoi
 }
 
 .invoice-summary {
-
 	font-weight: 700;
 	margin-top: 2rem;
 }
 
+
+.invoice-summary a {
+	font-weight: 400;
+}
 
 /************************************
 
