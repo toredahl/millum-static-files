@@ -1435,6 +1435,10 @@ table .rectangle:hover {
 	width: 50%;
 }
 
+.auto-width {
+	width: auto;
+}
+
 .no-show {
 	display:none;
 }
@@ -1623,4 +1627,10 @@ a:hover {
 	color: #00a0ff;
 }
 
+.float-container {
+	overflow: hidden;
+}
 
+.no-margin-top {
+	margin-top: 0;
+}

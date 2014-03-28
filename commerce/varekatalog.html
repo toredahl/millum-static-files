@@ -35,8 +35,9 @@
 		
 	<div class="row">
 		<div class="col-lg-8">
-			<h3 class="bold-font">Pals varekatalog</h3> 
-
+			<div class="float-container">
+				<h3 class="bold-font width-auto float-left margin-right-2rem no-margin-top"> Pals varekatalog </h3> <div class="edit-link underlined float-left">Rediger varekatalog</div>
+			</div>
 			<div> <b>Kunder</b> 
 				<span><a href="">Choice</a></span>
 				<span><a href="">Thon</a></span>
@@ -134,7 +135,7 @@
 			<div><input type="submit" value="Send varekatalog" class="blue-bg white-txt float-right"></div>
 			<div class="clearing"></div>
 			<div>
-				<h4> Katalogkvalitet</h4>
+				<h3 class="bold-font"> Katalogkvalitet</h3>
 				<div class="quality">
 					<div class="percent-indicator float-right blue-txt">68%</div>
 					<div class="progress clearing">
@@ -143,8 +144,75 @@
 						</div>
 					</div>
 					
-					<a href="" class="bold-font">+Last opp bilde</a><br>
-					<a href="" class="bold-font">+Skriv varebeskrivelser</a>
+					<div class="add-images">
+			            +Legg inn bilder
+
+			            <div class="modal fade bs-example-modal-sm modal-add-img" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			              <div class="modal-dialog modal-lg">
+			                <div class="modal-content">
+			                    <div class="row">
+			                        <div class="col-lg-6">
+			                            <h3>Disse mangler bilde</h3>
+			                            <ul>
+			                                <li><a href="" class="underlined">Appelsinjuice </a></li>
+			                                <li><a href="" class="underlined">Mandarinjuice</a></li>
+			                                <li><a href="" class="underlined">Eple</a></li>
+			                                <li><a href="" class="underlined">Banan</a></li>
+			                                <li><a href="" class="underlined">Agurk</a></li>
+			                            </ul>
+			                        </div>
+			                        <div class="col-lg-6">
+			                            <h2>Last opp bilder for </h2>
+			                            <strong class="font-20">Appelsinjuice</strong>
+			                            <form action="">
+			                                <input type="text" class="btn-height margin-right-2rem width-50"><input type="submit" class="warm-gray-bg white-txt search-img-btn" value="Bla gjennom"> <br><br>
+			                                <input type="submit" class="warm-gray-bg white-txt upload-btn width-50" value="Last opp"> <span class="padding-left-2rem">.jpg .jpeg  .png</span>
+			                                <div class="margin-top-2rem">ELLER sett inn alle url med varenavn</div>
+			                                <input type="text" class="btn-height margin-right-2rem width-50"> <br><br>
+			                                <input type="submit" class="warm-gray-bg white-txt save-btn width-50" value="Lagre">
+			                            </form>
+			                        </div>
+			                    </div>
+			                </div>
+			              </div>
+			            </div>
+			        </div>
+
+					<div class="add-item-description">
+			            +Legg inn varebeskrivelse
+
+			            <div class="modal fade bs-example-modal-sm modal-add-desc" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			              <div class="modal-dialog modal-lg">
+			                <div class="modal-content">
+			                    <div class="row">
+			                        <div class="col-lg-6">
+			                            <h3>Disse mangler bilde</h3>
+			                            <ul>
+			                                <li><a href="" class="underlined">Appelsinjuice </a></li>
+			                                <li><a href="" class="underlined">Mandarinjuice</a></li>
+			                                <li><a href="" class="underlined">Eple</a></li>
+			                                <li><a href="" class="underlined">Banan</a></li>
+			                                <li><a href="" class="underlined">Agurk</a></li>
+			                            </ul>
+			                        </div>
+			                        <div class="col-lg-6">
+			                            <h2>Skriv varebeskrivelse for </h2>
+			                            <strong class="font-20">Appelsinjuice</strong>
+			                            <form action="">
+			                                <input type="textarea" class="btn-height margin-right-2rem desc-textarea">
+			                                <input type="submit" class="warm-gray-bg white-txt save-btn width-50 float-right" value="Lagre">
+			                            </form>
+			                            <div class="float-right gray-prevnext">
+			                                NESTE
+			                            </div>
+
+			                        </div>
+			                    </div>
+			                </div>
+			              </div>
+			            </div>
+			        </div>
+
 					
 					<div class="horizontals padding-top-2rem padding-bottom-2rem overflow-hide margin-top-2rem">
 						
@@ -156,7 +224,7 @@
 					</div>
 				</div>
 				
-				<h4>Hvor mye har blitt solgt</h4>
+				<h3 class="bold-font">Hvor mye har blitt solgt</h3>
 				<div class="float-left">
 					123 345,78 
 					<div class="margin-top-2rem"><span class="down-triangle-orange float-left margin-top-small margin-right-1rem"></span><span class="float-left orange-txt">67%</span></div>
@@ -207,6 +275,18 @@
         	$("div.table-arrow-position").toggleClass('down-triangle-white').toggleClass('up-triangle-white');
         });
 
+    	$(function() {
+    $(".add-images").on('click', function() {
+            
+            $(this).find('.modal-add-img').modal('show');
+         });
+    });
+
+    $(function() {
+    $(".add-item-description").on('click', function() {
+            $(this).find('.modal-add-desc').modal('show');
+         });
+    });
 
 
     	//$('.carousel').carousel();
