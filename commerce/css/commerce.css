@@ -1621,4 +1621,8 @@ a:hover {
 	visibility: visible;
 }
 
+.navigate-button:hover {
+	color: #00a0ff;
+}
+
 
