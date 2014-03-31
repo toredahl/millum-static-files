@@ -1472,6 +1472,7 @@ table .rectangle:hover {
 .expand-box {
 	padding: 1rem;
 	border: 1px solid #ebebeb;
+	overflow: hidden;
 }
 
 .expand-form label {
