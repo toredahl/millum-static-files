@@ -17,43 +17,43 @@
 	<div class="row">
 		<div class="col-lg-12">
 			<div id="column-content-menu">
-	            <ul>
-	                <li><a href="#">OVERSIKT</a></li>
-	                <li> <a href="#">ORDRE</a></li>
-	                <li><a href="#">FAKTURA</a> </li>
-	                <li class="selected-item"><a href="#">MINE PRODUKTER</a> </li>
-	                <li><a href="#"> MINE KUNDER</a> </li>
-	                <li class="search-field"><input type="text"></li>
-	                <li><a href="#"> SØK</a> </li>
+	        	<ul>
+	            	<li><a href="#">OVERSIKT</a></li>
+	            	<li> <a href="#">ORDRE</a></li>
+	            	<li><a href="#">FAKTURA</a> </li>
+	            	<li class="selected-item"><a href="#">MINE PRODUKTER</a> </li>
+	            	<li><a href="#"> MINE KUNDER</a> </li>
+	            	<li class="search-field"><input type="text"></li>
+	            	<li><a href="#"> SØK</a> </li>
 	            </ul>
-	        </div>
+	    	</div>
 		</div>
 	</div>
 </div>
 
 <div id="product-info-container" class="container white-bg padding-2rem"><!-- start main container -->
-	<div class="row">
-		<div class="col-lg-4">
-			<div class="product-img-container relatively">
-				<img src="http://placehold.it/250x250/00a0ff/000000" alt="product item" class="product-image">	
-				<div class="edit-img">
-					<h4>Rediger bilde </h4>
-					<ul>
-						<li>Last opp bilde</li>
-						<li>Legg inn URL</li>
-						<li>Fjern bilde</li>
-					</ul>
+	<form id="product-item-form" role="form"> <!-- begin form: html does not allow nested forms, therefore we put all the elements inside. -->
+		<div class="row">
+			<div class="col-lg-4"><!-- start image container -->
+				<div class="product-img-container relatively">
+					<img src="http://placehold.it/250x250/00a0ff/000000" alt="product item" class="product-image">	
+					<div class="edit-img">
+						<h4>Rediger bilde </h4>
+						<ul>
+							<li>Last opp bilde</li>
+							<li>Legg inn URL</li>
+							<li>Fjern bilde</li>
+						</ul>
+					</div>
+					<div id="modal-img-info" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				  		<div class="modal-dialog modal-sm">
+				    		<div class="modal-content">
+				    		</div>
+				  		</div>
+					</div>
 				</div>
-				<div id="modal-img-info" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-				  	<div class="modal-dialog modal-sm">
-				    	<div class="modal-content">
-				    	</div>
-				  	</div>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-8">
-			<form id="product-item-form" role="form">
+			</div><!-- end col-lg-4 -->
+			<div class="col-lg-8">
 				<div class="form-group">
 				    <label id="upper-label" for="item-name">Varenavn*</label>
 				    <input type="email" class="form-control" id="item-name" placeholder="">
@@ -103,20 +103,17 @@
 					    	<input id="item-search" type="text" class="form-control" placeholder="">
 					  	</div>
 					</div>
-				</div>			
-			<!-- </form> -->
-			</div>
-		</div>
-
+				</div>		
+			</div><!-- end col-lg-8 -->	
+		</div><!-- end upper row -->
 		<div class="row">
 			<div class="col-lg-12">
 				<hr>
 				<h3 class="no-margin">Ekstra vareinformasjon</h3>
 				<div class="info-explantion">
-					<div class="small-circle float-left"></div><div class="float-left">Har utfylte punkter</div>
+					<div class="small-circle float-left"></div>
+					<div class="float-left">Har utfylte punkter</div>
 				</div>
-				
-			<!-- <form id="additional-product-item-form" class="clearing" role="form"> -->
 				<div class="row">	
 					<div class="col-xs-4">
 						<div class="pulldown-menu">
@@ -125,171 +122,146 @@
 							<div class="down-triangle-graphite float-right pulldown-form-position"></div>
 						</div>
 						<div class="expand-box no-show">
-							<!-- <form id="rebate-form" class="expand-form" action=""> -->
-								<label for="price-tag" class="full-width">Pris før rabatt</label> <br>
-								<input name="price-tag" class="full-width" type="text" value="825"><br><br>
-								<label for="agreement" class="third-width">Avtale</label><input type="checkbox" name="agreement"> <br>
-								<label for="bonus" class="third-width">Bonus</label> <input type="checkbox" name="bonus" checked> <br>
-								<label for="bonus-2" class="third-width">Bonus 2</label> <input type="checkbox" name="bonus-2" checked> <br>
-								<label for="rebate" class="third-width">Ordrerabatt</label>  <input type="checkbox" name="rebate"> <br>
-								<input type="submit" value="OK" class="float-right black-txt">
-								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
-							<!-- </form> -->
+							<label for="price-tag" class="full-width">Pris før rabatt</label> <br>
+							<input name="price-tag" class="full-width" type="text" value="825"><br><br>
+							<label for="agreement" class="third-width">Avtale</label><input type="checkbox" name="agreement"> <br>
+							<label for="bonus" class="third-width">Bonus</label> <input type="checkbox" name="bonus" checked> <br>
+							<label for="bonus-2" class="third-width">Bonus 2</label> <input type="checkbox" name="bonus-2" checked> <br>
+							<label for="rebate" class="third-width">Ordrerabatt</label>  <input type="checkbox" name="rebate"> <br>
+							<input type="submit" value="Lukk" class="float-right black-txt">
 						</div>
 					</div>
-			
 					<div class="col-xs-4">
 						<div class="pulldown-menu">Produktmerking 
 							<div class="down-triangle-graphite float-right pulldown-form-position"></div>
 						</div>
 						<div class="expand-box no-show">
-							<!-- <form class="labeling-form" id="environmental-form" action=""> -->
-								<div class="row">
-									<div class="col-xs-6">
-										<h3>Økologisk merking</h3>
-										<input type="checkbox" name="env-1"><label for="env-1">Merking 1</label> <br>
-										<input type="checkbox" name="env-1"><label for="env-2">Merking 2</label> <br>
-										<input type="checkbox" name="env-1"><label for="env-3">Merking 3</label> <br>
-										<input type="checkbox" name="env-1"><label for="env-4">Merking 4</label> <br>
-									</div>
-
-									<div class="col-xs-6">
-										<h3>Miljømerking</h3>
-										<input type="checkbox" name="env-10"><label for="env-10">Merking 10</label> <br>
-										<input type="checkbox" name="env-11"><label for="env-11">Merking 11</label> <br>
-										<input type="checkbox" name="env-12"><label for="env-12">Merking 12</label> <br>
-										<input type="checkbox" name="env-13"><label for="env-13">Merking 13</label> <br>
-										<input type="checkbox" name="env-14"><label for="env-13">Merking 14</label> <br>
-									</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<h3>Økologisk merking</h3>
+									<input type="checkbox" name="env-1"><label for="env-1">Merking 1</label> <br>
+									<input type="checkbox" name="env-1"><label for="env-2">Merking 2</label> <br>
+									<input type="checkbox" name="env-1"><label for="env-3">Merking 3</label> <br>
+									<input type="checkbox" name="env-1"><label for="env-4">Merking 4</label> <br>
 								</div>
-								<input type="submit" value="OK" class="float-right black-txt">
-								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
-							<!-- </form> -->
+								<div class="col-xs-6">
+									<h3>Miljømerking</h3>
+									<input type="checkbox" name="env-10"><label for="env-10">Merking 10</label> <br>
+									<input type="checkbox" name="env-11"><label for="env-11">Merking 11</label> <br>
+									<input type="checkbox" name="env-12"><label for="env-12">Merking 12</label> <br>
+									<input type="checkbox" name="env-13"><label for="env-13">Merking 13</label> <br>
+									<input type="checkbox" name="env-14"><label for="env-13">Merking 14</label> <br>
+								</div>
+							</div>
+							<input type="submit" value="Lukk" class="float-right black-txt">
 						</div>
 					</div>
-
 					<div class="col-xs-4">
 						<div class="pulldown-menu">Kampanje 
 							<div class="down-triangle-graphite float-right pulldown-form-position"></div>
 						</div>
 						<div id="campaign-form" class="expand-box no-show">
-							<!-- <form class="labeling-form" id="price-form" action=""> -->
-								<label for="price">Pris:</label><br>
-								<input type="text" class="full-width">
-								<div class="row">
-									<div class="col-xs-6">
-										<label for="start-date">Start</label>
-										<input id="start-date" type="date">
-									</div>
-									<div class="col-xs-6">
-										<label for="end-date">Slutt</label>
-										<input id=-"end-date" type="date">
-									</div>
+							<label for="price">Pris:</label><br>
+							<input type="text" class="full-width">
+							<div class="row">
+								<div class="col-xs-6">
+									<label for="start-date">Start</label>
+									<input id="start-date" type="date">
 								</div>
-								<label for="price">Beskrivelse:</label><br>
-								<input type="textarea" class="full-width">
-								<br><br>
-								<input type="submit" value="OK" class="float-right black-txt">
-								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
-							<!-- </form> -->
+								<div class="col-xs-6">
+									<label for="end-date">Slutt</label>
+									<input id=-"end-date" type="date">
+								</div>
+							</div>
+							<label for="price">Beskrivelse:</label><br>
+							<input type="textarea" class="full-width">
+							<br><br>
+							<input type="submit" value="Lukk" class="float-right black-txt">
 						</div>
 					</div>
 				</div>
 				<br>
 				<div class="row">	
-
 					<div class="col-xs-4">
-
-						<div class="pulldown-menu">Bestillingskrav <div class="down-triangle-graphite float-right pulldown-form-position"></div></div>
+						<div class="pulldown-menu">Bestillingskrav 
+							<div class="down-triangle-graphite float-right pulldown-form-position"></div>
+						</div>
 						<div class="expand-box no-show">
-							
-							<!-- <form class="expand-form" id="order-form" action=""> -->
-								<label for="minimum-count">Min. antall</label><br>
-								<input name="minimum-count" type="text" class="full-width"><br><br>
-								
-								<label for="maximum-count">Maks. antall</label><br>
-								<input name="maximum-count" type="text" class="full-width"><br><br>
-								
-								<label for="period">Bestillingsintervall:</label><br>
-								<input name="period" type="text"  class="full-width"><br><br>
-								
-								<label for="lead-time">Ledetid:</label><br>
-								<input name="lead-time" type="text" class="full-width"><br><br>
 
-								<label for="price">Beskrivelse:</label><br>
-								<input type="textarea" class="full-width">
-								<br><br>
-								<input type="submit" value="OK" class="float-right black-txt">
-								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
-							<!-- </form> -->
+							<label for="minimum-count">Min. antall</label><br>
+							<input name="minimum-count" type="text" class="full-width"><br><br>
+							
+							<label for="maximum-count">Maks. antall</label><br>
+							<input name="maximum-count" type="text" class="full-width"><br><br>
+							
+							<label for="period">Bestillingsintervall:</label><br>
+							<input name="period" type="text"  class="full-width"><br><br>
+							
+							<label for="lead-time">Ledetid:</label><br>
+							<input name="lead-time" type="text" class="full-width"><br><br>
+
+							<label for="price">Beskrivelse:</label><br>
+							<input type="textarea" class="full-width">
+							<br><br>
+							<input type="submit" value="Lukk" class="float-right black-txt">
 						</div>
 					</div>
 
 					<div class="col-xs-4">
-
-						<div id="" class="pulldown-menu">Forfalt- og erstatningskrav <div class="down-triangle-graphite float-right pulldown-form-position"></div></div>
+						<div id="" class="pulldown-menu">Forfalt- og erstatningskrav 
+							<div class="down-triangle-graphite float-right pulldown-form-position"></div>
+						</div>
 						<div class="expand-box no-show">
+							<label for="old-id-number">Gammelt varenummer:</label><br>
+							<input name="old-id-number" type="text" class="full-width"><br><br>
 							
-							<!-- <form class="expand-form" id="due-form" action=""> -->
-								<label for="old-id-number">Gammelt varenummer:</label><br>
-								<input name="old-id-number" type="text" class="full-width"><br><br>
-								
-								<label for="replacement-id">Erstatningsvarenummer</label><br>
-								<input name="replacement-id" type="text" class="full-width"><br><br>
-								
-								<label for="due-date">Utgått dato:</label><br>
-								<input id="due-date" type="date"><br><br>
-								
-								<label for="due-status">Utgått status:</label><br>
-								<input name="due-status" type="text" class="full-width"><br><br>
+							<label for="replacement-id">Erstatningsvarenummer</label><br>
+							<input name="replacement-id" type="text" class="full-width"><br><br>
+							
+							<label for="due-date">Utgått dato:</label><br>
+							<input id="due-date" type="date"><br><br>
+							
+							<label for="due-status">Utgått status:</label><br>
+							<input name="due-status" type="text" class="full-width"><br><br>
 
-								<input type="submit" value="OK" class="float-right black-txt">
-								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
-							<!-- </form> -->
-
+							<input type="submit" value="Lukk" class="float-right black-txt">
 						</div>
 					</div>
-
 					<div class="col-xs-4">
-						<div id="" class="pulldown-menu">Kriterier<div class="down-triangle-graphite float-right pulldown-form-position"></div></div>
-							<div class="expand-box no-show">
-								<p>Om ditt produkt har flere kriterier som kunden din trenger å spesifisere kan du legge dem til her.</p>
-
-								<div><a href="" class="underlined">Livvidde</a></div>
-								<div>+ Legg til flere inndelinger</div>
-
-								<input type="submit" value="OK" class="float-right black-txt">
-								<input type="submit" value="Avbryt" class="float-right black-txt margin-right-1rem">
-							</div>
+						<div id="" class="pulldown-menu">Kriterier
+							<div class="down-triangle-graphite float-right pulldown-form-position"></div>
+						</div>
+						<div class="expand-box no-show">
+							<p>Om ditt produkt har flere kriterier som kunden din trenger å spesifisere kan du legge dem til her.</p>
+							<div><a href="" class="underlined">Livvidde</a></div>
+							<div>+ Legg til flere inndelinger</div>
+							<input type="submit" value="Lukk" class="float-right black-txt">
 						</div>
 					</div>
-				
-			
-				<div class="clearing">.</div>
-
-				<div class="row clearing">
-			  		<div class="col-xs-4">
-						<label for="item-add-id">Legg til varenr</label>
-						<input id="item-add-id" type="text" class="form-control" placeholder="">
-					</div>
-					<div class="col-xs-4">
-						<label for="item-addition">Tillegg</label>
-						<input id="item-addition" type="text" class="form-control" placeholder="">
-					</div>
-				</div>
-			<hr>
-			<div id="button-row" class="row">
-				<div class="col-xs-4 col-xs-push-8">
-					<div class="float-right"><input type="submit" class="blue-bg white-txt" value="LAGRE"></div>
-					<div class="light-gray preview-button float-right"><input type="submit"  class="warm-gray-bg white-txt" value="FORHÅNDSVIS"></div>
 				</div>
 			</div>
 		</div>
-	</div>
+		<div class="clearing">.</div>
 
-
-	<!-- </div> -->
-	
+		<div class="row clearing">
+	  		<div class="col-xs-4">
+				<label for="item-add-id">Legg til varenr</label>
+				<input id="item-add-id" type="text" class="form-control" placeholder="">
+			</div>
+			<div class="col-xs-4">
+				<label for="item-addition">Tillegg</label>
+				<input id="item-addition" type="text" class="form-control" placeholder="">
+			</div>
+			<div class="col-xs-4"></div>
+		</div>
+		<hr>
+		<div id="button-row" class="row">
+			<div class="col-xs-4 col-xs-push-8">
+				<div class="float-right"><input type="submit" class="blue-bg white-txt" value="LAGRE"></div>
+				<div class="light-gray preview-button float-right"><input type="submit"  class="warm-gray-bg white-txt" value="FORHÅNDSVIS"></div>
+			</div>
+		</div>
+	</form>
 </div> <!-- end of main container with white background -->	
 
 <div id="support"></div><!-- no color background -->

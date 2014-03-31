@@ -1316,7 +1316,7 @@ label#upper-label {
 	margin: 0;
 }
 
-#product-item-form input, #product-item-form textarea, #additional-product-item-form input[type=text] {
+#product-item-form textarea, #additional-product-item-form input[type=text] {
 	background-color: #f7f7f9;
 }
 
@@ -1471,6 +1471,7 @@ table .rectangle:hover {
 
 .expand-box {
 	padding: 1rem;
+	border: 1px solid #ebebeb;
 }
 
 .expand-form label {
