@@ -1316,7 +1316,7 @@ label#upper-label {
 	margin: 0;
 }
 
-#product-item-form textarea, #additional-product-item-form input[type=text] {
+#additional-product-item-form input[type=text] {
 	background-color: #f7f7f9;
 }
 
