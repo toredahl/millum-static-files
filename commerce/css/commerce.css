@@ -1,13 +1,13 @@
 /*
 
 Hovedfarger:
-Blå #00a0ff
-Grafitt #363639
-Lysgrå #ededeb
+Blå #00a0ff  
+Grafitt #424445
+Lysgrå #ededed
 Varm mellomgrå #e6e4e2
 
 Komplement:
-Varm mørkgrå #a09b96
+Varm mørkgrå #a19c96 
 Grønn #41d705
 Oransje #ec581e
 
@@ -25,16 +25,24 @@ H2: 28px
 H3: 20px
 H4: 17px
 
-p
+brødtekst: 15px;
 
 */
 
 
 body {
-	background-image: url(../img/worn_dots.png);
+	background-image: url(../img/lghtmesh.png);
 	font-size: 62.5%;
 	font-family: 'PT Sans', sans-serif;
     color: #363639;
+}
+
+.container {
+	padding: 0;
+}
+
+.inner-container {
+	padding: 0 2rem 2rem 2rem;
 }
 
 #main-header.container {
@@ -44,8 +52,6 @@ body {
 .no-padding {
 	padding-left: 0;
 }
-
-
 
 #header-container {
 	margin-bottom: 1%;
@@ -66,6 +72,10 @@ h1, h2, h3, h4 {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+#login-intro  {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
 h1 {
     font-size: 4.0rem;
     font-weight: 700;
@@ -81,12 +91,12 @@ h3 {
 }
 
 h4 {
-    font-size: 1.4rem;   
+    font-size: 1.7rem;   
 	font-weight: 700;
 }
 
 div, p, span {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 }
 
 p,span, .users, .byline {
@@ -118,6 +128,11 @@ nav div.nav-inner-container {
 	font-weight: bold;
 }
 
+.rounded-btn, input.blue-bg {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+}
+
 .relatively {
 	position: relative;
 }
@@ -126,11 +141,14 @@ nav div.nav-inner-container {
 	position: absolute;
 }
 
+input[type=text] {
+	background-color: #FBFBFB;
+	border: 1px solid #ededed;
+}
+
 /* MENU STUFF */
 .welcome {
-	/*height: 2rem;
-	padding: 1rem;
-	text-align: center;*/
+	font-family: 'PT Sans Narrow', sans-serif;
 	height: 6rem;
 	padding: 1rem 0 1rem 0;
 	text-align: center;
@@ -224,13 +242,15 @@ nav div.nav-inner-container {
     font-weight: 400;
     margin-right: 1.0em;
     margin-top: 1.0em;
+    font-family: 'PT Sans Narrow', sans-serif;
+
 }
 
 .left-half-top-triangle-blue {
     display: block;
     height: 0;
     width: 0;
-    border-top: 0.7em solid #108BF5;
+    border-top: 0.7em solid #00a0ff;
     border-right: 0.9em solid transparent;
 }
 
@@ -238,15 +258,24 @@ nav div.nav-inner-container {
     display: block;
     height: 0;
     width: 0;
-    border-top: 0.7em solid #363639;
+    border-top: 0.7em solid #424445;
     border-right: 0.9em solid transparent;
 }
+
+.left-half-top-triangle-warm-gray {
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 0.7em solid #a19c96;
+    border-right: 0.9em solid transparent;
+}
+
 
 .down-triangle-graphite {
 	display: block;
     height: 0;
     width: 0;
-    border-top: 0.5em solid #363639;
+    border-top: 0.5em solid #424445;
     border-right: 0.5em solid transparent;
 	border-left: 0.5em solid transparent;
 }
@@ -255,7 +284,7 @@ nav div.nav-inner-container {
 	display: block;
     height: 0;
     width: 0;
-    border-bottom: 0.5em solid #363639;
+    border-bottom: 0.5em solid #424445;
     border-right: 0.5em solid transparent;
 	border-left: 0.5em solid transparent;
 }
@@ -358,7 +387,7 @@ nav div.nav-inner-container {
 
 .contact-box {
     padding: 0;
-    padding: 1.5em;
+    padding: 1.0em;
     overflow: hidden;
 }
 
@@ -393,7 +422,7 @@ nav div.nav-inner-container {
 }
 
 .blue-box {
-    background-color: #108BF5;
+    background-color: #00a0ff;
     color: #fff;
     text-align: center;
 }
@@ -409,13 +438,14 @@ nav div.nav-inner-container {
 }
 
 .graphite-box {
-    background-color: #363639;
+    background-color: #424445;
     color: #fff;
     text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .white-box {
-    background-color: #363639;
+    background-color: #424445;
     color: #fff;
     text-align: center;
 }
@@ -439,12 +469,16 @@ nav div.nav-inner-container {
 
 
 .light-gray-bg, .light-gray {
-	background-color: #ededeb;
+	background-color: #ededed;
 }
 
 
 #button-row .light-gray input{
 	background-color: #a09b96;
+}
+
+.input-wrapper input {
+	width: 12rem;
 }
 
 /* COLORS */
@@ -453,7 +487,7 @@ nav div.nav-inner-container {
 }
 
 .graphite, .graphite-bg {
-	background-color: #363639;
+	background-color: #424445;
 }
 
 .blue, .blue-bg {
@@ -527,7 +561,7 @@ nav div.nav-inner-container {
 
 /*  FORM  */
 #loginform {
-	background-color: #ededeb;
+	background-color: #ededed;
 	overflow: hidden;
 	padding: 2rem 2rem 3rem 2rem;
 }
@@ -537,8 +571,15 @@ nav div.nav-inner-container {
 	margin-bottom: 2rem;
 }
 
-#loginform h3, #overview-container h2 {
+ #overview-container h2 {
 	font-weight: bold;
+}
+#loginform h3 {
+
+	font-weight: bold;
+	margin-top: 0rem;
+	margin-bottom: 3rem;
+
 }
 
 #loginform input{
@@ -639,7 +680,8 @@ div#warehouse-items + div.warehouse-item {
 }
 
 .warehouse-item > div {
-	padding: 1rem 1rem 0.5rem 1rem;
+	/*padding: 1rem 1rem 0.5rem 1rem;*/
+	padding: 1.5rem;
 }
 
 .warehouse-item  h4.box-header {
@@ -649,13 +691,15 @@ div#warehouse-items + div.warehouse-item {
 	color: #fff;
 }
 
-.item-upper {
+.item-upper .blue-txt{
 	/*height: 6rem;*/
+	font-weight: 700;
 }
 
 .item-upper h4 {
 	margin: 0;
 	padding: 0;
+	font-weight: 400;
 }
 
 h4.blue-txt {
@@ -667,9 +711,23 @@ h4.blue-txt {
 }
 
 .percent-indicator { 
-
+	color: #a19c96;
 	font-size: 2.5rem;
 	padding: 0.25rem 0;
+}
+
+.progress-bar-success {
+	background-color:  #a19c96;
+}
+
+.slider-img-caption {
+	top: 14rem;
+	width: 100%;
+	height: 3.6rem;
+	background-color: #fff;
+	opacity: 0.7;
+	padding: 0.5rem 0 0 1rem;
+	color: #000;
 }
 
 .item-login {
@@ -712,7 +770,11 @@ ul#myTab li.active a {
 }
 
 .action-intro {
-	/*font-size: 0.84rem;*/
+	margin-bottom: 1rem;
+}
+
+#new-catalogue {
+	margin-bottom: 2.2rem;
 }
 
 .lower-part .light-gray-bg {
@@ -737,37 +799,6 @@ ul#myTab li.active a {
 }
 
 
-/*#page-menu-slot {
-	
-	background-color: #fff;
-
-}
-
-#page-menu-slot ul {
-	background-color: #ededeb;
-	list-style: none;
-	overflow: hidden;
-	width: 100%; 
-}
-
-#page-menu-slot ul li {
-	
-	float: left;
-	width: 13%;
-	text-align: center;
-	min-height: 3rem;
-	display:inline-block; 
-	vertical-align:middle; 
-	line-height: 1.5rem;
-
-}
-
-#page-menu-slot ul li a {
-
-  	vertical-align: middle; 
-  	text-align: center; 
-}
-*/
 
 .stipled-h4 {
 	border-bottom: 1px dotted #363639;
@@ -782,6 +813,7 @@ ul#myTab li.active a {
 
 #column-content-menu {
     background-color: #a09b96;
+    /*background-color: #424445;*/
     height: 5rem;
     width: 100%;
     margin-bottom: 1rem;
@@ -789,6 +821,7 @@ ul#myTab li.active a {
 
 #column-content-menu ul {
 	display: inline;
+	font-family: 'PT Sans Narrow', sans-serif;
 	list-style: none;
 	width: 100%;
 }
@@ -796,7 +829,6 @@ ul#myTab li.active a {
 #column-content-menu ul li {
 	float: left;
 	padding: 1.5rem 3.5rem 0rem 3.5rem;
-	/*line-height: 4rem;*/
 	height: 5rem;
 	position: relative;
 }
@@ -808,7 +840,8 @@ ul#myTab li.active a {
 
 .search-field input {
 	height: 3rem;
-	background-color: #ededeb;
+	/*background-color: #ededed;*/
+	background-color: #a09b96;
 }
 
 #column-content-menu ul li.selected-item {
@@ -851,7 +884,8 @@ table, table#order-table, table.invoice-tables, table.full-width {
 }
 
 .pseudo-row {
-	background-color: #ededeb;
+	background-color: #ededed;
+	font-family: 'PT Sans Narrow', sans-serif;
 	text-align: right;
 	font-weight: 700;
 	overflow: hidden;
@@ -866,7 +900,7 @@ table tr {
 }
 
 table#order-table th, table.invoice-tables th, table#order-table-static th, th{
-	background-color: #ededeb;
+	background-color: #ededed;
 	padding: 0.5rem;
 }
 
@@ -885,7 +919,7 @@ table#order-table th, table.invoice-tables th, table#order-table-static th, th{
 
 table#order-table th, table#order-table td, table.invoice-tables td, table.invoice-tables th {
 	text-align: center;
-	padding: 0.5rem;
+	padding: 0.5rem 0 0.25rem 1rem;
 }
 
 .widetext {
@@ -908,8 +942,10 @@ table#order-table th, table#order-table td, table.invoice-tables td, table.invoi
 
 .navigate-button {
 	font-weight: 700;
+	font-size: 1.2rem;
+	font-family: 'PT Sans Narrow', sans-serif;
 	overflow: hidden;
-	padding: 0.25rem 0.5rem;
+	padding: 0.5rem 1.75rem;
 	text-transform: uppercase;
 	min-width: 6rem;
 }
@@ -925,11 +961,13 @@ table#order-table th, table#order-table td, table.invoice-tables td, table.invoi
 
 #product-info-container input[type=submit] {
 	padding: 0.5rem;
+	font-family: 'PT Sans Narrow', sans-serif;
 }
 
 
 #invoice-data input[type=submit], #loginform input[type=submit] {
 	color: #fff;
+	font-family: 'PT Sans Narrow', sans-serif;
 	}
 
 #summary .row {
@@ -1001,14 +1039,14 @@ nav h1 {
     background-color: #363639;
     position: relative;
     padding: 1.3rem 0;
-    width: 7rem;
+    width: 8rem;
 }
 
 .menu-container hr {
-	border-top: 3px solid #EEEEEE;
+	border-top: 4px solid #EEEEEE;
     height: 0.5rem;
     margin: 0rem auto;
-    width: 1.9rem;
+    width: 2.6rem;
 	
 }
 
@@ -1090,7 +1128,9 @@ footer ul {
 	margin-top: 4rem;
 }
 
-
+.header {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
 /******************************************/
 
 .margin-zero {
@@ -1110,6 +1150,10 @@ footer ul {
 
 .margin-top-3rem {
 	margin-top: 3rem;
+}
+
+.margin-top-35rem {
+	margin-top: 3.5rem;
 }
 
 .margin-top-2rem {
@@ -1383,13 +1427,13 @@ label#upper-label {
 }
 
 .rectangle {
-	padding: 0.1rem;
+	padding: 0.2rem;
 /*	width: 100%;*/
 }
 
 table .rectangle {
 	width: 10rem;
-	height: 3.6rem;
+	height: 3.2rem;
 	display:block;
 	margin: 0 auto;
 }
@@ -1547,6 +1591,7 @@ a:hover {
 
 #campaign-form input[type=textarea] {
 	height:12rem;
+	background-color: #FBFBFB;
 }
 
 #campaign-form input[type=textarea] {
@@ -1573,6 +1618,7 @@ a:hover {
 
 	display: none;
 }
+
 
 .modal-content {
 	padding: 4rem;

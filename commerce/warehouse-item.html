@@ -28,49 +28,45 @@
 		</div>
 	</div>
     <div class="item-login">
-        <strong>Logg inn</strong>
+        <strong>Legg inn</strong>
         <div>
-            <span class="blue-txt">Bilder (18)</span><span class="blue-txt">Varebeskrivelser (11)</span>
-        </div>
-        <div class="add-images">
-            +Legg inn bilder
-
-            <!-- <div class="modal fade bs-example-modal-sm modal-add-img" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true"> -->
-            <div class="modal fade bs-example-modal-sm modal-add-img" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h3>Disse mangler bilde</h3>
-                            <ul>
-                                <li><a href="" class="underlined">Appelsinjuice </a></li>
-                                <li><a href="" class="underlined">Mandarinjuice</a></li>
-                                <li><a href="" class="underlined">Eple</a></li>
-                                <li><a href="" class="underlined">Banan</a></li>
-                                <li><a href="" class="underlined">Agurk</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <h2>Last opp bilder for </h2>
-                            <strong class="font-20">Appelsinjuice</strong>
-                            <form action="">
-                                <input type="text" class="btn-height margin-right-2rem width-50"><input type="submit" class="warm-gray-bg white-txt search-img-btn" value="Bla gjennom"> 
-                                <input type="submit" class="warm-gray-bg white-txt upload-btn width-50" value="Last opp"> <span class="padding-left-2rem">.jpg .jpeg  .png</span>
-                                <div class="margin-top-2rem">ELLER sett inn alle url med varenavn</div>
-                                <input type="text" class="btn-height margin-right-2rem width-50"> <br>
-                                <input type="submit" class="warm-gray-bg white-txt save-btn width-50" value="Lagre">
-                            </form>
+            <span class="blue-txt img-handle">Bilder (18)</span>
+        
+            <div class="add-images">
+                <div class="modal fade bs-example-modal-sm modal-add-img" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h3>Disse mangler bilde</h3>
+                                <ul>
+                                    <li><a href="" class="underlined">Appelsinjuice </a></li>
+                                    <li><a href="" class="underlined">Mandarinjuice</a></li>
+                                    <li><a href="" class="underlined">Eple</a></li>
+                                    <li><a href="" class="underlined">Banan</a></li>
+                                    <li><a href="" class="underlined">Agurk</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <h2>Last opp bilder for </h2>
+                                <strong class="font-20">Appelsinjuice</strong>
+                                <form action="">
+                                    <input type="text" class="btn-height margin-right-2rem width-50"><input type="submit" class="warm-gray-bg white-txt search-img-btn" value="Bla gjennom"> 
+                                    <input type="submit" class="warm-gray-bg white-txt upload-btn width-50" value="Last opp"> <span class="padding-left-2rem">.jpg .jpeg  .png</span>
+                                    <div class="margin-top-2rem">ELLER sett inn alle url med varenavn</div>
+                                    <input type="text" class="btn-height margin-right-2rem width-50"> <br>
+                                    <input type="submit" class="warm-gray-bg white-txt save-btn width-50" value="Lagre">
+                                </form>
+                            </div>
                         </div>
                     </div>
+                  </div>
                 </div>
-              </div>
             </div>
         </div>
-
+        <span class="blue-txt item-handle">Varebeskrivelser (11)</span> <!-- handle for dialog also on this element -->
         <!-- adding description -->
         <div class="add-item-description">
-            +Legg inn varebeskrivelse
-
             <div class="modal fade bs-example-modal-sm modal-add-desc" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -104,7 +100,6 @@
               </div>
             </div>
         </div>
-
     </div>
 
     <div class="floatct">
@@ -126,24 +121,17 @@
     });
 
     $(function() {
-    $(".add-images").on('click', function() {
+    $(".img-handle").on('click', function() {
             
-            $(this).find('.modal-add-img').modal('show');
+            $(this).siblings('.add-images').find('.modal-add-img').modal('show');
          });
     });
 
     $(function() {
-    $(".add-item-description").on('click', function() {
-            $(this).find('.modal-add-desc').modal('show');
+    $(".item-handle").on('click', function() {
+            $(this).siblings('.add-item-description').find('.modal-add-desc').modal('show');
          });
     });
-
-    // $(".customer-header").on('mouseover', function() {
-    //     var tmp = $(this).siblings()[0];
-    //     $(tmp).attr('visibility', 'visible');
-    
-    // });
-
 
 
 </script>
