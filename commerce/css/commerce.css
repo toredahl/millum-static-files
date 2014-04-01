@@ -27,6 +27,39 @@ H4: 17px
 
 brødtekst: 15px;
 
+Millumblå
+RGB 0-160-255
+HEX 00a0ff
+
+Grafitt/Sort
+RGB 66-68-69
+HEX 424445
+
+Oransje
+RGB 235-90-30
+HEX eb5a1e
+
+Grønn
+RGB 5-210-0
+HEX 05d200
+
+Lilla
+RGB 120-20-170
+HEX 7814aa
+
+Varm lysgrå  
+RGB 237-237-237
+HEX ededed
+
+Varm mellomgrå
+RGB 205-200-190
+HEX cdc8be
+
+Varm mørkgrå
+RGB 160-155-150
+HEX a09b96
+
+
 */
 
 
@@ -67,12 +100,12 @@ body {
 
 /*  typography  */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 , table tr th{
     color: #363639;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
-#login-intro  {
+#login-intro, .narrow-font  {
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -94,6 +127,12 @@ h4 {
     font-size: 1.7rem;   
 	font-weight: 700;
 }
+
+h5 {
+    font-size: 1.5rem;   
+	font-weight: 700;
+}
+
 
 div, p, span {
 	font-size: 1.5rem;
@@ -119,6 +158,10 @@ nav div.nav-inner-container {
 	float: left;
 }
 
+label {
+	margin-bottom: 0;
+}
+
 #millum-logo {
 	/*width: 12rem;*/
 	width: 100%;
@@ -130,7 +173,7 @@ nav div.nav-inner-container {
 
 .rounded-btn, input.blue-bg {
 	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .relatively {
@@ -144,6 +187,17 @@ nav div.nav-inner-container {
 input[type=text] {
 	background-color: #FBFBFB;
 	border: 1px solid #ededed;
+	min-height: 3.3rem;
+}
+
+.small-btn {
+	padding: 0.5rem 1.5rem;
+	width: auto;
+}
+
+.large-btn {
+	padding: 1.1rem 3.3rem;
+	width: auto;
 }
 
 /* MENU STUFF */
@@ -275,18 +329,18 @@ input[type=text] {
 	display: block;
     height: 0;
     width: 0;
-    border-top: 0.5em solid #424445;
-    border-right: 0.5em solid transparent;
-	border-left: 0.5em solid transparent;
+    border-top: 0.3em solid #424445;
+    border-right: 0.3em solid transparent;
+	border-left: 0.3em solid transparent;
 }
 
 .up-triangle-graphite {
 	display: block;
     height: 0;
     width: 0;
-    border-bottom: 0.5em solid #424445;
-    border-right: 0.5em solid transparent;
-	border-left: 0.5em solid transparent;
+    border-bottom: 0.3em solid #424445;
+    border-right: 0.3em solid transparent;
+	border-left: 0.3em solid transparent;
 }
 
 
@@ -294,18 +348,18 @@ input[type=text] {
 	display: block;
     height: 0;
     width: 0;
-    border-top: 0.5em solid #fff;
-    border-right: 0.5em solid transparent;
-	border-left: 0.5em solid transparent;
+    border-top: 0.3em solid #fff;
+    border-right: 0.3em solid transparent;
+	border-left: 0.3em solid transparent;
 }
 
 .up-triangle-white {
 	display: block;
     height: 0;
     width: 0;
-    border-bottom: 0.5em solid #fff;
-    border-right: 0.5em solid transparent;
-	border-left: 0.5em solid transparent;
+    border-bottom: 0.3em solid #fff;
+    border-right: 0.3em solid transparent;
+	border-left: 0.3em solid transparent;
 }
 
 .up-triangle-green {
@@ -470,6 +524,12 @@ input[type=text] {
 
 .light-gray-bg, .light-gray {
 	background-color: #ededed;
+}
+
+.light-gray-container {
+	background-color: #ededed;
+	padding: 0 2rem 2rem 2rem;
+	margin-top: 2rem;
 }
 
 
@@ -711,7 +771,8 @@ h4.blue-txt {
 }
 
 .percent-indicator { 
-	color: #a19c96;
+	/*color: #a19c96;*/
+	color: #424445;
 	font-size: 2.5rem;
 	padding: 0.25rem 0;
 }
@@ -800,7 +861,7 @@ ul#myTab li.active a {
 
 
 
-.stipled-h4 {
+.stipled-h {
 	border-bottom: 1px dotted #363639;
 	padding-bottom: 0.5rem;	
 }
@@ -913,13 +974,13 @@ table#order-table th, table.invoice-tables th, table#order-table-static th, th{
 .warehouse-table tr td {
 	background-color: #fff;
 	color: #000;
-	padding: 1rem;
+	padding: 0.25rem 1rem;
 }
 
 
 table#order-table th, table#order-table td, table.invoice-tables td, table.invoice-tables th {
 	text-align: center;
-	padding: 0.5rem 0 0.25rem 1rem;
+	padding: 0.5rem 0 0.25rem 2rem;
 }
 
 .widetext {
@@ -955,12 +1016,12 @@ table#order-table th, table#order-table td, table.invoice-tables td, table.invoi
 #invoice-data input[type=submit], #loginform input[type=submit], #product-info-container #button-row input[type=submit], input[type=submit] {
   font-size: 1.5rem;
   height: auto;
-  padding:1.1rem 3.3rem;
+  /*padding:1.1rem 3.3rem;*/
   text-transform: uppercase;
 }
 
 #product-info-container input[type=submit] {
-	padding: 0.5rem;
+	/*padding: 0.5rem;*/
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
@@ -1133,7 +1194,7 @@ footer ul {
 }
 /******************************************/
 
-.margin-zero {
+.margin-zero, .margin-none {
 	margin: 0;
 }
 
@@ -1162,6 +1223,10 @@ footer ul {
 
 .margin-top-4rem {
 	margin-top: 4rem;
+}
+
+.margin-top-10rem {
+	margin-top: 10rem;
 }
 
 
@@ -1208,6 +1273,11 @@ footer ul {
 .padding-left-2rem {
 	padding-left: 2rem;
 }
+
+.padding-sides-2rem {
+	padding: 0 2rem;
+}
+
 
 .padding-top-1rem {
 	padding: 1rem;
@@ -1281,14 +1351,14 @@ footer ul {
 }
 
 
-form.category-form input, form.save-action input {
+form.category-form input {
 	height: 3.5rem;	
 	margin-bottom: 0.5rem;
 	width: 60%;
 
 }
 
-form.category-form input[type=submit], form.save-action input[type=submit]{
+form.category-form input[type=submit]{
 	height: 3.5rem;	
 	margin: 0 0 0.5rem 1rem;
 	padding: 0.5rem 1rem;
@@ -1336,7 +1406,7 @@ div.page-action {
 }
 
 .search-result {
-	margin: 1rem 0;
+	margin: 4rem 0 2rem 0;
 }
 
 .product-img-container {
@@ -1428,7 +1498,10 @@ label#upper-label {
 
 .rectangle {
 	padding: 0.2rem;
-/*	width: 100%;*/
+}
+
+textarea {
+	background-color: #FBFBFB;
 }
 
 table .rectangle {
@@ -1549,6 +1622,7 @@ a:hover {
 
 #search-invoice-field {
 	height: 4.3rem;
+	border: 1px solid #ededed;
 }
 
 .progress-bar-info-blue , .progress-bar {
@@ -1615,10 +1689,8 @@ a:hover {
 
 
 .edit-img ul {
-
 	display: none;
 }
-
 
 .modal-content {
 	padding: 4rem;
@@ -1630,7 +1702,14 @@ a:hover {
 
 .btn-height {
 	height: 4.2rem;
+	border-radius: 0;
 }
+
+.dropdown-toggle{
+	border-radius: 0;
+	border: 1px solid #ededed;
+}
+
 
 #warehouse-stock .upload-btn, #warehouse-stock .save-btn {
 	margin: 1rem 0 0 0;
@@ -1644,6 +1723,7 @@ a:hover {
 .desc-textarea {
 	width: 100%;
 	height: 13rem;
+	background-color: #FBFBFB;
 }
 
 .gray-prevnext {
@@ -1681,4 +1761,58 @@ a:hover {
 
 .no-margin-top {
 	margin-top: 0;
+}
+
+.received {
+	width: 2.0rem;
+	margin-top: 0.25rem;
+}
+
+.blue-dot {
+	width: 2.0rem;
+	/*margin-top: 0.25rem;*/
+}
+
+.ok-arrow {
+	width: 2.5rem;
+	margin: 0 0.5rem 0.75rem 0;
+}
+
+.nav-tabs>li>a {
+	border-radius: 0;
+}
+
+.nav-tabs>li.active>a {
+	background-color: #ededed;
+}
+
+#invoiceContent input[type=submit]{
+	padding: 0.7rem 3.3rem;
+}
+
+#catalogue-quality {
+	margin-top: 5.5rem;
+}
+
+.form-control {
+	display: block;
+width: 100%;
+/* height: 34px; */
+padding: 6px 12px;
+/* font-size: 14px; */
+/* line-height: 1.42857143; */
+/* color: #555; */
+ background-color: #FBFBFB;
+background-image: none;
+border: 1px solid #ededed;
+ border-radius: 0px; 
+/* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
+ box-shadow: none; 
+/* -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
+/* transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
+}
+
+
+textarea.form-control {
+	background-color: #FBFBFB;
 }

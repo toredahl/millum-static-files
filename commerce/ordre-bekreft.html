@@ -10,56 +10,53 @@
 	</head>
 <body>
 
-<div class="container no-padding"><!-- start main container -->
-	<div id="header"></div>
-</div>
+	<div class="container no-padding"><!-- start main container -->
+		<div id="header"></div>
+	</div>
 
-<div id="main-menu" class="container white-bg">
-	<div class="row">
-		<div class="col-lg-12">
-			<div id="column-content-menu">
-	            <ul>
-	                <li><a href="#">OVERSIKT</a></li>
-	                <li class="selected-item"><a href="#">ORDRE</a></li>
-	                <li><a href="#">FAKTURA</a> </li>
-	                <li><a href="#">MINE PRODUKTER</a> </li>
-	                <li><a href="#"> MINE KUNDER</a> </li>
-	                <li class="search-field"><input type="text"></li>
-	                <li><a href="#"> SØK</a> </li>
-	            </ul>
-	        </div>
+	<div id="main-menu" class="container white-bg">
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="column-content-menu">
+	            	<ul>
+		                <li><a href="#">OVERSIKT</a></li>
+		                <li class="selected-item"><a href="#">ORDRE</a></li>
+		                <li><a href="#">FAKTURA</a> </li>
+		                <li><a href="#">MINE PRODUKTER</a> </li>
+		                <li><a href="#"> MINE KUNDER</a> </li>
+		                <li class="search-field"><input type="text"></li>
+		                <li><a href="#"> SØK</a> </li>
+	            	</ul>
+	        	</div>
+			</div>
 		</div>
 	</div>
-</div>
-
-<div class="container white-bg padding-2rem warm-gray-border"><!-- start main container -->
+	<div class="container white-bg padding-2rem warm-gray-border"><!-- start main container -->
 		
-	<div class="row">
-		<div class="col-lg-12">
-			<!-- buttons -->
-			<div class="float-left">
-				<span class="navigate-button light-gray">
-					TILBAKE TIL OVERSIKT
-				</span>
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- buttons -->
+				<div class="float-left">
+					<span class="navigate-button light-gray">
+						TILBAKE TIL OVERSIKT
+					</span>
+				</div>
+				<div class="float-right">
+					<span class="navigate-button light-gray">
+						Neste ubekreftede ordre
+					</span>
+				</div>
+				<!-- end buttons -->
 			</div>
-			<div class="float-right">
-				<span class="navigate-button light-gray">
-					Neste ubekreftede ordre
-				</span>
-			</div>
-			<!-- end buttons -->
 		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-12">
-	
-			<div id="buttons" class="light-gray clearing margin-top-2rem padding-1rem">
-				<span class="glyphicon glyphicon-ok green-txt padding-right-1em font-20"></span><span class="confirm">Bekreftet ordre</span>
-				<span class="addendums float-right">
-					<span class="glyphicon glyphicon-tag font-20"></span>
-					<span>
-
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="buttons" class="light-gray clearing margin-top-2rem padding-1rem">	
+					<img src="img/checked.png" class="ok-arrow" alt="ok icon">
+					<span class="confirm">Bekreftet ordre</span>
+					<span class="addendums float-right">
+						<span class="glyphicon glyphicon-tag font-20"></span>
+						<span>
 						<a href="">Lag pakkseddel</a>
 					</span>
 					<span class="glyphicon glyphicon-print font-20"></span>
@@ -68,7 +65,6 @@
 					</span>
 				</span>
 			</div>
-
 		</div>
 	</div>
 	
@@ -77,7 +73,6 @@
 			<h3 class="bold-font">Ordrenummer 12345</h3>
 		</div>
 		<div class="col-lg-6">
-			<!-- <span class="float-right padding-top-2rem"><a href="">Skriv ut</a></span> -->
 		</div>
 	</div>
 
@@ -91,11 +86,6 @@
 				<div class="col-lg-6"><b>Ønsket innleveringsdato</b></div>
 				<div class="col-lg-6">17.01.2014</div>
 			</div>
-
-			<!-- <div class="float-left margin-top-2rem">
-				<a href="">Tidligere bekreftelser på ordren</a>
-			</div> -->
-			
 		</div>
 		<div class="col-lg-4">
 			<!-- empty -->
@@ -113,7 +103,7 @@
 						1234 Oslo <br>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row margin-top-2rem">
 					<div class="col-lg-6"><b>Kontaktinfor</b></div>
 					<div class="col-lg-6">
 						Martin Martinsen <br>
@@ -122,19 +112,13 @@
 					</div>
 				</div>
 			</div>
-			
 		</div>
-
-
 		<div class="float-left margin-top-2rem margin-left-2rem">
-				<b><a href="">Tidligere bekreftelser på ordren (2)</a></b>
-			</div>
+			<b><a href="">Tidligere bekreftelser på ordren (2)</a></b>
+		</div>
 	</div>
-
-
 	<div class="row">
 		<div class="col-lg-12">
-	    	
 			<table id="order-table-static">
 				<thead>
                 <tr>
@@ -219,11 +203,8 @@
                 </tr>
 
 				</tbody>
-                
-
             </table>
-
-			<div class="pseudo-row"> <span class="float-right margin-right-3rem font-20">Totalpris:  12344.-</span></div>
+			<div class="pseudo-row"> <span class="float-right margin-right-3rem">Totalpris:  12344.-</span></div>
 
 		</div>
 	</div>
@@ -232,8 +213,9 @@
 	<div class="row margin-top-3rem">
 		<div class="col-lg-4">
 			
-			<div class="light-gray-bg padding-1rem rem20-height">
-				<span class="glyphicon glyphicon-envelope"></span><span class="stipled-h4  margin-left-1rem"><strong> Melding fra bestiller </strong></span>
+			<div class="light-gray-bg padding-1rem">
+				<img src="img/Message.png" class="received" alt="message icon">
+				<span class="stipled-h4  margin-left-1rem"><strong> Melding fra bestiller </strong></span>
 				<p class="margin-top-1rem">
 					Hei Arne, <br>
 					sender du den gule sausen, den med estragon og ekstra smak?
@@ -243,12 +225,10 @@
 				</p>
 			</div>
 			<div class="margin-top-1rem"><a href="">Tidligere beskjeder (2)</a></div>
-
 		</div>
 		<div class="col-lg-4">
 			
-			<div class="light-gray-bg padding-1rem rem20-height">
-								
+			<div class="light-gray-bg padding-1rem">
 				<span class="glyphicon glyphicon-transfer"></span><span class="stipled-h4  margin-left-1rem"><strong>Svar fra deg</strong></span>
 				<p class="margin-top-1rem">
 					Supert Morten, jeg har lagt to pakker av den gule sausen i lista. 
@@ -257,16 +237,10 @@
 					/Ole
 				</p>
 			</div>	
-
 		</div>
 		<div class="col-lg-4">
-			
 		</div>
-
-		
-
 	</div>
-
 </div> <!-- end of main container with white background -->	
 
 <div id="support"></div><!-- no color background -->

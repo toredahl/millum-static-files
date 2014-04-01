@@ -36,7 +36,7 @@
 	<div class="row margin-bottom-2rem">
 		<div class="col-lg-12">
 			 <div class="light-gray padding-2rem">
-			 	<h3 class="bold-font margin-top-1rem">Søk faktura</h3>
+			 	<h3 class="bold-font margin-zero">Søk faktura</h3>
 			 	<input id="search-invoice-field" type="search" name="googlesearch"> <input id="search-invoice" type="submit" class="blue-bg white-txt margin-left-1rem" value="SØK">
 				<input id="search-invoice-button" type="submit" class="blue-bg white-txt float-right" value="+ LAG NY FAKTURA">
 			 </div>			
@@ -54,7 +54,7 @@
         <div id="invoiceContent" class="tab-content">
         	
         	<div class="light-gray padding-2rem float-container">
-				<h3 class="bold-font width-auto float-left">Vis:</h3> 
+				<h3 class="bold-font width-auto float-left margin-top-small">Vis:</h3> 
 				<input id="show-all-button" type="submit" class="blue-bg white-txt float-left margin-left-2rem" value="ALLE">
 				<input id="show-daily-button" type="submit" class="warm-gray-bg white-txt float-left margin-left-2rem" value="Dagens ordre">
 				<input id="show-weekly-button" type="submit" class="warm-gray-bg white-txt float-left margin-left-2rem" value="Sist uke">
@@ -62,47 +62,40 @@
 			</div>
             <div class="tab-pane fade in active" id="invoice">
                 <table id="invoice-table" class="invoice-tables">
-
-				<thead>
-	                <tr>
-	                    <th> <div class="float-left">Ordrenummer</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-	                    <th> <div class="float-left">Kundenavn</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-	                    <th> <div class="float-left">Kundenummer</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-	                    <th> <div class="float-left">Ordredato</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-	                    <th> <div class="float-left">Sum</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-	                </tr>
-				</thead>
-				<tbody>
-	                <tr>
-	                    <td>187 78 33 </td>
-	                    <td>Thon</td>
-	                    <td>102456</td>
-	                    <td>11.04.2013</td>
-	                    <td>99 000</td>                   
-	                </tr>
-
-	                <tr>
-	                    <td>345 78 33 </td>
-	                    <td>Clarion</td>
-	                    <td>123356</td>
-	                    <td>21.05.2014</td>
-	                    <td>199 987</td>                   
-	                   
-	                </tr>
-	               
-	               	<tr>
-	                    <td>111 48 23 </td>
-	                    <td>Radisson</td>
-	                    <td>444456</td>
-	                    <td>01.06.2014</td>
-	                    <td>69 050</td>                   
-	                   
-	                </tr>
-               
-                </tbody>
-
-            </table>
-			<div class="pseudo-row"><div class="float-right"><a href="">Vis fullstendig liste</a></div></div>
+					<thead>
+		                <tr>
+		                    <th> <div class="float-left">Ordrenummer</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+		                    <th> <div class="float-left">Kundenavn</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+		                    <th> <div class="float-left">Kundenummer</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+		                    <th> <div class="float-left">Ordredato</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+		                    <th> <div class="float-left">Sum</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+		                </tr>
+					</thead>
+					<tbody>
+		                <tr>
+		                    <td>187 78 33 </td>
+		                    <td>Thon</td>
+		                    <td>102456</td>
+		                    <td>11.04.2013</td>
+		                    <td>99 000</td>                   
+		                </tr>
+		                <tr>
+		                    <td>345 78 33 </td>
+		                    <td>Clarion</td>
+		                    <td>123356</td>
+		                    <td>21.05.2014</td>
+		                    <td>199 987</td>                   
+		                </tr>
+		               	<tr>
+		                    <td>111 48 23 </td>
+		                    <td>Radisson</td>
+		                    <td>444456</td>
+		                    <td>01.06.2014</td>
+		                    <td>69 050</td>                   
+		                </tr>
+	                </tbody>
+            	</table>
+			<div class="pseudo-row"><div class="float-right"><a href="#" class="underlined">Vis fullstendig liste</a></div></div>
 
             </div>
 

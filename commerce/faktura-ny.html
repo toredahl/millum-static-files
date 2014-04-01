@@ -41,32 +41,46 @@
 				<div class="row">
  					<div class="col-lg-6">
 						<label for="invoice-serial">Fakturanummer</label>
-						<input id="invoice-serial" type="number">
-						<label for="order-serial">Ordrenummer</label>
-						<input id="order-serial" type="number">
-						<label for="kid-serial">KID</label>
-						<input id="kid-serial"  type="number">
-						<label for="personal-id-serial">Fødselsnummer</label>
-						<input id="personal-id-serial" type="number" max="11">
+						<input id="invoice-serial" type="text">
+						<label for="order-serial" class="margin-top-2rem">Ordrenummer</label>
+						<input id="order-serial" type="text">
+						<label for="kid-serial" class="margin-top-2rem">KID</label>
+						<input id="kid-serial"  type="text">
+						<label for="personal-id-serial" class="margin-top-2rem">Fødselsnummer</label>
+						<input id="personal-id-serial" type="text" max="11">
 					</div>
 					<div class="col-lg-6">
+						<!-- <label for="invoice-date">Fakturadato</label>
+						<input id="invoice-date" type="date"> -->
 						<label for="invoice-date">Fakturadato</label>
-						<input id="invoice-date" type="date">
-						<label for="order-due-date">Forfallsdato</label>
+  						<input id="invoice-date" class="date-picker" value="dd.mm.yyyy" type="text">
+
+						<!-- <label for="order-due-date">Forfallsdato</label>
 						<input id="order-due-date" type="date">
-						<label for="delivery-date">Leveringsdato</label>
+ -->
+
+						<label for="order-due-date" class="margin-top-2rem">Forfallsdato</label>
+  						<input id="order-due-date" class="date-picker" value="dd.mm.yyyy" type="text">
+						<!-- <label for="delivery-date">Leveringsdato</label>
 						<input id="delivery-date"  type="date">
+ -->
+
+<!-- 						<div class="input-append date" id="dp3"> -->
+							<label for="delivery-date" class="margin-top-2rem">Leveringsdato</label>
+  							<input class="date-picker" value="dd.mm.yyyy" type="text">
+  							<span class="add-on"><i class="icon-th"></i></span>
+						<!-- </div> -->
 					</div>
 				</div>
 			
 				<div class="row invoice-summary">
 					<div class="col-lg-6">
-						<h3>Kjøpers ordrenummer</h3>
-						<div>Fakturatotal</div>
+						<h3 class="bold-font margin-top-1rem">Kjøpers ordrenummer</h3>
+						<h3 class="bold-font  margin-top-1rem">Fakturatotal</h3>
 					</div>
 					<div class="col-lg-6">
-						<div>123447888</div>
-						<div>1440.45</div>
+						<div class=" margin-top-1rem">123448</div>
+						<div class=" margin-top-1rem">1440.45</div>
 						<div><a href="" class="underlined">Spesifikasjon</a></div>
 					</div>
 				</div>	
@@ -80,14 +94,14 @@
 			<div class="row light-gray margin-zero">
 				<div class="col-lg-6">
 					
-					<h3 class="stipled-h4">
+					<h3 class="stipled-h bold-font">
 						Mottaker
 					</h3>
 					
 					<div class="recipient">
-						<b>
-							Leverandørsted
-						</b>
+						<h5 class="bold-font margin-zero">
+							Leveransested
+						</h5>
 						<address>
 							<b>Gate 1</b> <br>
 							Sted, postnr
@@ -95,9 +109,9 @@
 					</div>
 
 					<div class="recipient">
-						<b>
+						<h5 class="bold-font margin-zero">
 							Leverandørsted
-						</b>
+						</h5>
 						<address>
 							<b>Gate 1</b> <br>
 							Sted, postnr
@@ -106,9 +120,9 @@
 					</div>
 
 					<div class="recipient">
-						<b>
-							Leverandørsted
-						</b>
+						<h5 class="bold-font margin-zero">
+							Juridisk enhet
+						</h5>
 						<address>
 							<b>Gate 1</b> <br>
 							Sted, postnr
@@ -118,14 +132,14 @@
 				</div>
 				<div class="col-lg-6">
 					
-					<h4 class="stipled-h4">
+					<h3 class="stipled-h bold-font">
 						Leverandør
-					</h4>
+					</h3>
 
 					<div class="supplier">
-						<b>
+						<h5 class="bold-font margin-zero">
 							Staples Norge AS
-						</b>
+						</h5>
 						<address>
 							<b>Gate 1</b> <br>
 							Sted, postnr
@@ -140,7 +154,7 @@
 	</div>	
 </div>
 
-<div class="container white-bg padding-bottom-2rem">
+<div class="container white-bg padding-bottom-2rem padding-2rem">
 	<div class="row">
 		<div class="col-lg-12">
 			<h3 class="bold-font">Fakturalinjer</h3>
@@ -248,11 +262,11 @@
 			<form action="">
 				<div class="row">
 					<div class="col-lg-6">Forhåndsfakturering</div>
-					<div class="col-lg-6"><input type="number"></div>
+					<div class="col-lg-6"><input type="text"></div>
 				</div>
 				<div class="row">
 					<div class="col-lg-6">Øreavrunding</div>
-					<div class="col-lg-6"><input type="number"></div>
+					<div class="col-lg-6"><input type="text"></div>
 				</div>
 
 				<div class="row padding-top-2rem">
@@ -262,7 +276,6 @@
 				<hr>
 				<input type="submit" value="Send faktura" class="left blue-bg white-txt">
 			</form>
-
 		</div>
 
 		<div class="col-lg-8">
@@ -276,9 +289,10 @@
 <div id="footer"></div> <!-- full width with its own color background -->
 
 <script src="../scripts/jquery-2.1.0.min.js"></script>
-<script src="../jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js"></script>
+<!-- <script src="../jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js"></script> -->
 <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
-
+<link type="text/css" rel="stylesheet" href="js/datepicker/css/datepicker.css">
+<script src="js/datepicker/js/bootstrap-datepicker.js"></script>
 
 <script> 
 
@@ -289,9 +303,11 @@
 
         if (!Modernizr.inputtypes.date) {
         	
-		    $('input[type=date]').datepicker();
+		    //$('input[type=date]').datepicker();
 		    // datepicker must be styled for the other browsers later: http://api.jqueryui.com/datepicker/
 		}
+		
+		$('input.date-picker').datepicker();
     
 	});
 

@@ -70,14 +70,18 @@
 				<div class="col-lg-6">17.01.2014</div>
 			</div>
 
-			<div class="float-left margin-top-2rem">
-				<a href="">Tidligere bekreftelser på ordren</a>
+			<div class="float-left margin-top-10rem">
+				<img src="img/Clock.png" class="received" alt="clock icon">
+				<span class="">
+				<a href="" class="underlined">Tidligere bekreftelser på ordren (2)</a>
 			</div>
 			
 		</div>
 		<div class="col-lg-4">
 			<div class="light-gray-bg padding-1rem">
-				  <span class="glyphicon glyphicon-envelope font-20"></span><span class="icon-adjustment"><a href="#">Du har fått melding fra bestiller</a></span>
+				  <!-- <span class="glyphicon glyphicon-envelope font-20"></span> -->
+				<img src="img/Message.png" class="received" alt="message icon">
+				<span class="icon-adjustment"><a href="#">Du har fått melding fra bestiller</a></span>
 			</div>
 		</div>
 		<div class="col-lg-4">
@@ -136,7 +140,7 @@
                     <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>325,50</td>
-                	<td>Endre</td>
+                	<td class="underlined">Endre</td>
                 </tr>
 
                 <tr>
@@ -149,7 +153,7 @@
                     <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>500,50</td>
-                	<td>Endre</td>
+                	<td class="underlined">Endre</td>
                 </tr>
                 <tr>
                     <td>100 78 33 </td>
@@ -161,7 +165,7 @@
                     <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>165,50</td>
-                	<td>Endre</td>
+                	<td class="underlined">Endre</td>
                 </tr>
                 <tr>
                     <td>100 78 33 </td>
@@ -173,7 +177,7 @@
                     <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>225,50</td>
-                	<td>Endre</td>
+                	<td class="underlined">Endre</td>
                 </tr>
                 <tr>
                     <td>100 78 33 </td>
@@ -185,13 +189,13 @@
                     <td><input type="text" class="change-order" name="changefield" value=""></td>
                     <td><input type="text" name="changefield" value=""></td>
                     <td>135,50</td>
-                	<td>Endre</td>
+                	<td class="underlined">Endre</td>
                 </tr>
 
 				</tbody>
             </table>
 			
-			<div class="pseudo-row"><div id="add-row" class="float-left">+Legg til ny varelinje</div> <div class="float-right margin-right-2rem font-20">Totalpris: 1344,50</div></div>
+			<div class="pseudo-row"><div id="add-row" class="float-left">+Legg til ny varelinje</div> <div class="float-right margin-right-2rem">Totalpris: 1344,50</div></div>
 
 		</div>
 	</div>
@@ -201,7 +205,9 @@
 		<div class="col-lg-4">
 			
 			<div class="light-gray-bg padding-1rem">
-				<span class="glyphicon glyphicon-envelope font-20"></span><span class="stipled-h4 icon-adjustment"><strong> Melding fra bestiller </strong></span>
+				<!-- <span class="glyphicon glyphicon-envelope font-20"></span> -->
+				<img src="img/Message.png" class="received" alt="message icon">
+				<span class="stipled-h4 icon-adjustment"><strong> Melding fra bestiller </strong></span>
 				<p class="margin-top-1rem">
 					Hei Arne, <br>
 					sender du den gule sausen, den med estragon og ekstra smak?
@@ -267,7 +273,7 @@
 
         $("#add-row").on('click', function() {
         	
-        	var newrow = '<tr><td>34566</td><td>Rødspette</td><td>4</td><td>paller</td><td>455</td><td>7</td><td><input type="text" name="changefield" value="2"></td><td><input type="text" name="changefield" value=""></td><td>467</td><td>Endre</td></tr>';
+        	var newrow = '<tr><td>34566</td><td>Rødspette</td><td>4</td><td>paller</td><td>455</td><td>7</td><td><input type="text" name="changefield" value="2"></td><td><input type="text" name="changefield" value=""></td><td>467</td><td class="underlined">Endre</td></tr>';
 			$("#order-table").append(newrow);			
 
         });
