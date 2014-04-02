@@ -185,7 +185,8 @@
 							<label for="campaign-item-description">Beskrivelse:</label><br>
 							<textarea id="campaign-item-description" class="form-control" rows="5"></textarea>
 							<br><br>
-							<input type="submit" value="Lukk" class="float-right black-txt">
+							<!-- <input type="submit" value="Lukk" class="float-right black-txt"> -->
+							<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
 						</div>
 					</div>
 				</div>
@@ -245,6 +246,7 @@
 							<div><a href="" class="underlined">Livvidde</a></div>
 							<div>+ Legg til flere inndelinger</div>
 							<input type="submit" value="Lukk" class="float-right black-txt">
+							div
 						</div>
 					</div>
 				</div>
@@ -288,8 +290,16 @@
 
         $(".pulldown-menu").on('click', function() {
         	
+
+        	// .on('click', function() {
+        	// 	debugger
+        	// });
         	$(this).siblings().toggleClass('no-show');
         	$(this).find("div.pulldown-form-position").toggleClass('down-triangle-graphite').toggleClass('up-triangle-graphite');
+
+        	//var tmp = $(this).find(".rectangle-small");
+			//debugger
+
 
         });
 

@@ -25,8 +25,8 @@
                         <li><a href="#">FAKTURA</a> </li>
                         <li><a href="#">MINE PRODUKTER</a> </li>
                         <li><a href="#"> MINE KUNDER</a> </li>
-                        <li class="search-field"><input type="text"></li>
-                        <li><a href="#"> SØK</a> </li>
+                        <li class="search-field float-left"><input type="text" value="Ordre / Produktbeskrivelse / Avgift"><a href="#" class="float-right"> SØK</a></li>
+                        <!-- <li><a href="#"> SØK</a> </li> -->
                     </ul>
                 </div>
 
@@ -55,7 +55,7 @@
                                 <td>17.04.2014</td>
                                 <td>112 000</td>
                                 <td><div class="gray-box white-txt rectangle click-me"> MOTTATT </div></td>
-                                <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
+                                <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle-small float-left"> BEKREFT </div></td>
                             </tr>
                             <tr>
                                 <td>34567</td>
@@ -285,6 +285,11 @@
             $("#footer").load("footer-bs3.1.1.html"); 
             $(".tmp-w").load("warehouse-item.html"); 
             $("#order-table").tablesorter(); 
+
+            $("#order-table th").on('click', function() {
+                $("div.table-arrow-position").toggleClass('down-triangle-graphite').toggleClass('up-triangle-graphite');
+            });
+
 
             $('.click-me').on('click', function() {
                 //var ok = '<span class="glyphicon glyphicon-ok green-txt font-size-2_5rem"></span>';    

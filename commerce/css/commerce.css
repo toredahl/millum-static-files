@@ -210,6 +210,12 @@ input[type=text] {
 	margin: 0 3rem 0 2rem;
 }
 
+.welcome-pos-txt {
+	top: 0.5rem;
+	left: 10px;
+	font-size: 1.4rem;
+}
+
 #main-menu.container {
 	padding:0;
 }
@@ -316,6 +322,10 @@ input[type=text] {
     border-right: 0.9em solid transparent;
 }
 
+.left-half-top-triangle-graphite:hover { 
+	border-top: 0.7em solid #00a0ff;
+}
+
 .left-half-top-triangle-warm-gray {
     display: block;
     height: 0;
@@ -334,6 +344,10 @@ input[type=text] {
 	border-left: 0.3em solid transparent;
 }
 
+th:hover .down-triangle-graphite, th:hover .down-triangle-white {
+	border-top: 0.3em solid #00a0ff;
+}
+
 .up-triangle-graphite {
 	display: block;
     height: 0;
@@ -343,6 +357,10 @@ input[type=text] {
 	border-left: 0.3em solid transparent;
 }
 
+
+th:hover .up-triangle-graphite {
+	border-bottom: 0.3em solid #00a0ff;
+}
 
 .down-triangle-white {
 	display: block;
@@ -895,14 +913,20 @@ ul#myTab li.active a {
 }
 
 #column-content-menu ul li.search-field {
-	
+	float:right;
 	padding: 1.0rem 3.5rem 0rem 3.5rem;
+
 }
 
 .search-field input {
 	height: 3rem;
-	/*background-color: #ededed;*/
+	width: 30rem;
+	color: #fff;
 	background-color: #a09b96;
+	border-top: 1px solid #a09b96;
+	border-left: 1px solid #a09b96;
+	border-right: 1px solid #a09b96;
+	border-bottom: 2px solid #fff;
 }
 
 #column-content-menu ul li.selected-item {
@@ -916,6 +940,9 @@ ul#myTab li.active a {
 
 #column-content-menu ul li a{
 	color: #fff;
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	margin-left: 0.5rem;
 }
 
 div#column-content-menu, #column-content-menu div {
@@ -1500,12 +1527,20 @@ label#upper-label {
 	padding: 0.2rem;
 }
 
+.rectangle-small {
+	padding: 0.5rem 1.0rem;
+}
+
+.rectangle-large {
+	padding: 1.1rem 3.3rem;
+}
+
 textarea {
 	background-color: #FBFBFB;
 }
 
 table .rectangle {
-	width: 10rem;
+	width: 9rem;
 	height: 3.2rem;
 	display:block;
 	margin: 0 auto;
@@ -1537,7 +1572,8 @@ table .rectangle:hover {
 #order-table input, #order-table-static input {
 	background-color: #FBFBFB;
 	float:left;
-	margin-right: 0.5rem;
+	margin-right: 1.5rem;
+	width: 9rem;
 }
 
 #order-table th:hover {
@@ -1819,4 +1855,8 @@ textarea.form-control {
 
 .log-in-img {
 	width: 10rem;
+}
+
+input[type=checkbox] {
+	margin-right:1rem;
 }
