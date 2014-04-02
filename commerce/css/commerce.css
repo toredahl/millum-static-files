@@ -592,6 +592,11 @@ th:hover .up-triangle-graphite {
 	color: #108BF5;
 }
 
+.blue-txt:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 .orange-txt {
 	color: #ec581e;
 }
@@ -920,13 +925,24 @@ ul#myTab li.active a {
 
 .search-field input {
 	height: 3rem;
-	width: 30rem;
+	width: 17rem;
 	color: #fff;
 	background-color: #a09b96;
 	border-top: 1px solid #a09b96;
 	border-left: 1px solid #a09b96;
 	border-right: 1px solid #a09b96;
 	border-bottom: 2px solid #fff;
+	padding-bottom: 4px;
+}
+
+.helpSearchTxt {
+	opacity: 0.8;	
+	font-style: italic; 
+}
+
+.searchTxt{
+	opacity: 1.0;
+	font-style: normal;
 }
 
 #column-content-menu ul li.selected-item {

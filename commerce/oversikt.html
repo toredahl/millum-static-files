@@ -25,7 +25,7 @@
                         <li><a href="#">FAKTURA</a> </li>
                         <li><a href="#">MINE PRODUKTER</a> </li>
                         <li><a href="#"> MINE KUNDER</a> </li>
-                        <li class="search-field float-left"><input type="text" value="Ordre / Produktbeskrivelse / Avgift"><a href="#" class="float-right"> SØK</a></li>
+                        <li class="search-field float-left"><input type="text" class="helpSearchTxt" value="Ordre / Produktbeskrivelse / Avgift"><a href="#" class="float-right"> SØK</a></li>
                         <!-- <li><a href="#"> SØK</a> </li> -->
                     </ul>
                 </div>
@@ -105,7 +105,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-9">
-                    <div id="new-catalogue" class="float-left">+Lag ny varekatalog</div>
+                    <div id="new-catalogue" class="float-left"><a href="" class="underlined">+ Lag ny varekatalog</a></div>
                     <div class="clearing"></div>
                     <!-- warehouse item start -->
                     <div class="warehouse-item float-left">
@@ -283,8 +283,18 @@
             $("#header").load("header-bs3.1.1.html"); 
             $("#support").load("support-bs3.1.1.html"); 
             $("#footer").load("footer-bs3.1.1.html"); 
+
+            $(".search-field input").on('click', function() {
+                $(this).removeClass("helpSearchTxt");    
+                $(this).addClass("searchTxt");
+                $(this).val("");
+
+            }); 
+
             $(".tmp-w").load("warehouse-item.html"); 
             $("#order-table").tablesorter(); 
+
+
 
             $("#order-table th").on('click', function() {
                 $("div.table-arrow-position").toggleClass('down-triangle-graphite').toggleClass('up-triangle-graphite');
