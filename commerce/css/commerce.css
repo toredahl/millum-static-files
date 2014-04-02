@@ -1816,3 +1816,7 @@ border: 1px solid #ededed;
 textarea.form-control {
 	background-color: #FBFBFB;
 }
+
+.log-in-img {
+	width: 10rem;
+}

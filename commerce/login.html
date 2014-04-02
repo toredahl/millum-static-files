@@ -111,13 +111,81 @@
 
 	<script src="../scripts/jquery-2.1.0.min.js"></script>
 	<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+	<script src="js/jquery.cookie.js"></script>
 
 	<script> 
 	    $(function() {
 	        $("#header").load("login-header-bs3.1.1.html"); 
 	        $("#support").load("support-warm-gray.html"); 
 	        $("#footer").load("footer-bs3.1.1.html"); 
+	        //$.cookie('millumtest', 1 , {expires: 10});
+
 		});
+
+
+	     if ($.cookie('millumtest') !== null)
+	         	 $(function() {
+	         	console.log("we have met the cookie and it is ours");
+				countdown = 5000;
+
+				timer = setInterval(function() {
+				   timerCookie = $.cookie('millumtest');
+				   counter = timerCookie/countdown;
+				   timerCookieNewTime = timerCookie - countdown;
+				   $.cookie('millumtest', null);
+				   $.cookie('millumtest', timerCookieNewTime, {expires: 10, path: '/'});
+				   counter = counter - 1;    
+				   console.log("Counter  now: " + counter);
+				   if (counter <= 0 || isNaN(counter)) {
+				          clearInterval(timer);
+				        //  $.cookie('AR12cookieSurveyMonkey2', 'AR12CookieForSurveyMonkey2', {expires: 365, path: '/'});
+				        //  $.cookie('AR12cookieSurveyMonkey2timerCookie', null);
+				          //crapLoader.loadScript("https://www.surveymonkey.com/jsPop.aspx?sm=v4qvc4DC25hPx6BDPbPJtA_3d_3d", "surveymonkeyContainer");
+
+				          alert("Hello! How did you do? You've reached the restaurant at the end of the Universe.");
+				   };
+				}, countdown);
+			});
+
+			} else {
+				console.log("We do not have a cookie set");
+
+
+				 $(function() {
+                     counter = 22;
+                     countdown = 5000;
+ 
+                     timer = setInterval(function() {
+                           counter = counter - 1;
+                           timerCookie = $.cookie('millumtest');
+                           timerCookieNewTime = timerCookie - countdown;
+                           $.cookie('millumtest', null);
+                           $.cookie('millumtest', timerCookieNewTime, {expires: 365, path: '/'});
+ 
+                           if (counter == 0) {
+                                  clearInterval(timer);
+                                  
+                                  console.log("counter is now zero...");
+                                  alert("I am NOT a number! I am a FREE man!");
+                           };
+                     }, countdown);
+              	});
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+
 	</script>
 
 
