@@ -595,6 +595,7 @@ th:hover .up-triangle-graphite {
 .blue-txt:hover {
 	cursor: pointer;
 	text-decoration: underline;
+	opacity: 0.9;
 }
 
 .orange-txt {
@@ -1567,6 +1568,10 @@ table .rectangle:hover {
 	background-color: #00a0ff;
 }
 
+.small-icon {
+	width: 2.0rem;
+}
+
 .icon-adjustment {
 	position: absolute;
 	margin-left: 10px;
@@ -1848,22 +1853,21 @@ a:hover {
 
 .form-control {
 	display: block;
-width: 100%;
-/* height: 34px; */
-padding: 6px 12px;
-/* font-size: 14px; */
-/* line-height: 1.42857143; */
-/* color: #555; */
- background-color: #FBFBFB;
-background-image: none;
-border: 1px solid #ededed;
- border-radius: 0px; 
-/* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
- box-shadow: none; 
-/* -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
-/* transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
+	width: 100%;
+	/* height: 34px; */
+	padding: 6px 12px;
+	/* font-size: 14px; */
+	/* line-height: 1.42857143; */
+	/* color: #555; */
+	 background-color: #FBFBFB;
+	background-image: none;
+	border: 1px solid #ededed;
+	 border-radius: 0px; 
+	/* -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
+	 box-shadow: none; 
+	/* -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
+	/* transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; */
 }
-
 
 textarea.form-control {
 	background-color: #FBFBFB;
@@ -1875,4 +1879,10 @@ textarea.form-control {
 
 input[type=checkbox] {
 	margin-right:1rem;
+}
+
+.confirm-order-container {
+	border: 1px solid #cdc8be;
+	padding: 1rem;
+	background-color: #ededed;
 }
