@@ -1568,6 +1568,11 @@ table .rectangle:hover {
 	background-color: #00a0ff;
 }
 
+.smallest-icon {
+	width: 1.5rem;
+}
+
+
 .small-icon {
 	width: 2.0rem;
 }
