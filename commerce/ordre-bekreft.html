@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	    <title>MILLUM COMMERCE</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	    <!-- <link href="bootstrap-3.1.1-dist/css/bootstrap-responsive.css" rel="stylesheet"> -->
-	    <link type="text/css" rel="stylesheet" href="css/commerce.css">
-	    <!--script src="/../foundation-5.1.1.custom/js/vendor/modernizr.js"></script -->	    
-	</head>
+<head>
+	<title>MILLUM COMMERCE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link type="text/css" rel="stylesheet" href="css/commerce.css">
+</head>
 <body>
-
 	<div class="container no-padding"><!-- start main container -->
 		<div id="header"></div>
 	</div>
-
 	<div id="main-menu" class="container white-bg">
 		<div class="row">
 			<div class="col-lg-12">
 				<div id="column-content-menu">
-	            	<ul>
-		                <li><a href="#">OVERSIKT</a></li>
-		                <li class="selected-item"><a href="#">ORDRE</a></li>
-		                <li><a href="#">FAKTURA</a> </li>
-		                <li><a href="#">MINE PRODUKTER</a> </li>
-		                <li><a href="#"> MINE KUNDER</a> </li>
-		                <li class="search-field float-left"><input type="text" class="helpSearchTxt" value="Ordre / Produkt / Avgift"><a href="#" class="float-right"> SØK</a></li>
-	            	</ul>
-	        	</div>
+					<ul>
+						<li><a href="#">OVERSIKT</a></li>
+						<li class="selected-item"><a href="#">ORDRE</a></li>
+						<li><a href="#">FAKTURA</a> </li>
+						<li><a href="#">MINE PRODUKTER</a> </li>
+						<li><a href="#"> MINE KUNDER</a> </li>
+						<li class="search-field float-left"><input type="text" class="helpSearchTxt" value="Ordre / Produkt / Avgift">
+							<a href="#" class="float-right"> SØK</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container white-bg padding-2rem warm-gray-border"><!-- start main container -->
-		
 		<div class="row">
 			<div class="col-lg-12">
-				<!-- buttons -->
+			<!-- buttons -->
 				<div class="float-left">
 					<span class="navigate-button light-gray">
 						TILBAKE TIL OVERSIKT
@@ -54,238 +50,192 @@
 					<img src="img/checked.png" class="ok-arrow" alt="ok icon">
 					<span class="confirm">Bekreftet ordre</span>
 					<span class="addendums float-right">
-						<img src="img/pakkeseddel.png" class="smallest-icon" alt="printer icon image">
+						<img src="img/pakkeseddel.png" class="smallest-icon" alt="pakkseddel icon bilde">
 						<span>
-						<a href="" class="underlined">Lag pakkseddel</a>
+							<a href="" class="underlined">Lag pakkseddel</a>
+						</span>
+						<span>
+							<img src="img/Printer.png" class="small-icon" alt="printer icon image">
+							<span><a href="" class="underlined">Skriv ut</a></span>
+						</span>
 					</span>
-
-					<img src="img/Printer.png" class="small-icon" alt="printer icon image">
-					<span><a href="" class="underlined">Skriv ut</a></span></span>
-					<!-- <span class="glyphicon glyphicon-print font-20"></span>
-					<span>
-						<a href="">Skriv ut</a>
-					</span> -->
-				</span>
-			</div>
-		</div>
-	</div>
-	
-	<div class="confirm-order-container">
-
-	<div class="row">
-		<div class="col-lg-6">
-			<h3 class="bold-font">Ordrenummer 12345</h3>
-		</div>
-		<div class="col-lg-6">
-		</div>
-	</div>
-
-	<div class="row margin-bottom-2rem">
-		<div class="col-lg-4">
-			<div class="row">
-				<div class="col-lg-6"><b>Ordreinfo</b></div>
-				<div class="col-lg-6">04.05.2013</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6"><b>Ønsket innleveringsdato</b></div>
-				<div class="col-lg-6">17.01.2014</div>
-			</div>
-		</div>
-		<div class="col-lg-4">
-			<!-- empty -->
-		</div>
-		<div class="col-lg-4">
-			<div class="light-gray-bg padding-1rem">
-				<h4 class="stipled-h4"> Kundenummer 345667 </h4>
-				<div class="row">
-					<div class="col-lg-6">
-						<b>Leveringssted</b>
-					</div>
-					<div class="col-lg-6">
-						Thor Ole Fjord <br>
-						Fjordveien 13 <br>
-						1234 Oslo <br>
-					</div>
-				</div>
-				<div class="row margin-top-2rem">
-					<div class="col-lg-6"><b>Kontaktinfor</b></div>
-					<div class="col-lg-6">
-						Martin Martinsen <br>
-						Fjordveien 13 <br>
-						1234 Oslo <br>
-					</div>
 				</div>
 			</div>
 		</div>
-		<div class="float-left margin-top-2rem margin-left-2rem">
-			<b><a href="">Tidligere bekreftelser på ordren (2)</a></b>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-12">
-			<table id="order-table-static">
-				<thead>
-                <tr>
-                    <th> Varenummer</th>
-                    <th> Varenavn </th>
-                    <th> Antall i enhet </th>
-                    <th> Enhet </th>
-                    <th> Pris </th>
-                    <th> Ant. bestilt </th>
-                    <th> Ant. bek </th>
-                    <th> Kommentar </th>
-                    <th> Status </th>
-                </tr>
-				</thead>
-				<tbody>
-                <tr>
-                    <td>100 78 33 </td>
-                    <td>Lasagne spesial, parmesan</td>
-                    <td>12</td>
-                    <td>Kasse</td>
-                    <td>140</td>
-                    <td>4</td>
-                    <td>4</td>
-                    <td>Denne får ny enhetsforpakning i juni.</td>
-                    <td><span class="table-sorter-index">2</span><span class="glyphicon glyphicon-minus red-txt font-20"></span>  </td>
-                </tr>
-                <tr>
-                    <td>199 78 33 </td>
-                    <td>Mortadella</td>
-                    <td>8</td>
-                    <td>Kasse</td>
-                    <td>250</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>Emilia Bologna opprinnelse</td>
-                    <td><span class="table-sorter-index">1</span><span class="glyphicon glyphicon-ok green-txt font-20"></span>  </td>
-                </tr>
-                <tr>
-                    <td>546 78 33 </td>
-                    <td>Risotto alla Milanese</td>
-                    <td>25</td>
-                    <td>Pose</td>
-                    <td>45</td>
-                    <td>6</td>
-                    <td>8</td>
-                    <td>Med safran</td>
-                    <td><span class="table-sorter-index">1</span><span class="glyphicon glyphicon-ok green-txt font-20"></span>  </td>
-                </tr>
-                <tr>
-                    <td>66 78 33 </td>
-                    <td>Gnocchi</td>
-                    <td>8</td>
-                    <td>Eske</td>
-                    <td>80</td>
-                    <td>40</td>
-                    <td>14</td>
-                    <td>Potet-gnocchi</td>
-                    <td> <span class="table-sorter-index">2</span><span class="glyphicon glyphicon-minus red-txt font-20"></span></td>
-                </tr>
-                <tr>
-                    <td>87 78 33 </td>
-                    <td>Pasta all'amatriciana</td>
-                    <td>12</td>
-                    <td>Kasse</td>
-                    <td>120</td>
-                    <td>2</td>
-                    <td>10</td>
-                    <td>Pecorino-basert.</td>
-                    <td> <span class="table-sorter-index">1</span><span class="glyphicon glyphicon-ok green-txt font-20"></span>    </td>
-                </tr>
-
-				<tr>
-                    <td>88 78 43 </td>
-                    <td>Zeppola</td>
-                    <td>12</td>
-                    <td>Eske</td>
-                    <td>790</td>
-                    <td>20</td>
-                    <td>5</td>
-                    <td>Med topping</td>
-                    <td> <span class="table-sorter-index">1</span><span class="glyphicon glyphicon-minus red-txt font-20"></span>    </td>
-                </tr>
-
-				</tbody>
-            </table>
-			<div class="pseudo-row"> <span class="float-right margin-right-3rem">Totalpris:  12344.-</span></div>
-
-		</div>
-	</div>
-
-
-	<div class="row margin-top-3rem">
-		<div class="col-lg-4">
-			
-			<div class="light-gray-bg padding-1rem">
-				<img src="img/Message.png" class="received" alt="message icon">
-				<span class="stipled-h4  margin-left-1rem"><strong> Melding fra bestiller </strong></span>
-				<p class="margin-top-1rem">
-					Hei Arne, <br>
-					sender du den gule sausen, den med estragon og ekstra smak?
-				</p>
-				<p>
-					/Morten
-				</p>
+		<div class="confirm-order-container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h3 class="bold-font">Ordrenummer 12345</h3>
+				</div>
+				<div class="col-lg-6"></div>
 			</div>
-			<!-- <div class="margin-top-1rem"><a href="">Tidligere beskjeder (2)</a></div> -->
+			<div class="row margin-bottom-2rem">
+				<div class="col-lg-4">
+					<div class="row">
+						<div class="col-lg-6"><b>Ordreinfo</b></div>
+						<div class="col-lg-6">04.05.2013</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6"><b>Ønsket innleveringsdato</b></div>
+						<div class="col-lg-6">17.01.2014</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+				<!-- empty -->
+			</div>
+			<div class="col-lg-4">
+				<div class="light-gray-bg padding-1rem">
+					<h4 class="stipled-h4"> Kundenummer 345667 </h4>
+					<div class="row">
+						<div class="col-lg-6">
+							<b>Leveringssted</b>
+						</div>
+						<div class="col-lg-6">
+							Thor Ole Fjord <br>
+							Fjordveien 13 <br>
+							1234 Oslo <br>
+						</div>
+					</div>
+					<div class="row margin-top-2rem">
+						<div class="col-lg-6"><b>Kontaktinfor</b></div>
+						<div class="col-lg-6">
+							Martin Martinsen <br>
+							Fjordveien 13 <br>
+							1234 Oslo <br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="float-left margin-top-2rem margin-left-2rem">
+				<b><a href="">Tidligere bekreftelser på ordren (2)</a></b>
+			</div>
 		</div>
-		<div class="col-lg-4">
-			
-			<div class="light-gray-bg padding-1rem">
-				<span class="glyphicon glyphicon-transfer"></span><span class="stipled-h4  margin-left-1rem"><strong>Svar fra deg</strong></span>
-				<p class="margin-top-1rem">
-					Supert Morten, jeg har lagt to pakker av den gule sausen i lista. 
-				</p>
-				<p>
-					/Ole
-				</p>
-			</div>	
+		<div class="row">
+			<div class="col-lg-12">
+				<table id="order-table-static">
+					<thead>
+						<tr>
+							<th> Varenummer</th>
+							<th> Varenavn </th>
+							<th> Antall i enhet </th>
+							<th> Enhet </th>
+							<th> Pris </th>
+							<th> Ant. bestilt </th>
+							<th> Ant. bek </th>
+							<th> Kommentar </th>
+							<th> Status </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>100 78 33 </td>
+							<td>Lasagne spesial, parmesan</td>
+							<td>12</td>
+							<td>Kasse</td>
+							<td>140</td>
+							<td>4</td>
+							<td>4</td>
+							<td>Denne får ny enhetsforpakning i juni.</td>
+							<td><span class="table-sorter-index">2</span><span class="glyphicon glyphicon-minus red-txt font-20"></span>  </td>
+						</tr>
+						<tr>
+							<td>199 78 33 </td>
+							<td>Mortadella</td>
+							<td>8</td>
+							<td>Kasse</td>
+							<td>250</td>
+							<td>2</td>
+							<td>2</td>
+							<td>Emilia Bologna opprinnelse</td>
+							<td><span class="table-sorter-index">1</span><span class="glyphicon glyphicon-ok green-txt font-20"></span>  </td>
+						</tr>
+						<tr>
+							<td>546 78 33 </td>
+							<td>Risotto alla Milanese</td>
+							<td>25</td>
+							<td>Pose</td>
+							<td>45</td>
+							<td>6</td>
+							<td>8</td>
+							<td>Med safran</td>
+							<td><span class="table-sorter-index">1</span><span class="glyphicon glyphicon-ok green-txt font-20"></span>  </td>
+						</tr>
+						<tr>
+							<td>66 78 33 </td>
+							<td>Gnocchi</td>
+							<td>8</td>
+							<td>Eske</td>
+							<td>80</td>
+							<td>40</td>
+							<td>14</td>
+							<td>Potet-gnocchi</td>
+							<td> <span class="table-sorter-index">2</span><span class="glyphicon glyphicon-minus red-txt font-20"></span></td>
+						</tr>
+						<tr>
+							<td>87 78 33 </td>
+							<td>Pasta all'amatriciana</td>
+							<td>12</td>
+							<td>Kasse</td>
+							<td>120</td>
+							<td>2</td>
+							<td>10</td>
+							<td>Pecorino-basert.</td>
+							<td> <span class="table-sorter-index">1</span><span class="glyphicon glyphicon-ok green-txt font-20"></span>    </td>
+						</tr>
+						<tr>
+							<td>88 78 43 </td>
+							<td>Zeppola</td>
+							<td>12</td>
+							<td>Eske</td>
+							<td>790</td>
+							<td>20</td>
+							<td>5</td>
+							<td>Med topping</td>
+							<td> <span class="table-sorter-index">1</span><span class="glyphicon glyphicon-minus red-txt font-20"></span>    </td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pseudo-row"> <span class="float-right margin-right-3rem">Totalpris:  12344.-</span></div>
+			</div>
 		</div>
-		<div class="col-lg-4">
+		<div class="row margin-top-3rem">
+			<div class="col-lg-4">
+				<div class="light-gray-bg padding-1rem">
+					<img src="img/Message.png" class="received" alt="message icon">
+					<span class="stipled-h4  margin-left-1rem"><strong> Melding fra bestiller </strong></span>
+					<p class="margin-top-1rem">
+						Hei Arne, <br>
+						sender du den gule sausen, den med estragon og ekstra smak?
+					</p>
+					<p>
+						/Morten
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="light-gray-bg padding-1rem">
+					<img src="img/svarFraDeg.png" class="small-icon" alt="printer icon image">
+					<strong>Svar fra deg</strong></span>
+					<p class="margin-top-1rem">
+						Supert Morten, jeg har lagt to pakker av den gule sausen i lista. 
+					</p>
+					<p>
+						/Ole
+					</p>
+				</div>	
+			</div>
+			<div class="col-lg-4">
+			</div>
 		</div>
-	</div>
-	</div>
+		<div class="margin-top-1rem"><a href="">Tidligere beskjeder (2)</a></div>
+	</div> <!-- end of main container with white background -->	
 
-	<div class="margin-top-1rem"><a href="">Tidligere beskjeder (2)</a></div>
-</div> <!-- end of main container with white background -->	
+	<div id="support"></div><!-- no color background -->
+	<div id="footer"></div> <!-- full width with its own color background -->
 
-<div id="support"></div><!-- no color background -->
-<div id="footer"></div> <!-- full width with its own color background -->
-
-<script src="../scripts/jquery-2.1.0.min.js"></script>
-<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
-<script src="js/jquery.tablesorter.min.js"></script>
-
-<script> 
-    $(function() {
-        $("#header").load("header-bs3.1.1.html"); 
-        //$("#header").load("login-header-bs3.1.1.html"); 
-        $//("#support").load("support-bs3.1.1.html"); 
-        $("#footer").load("footer-bs3.1.1.html"); 
-    	$(".tmp-w").load("warehouse-item.html"); 
-
-   //  	$("#order-table").tablesorter(); 
-
-   //  	$("#add-row").on('click', function() {
-        	
-   //      	var newrow = '<tr><td>133 34 566</td><td>Agnolotti</td><td>4</td><td>paller</td><td>Brett</td><td>7</td><td>12</td><td>8</td><td>-</td><td><span class="table-sorter-index">1</span><span class="glyphicon glyphicon-minus red-txt font-20"></span></td></tr>';
-			// $("#order-table").append(newrow);			
-
-   //      });
-
-
-
-	// $('#myTab a').click(function (e) {
-	// 		e.preventDefault();
-	// 		$(this).tab('show');
-	// });
-
-
-    
-	});
-</script>
-
-
+	<script src="../scripts/jquery-2.1.0.min.js"></script>
+	<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>
+	<script src="js/commerce.js"></script>
 </body>
 </html>

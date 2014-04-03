@@ -11,7 +11,6 @@
     <div class="container no-padding"><!-- start main container -->
         <div id="header"></div>
     </div>
-
     <div class="container white-bg "><!-- start main container -->
         <div class="row">
             <div class="col-lg-12">
@@ -221,42 +220,10 @@
                                         <span class="glyphicon glyphicon-chevron-right"></span>
                                     </a>
                                 </div>
-
                                 <div class="margin-top-2rem"><a href="#" class="underlined">Vis fullstendig statistikk</a></div>
-
-                                <!-- <p>Du har omsatt for 1 007 900 kroner gjennom Millum Commerce.</p>
-                                <p>Lorem ipsum and all that jazz</p> -->
                             </div>
                             <div class="tab-pane fade" id="profile">         
-
-
                                 <p>Lorem ipsum and all that jazz</p>                
-                                <!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="item active">
-                                            <img src="http://placehold.it/300x220/aa0ccc/00ff00" data-src="http://placehold.it/200x100/aa0ccc/00ff00" alt="First slide">
-                                        </div>
-                                        <div class="item">
-                                            <img src="http://placehold.it/300x220/aa0c00/00ff00" alt="Second slide">
-                                        </div>
-                                        <div class="item">
-                                            <img src="http://placehold.it/300x220/aa0ccc/ee00ff" alt="Third slide">
-                                        </div>
-                                    </div>
-                                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
-                                </div>
-
-                                <div class="margin-top-2rem"><a href="#" class="underlined">Vis fullstendig statistikk</a></div> -->
                             </div>
                         </div>
                     </div>
@@ -267,61 +234,10 @@
 
     <div id="support"></div><!-- no color background -->
     <div id="footer"></div> <!-- full width with its own color background -->
-
     <script src="../scripts/jquery-2.1.0.min.js"></script>
     <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
     <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/commerce.js"></script>    
 
-    <script> 
-
-        function removeRow (currentelement) {
-            currentelement.parent("td").parent("tr").remove();
-        }
-
-        $(function() {
-            $("#header").load("header-bs3.1.1.html"); 
-            $("#support").load("support-bs3.1.1.html"); 
-            $("#footer").load("footer-bs3.1.1.html"); 
-
-            $(".search-field input").on('click', function() {
-                $(this).removeClass("helpSearchTxt");    
-                $(this).addClass("searchTxt");
-                $(this).val("");
-
-            }); 
-
-            $(".tmp-w").load("warehouse-item.html"); 
-            $("#order-table").tablesorter(); 
-
-
-
-            $("#order-table th").on('click', function() {
-                $("div.table-arrow-position").toggleClass('down-triangle-graphite').toggleClass('up-triangle-graphite');
-            });
-
-
-            $('.click-me').on('click', function() {
-                //var ok = '<span class="glyphicon glyphicon-ok green-txt font-size-2_5rem"></span>';    
-                var ok = '<img src="img/checked.png" alt="ok icon">';
-                $(this).replaceWith(ok);                
-            });
-
-            $('.input-wrapper').siblings('div.gray-box').on('click', function() {
-                
-                var currentvalue = parseInt($('#counter').html());
-                if (currentvalue === 0) {
-                    $("#counter").removeClass("no-show"); //.addClass("counterbox");
-                }
-
-                currentvalue++;
-                $('#counter').html(currentvalue);
-
-                $(this).parent("td").parent("tr").delay(350).fadeOut(250, function(){
-                    $(this).remove();
-                });
-            });
-        });
-
-    </script>
 </body>
 </html>

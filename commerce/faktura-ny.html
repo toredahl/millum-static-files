@@ -4,315 +4,274 @@
 	    <title>MILLUM COMMERCE</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	    <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	    <!-- <link href="bootstrap-3.1.1-dist/css/bootstrap-responsive.css" rel="stylesheet"> -->
 	    <link type="text/css" rel="stylesheet" href="css/commerce.css">
 	    <script src="/../foundation-5.1.1.custom/js/vendor/modernizr.js"></script> 	    
 	</head>
 <body>
 
-<div id="main-header" class="container"><!-- start main container -->
-	<div id="header"></div>
-</div>
+	<div id="main-header" class="container"><!-- start main container -->
+		<div id="header"></div>
+	</div>
 
-<div id="main-menu" class="container white-bg">
-	<div class="row">
-		<div class="col-lg-12">
-			<div id="column-content-menu">
-	            <ul>
-	                <li><a href="#">OVERSIKT</a></li>
-	                <li><a href="#">ORDRE</a></li>
-	                <li class="selected-item"><a href="#">FAKTURA</a> </li>
-	                <li><a href="#">MINE PRODUKTER</a> </li>
-	                <li><a href="#"> MINE KUNDER</a> </li>
-	                <li class="search-field"><input type="text"></li>
-	                <li><a href="#"> SØK</a> </li>
-	            </ul>
-	        </div>
+	<div id="main-menu" class="container white-bg">
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="column-content-menu">
+		            <ul>
+		                <li><a href="#">OVERSIKT</a></li>
+		                <li><a href="#">ORDRE</a></li>
+		                <li class="selected-item"><a href="#">FAKTURA</a> </li>
+		                <li><a href="#">MINE PRODUKTER</a> </li>
+		                <li><a href="#"> MINE KUNDER</a> </li>
+		                <li class="search-field float-left"><input type="text" class="helpSearchTxt" value="Ordre / Produkt / Avgift"><a href="#" class="float-right"> SØK</a></li>
+		            </ul>
+		        </div>
+			</div>
 		</div>
 	</div>
-</div>
 
-<div class="container white-bg padding-2rem margin-bottom-2rem"><!-- start main container -->
-	<h3 class="bold-font">Fakturaopplysninger</h3>
-	<div class="row">
-		<div class="col-lg-4">
-				
-			<form id="invoice-data" class="regular-form" action="">
-				<div class="row">
- 					<div class="col-lg-6">
-						<label for="invoice-serial">Fakturanummer</label>
-						<input id="invoice-serial" type="text">
-						<label for="order-serial" class="margin-top-2rem">Ordrenummer</label>
-						<input id="order-serial" type="text">
-						<label for="kid-serial" class="margin-top-2rem">KID</label>
-						<input id="kid-serial"  type="text">
-						<label for="personal-id-serial" class="margin-top-2rem">Fødselsnummer</label>
-						<input id="personal-id-serial" type="text" max="11">
-					</div>
-					<div class="col-lg-6">
-						<!-- <label for="invoice-date">Fakturadato</label>
-						<input id="invoice-date" type="date"> -->
-						<label for="invoice-date">Fakturadato</label>
-  						<input id="invoice-date" class="date-picker" value="dd.mm.yyyy" type="text">
-
-						<!-- <label for="order-due-date">Forfallsdato</label>
-						<input id="order-due-date" type="date">
- -->
-
-						<label for="order-due-date" class="margin-top-2rem">Forfallsdato</label>
-  						<input id="order-due-date" class="date-picker" value="dd.mm.yyyy" type="text">
-						<!-- <label for="delivery-date">Leveringsdato</label>
-						<input id="delivery-date"  type="date">
- -->
-
-<!-- 						<div class="input-append date" id="dp3"> -->
+	<div class="container white-bg padding-2rem margin-bottom-2rem"><!-- start main container -->
+		<h2 class="bold-font">Fakturaopplysninger</h2>
+		<div class="row">
+			<div class="col-lg-4">			
+				<form id="invoice-data" class="regular-form" action="">
+					<div class="row">
+	 					<div class="col-lg-6">
+							<label for="invoice-serial">Fakturanummer</label>
+							<input id="invoice-serial" type="text">
+							<label for="order-serial" class="margin-top-2rem">Ordrenummer</label>
+							<input id="order-serial" type="text">
+							<label for="kid-serial" class="margin-top-2rem">KID</label>
+							<input id="kid-serial"  type="text">
+							<label for="personal-id-serial" class="margin-top-2rem">Pakkeseddelnummer</label>
+							<input id="personal-id-serial" type="text" max="11">
+						</div>
+						<div class="col-lg-6">
+							<label for="invoice-date">Fakturadato</label>
+	  						<input id="invoice-date" class="date-picker" value="dd.mm.yyyy" type="text">
+							<label for="order-due-date" class="margin-top-2rem">Forfallsdato</label>
+	  						<input id="order-due-date" class="date-picker" value="dd.mm.yyyy" type="text">
 							<label for="delivery-date" class="margin-top-2rem">Leveringsdato</label>
-  							<input class="date-picker" value="dd.mm.yyyy" type="text">
-  							<span class="add-on"><i class="icon-th"></i></span>
-						<!-- </div> -->
+							<input class="date-picker" value="dd.mm.yyyy" type="text">
+							<span class="add-on"><i class="icon-th"></i></span>
+						</div>
 					</div>
-				</div>
-			
-				<div class="row invoice-summary">
-					<div class="col-lg-6">
-						<h3 class="bold-font margin-top-1rem">Kjøpers ordrenummer</h3>
-						<h3 class="bold-font  margin-top-1rem">Fakturatotal</h3>
-					</div>
-					<div class="col-lg-6">
-						<div class=" margin-top-1rem">123448</div>
-						<div class=" margin-top-1rem">1440.45</div>
-						<div><a href="" class="underlined">Spesifikasjon</a></div>
-					</div>
-				</div>	
-				<hr>
-				<input type="submit" value="Send faktura" class="float-right blue-bg white-txt">
-			</form>
-		</div>
-
-		<div class="col-lg-8">
-			
-			<div class="row light-gray margin-zero">
-				<div class="col-lg-6">
-					
-					<h3 class="stipled-h bold-font">
-						Mottaker
-					</h3>
-					
-					<div class="recipient">
-						<h5 class="bold-font margin-zero">
-							Leveransested
-						</h5>
-						<address>
-							<b>Gate 1</b> <br>
-							Sted, postnr
-						</address>
-					</div>
-
-					<div class="recipient">
-						<h5 class="bold-font margin-zero">
-							Leverandørsted
-						</h5>
-						<address>
-							<b>Gate 1</b> <br>
-							Sted, postnr
-						</address>
-						<span>Kontonummer 23 34 55 89 9</span>
-					</div>
-
-					<div class="recipient">
-						<h5 class="bold-font margin-zero">
-							Juridisk enhet
-						</h5>
-						<address>
-							<b>Gate 1</b> <br>
-							Sted, postnr
-						</address>
-					</div>
-
-				</div>
-				<div class="col-lg-6">
-					
-					<h3 class="stipled-h bold-font">
-						Leverandør
-					</h3>
-
-					<div class="supplier">
-						<h5 class="bold-font margin-zero">
-							Staples Norge AS
-						</h5>
-						<address>
-							<b>Gate 1</b> <br>
-							Sted, postnr
-						</address>
-					</div>
-
-				</div>
+				
+					<div class="row invoice-summary">
+						<div class="col-lg-6">
+							<h3 class="bold-font margin-top-1rem">Kjøpers ordrenummer:</h3>
+							<h3 class="bold-font  margin-top-1rem">Fakturatotal:</h3>
+						</div>
+						<div class="col-lg-6">
+							<div class=" margin-top-1rem">123448</div>
+							<div class=" margin-top-1rem">1440.45</div>
+							<div class="margin-top-2rem"><a href="" class="underlined">Spesifikasjon</a></div>
+						</div>
+					</div>	
+					<hr>
+					<input type="submit" value="Send faktura" class="float-right blue-bg rectangle-large white-txt">
+				</form>
 			</div>
-			
-		</div>
-		
-	</div>	
-</div>
-
-<div class="container white-bg padding-bottom-2rem padding-2rem">
-	<div class="row">
-		<div class="col-lg-12">
-			<h3 class="bold-font">Fakturalinjer</h3>
-			<table class="full-width first-last-colored margin-bottom-2rem">
-				<tr>
-					<th>Ordre</th>
-					<th>Varenavn</th>
-					<th>Antall</th>
-					<th>Ordre</th>
-					<th>Summa</th>
-					<th>Summarum</th>
-					<th>Mva.grunnla</th>
-					<th>MVA</th>
-					<th>Endre</th>
-					<th>Sum</th>
-				</tr>
-				<tr>
-					<td>110 98 7 </td>
-					<td>Majones på tube</td>
-					<td>25</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>22%</td>
-					<td>118.50</td>
-					<td>-</td>
-					<td>-</td>
-				</tr>
-			</table>
-			<div class="pseudo-row margin-bottom-2rem"> <div class="float-left"><a href="">+Legg til ny fakturalinje</a></div></div>
-		</div>
+			<div class="col-lg-8">
+				<div class="row light-gray margin-zero">
+					<div class="col-lg-6">
+						<h3 class="stipled-h bold-font">
+							Mottaker
+						</h3>
+						<div class="recipient">
+							<h5 class="bold-font margin-zero">
+								Leveransested
+							</h5>
+							<address>
+								<b>Gate 1</b> <br>
+								Sted, postnr
+							</address>
+						</div>
+						<div class="recipient">
+							<h5 class="bold-font margin-zero">
+								Leverandørsted
+							</h5>
+							<address>
+								<b>Gate 1</b> <br>
+								Sted, postnr
+							</address>
+							<span>Kontonummer 23 34 55 89 9</span>
+						</div>
+						<div class="recipient">
+							<h5 class="bold-font margin-zero">
+								Juridisk enhet
+							</h5>
+							<address>
+								<b>Gate 1</b> <br>
+								Sted, postnr
+							</address>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<h3 class="stipled-h bold-font">
+							Leverandør
+						</h3>
+						<div class="supplier">
+							<h5 class="bold-font margin-zero">
+								Staples Norge AS
+							</h5>
+							<address>
+								<b>Gate 1</b> <br>
+								Sted, postnr
+							</address>
+						</div>
+					</div>
+				</div>			
+			</div>		
+		</div>	
 	</div>
 
-	<div class="row">
-		<div class="col-lg-4">
-			
-			<div class="row">
-				<div class="col-lg-6"><b>Fradrag</b></div>
-				<div class="col-lg-6"><b>+Nytt fradrag</b></div>
+	<div class="container white-bg padding-bottom-2rem padding-2rem">
+		<div class="row">
+			<div class="col-lg-12">
+				<h3 class="bold-font">Fakturalinjer</h3>
+				<table id="order-table" class="full-width first-last-colored margin-bottom-2rem">
+					<thead>
+						<tr>
+							<th><div class="float-left">Varenr</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">Varenavn</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">Kvantum</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">Enhet</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">Antall</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">Pris</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">Eks.fradrag</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">Ink.fradrag</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">MVA.grunnlag</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">MVA sats</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">Endre</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+							<th><div class="float-left">Slett</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>110 98 7 </td>
+							<td>Majones på tube</td>
+							<td>25</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>22%</td>
+							<td>118.50</td>
+							<td>-</td>
+							<td>-</td>
+							<td><img src="img/Edit.png" class="small-icon" alt="edit illustration icon"></td>
+							<td><img src="img/Trash.png" class="small-icon" alt="trash illustration icon"></td>
+						</tr>
+						<tr>
+							<td>801 18 7 </td>
+							<td>Ost på tube</td>
+							<td>25</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>12%</td>
+							<td>778.50</td>
+							<td>-</td>
+							<td>-</td>
+							<td><img src="img/Edit.png" class="small-icon" alt="edit illustration icon"></td>
+							<td><img src="img/Trash.png" class="small-icon" alt="trash illustration icon"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pseudo-row margin-bottom-2rem"> <div class="float-left"><a href="">+Legg til ny fakturalinje</a></div></div>
 			</div>
-			<div class="row margin-bottom-2rem">
-				<div class="col-lg-12">
-					Det er ikke registrert noe fradrag
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6"><b>Tillegg</b></div>
-				<div class="col-lg-6"><b>+Nytt tillegg</b></div>
-			</div>
-			<div class="row margin-bottom-2rem">
-				<div class="col-lg-12">
-					Det er ikke registrert noe tillegg
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6"><b>Særavgift</b></div>
-				<div class="col-lg-6"><b>+Ny særavgift</b></div>
-			</div>
-			<div class="row margin-bottom-2rem">
-				<div class="col-lg-12">
-					Det er registrert særavgifter
-				</div>
-			</div>
-
 		</div>
-		<div class="col-lg-8"></div>
-	</div>
-
-	<hr>
-
-	<div class="row" id="summary">
-		<div class="col-lg-4">
-			<h4>Fakturadato</h4>
-			<div class="row">
-				<div class="col-lg-6">Sum fradrag</div>
-				<div class="col-lg-6"> - </div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6">Sum tillegg</div>
-				<div class="col-lg-6"> - </div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6">Sum avgifter</div>
-				<div class="col-lg-6"> - </div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6"><b>Sum fradrag</b></div>
-				<div class="col-lg-6"><b>550.- </b></div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6">Sum 25%</div>
-				<div class="col-lg-6"> 435.50 </div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6">Sum avgifter</div>
-				<div class="col-lg-6"> - </div>
-			</div>
-			<form action="">
+		<div class="row">
+			<div class="col-lg-4">	
 				<div class="row">
-					<div class="col-lg-6">Forhåndsfakturering</div>
-					<div class="col-lg-6"><input type="text"></div>
+					<div class="col-lg-6"><b>Fradrag</b></div>
+					<div class="col-lg-6"><b><a href="" class="underlined">+ Nytt fradrag</a></b></div>
+				</div>
+				<div class="row margin-bottom-2rem">
+					<div class="col-lg-12">
+						<p class="dark-medium-gray-txt cursive">Det er ikke registrert noe fradrag</p>
+					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-6">Øreavrunding</div>
-					<div class="col-lg-6"><input type="text"></div>
+					<div class="col-lg-6"><b>Tillegg</b></div>
+					<div class="col-lg-6"><b><a href="" class="underlined">+ Nytt tillegg</a></b></div>
 				</div>
-
-				<div class="row padding-top-2rem">
-					<div class="col-lg-6"><b>Fakturatotal</b></div>
-					<div class="col-lg-6"><b>NOK 1234,56</b></div>
+				<div class="row margin-bottom-2rem">
+					<div class="col-lg-12">
+						<p class="dark-medium-gray-txt cursive">Det er ikke registrert noe tillegg</p>
+					</div>
 				</div>
-				<hr>
-				<input type="submit" value="Send faktura" class="left blue-bg white-txt">
-			</form>
+				<div class="row">
+					<div class="col-lg-6"><b>Særavgift</b></div>
+					<div class="col-lg-6"><b><a href="" class="underlined">+ Ny særavgift</a></b></div>
+				</div>
+				<div class="row margin-bottom-2rem">
+					<div class="col-lg-12">
+						<p class="dark-medium-gray-txt cursive"> Det er registrert særavgifter </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8"></div>
 		</div>
+		<hr>
+		<div class="row" id="summary">
+			<div class="col-lg-4">
+				<h4>Fakturadato</h4>
+				<div class="row">
+					<div class="col-lg-6">Sum fradrag</div>
+					<div class="col-lg-6"> - </div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">Sum tillegg</div>
+					<div class="col-lg-6"> - </div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">Sum avgifter</div>
+					<div class="col-lg-6"> - </div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6"><b>Sum fradrag</b></div>
+					<div class="col-lg-6"><b>550.- </b></div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">Sum 25%</div>
+					<div class="col-lg-6"> 435.50 </div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">Sum avgifter</div>
+					<div class="col-lg-6"> - </div>
+				</div>
+				<form action="">
+					<div class="row">
+						<div class="col-lg-6">Forhåndsfakturering</div>
+						<div class="col-lg-6"><input type="text"></div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">Øreavrunding</div>
+						<div class="col-lg-6"><input type="text"></div>
+					</div>
 
-		<div class="col-lg-8">
-			<!-- empty -->
+					<div class="row padding-top-2rem">
+						<div class="col-lg-6"><b>Fakturatotal</b></div>
+						<div class="col-lg-6"><b>NOK 1234,56</b></div>
+					</div>
+					<hr>
+					<input type="submit" value="Send faktura" class="left blue-bg white-txt rectangle-large">
+				</form>
+			</div>
+			<div class="col-lg-8">
+				<!-- empty -->
+			</div>
 		</div>
+	</div> <!-- end of main container with white background -->	
 
-	</div>
-
-</div> <!-- end of main container with white background -->	
-
-<div id="footer"></div> <!-- full width with its own color background -->
-
-<script src="../scripts/jquery-2.1.0.min.js"></script>
-<!-- <script src="../jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.js"></script> -->
-<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
-<link type="text/css" rel="stylesheet" href="js/datepicker/css/datepicker.css">
-<script src="js/datepicker/js/bootstrap-datepicker.js"></script>
-
-<script> 
-
-    $(function() {
-    
-        $("#header").load("header-bs3.1.1.html");  
-        $("#footer").load("footer-bs3.1.1.html"); 
-
-        if (!Modernizr.inputtypes.date) {
-        	
-		    //$('input[type=date]').datepicker();
-		    // datepicker must be styled for the other browsers later: http://api.jqueryui.com/datepicker/
-		}
-		
-		$('input.date-picker').datepicker();
-    
-	});
-
-</script>
-
+	<div id="footer"></div> <!-- full width with its own color background -->
+	<script src="../scripts/jquery-2.1.0.min.js"></script>
+	<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="js/datepicker/css/datepicker.css">
+	<script src="js/datepicker/js/bootstrap-datepicker.js"></script>
+	<script src="js/commerce.js"></script>
 
 </body>
 </html>

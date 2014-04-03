@@ -592,6 +592,23 @@ th:hover .up-triangle-graphite {
 	color: #108BF5;
 }
 
+
+.light-gray-txt {
+	color: #ededed;
+}
+
+.warm-medium-gray-txt {
+	color: #e6e4e2;
+}
+
+.dark-medium-gray-txt {
+	color: #a19c96;
+}
+
+.cursive {
+	font-style: italic;
+}
+
 .blue-txt:hover {
 	cursor: pointer;
 	text-decoration: underline;
@@ -1014,6 +1031,11 @@ table#order-table th, table.invoice-tables th, table#order-table-static th, th{
 	color: #fff;
 	padding: 1rem;
 }
+
+#warehouse-category-table tr th:hover {
+	background-color: #fff;
+}
+
 
 .warehouse-table tr td {
 	background-color: #fff;
@@ -1564,14 +1586,12 @@ table .rectangle {
 }
 
 table .rectangle:hover {
-
 	background-color: #00a0ff;
 }
 
 .smallest-icon {
 	width: 1.5rem;
 }
-
 
 .small-icon {
 	width: 2.0rem;
@@ -1604,6 +1624,11 @@ table .rectangle:hover {
 
 #order-table th:hover {
 	cursor: pointer;
+}
+
+.pulldown-menu:hover {
+	cursor: pointer;
+	opacity: 0.8;
 }
 
 #order-table-static th:hover {
@@ -1665,6 +1690,7 @@ table .rectangle:hover {
 
 
 th.header:hover, a:hover {
+	cursor: pointer;
 	color: #00a0ff;
 }
 
@@ -1706,6 +1732,23 @@ a:hover {
 	transition: width .6s ease;
 }
 
+.graphite-progress-bar {
+	float: left;
+	width: 0;
+	height: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	background-color: #424445;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+	-webkit-transition: width .6s ease;
+	transition: width .6s ease;
+}
+
+
+
 .floated-header {
 	width: auto;
 	margin-right: 2rem;
@@ -1739,10 +1782,15 @@ a:hover {
 }
 
 .edit-img  {
+	background-color: #fff;
+	left: 33%;
 	position: absolute;
-	top: 18rem;
-	left: 35%;
-	
+	top: 12rem;
+
+}
+
+.edit-img:hover  {
+	padding: 1rem;
 }
 
 .edit-img h4 {
@@ -1752,6 +1800,8 @@ a:hover {
 
 .edit-img ul {
 	display: none;
+	list-style-position: outside;
+	padding-left: 1rem;
 }
 
 .modal-content {
@@ -1813,11 +1863,11 @@ a:hover {
 	visibility: visible;
 }
 
-.navigate-button:hover {
+.navigate-button:hover, .img-handle:hover, .item-handle:hover, .underlined:hover  {
 	color: #00a0ff;
 }
 
-.float-container {
+.float-container, .no-overflow {
 	overflow: hidden;
 }
 
