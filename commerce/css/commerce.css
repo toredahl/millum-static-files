@@ -635,12 +635,20 @@ th:hover .up-triangle-graphite {
 }
 
 /* widths */
+.width-25 {
+	width: 25%;
+}
+
 .width-50 {
 	width: 50%;
 }
 
 .full-width {
 	width: 100%;
+}
+
+.width-10rem {
+	width: 10rem;
 }
 
 .auto-width {
@@ -1508,19 +1516,23 @@ div.page-action {
 	margin: 3rem 0;
 }
 
+#search-submit {
+	width: 10rem;
+	padding: 1rem;
+}
+
 #main-action form input {
 	margin: 0;
 	padding: 0;
 }
 
 #search-action input {
-	/*height: 3.5rem;*/
-	width: 25%;
+	/*width: 25%;*/
 	margin-right: 1rem;
 }
 
 #search-action input[type=submit] {
-	width: auto;
+	/*width: auto;*/
 }	
 
 .custom-search-field {
