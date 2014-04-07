@@ -141,6 +141,7 @@ a, p,span, .users, .byline {
 
 textarea {
 	background-color: #FBFBFB;
+	border: 1px solid #EDEDED;
 }
 
 .rounded-btn, input.blue-bg {

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>MILLUM COMMERCE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	    <link href="bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link type="text/css" rel="stylesheet" href="css/commerce.css">
+	    <script src="/../foundation-5.1.1.custom/js/vendor/modernizr.js"></script> 	    
+	</head>
+<body>
+
+	<div class="container no-padding"><!-- start main container -->
+		<div id="header"></div>
+	</div>
+
+	<div id="main-menu" class="container white-bg">
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="column-content-menu">
+		            <ul>
+		                <li><a href="#">OVERSIKT</a></li>
+		                <li class="selected-item"><a href="#">ORDRE</a></li>
+		                <li><a href="#">FAKTURA</a> </li>
+		                <li><a href="#">MINE PRODUKTER</a> </li>
+		                <li><a href="#"> MINE KUNDER</a> </li>
+		                <li class="search-field float-left"><input type="text" class="helpSearchTxt" value="Ordre / Produkt / Avgift"><a href="#" class="float-right"> SØK</a></li>
+		            </ul>
+		        </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container white-bg padding-2rem"><!-- start main container -->
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="header-container">
+					<h2 class="bold-font floated-header">Pals varekatalog</h2>
+					<div class="float-left margin-top-small"><a href="" class="underlined">Avbryt </a></div></div>
+
+					<div> <b>Kunder</b> 
+						<span><a href="" class="underlined">Choice</a></span>
+						<span><a href="" class="underlined">Thon</a></span>
+						<span><a href="" class="underlined">Asko</a></span>
+						<span><a href="" class="underlined">Rica</a></span> 
+						<div class="float-right bold-font">Valuta: NOK </div>
+					</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="light-gray padding-2rem margin-top-1rem">
+							<div class="row">
+								<div class="col-lg-12 margin-bottom-1rem">
+
+									<h3 class="bold-font margin-zero">Beskrivelse</h3>
+									<textarea class="form-control" rows="3"></textarea>
+									<input type="submit" value="Lagre beskrivelse" class="blue-bg white-txt float-right margin-top-1rem small-btn">
+								</div>
+							</div>				
+							<div class="row margin-bottom-2rem">
+								<div class="col-lg-8">
+									<h3 class="bold-font">Kategorier</h3>
+									<form class="category-form" action="">
+										<input type="text"><img src="img/Trash.png" class="received margin-left-1rem" alt="trashcan icon">
+										<input type="text"><img src="img/Trash.png" class="received margin-left-1rem" alt="trashcan icon">
+										<input type="text"><img src="img/Trash.png" class="received margin-left-1rem" alt="trashcan icon">
+										<input type="text"><img src="img/Trash.png" class="received margin-left-1rem" alt="trashcan icon">
+										<input type="text"><img src="img/Trash.png" class="received margin-left-1rem" alt="trashcan icon">
+										<div class="font-15 margin-top-2rem">Ny kategori</div>
+										<input type="text"><input type="submit" value="Legge til kategori" class="blue-bg white-txt margin-top-1rem small-btn">
+									</form>
+								</div>
+								<div class="col-lg-4">
+									<h3>&nbsp;<!-- this empty header is for easy alignment with the right hand side box --></h3>
+									<table class="warehouse-table">
+										<tr>
+											<th>Resultat i salg siste 3 måneder</th>
+										</tr>
+										<tr>
+											<td><span class="float-left margin-top-1rem margin-right-2rem up-triangle-green"></span><span class="float-left">Økning</span> </td>
+										</tr>
+										<tr>
+											<td><span class="float-left margin-top-1rem margin-right-2rem orange-bar"></span><span class="float-left">Uendret</span></td>
+										</tr>
+										<tr>
+											<td><span class="float-left margin-top-1rem margin-right-2rem  down-triangle-red"></span><span class="float-left">Nedgang</span></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div  class="page-action">
+							<form action="" class="save-action">
+								<input type="submit" value="Lagre endring" class="blue-bg white-txt large-btn"> <a href="" class="underlined">Avbryt</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div id="catalogue-widget"></div>
+			</div>	
+		</div> <!-- end of main container with white background -->	
+	</div>
+	<div id="support"></div><!-- no color background -->
+	<div id="footer"></div> <!-- full width with its own color background -->
+
+	<script src="../scripts/jquery-2.1.0.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>
+	<script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+	<script src="js/commerce.js"></script>
+
+</body>
+</html>

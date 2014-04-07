@@ -58,10 +58,22 @@ $(document).ready(function() {
             $('#modal-img-info').modal('show');
         });
     }
+
+    $('.rectangle-small').on('click', function() {
+        $(this).parent().toggleClass('no-show');
+    });
+
+
     if ($('.pulldown-menu').length > 0) {
         $(".pulldown-menu").on('click', function() {
             $(this).siblings().toggleClass('no-show');
             $(this).find("div.pulldown-form-position").toggleClass('down-triangle-graphite').toggleClass('up-triangle-graphite');
+
+            // $(this).siblings().find('.rectangle-small').on('click', function() {
+            // 	$(this).parent().toggleClass('no-show');
+
+            // });
+
         });
     }
     
@@ -93,7 +105,6 @@ $(document).ready(function() {
     if ($("#add-row").length > 0) {
     	$("#add-row").on('click', function() {	
         	var newrow = '<tr><td>34566</td><td>Rødspette</td><td>4</td><td>paller</td><td>455</td><td>7</td><td><input type="text" name="changefield" value="2"></td><td><input type="text" name="changefield" value=""></td><td>467</td><td class="underlined"><a href="" class="underlined">Endre</a></td></tr>';
-			debugger        	
 			$("#order-table").append(newrow);			
         });
 	}

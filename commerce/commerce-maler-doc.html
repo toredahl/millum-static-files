@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<head>
+	<title>Millum dokumentasjon</title>
+</head>
+
+<style>
+	body {
+		width: 1180px;
+		margin: 0 auto;
+		font-size: 100%;
+		padding: 1rem;
+		background-color: #ebebeb;
+		font-family: Trebuchet MS;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	article {
+		width: 100%;
+		background-color: #fff;
+		min-height: 800px;
+		padding: 2rem;
+	}
+
+	ul {
+		display: inline-table;
+		margin-left: 2rem;
+	}
+
+</style>
+<body>
+	
+	<article>
+		<h1>Millum maler - beskrivelse</h1>
+		
+		<p>Herunder følger en overordnet beskrivelse av det statiske malsettet for Millum Commerce. </p>
+
+		<h2>Maler</h2>
+
+		<p>
+			Det er laget 11 statiske maler for Millum.no:
+		</p>
+		<ul>
+			<li>Logg inn</li>
+			<li>Oversikt</li>
+			<li>Ordre </li>
+			<li>Ordre bekreft </li>
+			<li>Faktura søk </li>
+			<li>Faktura ny </li>
+			<li>Varekatalog </li>
+			<li>Varekatalog, rediger </li>
+			<li>Søk på nummer </li>
+			<li>Søk tekst</li>
+			<li>Produktside</li>
+		</ul>
+		<p>
+			I tillegg er html-kode for header-element og footer-element skilt ut i egne maler under testing, for å unngå duplisering av kode. Disse malene er navngitt som <b> header-bs3.1.1.html </b> og <b> footer-bs3.1.1.html </b>. Det er også en egen header og egen footer for logg inn-siden, da disse har et annerledes design: login-header-bs3.1.1.html  | samt
+		</p>
+
+		<p>
+			Det er også laget noen widget-maler for elementer som gjenbrukes flere steder, av samme årsak (unngå duplisert kode som må oppdateres flere steder.) <br>
+			Disse er: warehouse-item.html  | katalogkvalitet.html <br>
+			Samt også et par snakkeboble-varianter som gjenbrukes flere steder: support-bs3.1.1.html | support-lightgray.html | support-warm-gray.html
+		</p>
+	
+		
+
+		<dl>
+			<dt>LOGIN</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/login.html">http://millum-static-files.herokuapp.com/commerce/login.html</a></dd>
+			<dt>OVERSIKT</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/oversikt.html">http://millum-static-files.herokuapp.com/commerce/oversikt.html</a></dd>
+			<dt>ORDRE</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/ordre.html">http://millum-static-files.herokuapp.com/commerce/ordre.html</a></dd>
+			<dt>ORDRE BEKREFT</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/ordre-bekreft.html">http://millum-static-files.herokuapp.com/commerce/ordre-bekreft.html</a></dd>
+			<dt>FAKTURA S?K</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/faktura-sok.html">http://millum-static-files.herokuapp.com/commerce/faktura-sok.html   </a></dd>
+			<dt>FAKTURA NY</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/faktura-ny.html">http://millum-static-files.herokuapp.com/commerce/faktura-ny.html</a></dd>
+			<dt>VAREKATALOG</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/varekatalog.html">http://millum-static-files.herokuapp.com/commerce/varekatalog.html</a></dd>
+			<dt>VAREKATALOG, REDIGER</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/varekatalog-rediger.html">http://millum-static-files.herokuapp.com/commerce/varekatalog-rediger.html    </a></dd>
+			<dt>SØK NUMMER</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/sok-nummer.html">http://millum-static-files.herokuapp.com/commerce/sok-nummer.html</a></dd>
+			<dt>SØK TEKST</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/sok-tekst.html">http://millum-static-files.herokuapp.com/commerce/sok-tekst.html</a></dd>
+			<dt>PRODUKTSIDE</dt>
+			<dd><a href="http://millum-static-files.herokuapp.com/commerce/produktside.html">http://millum-static-files.herokuapp.com/commerce/produktside.html   </a></dd>
+		</dl>
+
+
+
+		<hr>
+		<h2>Rammeverk, grid</h2>
+		<p>
+			Det er benyttet Bootstrap 3.1.1 til malsettet. Det er ikke lagt opp til et responsivt design, men dette kan implementeres senere ved hjelp av tilstedeværende Bootstrap om ønskelig. 
+		</p>
+
+		
+		<hr>
+		<h2>Html</h2>
+		<p>
+			Malene er statiske og skrevet i standard html5.
+
+		</p>
+		<hr>
+		<h2>Fonter</h2>
+		<p>
+			Det benyttes to fonter for malsettet:
+			<ul>
+				<li>PT Sans Narrow for alle overskrifts-elementer</li>
+				<li>PT Sans for alle andre elementer </li>
+			</ul>
+
+		</p>
+		<p>
+			Fontstørrelser er definert som:
+
+		</p>
+		<ul>
+			<li>H1: 40px (NB: ikke pt som en av skissene viser)</li>
+			<li>H2: 28px </li>
+			<li>H3: 20px</li>
+			<li>H4: 17px</li>
+			<li>Øvrige tekstelementer og H5: 15px </li>
+		</ul>
+
+
+		<hr>
+		<h2>Farger</h2>
+		<p>Følgende fargekoder benyttes i malsettet:</p>
+		<h3>Hovedfarger:</h3>
+		
+		<ul>
+			<li>
+		Millumblå
+		RGB 0-160-255
+		HEX 00a0ff
+		</li><li>
+		Grafitt/Sort
+		RGB 66-68-69
+		HEX 424445
+		</li><li>
+		Oransje
+		RGB 235-90-30
+		HEX eb5a1e
+		</li><li>
+		Grønn
+		RGB 5-210-0
+		HEX 05d200
+		</li><li>
+		Lilla
+		RGB 120-20-170
+		HEX 7814aa
+		</li><li>
+		Varm lysgrå  
+		RGB 237-237-237
+		HEX ededed
+		</li><li>
+		Varm mellomgrå
+		RGB 205-200-190
+		HEX cdc8be
+		</li><li>
+		Varm mørkgrå
+		RGB 160-155-150
+		HEX a09b96
+
+			</li>
+		</ul>
+
+		<hr>
+		<h2>CSS og Javascript</h2>
+		<div>
+			<h3>Javascript-bibliotek:</h3> 
+			<p>Det er benyttet <b>Jquery 2.1</b> som støttebibliotek, men 1.x kan også benyttes. <br>
+			For datovelger er det benyttet <b>bootstrap-datepicker.js </b><br>
+			For tabellsortering benyttes <b>jquery.tablesorter.min.js </b> <br>
+			For bildekarusell, modal dialog benyttes innebygget funksjonalitet i bootstrap.
+			Øvrig javascript-kode er i skriptet <b>commerce.js</b><br>
+			</p>
+		</div>
+
+		<div>
+			<h3>CSS</h3>
+			<p>
+				Stiler er definert i stilarket commerce.css <br>
+				I tillegg finnes datepicker.css, samt bootstrap-stilarket.  <br>
+
+			</p>
+
+		</div>
+
+		<h2>Maler, kommentarer</h2>
+
+		<h3>Felles funksjonalitet, diverse</h3>
+		<p>
+			Søkefelt i meny: tekst fjernes og font-stil endres fra kursiv til normal ved klikk i søkefeltet, håndtert med javascript. 
+
+		</p>
+
+		<h3>Logg in</h3>
+
+
+		<p>
+			Statisk. Captcha-feltet skal hentes fra ASP.NET MVC 5 rammeverket etter hva som har blitt fortalt, og må legges inn i malen.
+		</p>
+
+		<h3>Oversikt</h3>
+		<p>
+			Tabeller sorterbare ved klikk på kolonneoverskrift. <br>
+			JS-event på Motatt og Bekreft-knapper i tabellen. Mottatt endres til grønn hake. Bekreft fjerner raden samt oppdaterer teller i menypunkt for Ordre. <br>
+			Bildekarusell implementert i sidemarg i flik <br>
+			Varekatalogbokser: hentes fra warehouse-item.html. Javascript: Klikk på lenke "Bilder" åpner modal dialog, med grensesnitt for opplasting av bilder (selve opplastingen må implementeres). Klikk på lenke "Varebeskrivelser" åpner dialog for å legge inn varebeskrivelse. Klikk på "Se handel på varekatalog" ekspanderer containeren med et felt hvor graf eller andre html-elementer kan synliggjøres. 
+		</p>
+
+		<h3>Ordre</h3>
+		<p>
+			Statisk, kun sortering av tabellkolonner. 
+
+		</p>
+
+		<h3>Ordre bekreft</h3>
+		<p>Statisk, ingen scripting</p>
+
+		<h3>Faktura, søk</h3>
+		<p>
+			Statisk, ingen scripting. 
+		</p>
+
+		<h3>Faktura, ny</h3>
+		<p>
+			Statisk, ingen scripting. 
+		</p>
+
+		<h3>Varekatalog og varekatalog rediger</h3>
+		<p>
+			Sortering av tabellkolonner.  <br> 
+			Modale bokser åpnes ved klikk på Legg inn bilder og Skriv varebeskrivelser i høyrekolonne for katalogkvalitet. 
+		</p>
+	
+		<h3>Søk tekst og søk nummer</h3>
+		<p>
+			Statisk, ingen scripting. 
+		</p>
+
+		<h3>Produktside</h3>
+		<p>
+			Ekspanderbare bokser under ekstra vareinformasjon, som åpner seg på klikk på overskrifter, lukkes ved klikk på overskrift igjen, eller på knapp merket "Lukk" inne i boksen. 
+
+		</p>
+	</article>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<html>
+	<div>
+		<h1>Vi tester COOKIE</h1>		
+
+	
+		<strong>Dette skriptet skal trigges for 50% av brukerne med en gang, for resten etter 30 sekunder. Hvordan tester vi det? </strong>
+
+		
+		
+		<script src="../scripts/jquery-2.1.0.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script>
+
+			$(document).ready(function(){
+ 
+				console.log("Let's see if ANY of these tests trigger....");
+
+			       if ($.cookie('AR12cookieSurveyMonkey1') !== null) { 
+			       		console.log("What the hell were you thinking when you wrote this test");
+			       }
+			       else if($.cookie('AR12cookieSurveyMonkey2') !== null) {
+			       		console.log("What the hell were you thinking when you wrote THIS - second test, silly?");
+			        }
+			       else if($.cookie('AR12cookieSurveyMonkey2timerCookie') !== null) {
+			       		console.log("Ready: AR12cookieSurveyMonkey2timerCookie is not null");
+			              $(function() {
+			                    countdown = 5000;
+			 					console.log("okay start countdown. ");
+		                        timer = setInterval(function() {
+			                           timerCookie = $.cookie('AR12cookieSurveyMonkey2timerCookie');
+			                           counter = timerCookie/countdown;
+			                           timerCookieNewTime = timerCookie - countdown;
+			                           $.cookie('AR12cookieSurveyMonkey2timerCookie', null);
+			                           $.cookie('AR12cookieSurveyMonkey2timerCookie', timerCookieNewTime, {expires: 365, path: '/'});
+			                           counter = counter - 1;    
+			 							console.log("Crap script test 1, counter:  " + counter + " | timerCookieNewTime"  + timerCookieNewTime  + " | timerCookie: " + timerCookie  );
+			                           if (counter == 0) {
+			                                  clearInterval(timer);
+			                                  $.cookie('AR12cookieSurveyMonkey2', 'AR12CookieForSurveyMonkey2', {expires: 365, path: '/'});
+			                                  $.cookie('AR12cookieSurveyMonkey2timerCookie', null);
+			                                  console.log(" counter is now zero in the second else if (or something similar) " + counter);
+			                                  //crapLoader.loadScript("https://www.surveymonkey.com/jsPop.aspx?sm=v4qvc4DC25hPx6BDPbPJtA_3d_3d", "surveymonkeyContainer");
+			                                  alert("triggering the survey...INSTANTLY? ");
+			                           };
+			                     }, countdown);
+
+			              });
+			       }
+			       else { 
+			       		console.log("okay what happens now... nothing of course. Great. ");
+			       }  // what a piece of crap...
+			 
+			 		console.log("okay, all the crappy tests failed, move on to the next, cookies are supposed to be null in those. ");
+			       if(($.cookie('AR12cookieSurveyMonkey1') == null) && ($.cookie('AR12cookieSurveyMonkey2')) == null && ($.cookie('AR12cookieSurveyMonkey2timerCookie')) == null) {
+			 			
+			 			console.log("Ready: AR12cookieSurveyMonkey2timerCookie is  NULL");
+			              $.cookie('AR12cookieSurveyMonkey2timerCookie', '60000', {expires: 365, path: '/'});
+			 
+			              $(function() {
+			                     counter = 22;
+			                     countdown = 5000;
+			 
+			                     timer = setInterval(function() {
+			                           counter = counter - 1;
+			                           timerCookie = $.cookie('AR12cookieSurveyMonkey2timerCookie');
+			                           timerCookieNewTime = timerCookie - countdown;
+			                           $.cookie('AR12cookieSurveyMonkey2timerCookie', null);
+			                           $.cookie('AR12cookieSurveyMonkey2timerCookie', timerCookieNewTime, {expires: 365, path: '/'});
+			 
+			                           if (counter == 0) {
+			                                  clearInterval(timer);
+			                                  $.cookie('AR12cookieSurveyMonkey2', 'AR12CookieForSurveyMonkey2', {expires: 365, path: '/'});
+			                                  $.cookie('AR12cookieSurveyMonkey2timerCookie', null);
+			                                  //crapLoader.loadScript("https://www.surveymonkey.com/jsPop.aspx?sm=v4qvc4DC25hPx6BDPbPJtA_3d_3d", "surveymonkeyContainer");
+
+			                                  alert("Counter eq zero, here we trigger the  survey after DELAY " + counter);
+			                           };
+			                     }, countdown);
+			              });
+			       };
+
+			       debugger
+			       console.log("let's see what we got now:  calling all cookies! " + $.cookie() );
+			});
+
+
+		</script>
+
+	</div>
+
+</html>
