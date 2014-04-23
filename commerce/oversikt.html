@@ -11,227 +11,230 @@
     <div class="container no-padding"><!-- start main container -->
         <div id="header"></div>
     </div>
-    <div class="container white-bg "><!-- start main container -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="column-content-menu">
-                    <ul>
-                        <li><a href="#">OVERSIKT</a></li>
-                        <li class="selected-item">
-                            <a href="#">ORDRE</a>
-                            <div id="counter" class="no-show counter-box">0</div>
-                        </li>
-                        <li><a href="#">FAKTURA</a> </li>
-                        <li><a href="#">MINE PRODUKTER</a> </li>
-                        <li><a href="#"> MINE KUNDER</a> </li>
-                        <li class="search-field float-left"><input type="text" class="helpSearchTxt" value="Ordre / Produkt / Avgift"><a href="#" class="float-right"> SØK</a></li>
-                    </ul>
-                </div>
-
-                <div class="inner-container">
-
-                    <h3 class="bold-font">Ubehandlede ordre</h3>
-                    <table id="order-table">
-                        <thead>
-                            <tr>
-                                <th><div class="float-left">Ordrenr</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-                                <th><div class="float-left">Kundenr</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-                                <th><div class="float-left">Kunde</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-                                <th><div class="float-left">Ordredata</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-                                <th><div class="float-left">Ønsket levering</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-                                <th><div class="float-left">Sum</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-                                <th><div class="float-left">Mottatt</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-                                <th><div class="float-left">Bekreft ordre uten endring </div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>12345</td>
-                                <td>56789</td>
-                                <td>  Thon Hotels  </td>
-                                <td> 10.04.2014 </td>
-                                <td>17.04.2014</td>
-                                <td>112 000</td>
-                                <td><div class="gray-box white-txt rectangle click-me"> MOTTATT </div></td>
-                                <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
-                            </tr>
-                            <tr>
-                                <td>34567</td>
-                                <td>56789</td>
-                                <td>  Rica Hotels  </td>
-                                <td> 12.04.2014 </td>
-                                <td>10.04.2015</td>
-                                <td>102 000</td>
-                                <td><div class="gray-box white-txt rectangle click-me"> MOTTATT </div></td>
-                                <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
-                            </tr>
-                            <tr>
-                                <td>23456</td>
-                                <td>67890</td>
-                                <td>  Clarion Hotels  </td>
-                                <td> 12.04.2014 </td>
-                                <td>15.05.2014</td>
-                                <td>122 000</td>
-                                <td><div class="gray-box white-txt rectangle click-me "> MOTTATT </div></td>
-                                <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
-                            </tr>
-
-                            <tr>
-                                <td>52356</td>
-                                <td>22890</td>
-                                <td>  Silica Hotels  </td>
-                                <td> 12.03.2014 </td>
-                                <td>15.06.2014</td>
-                                <td>322 000</td>
-                                <td><div class="gray-box white-txt rectangle click-me "> MOTTATT </div></td>
-                                <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="pseudo-row"><a href="" class="underlined"> Se alle ordre (26) </a></div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- end of main container with white background --> 
-
-    <div id="warehouse-stock" class="container margin-top-2rem light-gray padding-bottom-2rem">
-        <div class="inner-container">
+    <section>
+        <div class="container white-bg "><!-- start main container -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="bold-font margin-bottom-1rem">Varekataloger</h3>
+                    <div id="column-content-menu">
+                        <ul>
+                            <li><a href="#">OVERSIKT</a></li>
+                            <li class="selected-item">
+                                <a href="#">ORDRE</a>
+                                <div id="counter" class="no-show counter-box">0</div>
+                            </li>
+                            <li><a href="#">FAKTURA</a> </li>
+                            <li><a href="#">MINE PRODUKTER</a> </li>
+                            <li><a href="#"> MINE KUNDER</a> </li>
+                            <li class="search-field float-left"><input type="text" class="helpSearchTxt" value="Ordre / Produkt / Avgift"><a href="#" class="float-right"> SØK</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="inner-container">
+                        <section>
+                        <h3 class="bold-font">Ubehandlede ordre</h3>
+                        <table id="order-table">
+                            <thead>
+                                <tr>
+                                    <th><div class="float-left">Ordrenr</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+                                    <th><div class="float-left">Kundenr</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+                                    <th><div class="float-left">Kunde</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+                                    <th><div class="float-left">Ordredata</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+                                    <th><div class="float-left">Ønsket levering</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+                                    <th><div class="float-left">Sum</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+                                    <th><div class="float-left">Mottatt</div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+                                    <th><div class="float-left">Bekreft ordre uten endring </div><div class="down-triangle-graphite float-left table-arrow-position"></div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12345</td>
+                                    <td>56789</td>
+                                    <td>  Thon Hotels  </td>
+                                    <td> 10.04.2014 </td>
+                                    <td>17.04.2014</td>
+                                    <td>112 000</td>
+                                    <td><div class="gray-box white-txt rectangle click-me"> MOTTATT </div></td>
+                                    <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
+                                </tr>
+                                <tr>
+                                    <td>34567</td>
+                                    <td>56789</td>
+                                    <td>  Rica Hotels  </td>
+                                    <td> 12.04.2014 </td>
+                                    <td>10.04.2015</td>
+                                    <td>102 000</td>
+                                    <td><div class="gray-box white-txt rectangle click-me"> MOTTATT </div></td>
+                                    <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
+                                </tr>
+                                <tr>
+                                    <td>23456</td>
+                                    <td>67890</td>
+                                    <td>  Clarion Hotels  </td>
+                                    <td> 12.04.2014 </td>
+                                    <td>15.05.2014</td>
+                                    <td>122 000</td>
+                                    <td><div class="gray-box white-txt rectangle click-me "> MOTTATT </div></td>
+                                    <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
+                                </tr>
+
+                                <tr>
+                                    <td>52356</td>
+                                    <td>22890</td>
+                                    <td>  Silica Hotels  </td>
+                                    <td> 12.03.2014 </td>
+                                    <td>15.06.2014</td>
+                                    <td>322 000</td>
+                                    <td><div class="gray-box white-txt rectangle click-me "> MOTTATT </div></td>
+                                    <td><div class="input-wrapper"><input type="text"></div><div class="gray-box white-txt rectangle float-left"> BEKREFT </div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pseudo-row"><a href="" class="underlined"> Se alle ordre (26) </a></div>
+                        </section>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-9">
-                    <div id="new-catalogue" class="float-left"><a href="" class="underlined">+ Lag ny varekatalog</a></div>
-                    <div class="clearing"></div>
-                    <!-- warehouse item start -->
-                    <div class="warehouse-item float-left">
-                        <h4 class="graphite box-header">Varekatalog med langt navn</h4>
-                        <div class="item-upper">
-                            <h4 class="blue-txt">KUNDER (3)</h4>
-                            <h4>VARER (24)</h4>
-                            <div class="margin-top-1rem">Siste kjøp: 14.02.2014</div>
-                            <div class="blue-txt">Seneste aktivitet</div>
-                        </div>
-                        <div class="completed">
-                            <div class="percent-indicator float-right">60%</div>
-                            <div class="progress clearing">
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                    <span class="sr-only">40% Complete (success)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-login">
-                            <strong>Logg inn</strong>
-                        <div>
-                            <span class="blue-txt">Bilder (18)</span><span class="blue-txt">Varebeskrivelser (11)</span>
-                        </div>
+        </div> <!-- end of main container with white background --> 
+
+        <div id="warehouse-stock" class="container margin-top-2rem light-gray padding-bottom-2rem">
+            <div class="inner-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="bold-font margin-bottom-1rem">Varekataloger</h3>
                     </div>
-                    <div>
-                        <div class="warehouse-stats blue-txt">Se handel på varekatalog</div>
-                            <div class="statistics no-show">
-                                GRAFVISNING
-                            </div>
-                        </div>
-                    </div>
-                    <!-- warehouse item end -->
-                    <!-- for testing purposes, we load all of these with the warehouse-item template -->
-                    <div class="tmp-w"></div>
-                    <div class="tmp-w"></div>
-                    <div class="tmp-w"></div>
-                    <div class="tmp-w"></div>
-                    <div class="tmp-w"></div>
-                    <div class="tmp-w"></div>
-                    <div class="tmp-w"></div>
-                    <div class="tmp-w"></div>
-                    <div class="tmp-w"></div>
-                    <!-- end test section -->
                 </div>
-                <div class="col-lg-3">
-                    <div class="float-left action-intro">
-                        <div><strong>Vil du opprette flere varekataloger?</strong></div>
-                        <div>3 nye kjøpere siste måned <img src="img/btn_smallCircle.png" class="blue-dot float-right" alt="blue icon arrow"></div>
-                    </div>
-                    <div class="clearing"></div>
-                    <div class="right-column-overview white-bg">
-                        <ul id="myTab" class="nav nav-tabs">
-                            <li class="active"><a href="#home" data-toggle="tab">Statistikk</a></li>
-                            <li><a href="#profile" data-toggle="tab">Rapporter</a></li> 
-                        </ul>
-                        <div id="myTabContent" class="tab-content">
-                            <div class="tab-pane fade in active" id="home">
-                                <p>Du har omsatt for 1 007 900 kroner gjennom Millum Commerce.</p>
-
-                                <div>Dine 3 mest solgte produkter</div>
-                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="item relatively active">
-                                            <img src="http://placehold.it/300x220/aa0ccc/00ff00" data-src="http://placehold.it/200x100/aa0ccc/00ff00" alt="First slide">
-                                            <div class="absolutely slider-img-caption">Ostekake</div>
-                                        </div>
-                                        <div class="item relatively">
-                                            <img src="http://placehold.it/300x220/aa0c00/00ff00" alt="Second slide">
-                                            <div class="absolutely slider-img-caption">Sjokoladekake</div>
-                                        </div>
-                                        <div class="item relatively">
-                                            <img src="http://placehold.it/300x220/aa0ccc/ee00ff" alt="Third slide">
-                                            <div class="absolutely slider-img-caption">Kokoskake</div>
-                                        </div>
-                                    </div>
-                                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
-                                </div>
-
-                                <div class="margin-top-2rem">Dine 3 minst solgte produkter</div>
-                                <div id="carousel-secondary-generic" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-secondary-generic" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-secondary-generic" data-slide-to="1"></li>
-                                        <li data-target="#carousel-secondary-generic" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="item relatively active">
-                                            <img src="http://placehold.it/300x220/99dc7c/cc2f00" data-src="http://placehold.it/200x100/aa0ccc/00ff00" alt="First slide">
-                                            <div class="absolutely slider-img-caption">Gurkemeie</div>
-                                        </div>
-                                        <div class="item relatively">
-                                            <img src="http://placehold.it/300x220/3356A0/776600" alt="Second slide">
-                                            <div class="absolutely slider-img-caption">Gulrotjuice</div>
-                                        </div>
-                                        <div class="item relatively">
-                                            <img src="http://placehold.it/300x220/883c8c/44dd11" alt="Third slide">
-                                            <div class="absolutely slider-img-caption">Nepejuice</div>
-                                        </div>
-                                    </div>
-                                    <a class="left carousel-control" href="#carousel-secondary-generic" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-secondary-generic" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
-                                </div>
-                                <div class="margin-top-2rem"><a href="#" class="underlined">Vis fullstendig statistikk</a></div>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div id="new-catalogue" class="float-left"><a href="" class="underlined">+ Lag ny varekatalog</a></div>
+                        <div class="clearing"></div>
+                        <!-- warehouse item start -->
+                        <div class="warehouse-item float-left">
+                            <h4 class="graphite box-header">Varekatalog med langt navn</h4>
+                            <div class="item-upper">
+                                <h4 class="blue-txt">KUNDER (3)</h4>
+                                <h4>VARER (24)</h4>
+                                <div class="margin-top-1rem">Siste kjøp: 14.02.2014</div>
+                                <div class="blue-txt">Seneste aktivitet</div>
                             </div>
-                            <div class="tab-pane fade" id="profile">         
-                                <p>Lorem ipsum and all that jazz</p>                
+                            <div class="completed">
+                                <div class="percent-indicator float-right">60%</div>
+                                <div class="progress clearing">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                        <span class="sr-only">40% Complete (success)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-login">
+                                <strong>Logg inn</strong>
+                            <div>
+                                <span class="blue-txt">Bilder (18)</span><span class="blue-txt">Varebeskrivelser (11)</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="warehouse-stats blue-txt">Se handel på varekatalog</div>
+                                <div class="statistics no-show">
+                                    GRAFVISNING
+                                </div>
+                            </div>
+                        </div>
+                        <!-- warehouse item end -->
+                        <!-- for testing purposes, we load all of these with the warehouse-item template -->
+                        <div class="tmp-w"></div>
+                        <div class="tmp-w"></div>
+                        <div class="tmp-w"></div>
+                        <div class="tmp-w"></div>
+                        <div class="tmp-w"></div>
+                        <div class="tmp-w"></div>
+                        <div class="tmp-w"></div>
+                        <div class="tmp-w"></div>
+                        <div class="tmp-w"></div>
+                        <!-- end test section -->
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="float-left action-intro">
+                            <div><strong>Vil du opprette flere varekataloger?</strong></div>
+                            <div>3 nye kjøpere siste måned <img src="img/btn_smallCircle.png" class="blue-dot float-right" alt="blue icon arrow"></div>
+                        </div>
+                        <div class="clearing"></div>
+                        <div class="right-column-overview white-bg">
+                            <ul id="myTab" class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">Statistikk</a></li>
+                                <li><a href="#profile" data-toggle="tab">Rapporter</a></li> 
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane fade in active" id="home">
+                                    <p>Du har omsatt for 1 007 900 kroner gjennom Millum Commerce.</p>
+
+                                    <div>Dine 3 mest solgte produkter</div>
+                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="item relatively active">
+                                                <img src="http://placehold.it/300x220/aa0ccc/00ff00" data-src="http://placehold.it/200x100/aa0ccc/00ff00" alt="First slide">
+                                                <div class="absolutely slider-img-caption">Ostekake</div>
+                                            </div>
+                                            <div class="item relatively">
+                                                <img src="http://placehold.it/300x220/aa0c00/00ff00" alt="Second slide">
+                                                <div class="absolutely slider-img-caption">Sjokoladekake</div>
+                                            </div>
+                                            <div class="item relatively">
+                                                <img src="http://placehold.it/300x220/aa0ccc/ee00ff" alt="Third slide">
+                                                <div class="absolutely slider-img-caption">Kokoskake</div>
+                                            </div>
+                                        </div>
+                                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+
+                                    <div class="margin-top-2rem">Dine 3 minst solgte produkter</div>
+                                    <div id="carousel-secondary-generic" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-secondary-generic" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-secondary-generic" data-slide-to="1"></li>
+                                            <li data-target="#carousel-secondary-generic" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="item relatively active">
+                                                <img src="http://placehold.it/300x220/99dc7c/cc2f00" data-src="http://placehold.it/200x100/aa0ccc/00ff00" alt="First slide">
+                                                <div class="absolutely slider-img-caption">Gurkemeie</div>
+                                            </div>
+                                            <div class="item relatively">
+                                                <img src="http://placehold.it/300x220/3356A0/776600" alt="Second slide">
+                                                <div class="absolutely slider-img-caption">Gulrotjuice</div>
+                                            </div>
+                                            <div class="item relatively">
+                                                <img src="http://placehold.it/300x220/883c8c/44dd11" alt="Third slide">
+                                                <div class="absolutely slider-img-caption">Nepejuice</div>
+                                            </div>
+                                        </div>
+                                        <a class="left carousel-control" href="#carousel-secondary-generic" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel-secondary-generic" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                    <div class="margin-top-2rem"><a href="#" class="underlined">Vis fullstendig statistikk</a></div>
+                                </div>
+                                <div class="tab-pane fade" id="profile">         
+                                    <p>Lorem ipsum and all that jazz</p>                
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
+    
     <div id="support"></div><!-- no color background -->
     <div id="footer"></div> <!-- full width with its own color background -->
     <script src="../scripts/jquery-2.1.0.min.js"></script>

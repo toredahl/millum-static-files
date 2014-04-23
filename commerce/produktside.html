@@ -30,245 +30,245 @@
 			</div>
 		</div>
 	</div>
-
-	<div id="product-info-container" class="container white-bg padding-2rem"><!-- start main container -->
-		<form id="product-item-form" role="form"> <!-- begin form: html does not allow nested forms, therefore we put all the elements inside. -->
-			<div class="row">
-				<div class="col-lg-4"><!-- start image container -->
-					<div class="product-img-container relatively">
-						<img src="http://placehold.it/250x250/00a0ff/000000" alt="product item" class="product-image">	
-						<div class="edit-img">
-							<h4>Rediger bilde </h4>
-							<ul>
-								<li>Last opp bilde</li>
-								<li>Legg inn URL</li>
-								<li>Fjern bilde</li>
-							</ul>
+	<section>
+		<div id="product-info-container" class="container white-bg padding-2rem"><!-- start main container -->
+			<form id="product-item-form" role="form"> <!-- begin form: html does not allow nested forms, therefore we put all the elements inside. -->
+				<div class="row">
+					<div class="col-lg-4"><!-- start image container -->
+						<div class="product-img-container relatively">
+							<img src="http://placehold.it/250x250/00a0ff/000000" alt="product item" class="product-image">	
+							<div class="edit-img">
+								<h4>Rediger bilde </h4>
+								<ul>
+									<li>Last opp bilde</li>
+									<li>Legg inn URL</li>
+									<li>Fjern bilde</li>
+								</ul>
+							</div>
+							<div id="modal-img-info" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"  aria-hidden="true">
+						  		<div class="modal-dialog modal-sm">
+						    		<div class="modal-content">
+						    		</div>
+						  		</div>
+							</div>
 						</div>
-						<div id="modal-img-info" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"  aria-hidden="true">
-					  		<div class="modal-dialog modal-sm">
-					    		<div class="modal-content">
-					    		</div>
-					  		</div>
-						</div>
-					</div>
-				</div><!-- end col-lg-4 -->
-				<div class="col-lg-8">
-					<div class="form-group">
-					    <label id="upper-label" for="item-name">Varenavn*</label>
-					    <input type="email" class="form-control" id="item-name" placeholder="">
-						<div class="row">
-						  	<div class="col-xs-6">
-						  		<label for="item-id">Varenummer*</label>
-						    	<input id="item-id" type="text" class="form-control" placeholder="default text">
-								<div class="row">
-						  			<div class="col-xs-6">
-										<label for="item-price">Varepris*</label>
-										<input id="item-price" type="text" class="form-control" placeholder="">
+					</div><!-- end col-lg-4 -->
+					<div class="col-lg-8">
+						<div class="form-group">
+						    <label id="upper-label" for="item-name">Varenavn*</label>
+						    <input type="email" class="form-control" id="item-name" placeholder="">
+							<div class="row">
+							  	<div class="col-xs-6">
+							  		<label for="item-id">Varenummer*</label>
+							    	<input id="item-id" type="text" class="form-control" placeholder="default text">
+									<div class="row">
+							  			<div class="col-xs-6">
+											<label for="item-price">Varepris*</label>
+											<input id="item-price" type="text" class="form-control" placeholder="">
+										</div>
 									</div>
+									<div class="row">
+							  			<div class="col-xs-6">
+											<label for="item-count">Antall i salgsenhet*</label>
+											<input id="item-count" type="text" class="form-control" placeholder="">
+										</div>
+										<div class="col-xs-6">
+											<label for="select-item">Salgsenhet*</label>
+											<select id="select-item" class="form-control">
+										  		<option class="narrow-font">Velg</option>
+										  		<option>Kasse</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+							  			<div class="col-xs-6">
+											<label for="unit-price">Enhetspris*</label>
+											<input id="unit-price" type="text" class="form-control" placeholder="">
+										</div>
+										<div class="col-xs-6">
+											<label for="select-unit">Enhet*</label>
+											<select id="select-unit" class="form-control">
+										  		<option class="narrow-font">Velg</option>
+										  		<option>2</option>
+											</select>
+										</div>
+									</div>
+							 	</div>
+							 	<div class="col-xs-6">
+							  		<label for="item-description">Varebeskrivelse</label>
+							    	<textarea id="item-description" class="form-control" rows="5"></textarea>
+									<label for="item-url">URL Varebeskrivelse</label>
+							    	<input id="item-url" type="text" class="form-control" placeholder="">
+									<label for="item-search">Søkeord*</label>
+							    	<input id="item-search" type="text" class="form-control" placeholder="">
+							  	</div>
+							</div>
+						</div>		
+					</div><!-- end col-lg-8 -->	
+				</div><!-- end upper row -->
+				<div class="row">
+					<div class="col-lg-12">
+						<hr>
+						<h3 class="no-margin bold-font">Ekstra vareinformasjon</h3>
+						<div class="info-explantion">
+							<div class="small-circle float-left"></div>
+							<div class="float-left">Har utfylte punkter</div>
+						</div>
+						<div class="row">	
+							<div class="col-xs-4">
+								<div class="pulldown-menu">
+									<div class="small-circle float-left inside-circle"></div>
+									<div class="float-left">Avtale / Bonus / Rabatt </div>
+									<div class="down-triangle-graphite float-right pulldown-form-position"></div>
 								</div>
-								<div class="row">
-						  			<div class="col-xs-6">
-										<label for="item-count">Antall i salgsenhet*</label>
-										<input id="item-count" type="text" class="form-control" placeholder="">
-									</div>
-									<div class="col-xs-6">
-										<label for="select-item">Salgsenhet*</label>
-										<select id="select-item" class="form-control">
-									  		<option class="narrow-font">Velg</option>
-									  		<option>Kasse</option>
-										</select>
-									</div>
+								<div class="expand-box no-show">
+									<label for="price-tag" class="full-width">Pris før rabatt</label> <br>
+									<input id="price-tag" name="price-tag" class="full-width" type="text" value="825"><br><br>
+									<label for="agreement" class="third-width">Avtale </label><input type="checkbox" id="agreement" name="agreement"> <br>
+									<label for="bonus" class="third-width">Bonus</label><input type="checkbox" id="bonus" name="bonus" checked> <br>
+									<label for="bonus-2" class="third-width">Bonus 2</label><input type="checkbox" id="bonus-2" name="bonus-2" checked> <br>
+									<label for="rebate" class="third-width">Ordrerabatt</label><input type="checkbox" id="rebate" name="rebate"> <br>
+									<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
 								</div>
-								<div class="row">
-						  			<div class="col-xs-6">
-										<label for="unit-price">Enhetspris*</label>
-										<input id="unit-price" type="text" class="form-control" placeholder="">
-									</div>
-									<div class="col-xs-6">
-										<label for="select-unit">Enhet*</label>
-										<select id="select-unit" class="form-control">
-									  		<option class="narrow-font">Velg</option>
-									  		<option>2</option>
-										</select>
-									</div>
+							</div>
+							<div class="col-xs-4">
+								<div class="pulldown-menu">Produktmerking 
+									<div class="down-triangle-graphite float-right pulldown-form-position"></div>
 								</div>
-						 	</div>
-						 	<div class="col-xs-6">
-						  		<label for="item-description">Varebeskrivelse</label>
-						    	<textarea id="item-description" class="form-control" rows="5"></textarea>
-								<label for="item-url">URL Varebeskrivelse</label>
-						    	<input id="item-url" type="text" class="form-control" placeholder="">
-								<label for="item-search">Søkeord*</label>
-						    	<input id="item-search" type="text" class="form-control" placeholder="">
-						  	</div>
-						</div>
-					</div>		
-				</div><!-- end col-lg-8 -->	
-			</div><!-- end upper row -->
-			<div class="row">
-				<div class="col-lg-12">
-					<hr>
-					<h3 class="no-margin bold-font">Ekstra vareinformasjon</h3>
-					<div class="info-explantion">
-						<div class="small-circle float-left"></div>
-						<div class="float-left">Har utfylte punkter</div>
-					</div>
-					<div class="row">	
-						<div class="col-xs-4">
-							<div class="pulldown-menu">
-								<div class="small-circle float-left inside-circle"></div>
-								<div class="float-left">Avtale / Bonus / Rabatt </div>
-								<div class="down-triangle-graphite float-right pulldown-form-position"></div>
-							</div>
-							<div class="expand-box no-show">
-								<label for="price-tag" class="full-width">Pris før rabatt</label> <br>
-								<input id="price-tag" name="price-tag" class="full-width" type="text" value="825"><br><br>
-								<label for="agreement" class="third-width">Avtale </label><input type="checkbox" id="agreement" name="agreement"> <br>
-								<label for="bonus" class="third-width">Bonus</label><input type="checkbox" id="bonus" name="bonus" checked> <br>
-								<label for="bonus-2" class="third-width">Bonus 2</label><input type="checkbox" id="bonus-2" name="bonus-2" checked> <br>
-								<label for="rebate" class="third-width">Ordrerabatt</label><input type="checkbox" id="rebate" name="rebate"> <br>
-								<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
-							</div>
-						</div>
-						<div class="col-xs-4">
-							<div class="pulldown-menu">Produktmerking 
-								<div class="down-triangle-graphite float-right pulldown-form-position"></div>
-							</div>
-							<div class="expand-box no-show">
-								<div class="row">
-									<div class="col-xs-6">
-										<h3>Økologisk merking</h3>
-										<input type="checkbox" id="env-1"><label for="env-1">Merking 1</label> <br>
-										<input type="checkbox" id="env-2"><label for="env-2">Merking 2</label> <br>
-										<input type="checkbox" id="env-3"><label for="env-3">Merking 3</label> <br>
-										<input type="checkbox" id="env-4"><label for="env-4">Merking 4</label> <br>
+								<div class="expand-box no-show">
+									<div class="row">
+										<div class="col-xs-6">
+											<h3>Økologisk merking</h3>
+											<input type="checkbox" id="env-1"><label for="env-1">Merking 1</label> <br>
+											<input type="checkbox" id="env-2"><label for="env-2">Merking 2</label> <br>
+											<input type="checkbox" id="env-3"><label for="env-3">Merking 3</label> <br>
+											<input type="checkbox" id="env-4"><label for="env-4">Merking 4</label> <br>
+										</div>
+										<div class="col-xs-6">
+											<h3>Miljømerking</h3>
+											<input type="checkbox" id="env-10"><label for="env-10">Merking 10</label> <br>
+											<input type="checkbox" id="env-11"><label for="env-11">Merking 11</label> <br>
+											<input type="checkbox" id="env-12"><label for="env-12">Merking 12</label> <br>
+											<input type="checkbox" id="env-13"><label for="env-13">Merking 13</label> <br>
+											<input type="checkbox" id="env-14"><label for="env-13">Merking 14</label> <br>
+										</div>
 									</div>
-									<div class="col-xs-6">
-										<h3>Miljømerking</h3>
-										<input type="checkbox" id="env-10"><label for="env-10">Merking 10</label> <br>
-										<input type="checkbox" id="env-11"><label for="env-11">Merking 11</label> <br>
-										<input type="checkbox" id="env-12"><label for="env-12">Merking 12</label> <br>
-										<input type="checkbox" id="env-13"><label for="env-13">Merking 13</label> <br>
-										<input type="checkbox" id="env-14"><label for="env-13">Merking 14</label> <br>
-									</div>
+									<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
 								</div>
-								<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
 							</div>
-						</div>
-						<div class="col-xs-4">
-							<div class="pulldown-menu">Kampanje 
-								<div class="down-triangle-graphite float-right pulldown-form-position"></div>
-							</div>
-							<div id="campaign-form" class="expand-box no-show">
-								<label for="price">Pris:</label><br>
-								<input id="price" type="text" class="full-width">
-								<div class="row">
-									<div class="col-xs-6">
-										<label for="start-date">Start</label>
-								
-										<input id="start-date" class="date-picker" value="dd.mm.yyyy" type="text">
-									</div>
-									<div class="col-xs-6">
-										<label for="end-date">Slutt</label>
-								
-										<input id="end-date" class="date-picker" value="dd.mm.yyyy" type="text">
-									</div>
+							<div class="col-xs-4">
+								<div class="pulldown-menu">Kampanje 
+									<div class="down-triangle-graphite float-right pulldown-form-position"></div>
 								</div>
-								<label for="campaign-item-description">Beskrivelse:</label><br>
-								<textarea id="campaign-item-description" class="form-control" rows="5"></textarea>
-								<br><br>
-								
-								<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
+								<div id="campaign-form" class="expand-box no-show">
+									<label for="price">Pris:</label><br>
+									<input id="price" type="text" class="full-width">
+									<div class="row">
+										<div class="col-xs-6">
+											<label for="start-date">Start</label>
+									
+											<input id="start-date" class="date-picker" value="dd.mm.yyyy" type="text">
+										</div>
+										<div class="col-xs-6">
+											<label for="end-date">Slutt</label>
+									
+											<input id="end-date" class="date-picker" value="dd.mm.yyyy" type="text">
+										</div>
+									</div>
+									<label for="campaign-item-description">Beskrivelse:</label><br>
+									<textarea id="campaign-item-description" class="form-control" rows="5"></textarea>
+									<br><br>
+									
+									<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<br>
-					<div class="row">	
-						<div class="col-xs-4">
-							<div class="pulldown-menu">Bestillingskrav 
-								<div class="down-triangle-graphite float-right pulldown-form-position"></div>
-							</div>
-							<div class="expand-box no-show">
+						<br>
+						<div class="row">	
+							<div class="col-xs-4">
+								<div class="pulldown-menu">Bestillingskrav 
+									<div class="down-triangle-graphite float-right pulldown-form-position"></div>
+								</div>
+								<div class="expand-box no-show">
 
-								<label for="minimum-count">Min. antall</label><br>
-								<input id="minimum-count" type="text" class="full-width"><br>
-								
-								<label for="maximum-count">Maks. antall</label><br>
-								<input id="maximum-count" type="text" class="full-width"><br>
-								
-								<label for="period">Bestillingsintervall:</label><br>
-								<input id="period" type="text"  class="full-width"><br>
-								
-								<label for="lead-time">Ledetid:</label><br>
-								<input id="lead-time" type="text" class="full-width"><br>
+									<label for="minimum-count">Min. antall</label><br>
+									<input id="minimum-count" type="text" class="full-width"><br>
+									
+									<label for="maximum-count">Maks. antall</label><br>
+									<input id="maximum-count" type="text" class="full-width"><br>
+									
+									<label for="period">Bestillingsintervall:</label><br>
+									<input id="period" type="text"  class="full-width"><br>
+									
+									<label for="lead-time">Ledetid:</label><br>
+									<input id="lead-time" type="text" class="full-width"><br>
 
-								<label for="price-description">Beskrivelse:</label><br>
-								<textarea id="price-description" class="form-control" rows="5"></textarea>
-								<br>
-								<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
+									<label for="price-description">Beskrivelse:</label><br>
+									<textarea id="price-description" class="form-control" rows="5"></textarea>
+									<br>
+									<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
+								</div>
 							</div>
-						</div>
 
-						<div class="col-xs-4">
-							<div id="due-note" class="pulldown-menu">Forfalt- og erstatningskrav 
-								<div class="down-triangle-graphite float-right pulldown-form-position"></div>
-							</div>
-							<div class="expand-box no-show">
-								<label for="old-id-number">Gammelt varenummer:</label><br>
-								<input id="old-id-number" type="text" class="full-width"><br>
-								
-								<label for="replacement-id">Erstatningsvarenummer</label><br>
-								<input id="replacement-id" name="replacement-id" type="text" class="full-width"><br>
-								
-								<label for="due-date">Utgått dato:</label><br>
-								<!-- <input id="due-date" type="date"><br> -->
-								<input id="due-date" class="date-picker" value="dd.mm.yyyy" type="text"><br>
-								
-								<label for="due-status">Utgått status:</label><br>
-								<input id="due-status" type="text" class="full-width margin-top-1rem"><br>
+							<div class="col-xs-4">
+								<div id="due-note" class="pulldown-menu">Forfalt- og erstatningskrav 
+									<div class="down-triangle-graphite float-right pulldown-form-position"></div>
+								</div>
+								<div class="expand-box no-show">
+									<label for="old-id-number">Gammelt varenummer:</label><br>
+									<input id="old-id-number" type="text" class="full-width"><br>
+									
+									<label for="replacement-id">Erstatningsvarenummer</label><br>
+									<input id="replacement-id" name="replacement-id" type="text" class="full-width"><br>
+									
+									<label for="due-date">Utgått dato:</label><br>
+									<!-- <input id="due-date" type="date"><br> -->
+									<input id="due-date" class="date-picker" value="dd.mm.yyyy" type="text"><br>
+									
+									<label for="due-status">Utgått status:</label><br>
+									<input id="due-status" type="text" class="full-width margin-top-1rem"><br>
 
-								<div class="gray-box white-txt rectangle-small float-right margin-top-1rem"> Lukk </div>
+									<div class="gray-box white-txt rectangle-small float-right margin-top-1rem"> Lukk </div>
+								</div>
 							</div>
-						</div>
-						<div class="col-xs-4">
-							<div id="criteria" class="pulldown-menu">Kriterier
-								<div class="down-triangle-graphite float-right pulldown-form-position"></div>
-							</div>
-							<div class="expand-box no-show">
-								<p>Om ditt produkt har flere kriterier som kunden din trenger å spesifisere kan du legge dem til her.</p>
-								<div><a href="" class="underlined">Livvidde</a></div>
-								<div>+ Legg til flere inndelinger</div>
-								<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
-								div
+							<div class="col-xs-4">
+								<div id="criteria" class="pulldown-menu">Kriterier
+									<div class="down-triangle-graphite float-right pulldown-form-position"></div>
+								</div>
+								<div class="expand-box no-show">
+									<p>Om ditt produkt har flere kriterier som kunden din trenger å spesifisere kan du legge dem til her.</p>
+									<div><a href="" class="underlined">Livvidde</a></div>
+									<div>+ Legg til flere inndelinger</div>
+									<div class="gray-box white-txt rectangle-small float-right"> Lukk </div>
+									div
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="clearing">.</div>
+				<div class="clearing">.</div>
 
-			<div class="row clearing">
-		  		<div class="col-xs-4">
-					<label for="item-add-id">Legg til varenr</label>
-					<input id="item-add-id" type="text" class="form-control" placeholder="">
+				<div class="row clearing">
+			  		<div class="col-xs-4">
+						<label for="item-add-id">Legg til varenr</label>
+						<input id="item-add-id" type="text" class="form-control" placeholder="">
+					</div>
+					<div class="col-xs-4">
+						<label for="item-addition">Tillegg</label>
+						<input id="item-addition" type="text" class="form-control" placeholder="">
+					</div>
+					<div class="col-xs-4"></div>
 				</div>
-				<div class="col-xs-4">
-					<label for="item-addition">Tillegg</label>
-					<input id="item-addition" type="text" class="form-control" placeholder="">
+				<hr>
+				<div id="button-row" class="row">
+					<div class="col-xs-4 col-xs-push-8">
+						<div class="float-right"><input type="submit" class="blue-bg white-txt large-btn" value="LAGRE"></div>
+						<div class="light-gray preview-button float-right"><input type="submit"  class="warm-gray-bg white-txt large-btn" value="FORHÅNDSVIS"></div>
+					</div>
 				</div>
-				<div class="col-xs-4"></div>
-			</div>
-			<hr>
-			<div id="button-row" class="row">
-				<div class="col-xs-4 col-xs-push-8">
-					<div class="float-right"><input type="submit" class="blue-bg white-txt large-btn" value="LAGRE"></div>
-					<div class="light-gray preview-button float-right"><input type="submit"  class="warm-gray-bg white-txt large-btn" value="FORHÅNDSVIS"></div>
-				</div>
-			</div>
-		</form>
-	</div> <!-- end of main container with white background -->	
-
+			</form>
+		</div> <!-- end of main container with white background -->	
+	</section>
 	<div id="support"></div><!-- no color background -->
 	<div id="footer"></div> <!-- full width with its own color background -->
 

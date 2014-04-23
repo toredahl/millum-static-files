@@ -8,12 +8,13 @@
 	</head>
 <body>
 
+<section>
 	<div id="header-container" class="container no-padding"><!-- start main container -->
 		<div id="header"></div>
 	</div>
 
 	<div class="container white-bg padding-2rem"><!-- start main container -->
-
+		
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="millum-inner-container">
@@ -25,81 +26,84 @@
 
 		<div class="row">
 			<div class="col-lg-8">
-
-				<form id="loginform">
-					<h2> Logg inn </h2>
-					<div class="row">
-						<div class="col-lg-6">
-							<label for="usernameinput">Brukernavn </label>
-							<input type="text" id="usernameinput" name="usernameinput"  required>
-						</div>
-						<div class="col-lg-6 margin-top-2rem">
-							<h4 class="no-margin">Brukernavn</h4>
-							<p>
-						    	Tast inn brukernavn som er tilsendt på e-post
-							<p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-6">
-							<label for="passwordinput">Passord </label>
-							<input type="password" id="passwordinput" name="passwordinput" required>
-						</div>
-						<div class="col-lg-6 margin-top-2rem">
-							<h4 class="no-margin">Passord</h4>
-							<p>
-							    Tast inn passord som er tilsendt på e-post
-							<p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-6">
-							<label for="singletonpassword">Engangspassord </label>
-							<input type="text" id="singletonpassword" name="singletonpassword" required>
-							<div id="simplecaptcha"> 
-								ABCDEF 
+				<article>
+					<form id="loginform">
+						<h2> Logg inn </h2>
+						<div class="row">
+							<div class="col-lg-6">
+								<label for="usernameinput">Brukernavn </label>
+								<input type="text" id="usernameinput" name="usernameinput"  required>
+							</div>
+							<div class="col-lg-6 margin-top-2rem">
+								<h4 class="no-margin">Brukernavn</h4>
+								<p>
+							    	Tast inn brukernavn som er tilsendt på e-post
+								<p>
 							</div>
 						</div>
-						<div class="col-lg-6  margin-top-2rem">
-							<h4 class="no-margin">Engangspassord</h4>
-							<p>
-							    Skriv inn bokstavene som vises i feltet
-							<p>
+						<div class="row">
+							<div class="col-lg-6">
+								<label for="passwordinput">Passord </label>
+								<input type="password" id="passwordinput" name="passwordinput" required>
+							</div>
+							<div class="col-lg-6 margin-top-2rem">
+								<h4 class="no-margin">Passord</h4>
+								<p>
+								    Tast inn passord som er tilsendt på e-post
+								<p>
+							</div>
 						</div>
-					</div>
-					<input class="blue-bg white-txt" type="submit" value="LOGG INN">                	
-				</form>
+						<div class="row">
+							<div class="col-lg-6">
+								<label for="singletonpassword">Engangspassord </label>
+								<input type="text" id="singletonpassword" name="singletonpassword" required>
+								<div id="simplecaptcha"> 
+									ABCDEF 
+								</div>
+							</div>
+							<div class="col-lg-6  margin-top-2rem">
+								<h4 class="no-margin">Engangspassord</h4>
+								<p>
+								    Skriv inn bokstavene som vises i feltet
+								<p>
+							</div>
+						</div>
+						<input class="blue-bg white-txt" type="submit" value="LOGG INN">                	
+					</form>
+				</article>
 			</div>
+			
+			<aside>
+				<div class="col-lg-4">
+					
+					<div class="divider-bar-gray">
+		                    TILLEGG
+		            </div>
 
-			<div class="col-lg-4">
-				
-				<div class="divider-bar-gray">
-	                    TILLEGG
-	            </div>
+	                <div class="additional-container">
+	                    <img src=
+	                        "http://placehold.it/310x200/DCDCDC/000000" alt="test image millum">
 
-                <div class="additional-container">
-                    <img src=
-                        "http://placehold.it/310x200/DCDCDC/000000" alt="test image millum">
+	                    <h4> Pay H4 </h4>
 
-                    <h4> Pay H4 </h4>
+	                    <p>Nam libero tempore, cum soluta nobis est
+	                    eligendi optio cumque nihil impedit quo minus id
+	                    quod maxime placeat facere possimus.</p>
+	                </div>
 
-                    <p>Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus id
-                    quod maxime placeat facere possimus.</p>
-                </div>
+	                <div class="additional-container">
+	                    <img src=
+	                    "http://placehold.it/310x200/DCDCDC/000000" alt="test image millum">
 
-                <div class="additional-container">
-                    <img src=
-                    "http://placehold.it/310x200/DCDCDC/000000" alt="test image millum">
+	                    <h4>Mobile H4</h4>
 
-                    <h4>Mobile H4</h4>
+	                    <p>Nam libero tempore, cum soluta nobis est
+	                    eligendi optio cumque nihil impedit quo minus id
+	                    quod maxime placeat facere possimus.</p>
+	                </div>
 
-                    <p>Nam libero tempore, cum soluta nobis est
-                    eligendi optio cumque nihil impedit quo minus id
-                    quod maxime placeat facere possimus.</p>
-                </div>
-
-			</div>
+				</div>
+			</aside>
 		</div>
 	</div> <!-- end of main container with white background -->	
 
@@ -116,6 +120,6 @@
 	        $("#footer").load("footer-bs3.1.1.html"); 
 		});
 	</script>
-
+</section>
 </body>
 </html>
